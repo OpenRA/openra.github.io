@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024" />
+    <title>OpenRA - Games</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/style.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/news/atom/" rel="alternate" type="application/atom+xml">
+    <script>
+    function supportsSVG() {
+      return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+    }
+    $(document).ready(function(){
+      if (!supportsSVG()) {
+        document.documentElement.className += ' no-svg';
+        $('img[src$=".svg"]').attr('src', function(){return $(this).attr('src').replace('.svg', '-fallback.png');});
+      }
+    });
+    </script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48361645-1', 'open-ra.org');
+      ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+  </head>
+  <body>
+    <div id="container">
+      
+      <div id="header"><h1><img src="/images/soviet-logo.svg" />OpenRA</h1></div>
+      
+      <a id="ghbanner" href="https://github.com/OpenRA/OpenRA"><img src="/images/forkme.svg" alt="Fork me on GitHub"></a>
+      <ul id="nav">
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/news/">News</a></li>
+      
+        <li><a href="/download/">Download</a></li>
+      
+        <li><a href="/games/" class="nav-selected">Games</a></li>
+      
+        <li><a href="/community/">Community</a></li>
+      
+      </ul>
+      <div id="content"><script type="text/javascript">
+  var data = {};
+  function initMapInfo(hash) {
+    var doMap = function(map) {
+      if ('title' in map)
+        $('.map-'+hash).html(map['title']+'<br /><span class="gameSubline">'+map['map_type']+'&nbsp;('+map['players']+' Players)</span>');
+      else
+        $('.map-'+hash).html('Unknown Map');
+    };
+    if (hash in data) {
+      doMap(data[hash]);
+      return;
+    }
+
+    $.ajax({type: "GET", url: "http://resource.openra.net/map/hash/"+hash}).done(function(msg) {
+      data[hash] = {};
+      var reply = jQuery.parseJSON(msg);
+      if (!!reply[0])
+           data[hash] = reply[0];
+
+      doMap(data[hash]);
+    });
+  }
+
+  function updateGameList() {
+    $.ajax({
+      type: "GET",
+      url:  "http://master.open-ra.org/list_json.php"
+    }).done(function(masterMessage) {
+      $('#serverlist').empty();
+      var masterReply = jQuery.parseJSON(masterMessage);
+      var hashes = [];
+      var activePlayers = 0;
+      var activeServers = 0;
+      for (var i in masterReply) {
+        var game = masterReply[i];
+        // Ignore empty servers or finished games
+        if (game['players'] == 0 || game['state'] == 3)
+          continue;
+
+        activePlayers += parseInt(game['players']);
+        activeServers++;
+        var state = 'Unknown';
+        var stateClass = '';
+        switch (game['state']) {
+          case '2': state = 'Playing'; stateClass = 'gamePlaying'; break;
+          case '1': state = 'Waiting'; stateClass = 'gameWaiting'; break;
+        }
+
+        var modver = game['mods'].split('@');
+        // Invalid entry
+        if (modver.length != 2)
+          continue;
+
+        var tag = modver[1];
+        var mod = 'Unknown Mod ('+modver[0]+')';
+        switch (modver[0]) {
+          case 'ra': mod = "Red Alert"; break;
+          case 'cnc': mod = "Tiberian Dawn"; break;
+          case 'd2k': mod = "Dune 2000"; break;
+
+          // Third party mods
+          case 'fgtn': mod = "The Forgotten Chapter"; break;
+          case 'to': mod = "RA: Tiberium Origins"; break;
+        }
+
+        rowClass = '';
+        if (modver[1] != "release-20131223" & modver[1] != "playtest-20140405-2")
+          rowClass = 'greyout';
+
+        var row = $('<tr class="'+rowClass+'">');
+        row.append('<td>'+game['name'].replace(/\\\'/g, "'")+'<br /><span class="gameSubline">'+game['address']+'</span></td>');
+        row.append('<td><span class="'+stateClass+'">'+state+'</span><br /><span class="gameSubline">'+game['players']+(game['players'] == 1 ? ' player' : ' players')+'</span></td>');
+        row.append('<td>'+mod+'<br /><span class="gameSubline">'+tag+'</span></td>');
+        row.append('<td class="map-'+game['map']+'">Loading...</td></tr>');
+        $('#serverlist').append(row);
+
+        if ($.inArray(game['map'], hashes) < 0)
+          hashes.push(game['map']);
+      }
+
+      if (activeServers == 0)
+        $('#serverlist').append('<tr><td colspan="4">No active games found</td></tr>');
+
+      for (var i in hashes)
+        initMapInfo(hashes[i]);
+
+      $('#activePlayers').text(activePlayers+(activePlayers == 1 ? ' player is' : ' players are'));
+      $('#activeServers').text(activeServers);
+
+      window.setTimeout(updateGameList, 30000);
+    });
+  }
+
+  $(document).ready(function() {
+    $('#serverlist').empty();
+    $('#serverlist').append('<tr><td colspan="4">Loading server list...</td></tr>');
+	updateGameList();
+  });
+
+</script>
+<h3>Who's playing?</h3>
+<p><span id="activePlayers">0 players are</span> online in <span id="activeServers">0</span> advertised servers.</p>
+<table>
+  <thead><tr><th>Server</th><th>Status</th><th>Mod</th><th>Map</th></tr></thead>
+  <tbody id="serverlist"></tbody>
+</table>
+<noscript><div class="noscript">Please enable JavaScript to view the server list.</div></noscript>
+</div>
+      <div id="footer"><p>Copyright &copy; 2007-2014 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</p></div>
+    </div>
+  </body>
+</html>

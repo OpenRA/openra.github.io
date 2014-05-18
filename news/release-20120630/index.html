@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024" />
+    <title>OpenRA - Release 20120630</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/style.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/news/atom/" rel="alternate" type="application/atom+xml">
+    <script>
+    function supportsSVG() {
+      return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+    }
+    $(document).ready(function(){
+      if (!supportsSVG()) {
+        document.documentElement.className += ' no-svg';
+        $('img[src$=".svg"]').attr('src', function(){return $(this).attr('src').replace('.svg', '-fallback.png');});
+      }
+    });
+    </script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48361645-1', 'open-ra.org');
+      ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+  </head>
+  <body>
+    <div id="container">
+      
+      <div id="header"><h1><img src="/images/soviet-logo.svg" />OpenRA</h1></div>
+      
+      <a id="ghbanner" href="https://github.com/OpenRA/OpenRA"><img src="/images/forkme.svg" alt="Fork me on GitHub"></a>
+      <ul id="nav">
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/news/" class="nav-selected">News</a></li>
+      
+        <li><a href="/download/">Download</a></li>
+      
+        <li><a href="/games/">Games</a></li>
+      
+        <li><a href="/community/">Community</a></li>
+      
+      </ul>
+      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; Release 20120630</h3>
+<p class="newsDetails">Posted by Curtis Shmyr at 2012-07-15 22:14:00 +0200</p>
+<hr />
+<p>A new release of OpenRA is available! Grab it on the downloads page.</p>
+
+<p>Both mods:</p>
+
+<ul>
+  <li>Added a server banlist setting (e.g. Server: Ban: IP1,IP2,IP3).</li>
+  <li>Comments can be placed at the end of lines in YAML files (comments are prefixed with #).</li>
+  <li>Improved error handling for multiple definitions of the same field in YAML files.</li>
+  <li>(Gameplay) Missiles lose guidance and run out their remaining fuel if the target dies.</li>
+</ul>
+
+<p>RA:</p>
+
+<ul>
+  <li>Camoflauged pillbox is back, with the same garrison features of the original pillbox.
+    <ul>
+      <li>The camoflauge effect requires power - the unit inside the structure will still attack even if power is low.</li>
+    </ul>
+  </li>
+  <li>Added a setting to disable the CashTick sound played when producing structures and units. Setting can be set to Extreme (default), Normal, or Off.</li>
+  <li>Minor AI improvements.</li>
+</ul>
+
+<p>CNC:</p>
+
+<ul>
+  <li>Exposed the option to toggle the shellmap.</li>
+  <li>MRLS cost increased from 800 to 1200.</li>
+  <li>APC’s gun damage was increased, to be a bit more effective against helis.</li>
+  <li>Several buildings had hitpoints modified. Construction Yard, Airfield, Weapons Factory and Advanced Powerplant all received a bonus to their armor, while defensive walls received a reduction of health.</li>
+  <li>Serveral units had movement speed adjusted. Notably the Nod Buggy, Recon Bike and Humvee all received a boost, and Medium Tank was slightly slowed.</li>
+  <li>Landed helicopters were made targetable by units.</li>
+  <li>Production hotkeys changed from YUIOP to QWERT (a la C&amp;C 3).</li>
+  <li>Mammoth Tank has an 8-sec cooldown for heal (like RA).</li>
+</ul>
+
+<p>Bug fixes:</p>
+
+<ul>
+  <li>Spy entering radar dome will no longer reset GPS if up.</li>
+  <li>Players cannot attempt to capture buildings if that same player (or friendly ally) is already capturing.</li>
+  <li>Barrels are no longer capturable/sellable.</li>
+</ul>
+
+<p>The next release should be a large one, stay tuned.</p>
+
+<hr />
+
+<div id="disqus_thread">
+  <noscript><div class="noscript">Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></div></noscript>
+</div>
+<script type="text/javascript">
+  if (document.domain == 'openra.res0l.net') {
+    var disqus_shortname = 'openra';
+    var disqus_identifier = 'release-20120630';
+	// Future proofed permalink
+    var disqus_url = 'http://open-ra.org/news/release-20120630/';
+    var disqus_title = 'Release 20120630';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  }
+  else
+    $('#disqus_thread').append('<div class="noscript">Comments are disabled for this domain.</div>');
+</script>
+</div>
+      <div id="footer"><p>Copyright &copy; 2007-2014 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</p></div>
+    </div>
+  </body>
+</html>

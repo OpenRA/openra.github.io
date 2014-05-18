@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024" />
+    <title>OpenRA - Playtest 20140405</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/style.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/news/atom/" rel="alternate" type="application/atom+xml">
+    <script>
+    function supportsSVG() {
+      return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+    }
+    $(document).ready(function(){
+      if (!supportsSVG()) {
+        document.documentElement.className += ' no-svg';
+        $('img[src$=".svg"]').attr('src', function(){return $(this).attr('src').replace('.svg', '-fallback.png');});
+      }
+    });
+    </script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48361645-1', 'open-ra.org');
+      ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+  </head>
+  <body>
+    <div id="container">
+      
+      <div id="header"><h1><img src="/images/soviet-logo.svg" />OpenRA</h1></div>
+      
+      <a id="ghbanner" href="https://github.com/OpenRA/OpenRA"><img src="/images/forkme.svg" alt="Fork me on GitHub"></a>
+      <ul id="nav">
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/news/" class="nav-selected">News</a></li>
+      
+        <li><a href="/download/">Download</a></li>
+      
+        <li><a href="/games/">Games</a></li>
+      
+        <li><a href="/community/">Community</a></li>
+      
+      </ul>
+      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; Playtest 20140405</h3>
+<p class="newsDetails">Posted by Paul Chote at 2014-04-05 15:00 +1300</p>
+<hr />
+<p>Our first playtest of 2014 is long overdue, and marks a significant step forward from our <a href="news/release-20131223/">holiday release</a>.</p>
+
+<p>A brief sampling of our <a href="https://github.com/OpenRA/OpenRA/blob/playtest-20140405/CHANGELOG">full changelog</a> is included below.</p>
+
+<p>General gameplay improvements include:</p>
+
+<ul>
+  <li>Air units can now attack-move and guard other actors.</li>
+  <li>Players can now place beacons on the map to signal teammates.</li>
+  <li>Time-delayed support powers will also place beacons.</li>
+  <li>Unit husks can now be force-targeted and destroyed.</li>
+  <li>Engineers (mechanics in RA) can salvage unit husks to return them to the battlefield.</li>
+</ul>
+
+<p>User-interface improvements include:</p>
+
+<ul>
+  <li>A new mod selector interface, which now appears the first time you run OpenRA.</li>
+  <li>The offline skirmish mode from Tiberian Dawn has been added to the other mods.</li>
+  <li>Significant UI improvements for spectators and replays.</li>
+  <li>Integration with the <a href="http://resource.openra.net">OpenRA Resource Center</a> for installing custom maps when joining a game.</li>
+</ul>
+
+<p>Specific mod improvements include:</p>
+
+<ul>
+  <li>[D2K] Implemented concrete plates, and structural damage for buildings built on the ground.</li>
+  <li>[D2K &amp; RA] Saboteur / Tanya can now place C4 on vehicles.</li>
+  <li>[RA &amp; TD] Tanya / Commando can now place C4 on bridges.</li>
+  <li>[TD] Added several of the original campaign missions.</li>
+  <li>[RA] Added the Allies Phase Transport and and Soviet Hijacker units.</li>
+  <li>[RA &amp; TD] A number of balance changes (see the <a href="https://github.com/OpenRA/OpenRA/blob/playtest-20140405/CHANGELOG">full changelog</a> for details).</li>
+</ul>
+
+<p>Changes that impact mod and custom-map authors include:</p>
+
+<ul>
+  <li>Improvements to the Lua scripting API.</li>
+  <li>Removal of the legacy scripted missions.</li>
+  <li>The legacy (RA &amp; TD) map converter has moved from the map editor into OpenRA.Utility.exe.</li>
+  <li>Added <span style="font-family: monospace;">--upgrade-mod</span> and <span style="font-family: monospace;">--upgrade-map</span> utility commands to automatically upgrade a mod or map targeting release-20131223 to the latest version.</li>
+  <li>A number of trait properties have changed from pixel or cell units into world units. Use –upgrade-mod to automatically convert these.</li>
+</ul>
+
+<p>A significant issue was discovered with our Lua integration late in this playtest cycle.  This shouldn’t significantly affect scripted missions, but caused the shellmaps (the animations that run in the main menu) to become unstable after some time.
+Rather than delay the playtest further, we have disabled the shellmaps until the issue has been fixed.  The shellmaps will be restored before the next full release.</p>
+
+<hr />
+
+<p>We have also been nominated for the Linux Game Awards Project of the Month for May 2014.</p>
+
+<div style="text-align:center">
+  <p><a href="http://www.linuxgameawards.org/game/openra"><img src="http://www.linuxgameawards.org/sites/default/files/styles/medium/public/50/potm1405_banner.jpg?itok=3vIW4Mju" width="370" height="224" alt="OpenRA" /></a></p>
+</div>
+
+<p>If you’d like to help improve the profile of open-source Linux gaming, then be sure to <a href="http://www.linuxgameawards.org/game/openra">vote for us</a> (or one of our <a href="http://www.linuxgameawards.org/award-instance/project-of-the-month-may-2014">competitors</a>, they are great projects too!).</p>
+
+<hr />
+
+<p>A brief taste of our new playtest changes can be seen below:</p>
+
+<div style="text-align:center">
+  <p><img src="/images/news/20140405-modchooser.png" alt="Mod Chooser" /></p>
+
+  <p>The new mod chooser is styled after our website, and better highlights the official and <a href="https://github.com/OpenRA/OpenRA/wiki/Modding-Guide">custom mods</a>.</p>
+
+  <p><img src="/images/news/20140405-d2k.png" alt="D2K Improvements" /></p>
+
+  <p>Concrete plates have been added to D2K, and the turrets now integrate properly with walls.</p>
+
+  <p><img src="/images/news/20140405-beacons.png" alt="Map Beacons" /></p>
+
+  <p>Beacons and radar pings will now notify you, your allies, and spectators of any important events.</p>
+
+  <p><img src="/images/news/20140405-ra.png" alt="Phase Transport" /></p>
+
+  <p>The Allied Phase Transport can transport three infantry, while remaining cloaked from enemy view.</p>
+
+</div>
+
+<hr />
+
+<div id="disqus_thread">
+  <noscript><div class="noscript">Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></div></noscript>
+</div>
+<script type="text/javascript">
+  if (document.domain == 'openra.res0l.net') {
+    var disqus_shortname = 'openra';
+    var disqus_identifier = 'playtest-20140405';
+	// Future proofed permalink
+    var disqus_url = 'http://open-ra.org/news/playtest-20140405/';
+    var disqus_title = 'Playtest 20140405';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  }
+  else
+    $('#disqus_thread').append('<div class="noscript">Comments are disabled for this domain.</div>');
+</script>
+</div>
+      <div id="footer"><p>Copyright &copy; 2007-2014 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</p></div>
+    </div>
+  </body>
+</html>

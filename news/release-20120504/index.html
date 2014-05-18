@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024" />
+    <title>OpenRA - Release 20120504</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/style.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/news/atom/" rel="alternate" type="application/atom+xml">
+    <script>
+    function supportsSVG() {
+      return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+    }
+    $(document).ready(function(){
+      if (!supportsSVG()) {
+        document.documentElement.className += ' no-svg';
+        $('img[src$=".svg"]').attr('src', function(){return $(this).attr('src').replace('.svg', '-fallback.png');});
+      }
+    });
+    </script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48361645-1', 'open-ra.org');
+      ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+  </head>
+  <body>
+    <div id="container">
+      
+      <div id="header"><h1><img src="/images/soviet-logo.svg" />OpenRA</h1></div>
+      
+      <a id="ghbanner" href="https://github.com/OpenRA/OpenRA"><img src="/images/forkme.svg" alt="Fork me on GitHub"></a>
+      <ul id="nav">
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/news/" class="nav-selected">News</a></li>
+      
+        <li><a href="/download/">Download</a></li>
+      
+        <li><a href="/games/">Games</a></li>
+      
+        <li><a href="/community/">Community</a></li>
+      
+      </ul>
+      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; Release 20120504</h3>
+<p class="newsDetails">Posted by Curtis Shmyr at 2012-05-03 15:53:00 +0200</p>
+<hr />
+<p>We have released a new version of OpenRA! Head over to the downloads page to grab it.</p>
+
+<p>List of changes since the previous release:</p>
+
+<ul>
+  <li>Maps
+    <ul>
+      <li>Added a new RA Map by Nukem: Tainted Peak</li>
+      <li>Dropped three RA Maps: Daejeon, Mjolnir, and No Fly Zone.</li>
+    </ul>
+  </li>
+  <li>Added a Sound Engine game setting: Sound.Engine=AL.
+    <ul>
+      <li>“AL” uses OpenAL, “Null” gives you no sound.</li>
+    </ul>
+  </li>
+  <li>Warnings are shown to lobbies when a DEV_VERSION client joins.</li>
+  <li>General gameplay changes:
+    <ul>
+      <li>Buildings now take 10 seconds to capture.</li>
+      <li>New units now attack-move to the designated rally point.</li>
+    </ul>
+  </li>
+  <li>RA changes:
+    <ul>
+      <li>Spy
+        <ul>
+          <li>Can infiltrate Refinery: Steals 50% of a player’s cash, minimum $500.</li>
+          <li>Can infiltrate Radar Dome: Resets exploration for the enemy team.</li>
+          <li>Is equipped with a Silenced PPK. Use force-fire to assassinate an enemy unit (careful, your disguise will be dropped).</li>
+        </ul>
+      </li>
+      <li>Gap Generator made available to Allies.</li>
+      <li>Tanya made available only to Allies.</li>
+      <li>Pillboxes now include a rifle infantry when built. Pillboxes are garrisonable, so swapping the unit inside changes the weapon fired.</li>
+      <li>Camo Pillbox was removed (temporarily).</li>
+      <li>Artilleries have a 75% chance of exploding on death, down from 100%.</li>
+      <li>Flamethrower received new art for its flame effect, as well as an overall damage increase.</li>
+      <li>AI: Replaced Normal AI with two new AIs: Rommel and Zhukov.
+        <ul>
+          <li>Zhukov is a turtle, but sends large attacks with Artillery and V2.</li>
+          <li>Rommel is a modified Hard AI; sends Artillery and V2, but doesn’t like light vehicles.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>CNC changes:
+    <ul>
+      <li>A10’s speed increased, Napalm Drop damage increased.</li>
+      <li>Chinooks now carry up to 10 passengers.</li>
+      <li>Sight of all infantry was increased by 1 tile.</li>
+      <li>Chem Warrior/Flamethrower/Grenadier damage vs certain armor types increased.</li>
+      <li>Artillery’s attack range was doubled.</li>
+      <li>Guard Tower’s attack range increased by 1.</li>
+      <li>Increased sight of Construction Yards and MCVs.</li>
+      <li>Construction Yard armor type changed to Heavy (previously Wood).</li>
+      <li>Harvester armor type changed to Heavy (previously Light).</li>
+      <li>Reduced the probability of SpawnVisceroid from 10% to 2%.</li>
+      <li>Reduced the damage and size of Grenadier death explosions.</li>
+      <li>Units no longer target buildings when attack-moving or when idle. They still target defensive structures (except SAM sites).</li>
+      <li>AI is now reasonable and playable.</li>
+    </ul>
+  </li>
+  <li>General mod support and bug fixes:
+    <ul>
+      <li>New CloakPaletteEffect trait for adding a shimmer effect to cloaked units.</li>
+      <li>Cargo trait now allows initial passengers when units are built.</li>
+      <li>Capture time length is adjustable</li>
+      <li>Custom starting units can be used for each faction.</li>
+      <li>General engine tweaks.</li>
+      <li>Main menu no longer vanished after a lobby disconnect.</li>
+      <li>Fixed a crash with capturing/selling buildings at the same time.</li>
+      <li>Fixed a crash in server in StartGame if there were unvalidated connections.</li>
+      <li>Fixed a crash in the CNC replay viewer.</li>
+      <li>Fixed a bug in CNC where radar would not be shown if dead/spectating.</li>
+      <li>Fixed a bug where passengers could shoot from transports.</li>
+      <li>Improved error messages given with bad MiniYaml indentations.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<div id="disqus_thread">
+  <noscript><div class="noscript">Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></div></noscript>
+</div>
+<script type="text/javascript">
+  if (document.domain == 'openra.res0l.net') {
+    var disqus_shortname = 'openra';
+    var disqus_identifier = 'release-20120504';
+	// Future proofed permalink
+    var disqus_url = 'http://open-ra.org/news/release-20120504/';
+    var disqus_title = 'Release 20120504';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  }
+  else
+    $('#disqus_thread').append('<div class="noscript">Comments are disabled for this domain.</div>');
+</script>
+</div>
+      <div id="footer"><p>Copyright &copy; 2007-2014 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</p></div>
+    </div>
+  </body>
+</html>

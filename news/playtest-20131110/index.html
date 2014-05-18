@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024" />
+    <title>OpenRA - Playtest 20131112</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/style.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/news/atom/" rel="alternate" type="application/atom+xml">
+    <script>
+    function supportsSVG() {
+      return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+    }
+    $(document).ready(function(){
+      if (!supportsSVG()) {
+        document.documentElement.className += ' no-svg';
+        $('img[src$=".svg"]').attr('src', function(){return $(this).attr('src').replace('.svg', '-fallback.png');});
+      }
+    });
+    </script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48361645-1', 'open-ra.org');
+      ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+  </head>
+  <body>
+    <div id="container">
+      
+      <div id="header"><h1><img src="/images/soviet-logo.svg" />OpenRA</h1></div>
+      
+      <a id="ghbanner" href="https://github.com/OpenRA/OpenRA"><img src="/images/forkme.svg" alt="Fork me on GitHub"></a>
+      <ul id="nav">
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/news/" class="nav-selected">News</a></li>
+      
+        <li><a href="/download/">Download</a></li>
+      
+        <li><a href="/games/">Games</a></li>
+      
+        <li><a href="/community/">Community</a></li>
+      
+      </ul>
+      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; Playtest 20131112</h3>
+<p class="newsDetails">Posted by Matthias Mailänder at 2013-11-10 10:30:00 +0100</p>
+<hr />
+<p><strong>Note: The 1110 playtest contained issues under Windows and Debian/Ubuntu.</strong><br />
+<strong>These have been resolved in the 1112 build.</strong></p>
+
+<p>We have just released a new playtest build containing the latest snapshot of our development progress.
+Playtest-20131112 can be downloaded from the <a href="/download/">download page</a> or using your git client.
+If you run into any issues or have any feedback then you can create a ticket on our <a href="http://bugs.open-ra.org">Github issue tracker</a> or <a href="http://webchat.freenode.net/?channels=openra">find us on IRC</a>.</p>
+
+<p>Some of the key changes from our <a href="http://openra.res0l.net/news/release-20130915/">stable september release</a> include:</p>
+
+<ul>
+  <li>Added support for multiple languages (translations for DE, FR, ES, RU and PL are in progress).</li>
+  <li>Added support for password-protected servers and a global lobby chat channel.</li>
+  <li>Additional UI polishing, including a new settings menu, overhauled chat, and improved hotkey support.</li>
+  <li>Improvements to RA include production acceleration, the base radius from C&amp;C, and the M.A.D Tank!</li>
+  <li>An overhauled Airstrike and improved weapon effects for C&amp;C (now renamed to Tiberian Dawn).</li>
+  <li>The popular RA map Haos Ridges is now available in Tiberian Dawn.</li>
+</ul>
+
+<p>As usual, the <a href="https://github.com/OpenRA/OpenRA/blob/playtest-20131112/CHANGELOG">changelog</a> contains all the details, including a list of changes that affect maps and mods.</p>
+
+<div style="text-align:center">
+  <p><img src="/images/news/20131102-settings.png" alt="Settings" /></p>
+
+  <p>The new settings menu provides improved access to the important settings, and is unified across all the mods.</p>
+
+  <p><img src="/images/news/20131102-qtnk.png" alt="MAD tank" /></p>
+
+  <p>The M.A.D Tank detonates a powerful seismic blast that heavily damages vehicles and structures.</p>
+
+  <p><img src="/images/news/20131102-a10-strike.png" alt="A10 airstrike" /></p>
+
+  <p>The new Airstrike power calls a group of A10 to strike an area with gatling guns and napalm bombs.</p>
+
+  <p><img src="/images/news/20131102-haos-ridges-cnc.png" alt="Haos Ridges C&amp;C" /></p>
+
+  <p>Haos Ridges is now available in C&amp;C (thanks sunny!).</p>
+</div>
+
+<hr />
+
+<p>Our friends at <a href="http://www.ppmsite.com/">Project Perfect Mod</a> have created a new <a href="http://www.ppmsite.com/forum/index.php?f=929">OpenRA Editing Forums</a> section where modders can compare notes with each other.
+We will be keeping an eye on these as well as our <a href="http://www.sleipnirstuff.com/forum/viewforum.php?f=80">official forum</a> (which is currently offline due to a hardware failure).</p>
+
+<hr />
+
+<div id="disqus_thread">
+  <noscript><div class="noscript">Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></div></noscript>
+</div>
+<script type="text/javascript">
+  if (document.domain == 'openra.res0l.net') {
+    var disqus_shortname = 'openra';
+    var disqus_identifier = 'playtest-20131102';
+	// Future proofed permalink
+    var disqus_url = 'http://open-ra.org/news/playtest-20131110/';
+    var disqus_title = 'Playtest 20131112';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  }
+  else
+    $('#disqus_thread').append('<div class="noscript">Comments are disabled for this domain.</div>');
+</script>
+</div>
+      <div id="footer"><p>Copyright &copy; 2007-2014 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</p></div>
+    </div>
+  </body>
+</html>

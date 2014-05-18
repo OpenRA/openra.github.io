@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024" />
+    <title>OpenRA - Release 20130915</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/style.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/news/atom/" rel="alternate" type="application/atom+xml">
+    <script>
+    function supportsSVG() {
+      return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+    }
+    $(document).ready(function(){
+      if (!supportsSVG()) {
+        document.documentElement.className += ' no-svg';
+        $('img[src$=".svg"]').attr('src', function(){return $(this).attr('src').replace('.svg', '-fallback.png');});
+      }
+    });
+    </script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48361645-1', 'open-ra.org');
+      ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+  </head>
+  <body>
+    <div id="container">
+      
+      <div id="header"><h1><img src="/images/soviet-logo.svg" />OpenRA</h1></div>
+      
+      <a id="ghbanner" href="https://github.com/OpenRA/OpenRA"><img src="/images/forkme.svg" alt="Fork me on GitHub"></a>
+      <ul id="nav">
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/news/" class="nav-selected">News</a></li>
+      
+        <li><a href="/download/">Download</a></li>
+      
+        <li><a href="/games/">Games</a></li>
+      
+        <li><a href="/community/">Community</a></li>
+      
+      </ul>
+      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; Release 20130915</h3>
+<p class="newsDetails">Posted by Paul Chote at 2013-09-14 14:30:00 +0200</p>
+<hr />
+<p>Our September release is another huge jump, with over 1,100 changes and improvements by 17 authors.</p>
+
+<p>The headline changes in this build are:</p>
+
+<ul>
+  <li>Refined Fog of War behavior (buildings and ore/tiberium/spice are now frozen as they were last seen).</li>
+  <li>Added game options for starting units, starting cash, team construction, shroud, fog of war.</li>
+  <li>Reworked engineer behavior - C&amp;C again uses the “classic” behavior, and RA/D2K external (C&amp;C Generals style) capturing.</li>
+  <li>Overhauled firing, projectile, and explosion effects for all mods.</li>
+  <li>Native support for the D2K game files, significantly improving the artwork and sound quality.</li>
+  <li>Fixed windows installer problems.</li>
+  <li>A lot more bug, crash, and performance fixes.</li>
+</ul>
+
+<p>Please note that OpenRA now requires GPU support for framebuffer objects.
+This should not be a problem for most computers manufactured in the last 5-7 years, but some older high-end GPUs may not work from this release onward.</p>
+
+<p>The full list of changes is far too large to include here, so we recommend clicking through to the <a href="https://github.com/OpenRA/OpenRA/blob/release-20130915/CHANGELOG">human-optimized changelog</a> or <a href="https://github.com/OpenRA/OpenRA/compare/release-20130514...release-20130915">full list of commits</a>.
+If you’d like to get involved, the best point of contact is our IRC channel <a href="irc://chat.freenode.net/openra">#openra</a> (<a href="http://webchat.freenode.net/?channels=openra">webchat</a>).</p>
+
+<p>This release also adds beta support for Tiberian Sun and Red Alert 2 assets.
+Work has started on an official Tiberian Sun mod, but we don’t expect this to be ready for several more months.
+In the meantime, modders can take advantage of the new <a href="https://github.com/OpenRA/OpenRA/wiki/Adding-a-voxel-unit-ingame">voxel</a> and shp(ts) support in their own projects.</p>
+
+<p><img src="/images/news/20130915-explosions.png" alt="D2K explosion effects" /><br />
+D2K now uses the original translucent explosion effects.</p>
+
+<p><img src="/images/news/20130915-lobby.png" alt="New lobby options" style="width:100%" />
+The overhauled lobby interface offers several new game options.</p>
+
+<p><img src="/images/news/20130915-ra2voxels.png" alt="Voxel demonstration" />
+An early test showing voxel units in OpenRA (we have no plans on shipping this!).</p>
+
+<p>We have also taken this time to overhaul our website. It’s hot off the virtual press, so please let us know if you spot any typos or rendering glitches.</p>
+
+<hr />
+
+<div id="disqus_thread">
+  <noscript><div class="noscript">Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></div></noscript>
+</div>
+<script type="text/javascript">
+  if (document.domain == 'openra.res0l.net') {
+    var disqus_shortname = 'openra';
+    var disqus_identifier = '/news/release-20130915/';
+	// Future proofed permalink
+    var disqus_url = 'http://open-ra.org/news/release-20130915/';
+    var disqus_title = 'Release 20130915';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  }
+  else
+    $('#disqus_thread').append('<div class="noscript">Comments are disabled for this domain.</div>');
+</script>
+</div>
+      <div id="footer"><p>Copyright &copy; 2007-2014 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</p></div>
+    </div>
+  </body>
+</html>

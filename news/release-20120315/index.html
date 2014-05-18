@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024" />
+    <title>OpenRA - Release 20120315</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/style.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/news/atom/" rel="alternate" type="application/atom+xml">
+    <script>
+    function supportsSVG() {
+      return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+    }
+    $(document).ready(function(){
+      if (!supportsSVG()) {
+        document.documentElement.className += ' no-svg';
+        $('img[src$=".svg"]').attr('src', function(){return $(this).attr('src').replace('.svg', '-fallback.png');});
+      }
+    });
+    </script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48361645-1', 'open-ra.org');
+      ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+  </head>
+  <body>
+    <div id="container">
+      
+      <div id="header"><h1><img src="/images/soviet-logo.svg" />OpenRA</h1></div>
+      
+      <a id="ghbanner" href="https://github.com/OpenRA/OpenRA"><img src="/images/forkme.svg" alt="Fork me on GitHub"></a>
+      <ul id="nav">
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/news/" class="nav-selected">News</a></li>
+      
+        <li><a href="/download/">Download</a></li>
+      
+        <li><a href="/games/">Games</a></li>
+      
+        <li><a href="/community/">Community</a></li>
+      
+      </ul>
+      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; Release 20120315</h3>
+<p class="newsDetails">Posted by Curtis Shmyr at 2012-03-15 19:41:00 +0100</p>
+<hr />
+<p>A new release of OpenRA is available! Head over to the downloads page to check it out.</p>
+
+<p>Here are the changes since the previous release:</p>
+
+<ul>
+  <li>8 new community made RA maps</li>
+  <li>Base under attack notifications (‘spacebar’ focuses screen to last event)</li>
+  <li>New unit stance: Defend (‘Z’ cycles unit stances)</li>
+  <li>UI changes
+    <ul>
+      <li>New server browser for RA and CNC</li>
+      <li>Changed layout of RA’s mod chooser to match CNC’s</li>
+    </ul>
+  </li>
+  <li>Option to toggle shellmap on and off</li>
+  <li>Added executable args
+    <ul>
+      <li>Join a server on game start up: Game.ConnectTo=ip:port</li>
+      <li>Limit framerate: Graphics.CapFramerate=false</li>
+    </ul>
+  </li>
+  <li>Improvements to bots
+    <ul>
+      <li>Bots maintain aggro with players</li>
+      <li>Bots repair their own structures</li>
+      <li>Moved some bot configuration into system.yaml</li>
+    </ul>
+  </li>
+  <li>Map Editor tweaks
+    <ul>
+      <li>Added a menu item to set up default players in map editor</li>
+      <li>Added dropdown in editor for choosing owner of new actors</li>
+    </ul>
+  </li>
+  <li>Gameplay changes
+    <ul>
+      <li>Aircraft assign themselves to empty airfields/helipads when returning to base</li>
+      <li>Aircraft can now use ally airfields and helipads</li>
+      <li>MiGs fire in bursts of 2 instead of 4, overall rocket damage increased</li>
+      <li>Longbows fire in bursts of 2 instead of 1</li>
+      <li>Mammoth Tanks regenerate health differently - 25hp/second, after 10 seconds since last unit damage</li>
+      <li>Tesla Tank cost was decreased, armor increased</li>
+      <li>Flamethrower tech requirement was lowered</li>
+      <li>Minelayer (Anti-Tank) mine count reduced from 5 to 3</li>
+      <li>Submarine, Missile Sub and Stealth Tank have a ‘HoldFire’ stance by default</li>
+    </ul>
+  </li>
+  <li>Many various tweaks, bug fixes and mod support changes
+    <ul>
+      <li>Allow units to pass over both types of land mines</li>
+      <li>Helicopters now bob up and down when in flight</li>
+      <li>Game remembers the last map played</li>
+      <li>Team color pickers between RA and CNC mods were unified</li>
+      <li>The ‘SpawnMPUnits’ initial unit is now configurable</li>
+      <li>Added support for negative prerequisites</li>
+      <li>Fixed a crash when playing with AI players online</li>
+      <li>Fixed a crash when joining a CNC lobby</li>
+      <li>Fixed the writing of empty replays - we only write once a game has started</li>
+      <li>Semi-fixed a bug with RepairableNear where naval units could repair from anywhere on a map</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<div id="disqus_thread">
+  <noscript><div class="noscript">Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></div></noscript>
+</div>
+<script type="text/javascript">
+  if (document.domain == 'openra.res0l.net') {
+    var disqus_shortname = 'openra';
+    var disqus_identifier = 'release-20120315';
+	// Future proofed permalink
+    var disqus_url = 'http://open-ra.org/news/release-20120315/';
+    var disqus_title = 'Release 20120315';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  }
+  else
+    $('#disqus_thread').append('<div class="noscript">Comments are disabled for this domain.</div>');
+</script>
+</div>
+      <div id="footer"><p>Copyright &copy; 2007-2014 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</p></div>
+    </div>
+  </body>
+</html>

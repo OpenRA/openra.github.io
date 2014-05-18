@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024" />
+    <title>OpenRA - OpenRA Holiday Release (20131223)</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/style.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/news/atom/" rel="alternate" type="application/atom+xml">
+    <script>
+    function supportsSVG() {
+      return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+    }
+    $(document).ready(function(){
+      if (!supportsSVG()) {
+        document.documentElement.className += ' no-svg';
+        $('img[src$=".svg"]').attr('src', function(){return $(this).attr('src').replace('.svg', '-fallback.png');});
+      }
+    });
+    </script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48361645-1', 'open-ra.org');
+      ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+  </head>
+  <body>
+    <div id="container">
+      
+      <div id="header"><h1><img src="/images/soviet-logo.svg" />OpenRA</h1></div>
+      
+      <a id="ghbanner" href="https://github.com/OpenRA/OpenRA"><img src="/images/forkme.svg" alt="Fork me on GitHub"></a>
+      <ul id="nav">
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/news/" class="nav-selected">News</a></li>
+      
+        <li><a href="/download/">Download</a></li>
+      
+        <li><a href="/games/">Games</a></li>
+      
+        <li><a href="/community/">Community</a></li>
+      
+      </ul>
+      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; OpenRA Holiday Release (20131223)</h3>
+<p class="newsDetails">Posted by Paul Chote at 2013-12-22 22:15:00 +0100</p>
+<hr />
+<p>Our hard working developer-elves have wrapped up a new release as an early christmas present to our fans.<br />
+We have focused on two main areas in this version: improving the stability and polish of our existing mods, and laying
+the foundations for several big new features that will appear in future releases.</p>
+
+<p>In the last three months we have merged 769 commits by 14 authors into <a href="https://github.com/OpenRA/OpenRA">our Github project</a>.<br />
+We do all of our development in the open, so anybody can get involved!<br />
+You can find us on <a href="irc://chat.freenode.net/openra">our IRC channel</a> (<a href="http://webchat.freenode.net/?channels=openra">webchat</a>) or using your favorite social media platform:</p>
+
+<div style="text-align:center">
+<a href="http://twitter.com/openRA"><img src="/images/social/twitter-fallback.png" alt="Twitter" /></a><span> </span><a href="https://www.facebook.com/openra"><img src="/images/social/facebook-fallback.png" alt="Facebook" /></a> <a href="https://plus.google.com/100332364931123881367"><img src="/images/social/gplus-fallback.png" alt="Google+" /></a><span> </span><a href="http://www.moddb.com/games/openra"><img src="/images/social/moddb-fallback.png" alt="ModDB" /></a><span> </span><a href="http://www.reddit.com/r/openra"><img src="/images/social/reddit-fallback.png" alt="Reddit" /></a>
+</div>
+<p>Some important improvements over our last <a href="/news/release-20130915/">September release</a> are:</p>
+
+<ul>
+  <li>We now support <a href="https://github.com/OpenRA/OpenRA/wiki/Map-scripting">Lua scripting</a> in maps for creating missions and custom minigames.</li>
+  <li>Our Red Alert mod now includes the M.A.D tank, production acceleration (multiple factories improve the production rate), and the heavily requested base-size limit from our TD mod.</li>
+  <li>Our Tiberian Dawn mod (renamed from C&amp;C) has overhauled support powers and weapon effects.</li>
+  <li>Our Dune 2000 mod now uses the original artwork for shroud and spice.</li>
+  <li>Menu UI improvements include password-protected servers and a new unified settings menu.</li>
+  <li>A lot more bug, polish, and performance fixes. Thanks to everyone who <a href="http://bugs.open-ra.org">reported problems</a>!</li>
+</ul>
+
+<p>The <del>christmas stocking</del> <a href="https://github.com/OpenRA/OpenRA/blob/release-20131223/CHANGELOG">full changelog</a> is stuffed with goodies, so be sure to check it out if you’re interested in seeing all the changes, or have a <a href="https://github.com/OpenRA/OpenRA/wiki/Modding-Guide">mod</a> or <a href="https://github.com/OpenRA/OpenRA/wiki/Mapping">map</a> that you’d like to upgrade.</p>
+
+<hr />
+<div style="text-align:center">
+  <p><img src="/images/news/20131130-allies02.png" alt="Allies-02" /></p>
+  <p>The first two allied missions have been recreated using Lua in our RA mod.</p>
+
+  <p><img src="/images/news/20131130-cnc.png" alt="TD Combat" /></p>
+  <p>The A10 aircraft in our TD mod now strafe their target with their vulcan cannon before releasing fire-bombs.</p>
+
+  <p><img src="/images/news/20131223-d2k-battle.png" alt="D2K Battle" /></p>
+  <p>Our D2K mod is looking better than ever, now using the proper shroud and spice artwork.</p>
+
+  <p><img src="/images/news/20131223-assetbrowser.png" alt="Modding Support" /></p>
+  <p>Our modding tools have received several improvements.<br />Shown here is a sneak-peek from our work in progress Tiberian Sun mod.</p>
+</div>
+
+<hr />
+
+<div id="disqus_thread">
+  <noscript><div class="noscript">Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></div></noscript>
+</div>
+<script type="text/javascript">
+  if (document.domain == 'openra.res0l.net') {
+    var disqus_shortname = 'openra';
+    var disqus_identifier = 'release-20131223';
+	// Future proofed permalink
+    var disqus_url = 'http://open-ra.org/news/release-20131223/';
+    var disqus_title = 'OpenRA Holiday Release (20131223)';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  }
+  else
+    $('#disqus_thread').append('<div class="noscript">Comments are disabled for this domain.</div>');
+</script>
+</div>
+      <div id="footer"><p>Copyright &copy; 2007-2014 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</p></div>
+    </div>
+  </body>
+</html>
