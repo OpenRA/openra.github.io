@@ -5,7 +5,7 @@
     <lastmod>2014-02-07</lastmod>
   </url>
   <url>
-    <loc>http://openra.res0l.net/404/</loc>
+    <loc>http://openra.res0l.net/404.html</loc>
     <lastmod>2014-01-25</lastmod>
   </url>
   <url>
@@ -22,11 +22,11 @@
   </url>
   <url>
     <loc>http://openra.res0l.net/get-dependency.php</loc>
-    <lastmod>2013-10-06</lastmod>
+    <lastmod>2014-05-18</lastmod>
   </url>
   <url>
     <loc>http://openra.res0l.net/.htaccess</loc>
-    <lastmod>2013-12-20</lastmod>
+    <lastmod>2014-05-25</lastmod>
   </url>
   <url>
     <loc>http://openra.res0l.net/includes/footer/</loc>
@@ -91,6 +91,10 @@
   <url>
     <loc>http://openra.res0l.net/news/playtest-20140405/</loc>
     <lastmod>2014-04-06</lastmod>
+  </url>
+  <url>
+    <loc>http://openra.res0l.net/news/playtest-20140525/</loc>
+    <lastmod>2014-05-25</lastmod>
   </url>
   <url>
     <loc>http://openra.res0l.net/news/reinforcements-en-route/</loc>
