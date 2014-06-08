@@ -93,6 +93,7 @@ $(document).ready(function(){
       else if (ua.match(/Ubuntu|Debian/)) activateTab($('a[href=#deb]'));
       else if (ua.match(/Red Hat|Fedora|SUSE/)) activateTab($('a[href=#rpm]'));
       else if (ua.match('Arch Linux')) activateTab($('a[href=#arch]'));
+      else if (ua.match('Gentoo')) activateTab($('a[href=#gentoo]'));
       else if (ua.match('Linux')) activateTab($('a[href=#source]'));
 
       // Bind the click event handler
@@ -118,6 +119,8 @@ $(document).ready(function(){
   
   <li><a href="#arch"><img src="/images/platforms/arch.svg" alt="Arch Linux" title="Arch Linux" /></a></li>
   
+  <li><a href="#gentoo"><img src="/images/platforms/gentoo.svg" alt="Gentoo" title="Gentoo" /></a></li>
+  
   <li><a href="#source"><img src="/images/platforms/source.svg" alt="Source Code" title="Source Code" /></a></li>
   
   <li><a href="#desura"><img src="/images/platforms/desura.svg" alt="Desura" title="Desura" /></a></li>
@@ -135,11 +138,13 @@ $(document).ready(function(){
   
   <h3>Download OpenRA for  Windows</h3>
   <p class="downloadblurb">The default GPU drivers included with Windows do not support OpenGL rendering.<br />You may need to install full drivers supplied by your GPU vendor.</p>
+  
   <ul class="downloadlinks">
-    <li><a href="https://github.com/OpenRA/OpenRA/releases/download/release-20131223/OpenRA-release-20131223.exe" title="Download release-20131223">Download release-20131223<br />(6.45 MB)</a></li>
-    <li><a href="http://openra.res0l.net/assets/downloads/windows/OpenRA-playtest-20140602.exe" title="Download playtest-20140602">Download playtest-20140602<br />(9.07 MB)</a></li>
+    <li><a href="https://github.com/OpenRA/OpenRA/releases/download/release-20140608/OpenRA-release-20140608.exe" title=\"Download release-20140608">Download release-20140608<br />(9.07 MB)</a></li>
+    <li><span>No playtest available<br />(release is newer)</span></li>
   </ul>
-  <p>Older releases can be found in our <a href="http://openra.res0l.net/assets/downloads/windows/">package archive</a>.</p>
+  <p>Older releases can be found in our <a href="https://github.com/OpenRA/OpenRA/releases/">release archive</a>.</p>
+  
   
 </div>
 
@@ -148,11 +153,13 @@ $(document).ready(function(){
   
   <h3>Download OpenRA for  OS X</h3>
   <p class="downloadblurb">OpenRA requires Mono 2.10 or greater (3.2 or greater recommended).<br /><a href="http://www.go-mono.com/mono-downloads/download.html">Download Mono</a>.</p>
+  
   <ul class="downloadlinks">
-    <li><a href="https://github.com/OpenRA/OpenRA/releases/download/release-20131223/OpenRA-release-20131223.zip" title="Download release-20131223">Download release-20131223<br />(8.21 MB)</a></li>
-    <li><a href="http://openra.res0l.net/assets/downloads/mac/OpenRA-playtest-20140602.zip" title="Download playtest-20140602">Download playtest-20140602<br />(10.15 MB)</a></li>
+    <li><a href="https://github.com/OpenRA/OpenRA/releases/download/release-20140608/OpenRA-release-20140608.zip" title=\"Download release-20140608">Download release-20140608<br />(10.15 MB)</a></li>
+    <li><span>No playtest available<br />(release is newer)</span></li>
   </ul>
-  <p>Older releases can be found in our <a href="http://openra.res0l.net/assets/downloads/mac/">package archive</a>.</p>
+  <p>Older releases can be found in our <a href="https://github.com/OpenRA/OpenRA/releases/">release archive</a>.</p>
+  
   
 </div>
 
@@ -160,12 +167,14 @@ $(document).ready(function(){
   <hr />
   
   <h3>Download OpenRA for  Debian / Ubuntu</h3>
-  <p class="downloadblurb">Just install the package, and you're good to go!</p>
+  <p class="downloadblurb">The stable version is also available from <a href="http://www.playdeb.net/software/OpenRA">PlayDeb</a>.</p>
+  
   <ul class="downloadlinks">
-    <li><a href="https://github.com/OpenRA/OpenRA/releases/download/release-20131223/openra_release.20131223_all.deb" title="Download release-20131223">Download release-20131223<br />(7.79 MB)</a></li>
-    <li><a href="http://openra.res0l.net/assets/downloads/linux/deb/openra_playtest.20140602_all.deb" title="Download playtest-20140602">Download playtest-20140602<br />(10.33 MB)</a></li>
+    <li><a href="https://github.com/OpenRA/OpenRA/releases/download/release-20140608/openra_release.20140608_all.deb" title=\"Download release-20140608">Download release-20140608<br />(10.33 MB)</a></li>
+    <li><span>No playtest available<br />(release is newer)</span></li>
   </ul>
-  <p>Older releases can be found in our <a href="http://openra.res0l.net/assets/downloads/linux/deb/">package archive</a>.</p>
+  <p>Older releases can be found in our <a href="https://github.com/OpenRA/OpenRA/releases/">release archive</a>.</p>
+  
   
 </div>
 
@@ -173,12 +182,14 @@ $(document).ready(function(){
   <hr />
   
   <h3>Download OpenRA for  Fedora / openSUSE</h3>
-  <p class="downloadblurb">Just install the package, and you're good to go!</p>
+  <p class="downloadblurb">The stable version is also available in the <a href="http://software.opensuse.org/download.html?project=games&package=openra">official openSUSE games repository.</a></p>
+  
   <ul class="downloadlinks">
-    <li><a href="https://github.com/OpenRA/OpenRA/releases/download/release-20131223/openra-release.20131223-1.noarch.rpm" title="Download release-20131223">Download release-20131223<br />(7.69 MB)</a></li>
-    <li><a href="http://openra.res0l.net/assets/downloads/linux/rpm/openra-playtest.20140602-1.noarch.rpm" title="Download playtest-20140602">Download playtest-20140602<br />(10.23 MB)</a></li>
+    <li><a href="https://github.com/OpenRA/OpenRA/releases/download/release-20140608/openra-release.20140608-1.noarch.rpm" title=\"Download release-20140608">Download release-20140608<br />(10.23 MB)</a></li>
+    <li><span>No playtest available<br />(release is newer)</span></li>
   </ul>
-  <p>Older releases can be found in our <a href="http://openra.res0l.net/assets/downloads/linux/rpm/">package archive</a>.</p>
+  <p>Older releases can be found in our <a href="https://github.com/OpenRA/OpenRA/releases/">release archive</a>.</p>
+  
   
 </div>
 
@@ -186,12 +197,23 @@ $(document).ready(function(){
   <hr />
   
   <h3>Download OpenRA for  Arch Linux</h3>
-  <p class="downloadblurb">Just install the package, and you're good to go!</p>
+  <p class="downloadblurb">The stable version is also available in the <a href="https://www.archlinux.org/packages/community/any/openra/">official Arch Linux repositories</a>.</p>
+  
   <ul class="downloadlinks">
-    <li><a href="https://github.com/OpenRA/OpenRA/releases/download/release-20131223/openra-release.20131223-1-any.pkg.tar.xz" title="Download release-20131223">Download release-20131223<br />(5.93 MB)</a></li>
-    <li><a href="http://openra.res0l.net/assets/downloads/linux/arch/openra-playtest.20140602-1-any.pkg.tar.xz" title="Download playtest-20140602">Download playtest-20140602<br />(8.10 MB)</a></li>
+    <li><a href="https://github.com/OpenRA/OpenRA/releases/download/release-20140608/openra-release.20140608-1-any.pkg.tar.gz" title=\"Download release-20140608">Download release-20140608<br />(10.36 MB)</a></li>
+    <li><span>No playtest available<br />(release is newer)</span></li>
   </ul>
-  <p>Older releases can be found in our <a href="http://openra.res0l.net/assets/downloads/linux/arch/">package archive</a>.</p>
+  <p>Older releases can be found in our <a href="https://github.com/OpenRA/OpenRA/releases/">release archive</a>.</p>
+  
+  
+</div>
+
+<div id="gentoo" class="tab">
+  <hr />
+  
+  <h3>Download OpenRA for  Gentoo</h3>
+  <p class="downloadblurb">Stable versions are packaged in the <a href="http://packages.gentoo.org/package/games-strategy/openra">official Gentoo repositories</a>.<br /><br />To install the ebuild:<br /><pre>$ emerge -av openra</pre><br />You can get unstable playtests using the following overlay:<br /><pre>http://github.com/cerebrum/dr/raw/master/repo.xml</pre><br /></p>
+  
   
 </div>
 
@@ -199,15 +221,14 @@ $(document).ready(function(){
   <hr />
   
   <h3>Download OpenRA  Source Code</h3>
-  <p class="downloadblurb">Follow the instructions in the INSTALL document to build and run OpenRA.<br />
-    <a title="Visual C# Express Download" href="http://www.microsoft.com/express/downloads/">Visual C# Express</a> (Windows) and <a title="MonoDevelop" href="http://www.monodevelop.com/"/>MonoDevelop</a> (OS X / Linux) are free IDEs that work with OpenRA.<br /><br />
-    If you'd like to <a href="https://github.com/OpenRA/OpenRA/pulls">contribute patches</a> (or just don't want to fiddle with tar files) you can download and/or update the code using the <a href="http://git-scm.com/">git version control system</a>:<br />
-    <pre>$ git clone git://github.com/OpenRA/OpenRA.git</pre><br /></p>
+  <p class="downloadblurb">Follow the instructions in the <a href="https://github.com/OpenRA/OpenRA/blob/bleed/INSTALL.md">INSTALL.md</a> document to build and run OpenRA.<br /><a title="Visual C# Express Download" href="http://www.microsoft.com/express/downloads/">Visual C# Express</a> (Windows) and <a title="MonoDevelop" href="http://www.monodevelop.com/"/>MonoDevelop</a> (OS X / Linux) are free IDEs that work with OpenRA.<br /><br />If you'd like to <a href="https://github.com/OpenRA/OpenRA/pulls">contribute patches</a> (or just don't want to fiddle with tar files) you can download and/or update the code using the <a href="http://git-scm.com/">git version control system</a>:<br /><pre>$ git clone git://github.com/OpenRA/OpenRA.git</pre><br /></p>
+  
   <ul class="downloadlinks">
-    <li><a href="https://github.com/OpenRA/OpenRA/archive/release-20131223.tar.gz" title="Download release-20131223">Download release-20131223<br />(10.27 MB)</a></li>
-    <li><a href="http://openra.res0l.net/assets/downloads/source/playtest-20140602.tar.gz" title="Download playtest-20140602">Download playtest-20140602<br />(12.91 MB)</a></li>
+    <li><a href="https://github.com/OpenRA/OpenRA/archive/release-20140608.tar.gz" title=\"Download release-20140608">Download release-20140608<br />(source package)</a></li>
+    <li><span>No playtest available<br />(release is newer)</span></li>
   </ul>
-  <p>Older releases can be found in our <a href="http://openra.res0l.net/assets/downloads/source/">package archive</a>.</p>
+  <p>Older releases can be found in our <a href="https://github.com/OpenRA/OpenRA/releases/">release archive</a>.</p>
+  
   
 </div>
 
