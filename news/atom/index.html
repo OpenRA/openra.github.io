@@ -2,13 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2014-06-08T07:00:00Z</updated>
+  <updated>2014-07-09T10:00:00Z</updated>
   <link rel="alternate" href="http://openra.net/"/>
   <link rel="self" href="http://openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://openra.net</uri>
   </author>
+  <entry>
+    <id>tag:openra.net,2014-07-09:/news/playtest-20140709/</id>
+    <title type="html">Playtest 20140709</title>
+    <published>2014-07-09T10:00:00Z</published>
+    <updated>2014-07-09T10:00:00Z</updated>
+    <link rel="alternate" href="http://openra.net/news/playtest-20140709/"/>
+    <content type="html">&lt;p&gt;We have just released our first July release candidate, &lt;a href="/download/"&gt;playtest-20140709&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This short development cycle has been extremely productive, and includes some long-awaited features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The RA and TD game music can now be downloaded and installed from the in-game music player.&lt;/li&gt;
+  &lt;li&gt;Capturing enemy structures in RA and TD will now let you build units from their faction.&lt;/li&gt;
+  &lt;li&gt;The maximum tech level can be configured in the lobby options (TD only in this playtest).&lt;/li&gt;
+  &lt;li&gt;Added an option to lock the mouse cursor inside the game window.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Other big changes include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fixed a number of crashes that were introduced in the last release.&lt;/li&gt;
+  &lt;li&gt;Improved performance and memory usage.&lt;/li&gt;
+  &lt;li&gt;Added beacon images for the RA spy plane, paratroopers, and parabombs.&lt;/li&gt;
+  &lt;li&gt;Multiple players can now repair a building at an accelerated rate.&lt;/li&gt;
+  &lt;li&gt;Added engine support for diamond-shaped (“isometric”) terrain (an important milestone for our TS mod).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As usual, the full list of changes compared with the &lt;a href="/news/release-20140608/"&gt;June release&lt;/a&gt; is available &lt;a href="http://wiki.openra.net/Changelog"&gt;on our wiki&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20140709-beacons.png" alt="Beacons" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Beacons have been added for the air-support powers in RA.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20140709-techlevels.png" alt="OpenRA Resources" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Tech levels can be configured in the TD lobby options.  Support for RA and D2K will be added in the next playtest.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20140709-tibsun.png" alt="Tiberian Sun" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The OpenRA engine now supports isometric perspectives.  Development is progressing well on our Tiberian Sun mod, but it will not be ready for several more months.&lt;/p&gt;
+
+&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:openra.net,2014-06-08:/news/release-20140608/</id>
     <title type="html">Release 20140608</title>
@@ -219,38 +265,6 @@ Rather than delay the playtest further, we have disabled the shellmaps until the
   &lt;p&gt;The Allied Phase Transport can transport three infantry, while remaining cloaked from enemy view.&lt;/p&gt;
 
 &lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:openra.net,2014-02-11:/news/dns-issues/</id>
-    <title type="html">DNS Issues</title>
-    <published>2014-02-11T21:00:00Z</published>
-    <updated>2014-02-11T21:00:00Z</updated>
-    <link rel="alternate" href="http://openra.net/news/dns-issues/"/>
-    <content type="html">&lt;p&gt;Our website DNS provider is experiencing sporadic problems, which is affecting new content downloads, our online server listings, and automatic map downloads.&lt;/p&gt;
-&lt;p&gt;We are working on resolving this issue, but this may take some time.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;h3&gt;Manually installing content&lt;/h3&gt;
-&lt;p&gt;If you receive a "Can't connect to remote server" error in game, then you can manually install the content:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Download the content assets for your favorite mod: &lt;a href="/download/content/ra-packages"&gt;Red Alert&lt;/a&gt;, &lt;a href="/download/content/cnc-packages"&gt;Tiberian Dawn&lt;/a&gt;, &lt;a href="/download/content/d2k-103-packages"&gt;Dune 2000&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Extract the zip file contents into the following directory (where &amp;lt;MOD&amp;gt; is either ra, cnc, or d2k)
-	  &lt;ul&gt;&lt;li&gt;Windows Users: &lt;span style="font-family: monospace; border: 1px solid #999; padding: 0 5px; background-color: #666"&gt;My Documents\OpenRA\Content\&amp;lt;MOD&amp;gt;&lt;/span&gt;&lt;/li&gt;
-		  &lt;li&gt;Mac OSX Users: &lt;span style="font-family: monospace; border: 1px solid #999; padding: 0 5px; background-color: #666"&gt;~/Library/Application Support/OpenRA/Content/&amp;lt;MOD&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;span style="font-size:10px"&gt;(The Library folder is hidden, so use the Finder's &lt;strong&gt;Go &amp;rarr; Go To Folder...&lt;/strong&gt; option and paste this path.)&lt;/span&gt;&lt;/li&gt;
-		  &lt;li&gt;Linux Users: &lt;span style="font-family: monospace; border: 1px solid #999; padding: 0 5px; background-color: #666"&gt;.openra/Content/&amp;lt;MOD&amp;gt;&lt;/span&gt;&lt;/li&gt;
-	  &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;h3&gt;Manually finding games&lt;/h3&gt;
-&lt;p&gt;If the server list is empty or gives an error, you can still direct connect to games manually.&lt;/p&gt;
-&lt;p&gt;Players are using our &lt;a href="http://webchat.freenode.net/?channels=openra" alt="#openra on freenode"&gt;IRC channel&lt;/a&gt; to organize games via direct connect.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;h3&gt;Manually installing maps&lt;/h3&gt;
-&lt;p&gt;The automatic map downloads are not functioning, so the game will produce an exception and close if you attempt to connect to a server running a custom map that you do not have installed.&lt;br /&gt;You can manually install missing maps to the &lt;span style="font-family: monospace; border: 1px solid #999; padding: 0 5px; background-color: #666"&gt;OpenRA/maps/&amp;lt;MOD&amp;gt;&lt;/span&gt; directory indicated above.&lt;/p&gt;
 </content>
   </entry>
 </feed>
