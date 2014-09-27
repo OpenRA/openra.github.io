@@ -2,13 +2,65 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2014-07-22T10:00:00Z</updated>
+  <updated>2014-09-27T12:00:00Z</updated>
   <link rel="alternate" href="http://openra.net/"/>
   <link rel="self" href="http://openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://openra.net</uri>
   </author>
+  <entry>
+    <id>tag:openra.net,2014-09-27:/news/playtest-20140927/</id>
+    <title type="html">Playtest 20140927</title>
+    <published>2014-09-27T12:00:00Z</published>
+    <updated>2014-09-27T12:00:00Z</updated>
+    <link rel="alternate" href="http://openra.net/news/playtest-20140927/"/>
+    <content type="html">&lt;p&gt;The first playtest for our next big release is now available!&lt;/p&gt;
+
+&lt;p&gt;The biggest change in this playtest compared to our &lt;a href="/news/release-20140722/"&gt;July release&lt;/a&gt; is the overhauled in-game interface:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The RA mod has received a brand new sidebar.&lt;/li&gt;
+  &lt;li&gt;A new end-game score screen appears once a game is complete.&lt;/li&gt;
+  &lt;li&gt;The in-game menu now shows an objectives panel in all mods (previously only available in the TD mod).&lt;/li&gt;
+  &lt;li&gt;New &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Hotkeys"&gt;keyboard shortcuts&lt;/a&gt; have been added, and the default keys have changed to match Tiberium Wars and Red Alert 3.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style="text-align:center"&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20140927-sidebars.png" alt="RA sidebar overhaul" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The Red Alert sidebar interface has been given a much-needed facelift and a more compact design.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;These UI changes are still a work in progress, and further refinements will be made before the final release.  If you have feedback on the new design then please let us know during this playtest period!&lt;/p&gt;
+
+&lt;p&gt;The full &lt;a href="http://wiki.openra.net/Changelog"&gt;Changelog&lt;/a&gt; lists many of the other improvements, bug fixes, and balance changes that are included in this playtest.  A few notable improvements include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The lobby now prevents players from choosing colors that are too similar to each other or the terrain.&lt;/li&gt;
+  &lt;li&gt;Veteran units gain improved reload time and accuracy, and elite units will now heal over time.&lt;/li&gt;
+  &lt;li&gt;Planes will maintain their distance from each other in a similar fashion to helicopters.&lt;/li&gt;
+  &lt;li&gt;Several of the Tiberian Dawn campaign missions have been updated with mission objectives.&lt;/li&gt;
+  &lt;li&gt;A number of small balance changes to the Red Alert and Tiberian Dawn mods.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A lot of work has gone into our &lt;a href="https://github.com/OpenRA/OpenRA/wiki/New-Lua-API"&gt;new Lua API&lt;/a&gt; for scripted maps that was introduced with our &lt;a href="/news/release-20140608/"&gt;June release&lt;/a&gt;.  This new API offers improved performance, stability, and integrates with the new mission objectives system.  If you have written any scripted maps then please use this playtest as an opportunity to port your maps to the new API, and please &lt;a href="http://bugs.openra.net/"&gt;file a bug&lt;/a&gt; if there are any missing features.  The old API will be removed in the near future.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20140927-objectives.png" alt="Mission objectives" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Several Tiberian Dawn campaign missions have been overhauled with objectives and other improvements.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20140927-aircraft.png" alt="RA aircraft" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Planes no longer bunch together, which makes them much less vulnerable to enemy AA.&lt;/p&gt;
+
+&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:openra.net,2014-07-22:/news/release-20140722/</id>
     <title type="html">Release 20140722</title>
@@ -205,32 +257,6 @@ The Tiberian Dawn mod also received a complete balance overhaul.&lt;/p&gt;
 
   &lt;p&gt;Spectators will never miss an impacting nuke anymore.&lt;/p&gt;
 &lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:openra.net,2014-05-25:/news/playtest-20140525/</id>
-    <title type="html">Playtest 20140525</title>
-    <published>2014-05-25T12:00:00Z</published>
-    <updated>2014-05-25T12:00:00Z</updated>
-    <link rel="alternate" href="http://openra.net/news/playtest-20140525/"/>
-    <content type="html">&lt;p&gt;We have just released &lt;a href="/download/"&gt;playtest-20140525&lt;/a&gt;, which is the first release candidate for our upcoming June release.&lt;/p&gt;
-
-&lt;p&gt;The focus of this playtest has been improving our low-level engine code, but there have been a few nice player-facing
-improvements, too:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fixed the shellmap issues that were present in the previous playtest.&lt;/li&gt;
-  &lt;li&gt;Added a “Battlefield News” indicator, so we can keep you up to date on with the latest community news.&lt;/li&gt;
-  &lt;li&gt;Further improvements to the lobby and replay interfaces.&lt;/li&gt;
-  &lt;li&gt;Significant reductions in load time.&lt;/li&gt;
-  &lt;li&gt;More balance improvements!&lt;/li&gt;
-  &lt;li&gt;More bug fixes!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The full list of changes compared with &lt;a href="/news/release-20131223/"&gt;holiday release&lt;/a&gt; is available &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog"&gt;on our wiki&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This announcement is briefer than usual: as the final release only a couple of weeks away, we have decided to save the
-usual set of screenshots and details for the proper release announcement.&lt;/p&gt;
 </content>
   </entry>
 </feed>
