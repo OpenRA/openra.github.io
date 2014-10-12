@@ -2,13 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2014-09-27T12:00:00Z</updated>
+  <updated>2014-10-12T00:00:00Z</updated>
   <link rel="alternate" href="http://openra.net/"/>
   <link rel="self" href="http://openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://openra.net</uri>
   </author>
+  <entry>
+    <id>tag:openra.net,2014-10-12:/news/playtest-20141012/</id>
+    <title type="html">Playtest 20141012</title>
+    <published>2014-10-12T00:00:00Z</published>
+    <updated>2014-10-12T00:00:00Z</updated>
+    <link rel="alternate" href="http://openra.net/news/playtest-20141012/"/>
+    <content type="html">&lt;p&gt;The second playtest build for our upcoming Halloween release is now available.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/download"&gt;Playtest-20141012&lt;/a&gt; rounds off the new singleplayer campaign backend that was introduced in &lt;a href="/news/playtest-20140927"&gt;playtest-20140927&lt;/a&gt;, and includes a few new features of its own.  Some key features selected from the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog"&gt;full changelog&lt;/a&gt; include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fixes for bugs with weapons, crates, and mines that were introduced in the last playtest.&lt;/li&gt;
+  &lt;li&gt;Further improvements to the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/New-Lua-API"&gt;new Lua API&lt;/a&gt; for missions, and an overhauled singleplayer mission menu.&lt;/li&gt;
+  &lt;li&gt;Servers will now drop players with unresponsive connections to allow frozen games to continue.&lt;/li&gt;
+  &lt;li&gt;Our new &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Actor-Upgrades"&gt;actor upgrade system&lt;/a&gt; adds support for EMP weapons and stealth generators.&lt;/li&gt;
+  &lt;li&gt;Units will now properly move inside transports, instead of teleporting.&lt;/li&gt;
+  &lt;li&gt;Tank turrets will now turn to face forward after the unit has finished attacking.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We encourage any map authors who are using the old Lua API to upgrade their maps during this playtest cycle.  We are planning to remove the old API before the final release, and so this will be your last chance to report any bugs or missing functionality in time for us to fix them!&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20141012-missions.png" alt="Improved mission dialog" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The improved mission selector includes support for player-created missions and the campaign briefing videos.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20141012-connection.png" alt="Connection notification" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Game servers will detect when a player causes extended periods of lag, and disconnect them from the game.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20141012-tibsun.png" alt="Tiberian Sun progress" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Work continues on our Tiberian Sun mod, but it is still several months away from release.&lt;/p&gt;
+
+&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:openra.net,2014-09-27:/news/playtest-20140927/</id>
     <title type="html">Playtest 20140927</title>
@@ -216,46 +254,6 @@ The Tiberian Dawn mod also received a complete balance overhaul.&lt;/p&gt;
   &lt;p&gt;&lt;img src="/images/news/20140608-modchooser.png" alt="OpenRA Resources" /&gt;&lt;/p&gt;
 
   &lt;p&gt;The new mod chooser is based on the design of our website, and provides a canvas to showcase your installed mods.&lt;/p&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:openra.net,2014-06-02:/news/playtest-20140602/</id>
-    <title type="html">Playtest 20140602</title>
-    <published>2014-06-02T09:04:00Z</published>
-    <updated>2014-06-02T09:04:00Z</updated>
-    <link rel="alternate" href="http://openra.net/news/playtest-20140602/"/>
-    <content type="html">&lt;p&gt;We have just released &lt;a href="/download/"&gt;playtest-20140602&lt;/a&gt;, which is the second release candidate for our upcoming June release.&lt;/p&gt;
-
-&lt;p&gt;The whole development branch is currently in feature freeze to not introduce new problems. Only small improvements and bug-fixes are accepted:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fixed crashes when &lt;a href="http://resource.openra.net/"&gt;OpenRA Resources&lt;/a&gt; returns invalid data.&lt;/li&gt;
-  &lt;li&gt;Fixed the automatic map download not updating the lobby after completion.&lt;/li&gt;
-  &lt;li&gt;Fixed a crash on non-English locales (Windows).&lt;/li&gt;
-  &lt;li&gt;Another significant improvement in CPU performance.&lt;/li&gt;
-  &lt;li&gt;Added 3 new Lua scripted missions and skirmish maps.&lt;/li&gt;
-  &lt;li&gt;Polished the support beacon display.&lt;/li&gt;
-  &lt;li&gt;Improved pathing for engineers and passengers.&lt;/li&gt;
-  &lt;li&gt;Fixed compatibility with Debian Wheezy.&lt;/li&gt;
-  &lt;li&gt;Fixed the startmenu shortcut on Windows.&lt;/li&gt;
-  &lt;li&gt;Fixed problems in the Red Alert SNOW tileset.&lt;/li&gt;
-  &lt;li&gt;Fixed a regression where spies could be identified on the radar.&lt;/li&gt;
-  &lt;li&gt;The web infrastructure has been ported to a new faster site: &lt;a href="http://www.openra.net"&gt;openra.net&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; There is a known issue with the old content.open-ra.org not redirecting at the moment which breaks the custom map download for the current stable release. Use the new playtest or choose standard maps for the moment.&lt;/p&gt;
-
-&lt;p&gt;The full list of changes compared with the &lt;a href="/news/release-20131223/"&gt;holiday release&lt;/a&gt; is available &lt;a href="http://wiki.openra.net/Changelog"&gt;on our wiki&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20140602-openra-resources.png" alt="OpenRA Resources" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Share your maps at &lt;a href="http://resource.openra.net/"&gt;resource.openra.net&lt;/a&gt; for automatic in-game downloading.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20140602-beacon-clock.png" alt="Beacons" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Spectators will never miss an impacting nuke anymore.&lt;/p&gt;
 &lt;/div&gt;
 </content>
   </entry>
