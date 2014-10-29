@@ -2,13 +2,69 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2014-10-20T09:00:00Z</updated>
+  <updated>2014-10-29T08:00:00Z</updated>
   <link rel="alternate" href="http://openra.net/"/>
   <link rel="self" href="http://openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://openra.net</uri>
   </author>
+  <entry>
+    <id>tag:openra.net,2014-10-29:/news/release-20141029/</id>
+    <title type="html">Release 20141029</title>
+    <published>2014-10-29T08:00:00Z</published>
+    <updated>2014-10-29T08:00:00Z</updated>
+    <link rel="alternate" href="http://openra.net/news/release-20141029/"/>
+    <content type="html">&lt;p&gt;Our Halloween 2014 release is now available, and is overflowing with both tricks and treats!&lt;br /&gt;
+This release includes over 760 commits by 41 contributors since our &lt;a href="/news/release-20140722/"&gt;July release&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The most visible change in this release is the redesigned in-game UI:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The RA mod has received a brand new sidebar.&lt;/li&gt;
+  &lt;li&gt;Improved &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Hotkeys"&gt;keyboard shortcut&lt;/a&gt; configuration, with new defaults based on Tiberium Wars and Red Alert 3.&lt;/li&gt;
+  &lt;li&gt;The in-game menu has been completely overhauled, and now includes information on mission objectives.&lt;/li&gt;
+  &lt;li&gt;A new end-game score screen appears once a game is complete.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The other big focus of this release was a complete overhaul of our &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Map-scripting"&gt;map scripting&lt;/a&gt; support for creating single-player missions and multi-player minigames.  Our &lt;a href="https://github.com/OpenRA/OpenRA/wiki/New-Lua-API"&gt;new Lua API&lt;/a&gt; is faster, more robust, and provides many new features that were not available in the older API (which has now been removed).&lt;/p&gt;
+
+&lt;p&gt;A large number of smaller features have also been included.  A small selection from our &lt;a href="http://wiki.openra.net/Changelog"&gt;full changelog&lt;/a&gt; includes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The lobby now prevents players from choosing “cheating” colors that are too similar to the terrain.&lt;/li&gt;
+  &lt;li&gt;Veteran units gain improved reload time and accuracy, and elite units will now heal over time.&lt;/li&gt;
+  &lt;li&gt;Planes will maintain their distance from each other in a similar fashion to helicopters.&lt;/li&gt;
+  &lt;li&gt;Servers will now drop players with unresponsive connections to unfreeze stalled games.&lt;/li&gt;
+  &lt;li&gt;Units will now properly move inside transports, instead of teleporting.&lt;/li&gt;
+  &lt;li&gt;Tank turrets will now turn to face forward after the unit has finished attacking.&lt;/li&gt;
+  &lt;li&gt;A number of small balance changes to the Red Alert and Tiberian Dawn mods.&lt;/li&gt;
+  &lt;li&gt;Many more small bug-fixes and behaviour improvements.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Head over to our &lt;a href="/download/"&gt;downloads page&lt;/a&gt; to grab the new release!&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20140927-sidebars.png" alt="RA sidebar overhaul" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The Red Alert sidebar interface has been given a much-needed facelift and a more compact design.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20141029-missions.png" alt="Improved single-player missions" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Our single-player mission support has improved dramatically with this release.  The bulk of this work is now complete, and so future releases will be able to add more campaign missions.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20141012-connection.png" alt="Connection notification" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Game servers will detect when a player causes extended periods of lag, and disconnect them from the game.  This should resolve the situations where a multiplayer game would freeze after a player drops.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20141012-tibsun.png" alt="Tiberian Sun progress" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Work is slowly progressing on our Tiberian Sun mod.  The features that we have been developing for TS&lt;br /&gt;(such as EMP weapons and stealth generators) are available for use in mods and custom maps.&lt;/p&gt;
+
+&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:openra.net,2014-10-20:/news/playtest-20141020/</id>
     <title type="html">Playtest 20141020</title>
@@ -179,54 +235,6 @@
   &lt;p&gt;&lt;img src="/images/news/20140709-tibsun.png" alt="Tiberian Sun" /&gt;&lt;/p&gt;
 
   &lt;p&gt;Development is progressing well on our Tiberian Sun mod, but it is still several months away from a release.&lt;/p&gt;
-
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:openra.net,2014-07-09:/news/playtest-20140709/</id>
-    <title type="html">Playtest 20140709</title>
-    <published>2014-07-09T10:00:00Z</published>
-    <updated>2014-07-09T10:00:00Z</updated>
-    <link rel="alternate" href="http://openra.net/news/playtest-20140709/"/>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Update: We have released a fourth and final release candidate (20140719) which fixes a few remaining issues. Thanks to everyone who reported problems and submitted fixes!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We have just released our &lt;del&gt;first&lt;/del&gt; fourth July release candidate, &lt;del&gt;playtest-20140709&lt;/del&gt; &lt;a href="/download/"&gt;playtest-20140719&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This short development cycle has been extremely productive, and includes some long-awaited features:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The RA and TD game music can now be downloaded and installed from the in-game music player.&lt;/li&gt;
-  &lt;li&gt;Capturing enemy structures in RA and TD will now let you build units from their faction.&lt;/li&gt;
-  &lt;li&gt;The maximum tech level can be configured in the lobby options.&lt;/li&gt;
-  &lt;li&gt;Added an option to lock the mouse cursor inside the game window.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Other big changes include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fixed a number of crashes that were introduced in the last release.&lt;/li&gt;
-  &lt;li&gt;Improved performance and memory usage.&lt;/li&gt;
-  &lt;li&gt;Added beacon images for the RA spy plane, paratroopers, and parabombs.&lt;/li&gt;
-  &lt;li&gt;Multiple players can now repair a building at an accelerated rate.&lt;/li&gt;
-  &lt;li&gt;Added engine support for diamond-shaped (“isometric”) terrain (an important milestone for our TS mod).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As usual, the full list of changes compared with the &lt;a href="/news/release-20140608/"&gt;June release&lt;/a&gt; is available &lt;a href="http://wiki.openra.net/Changelog"&gt;on our wiki&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20140709-beacons.png" alt="Beacons" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Beacons have been added for the air-support powers in RA.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20140709-techlevels.png" alt="OpenRA Resources" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Tech levels can be configured in the TD lobby options.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20140709-tibsun.png" alt="Tiberian Sun" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;The OpenRA engine now supports isometric perspectives.  Development is progressing well on our Tiberian Sun mod, but it will not be ready for several more months.&lt;/p&gt;
 
 &lt;/div&gt;
 </content>
