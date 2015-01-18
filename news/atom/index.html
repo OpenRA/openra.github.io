@@ -2,13 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2014-10-29T08:00:00Z</updated>
+  <updated>2015-01-18T10:18:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2015-01-18:/news/playtest-20150118/</id>
+    <title type="html">Playtest 20150118</title>
+    <published>2015-01-18T10:18:00Z</published>
+    <updated>2015-01-18T10:18:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/playtest-20150118/"/>
+    <content type="html">&lt;p&gt;We wish everyone a late happy new year and prepared a new playtest which builds upon our &lt;a href="/news/release-20141029/"&gt;Halloween release&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The main focuses of this release were improving stability and performance, as well as implementing some of the missing features that make Dune 2000 unique.&lt;/p&gt;
+
+&lt;p&gt;These playtest builds provide a snapshot of our current development for feedback by our testers. You can help shape the future of OpenRA by testing them and &lt;a href="http://bugs.openra.net"&gt;reporting bugs&lt;/a&gt; or simply letting the &lt;a href="/community/"&gt;community&lt;/a&gt; know what you think.&lt;/p&gt;
+
+&lt;p&gt;Some highlights in this development build are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added carryalls and sandworms to the Dune 2000 mod&lt;/li&gt;
+  &lt;li&gt;Added countries (with their own unique abilities) to the Red Alert mod.&lt;/li&gt;
+  &lt;li&gt;Added an often requested lobby option for disabling the “Short Game” mode.&lt;/li&gt;
+  &lt;li&gt;Improved performance and memory usage across the board.&lt;/li&gt;
+  &lt;li&gt;Added hardware cursors support for smoother mouse movements.&lt;/li&gt;
+  &lt;li&gt;Added new missions: GDI 03, Soviet 01 as well as Survival 01 and 02.&lt;/li&gt;
+  &lt;li&gt;Fixed Fort Lonestar and the Dropzone minigames not starting.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See the &lt;a href="http://changelog.openra.net"&gt;changelog&lt;/a&gt; for more details on the playtest changes and bugfixes.&lt;/p&gt;
+
+&lt;p&gt;The playtest-20150118 build is available from the &lt;a href="/download/"&gt;download&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;p&gt;We have put a lot of work into streamlining our development and release process, which included a shake-up of our Linux packages.  We now provide distro-specific RPM and Arch Linux packages via the &lt;a href="https://software.opensuse.org/download.html?project=games:openra&amp;amp;package=openra"&gt;openSUSE Build Service&lt;/a&gt;, and recommend that most users install OpenRA from their main distribution repositories.  We have also fixed the “bad quality” package warning that occurs when installing our Ubuntu package.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20150118-ra-countries-dropdown.png" alt="Countries" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The Red Alert mod introduces support for sub-factions inspired by the way Red Alert 2 introduced them. These countries have special units or support powers, but otherwise have a lot in common with the Allied or Soviet army they belong to.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150118-cnc-colored-game-servers-heading.png" alt="Game server browser" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;We overhauled the server browser. It is grouped by mods with the currently loaded one on top, but you can now join any game if the mod is installed. The ingame interface has been updated to use the same new color scheme as the web-based &lt;a href="/games/"&gt;game server overview&lt;/a&gt;. We also added a filter for password-protected servers.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150118-d2k-sandworm-carryall.png" alt="Sandworms and Carryalls" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Carryalls that automatically transport harvesters across longer distances. Also sandworms are now included in our D2K mod. The balancing is a work in progress and they can be disabled in the lobby options.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150118-ts-heightmaps.png" alt="Heightmaps" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Paul is making good progress in implementing the height map support required for all next generation titles such as Tiberian Sun. It will take (at least) several months to polish this into a glitch-free experience that can be shipped in stable releases.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2014-10-29:/news/release-20141029/</id>
     <title type="html">Release 20141029</title>
@@ -188,55 +237,5 @@ This release includes over 760 commits by 41 contributors since our &lt;a href="
 &lt;/div&gt;
 </content>
   </entry>
-  <entry>
-    <id>tag:www.openra.net,2014-07-22:/news/release-20140722/</id>
-    <title type="html">Release 20140722</title>
-    <published>2014-07-22T10:00:00Z</published>
-    <updated>2014-07-22T10:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/release-20140722/"/>
-    <content type="html">&lt;p&gt;We are pleased to announce the availability of our July release, which includes 619 commits by 27 contributors.&lt;/p&gt;
-
-&lt;p&gt;The feature list remains the same as for our &lt;a href="/news/playtest-20140709/"&gt;July playtests&lt;/a&gt;, but this release benefits from additional testing and bugfixes.  The main new features are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The RA and TD game music can now be downloaded and installed from the in-game music player.&lt;/li&gt;
-  &lt;li&gt;Capturing enemy structures in RA and TD will now let you build units from their faction.&lt;/li&gt;
-  &lt;li&gt;The maximum tech level can be configured in the lobby options.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Other notable improvements include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fixed a number of crashes that were introduced in the last release.&lt;/li&gt;
-  &lt;li&gt;Fixed issues that occurred when installing from CD.&lt;/li&gt;
-  &lt;li&gt;Improved performance and memory usage.&lt;/li&gt;
-  &lt;li&gt;Improved scroll-panel behaviour.&lt;/li&gt;
-  &lt;li&gt;Added an option to lock the mouse cursor inside the game window.&lt;/li&gt;
-  &lt;li&gt;Multiple players can now repair a building at an accelerated rate.&lt;/li&gt;
-  &lt;li&gt;Added engine support for diamond-shaped (“isometric”) terrain (an important milestone for our TS mod).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As usual, the full list of changes compared with the &lt;a href="/news/release-20140608/"&gt;June release&lt;/a&gt; is available &lt;a href="http://wiki.openra.net/Changelog"&gt;on our wiki&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20140722-capturetech.png" alt="Capturable Technology" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Capturing enemy structures in TD and RA will now allow you to produce their units.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20140722-musicdownload.png" alt="Music Downloading" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;OpenRA can now download the game music for RA and TD.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20140722-techlevels.png" alt="Tech Levels" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Tech levels can be configured in the lobby options for all mods.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20140709-tibsun.png" alt="Tiberian Sun" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Development is progressing well on our Tiberian Sun mod, but it is still several months away from a release.&lt;/p&gt;
-
-&lt;/div&gt;
-</content>
-  </entry>
 </feed>
+
