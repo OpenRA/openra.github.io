@@ -2,13 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2015-04-08T10:00:00Z</updated>
+  <updated>2015-04-18T10:00:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2015-04-18:/news/playtest-20150418/</id>
+    <title type="html">Playtest 20150418</title>
+    <published>2015-04-18T10:00:00Z</published>
+    <updated>2015-04-18T10:00:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/playtest-20150418/"/>
+    <content type="html">&lt;p&gt;Our plan to release the stable release this weekend has unfortunately been thwarted by a few show-stopper bugs in the last playtest. Those have now all been fixed, so we have decided to do another playtest!&lt;/p&gt;
+
+&lt;p&gt;Here are the fixes contained in this release:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A bug in the pathfinder code which caused freezes of several seconds or even longer has been fixed.&lt;/li&gt;
+  &lt;li&gt;The minigame and dropzone maps would crash when selected in the lobby.&lt;/li&gt;
+  &lt;li&gt;The player’s faction in single-player missions was erroneously assigned at random.&lt;/li&gt;
+  &lt;li&gt;A race condition related to carryalls which caused crashes when met has been fixed.&lt;/li&gt;
+  &lt;li&gt;The unintended dependency on XQuartz for the OS X package has been removed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In addition, the ore silo in Red Alert has been moved to the support structure queue.&lt;/p&gt;
+
+&lt;p&gt;All the details can be found on our &lt;a href="http://changelog.openra.net"&gt;changelog page&lt;/a&gt; as usual.&lt;/p&gt;
+
+&lt;p&gt;Head on over to the &lt;a href="/download/"&gt;download section&lt;/a&gt; to find the installer for your operating system.&lt;/p&gt;
+
+&lt;p&gt;We really hope that this will be the last playtest in this cycle and we will be able to give you a stable release next weekend. Nonetheless, should you encounter any bugs, problems, or have any suggestions, don’t hesitate to let us know &lt;a href="http://bugs.openra.net"&gt;on our bug tracker&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A note on map compatibility: already with the first playtest a new map format was introduced which is not backward-compatible with last October’s release-20141029. This means that if you have downloaded custom maps from &lt;a href="http://resource.openra.net"&gt;the Resource Center&lt;/a&gt; or elsewhere, these maps will have been automatically updated to the new map format once you have run this or one of the previous playtests. If you later go back to the release version, it will not be able to parse the new map format and crash. You can avoid the problem by either deleting the contents of your &lt;code&gt;map&lt;/code&gt; folder, or by making backups of the &lt;code&gt;map&lt;/code&gt; folder and restoring that when you switch back to release-20141029.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2015-04-08:/news/playtest-20150408/</id>
     <title type="html">Playtest 20150408</title>
@@ -182,62 +211,6 @@
   &lt;p&gt;&lt;img src="/images/news/20150118-ts-heightmaps.png" alt="Heightmaps" /&gt;&lt;/p&gt;
 
   &lt;p&gt;Paul is making good progress in implementing the height map support required for all next generation titles such as Tiberian Sun. It will take (at least) several months to polish this into a glitch-free experience that can be shipped in stable releases.&lt;/p&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2014-10-29:/news/release-20141029/</id>
-    <title type="html">Release 20141029</title>
-    <published>2014-10-29T08:00:00Z</published>
-    <updated>2014-10-29T08:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/release-20141029/"/>
-    <content type="html">&lt;p&gt;Our Halloween 2014 release is now available, and is overflowing with both tricks and treats!&lt;br /&gt;
-This release includes over 760 commits by 41 contributors since our &lt;a href="/news/release-20140722/"&gt;July release&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The most visible change in this release is the redesigned in-game UI:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The RA mod has received a brand new sidebar.&lt;/li&gt;
-  &lt;li&gt;Improved &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Hotkeys"&gt;keyboard shortcut&lt;/a&gt; configuration, with new defaults based on Tiberium Wars and Red Alert 3.&lt;/li&gt;
-  &lt;li&gt;The in-game menu has been completely overhauled, and now includes information on mission objectives.&lt;/li&gt;
-  &lt;li&gt;A new end-game score screen appears once a game is complete.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The other big focus of this release was a complete overhaul of our &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Map-scripting"&gt;map scripting&lt;/a&gt; support for creating single-player missions and multi-player minigames.  Our &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Lua-API"&gt;new Lua API&lt;/a&gt; is faster, more robust, and provides many new features that were not available in the older API (which has now been removed).&lt;/p&gt;
-
-&lt;p&gt;A large number of smaller features have also been included.  A small selection from our &lt;a href="http://wiki.openra.net/Changelog"&gt;full changelog&lt;/a&gt; includes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The lobby now prevents players from choosing “cheating” colors that are too similar to the terrain.&lt;/li&gt;
-  &lt;li&gt;Veteran units gain improved reload time and accuracy, and elite units will now heal over time.&lt;/li&gt;
-  &lt;li&gt;Planes will maintain their distance from each other in a similar fashion to helicopters.&lt;/li&gt;
-  &lt;li&gt;Servers will now drop players with unresponsive connections to unfreeze stalled games.&lt;/li&gt;
-  &lt;li&gt;Units will now properly move inside transports, instead of teleporting.&lt;/li&gt;
-  &lt;li&gt;Tank turrets will now turn to face forward after the unit has finished attacking.&lt;/li&gt;
-  &lt;li&gt;A number of small balance changes to the Red Alert and Tiberian Dawn mods.&lt;/li&gt;
-  &lt;li&gt;Many more small bug-fixes and behaviour improvements.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Head over to our &lt;a href="/download/"&gt;downloads page&lt;/a&gt; to grab the new release!&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20140927-sidebars.png" alt="RA sidebar overhaul" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;The Red Alert sidebar interface has been given a much-needed facelift and a more compact design.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20141029-missions.png" alt="Improved single-player missions" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Our single-player mission support has improved dramatically with this release.  The bulk of this work is now complete, and so future releases will be able to add more campaign missions.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20141012-connection.png" alt="Connection notification" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Game servers will detect when a player causes extended periods of lag, and disconnect them from the game.  This should resolve the situations where a multiplayer game would freeze after a player drops.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20141012-tibsun.png" alt="Tiberian Sun progress" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Work is slowly progressing on our Tiberian Sun mod.  The features that we have been developing for TS&lt;br /&gt;(such as EMP weapons and stealth generators) are available for use in mods and custom maps.&lt;/p&gt;
-
 &lt;/div&gt;
 </content>
   </entry>
