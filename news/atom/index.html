@@ -2,13 +2,91 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2015-04-18T10:00:00Z</updated>
+  <updated>2015-04-24T16:00:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2015-04-24:/news/release-20150424/</id>
+    <title type="html">Release 20150424</title>
+    <published>2015-04-24T16:00:00Z</published>
+    <updated>2015-04-24T16:00:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/release-20150424/"/>
+    <content type="html">&lt;p&gt;We are very pleased to announce the Spring release of OpenRA!&lt;/p&gt;
+
+&lt;p&gt;This release a huge step forward for the Dune 2000 mod in particular. It includes just shy of 1000 commits by 53 contributors, the culmination of six months of relentless work. With more than 2000 files and 210,000 changed lines it is one of our busiest development cycles to date.&lt;/p&gt;
+
+&lt;p&gt;A large development focus has been on the Dune 2000 mod, which contains the most visible changes. A new sidebar, sandworms and Carryalls are the big new features, which should make any Dune 2000 player feel more at home in our mod. Additionally, the OpenRA.Utility now supports importing maps from the original Dune 2000 game, so we hope that the number of maps and of course the number of players will increase in the near future!&lt;/p&gt;
+
+&lt;p&gt;The other mods were not neglected, though. In Red Alert, the standout feature is the support of playable factions such as Russia, England, France, Ukraine and Germany. In both Red Alert and Tiberian Dawn, new single-player missions are available that will keep you occupied.&lt;/p&gt;
+
+&lt;p&gt;Of course, we have not only improved the mods themselves. Here is a list of changes that affect the game in general:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The server browser shows and allows joining games from any installed mod.&lt;/li&gt;
+  &lt;li&gt;It is now possible to disable the “short game” mode that was forced in the past.&lt;/li&gt;
+  &lt;li&gt;The player name and colour can now be set up in the settings dialog.&lt;/li&gt;
+  &lt;li&gt;When creating a server, the game informs the host about port forwarding issues.&lt;/li&gt;
+  &lt;li&gt;Left-click mouse orders have been markedly improved.&lt;/li&gt;
+  &lt;li&gt;Some missions now support difficulty levels.&lt;/li&gt;
+  &lt;li&gt;A huge number of smaller gameplay fixes and improvements, including:
+    &lt;ul&gt;
+      &lt;li&gt;Friendly units blocking the exit of a production building will now move out of the way if needed.&lt;/li&gt;
+      &lt;li&gt;Units will no longer hunt cloaked units.&lt;/li&gt;
+      &lt;li&gt;The spy plane in Red Alert will no longer lure your anti-air capable units across the map.&lt;/li&gt;
+      &lt;li&gt;Planes will no longer collide with helicopters and push them out of the way.&lt;/li&gt;
+      &lt;li&gt;Your faction will not be revealed to enemies when you have selected a random faction in the lobby.&lt;/li&gt;
+      &lt;li&gt;In sell mode, the tooltip will now show the expected refund value for structures.&lt;/li&gt;
+      &lt;li&gt;Harvesters should now no longer block themselves at refineries, and also make use of all available refineries if the nearest ones are occupied.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A similarly massive number of performance improvements have been made in this release.&lt;/li&gt;
+  &lt;li&gt;Many race conditions and crashes have been fixed across the board.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For the complete list of changes, please visit &lt;a href="http://changelog.openra.net"&gt;our changelog page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A note on key bindings: In the previous release, the key to toggle team chat was changed to ‘Alt’, which, looking back, was an unfortunate decision. It has been reverted to ‘Tab’ in this release, where it serves a double role: on an empty line, it toggles team chat, otherwise it auto-completes player names.&lt;/p&gt;
+
+&lt;p&gt;For modders and mappers, there have been quite a few important changes as well. We have introduced a new map format, to which maps running on this release will be updated automatically. All of the shared engine code has been moved into the OpenRA.Mods.Common project, so that third-party mods can drop their dependencies on our game mods. A lot of code has been changed to enable features that will be needed by the Tiberian Sun mod. One important change for Red Alert mappers is that the gem mine has been replaced with a new one. For more details, check out the &lt;a href="http://changelog.openra.net"&gt;changelog&lt;/a&gt;, as well as the &lt;a href="https://github.com/openra/openra/wiki/Traits"&gt;trait&lt;/a&gt; and &lt;a href="https://github.com/openra/openra/wiki/Lua-API"&gt;Lua API&lt;/a&gt; documentation.&lt;/p&gt;
+
+&lt;p&gt;Looking forward, we hope to get the next release out faster than this time around (famous last words!). Feature-wise, you can probably expect the first appearance of the in-game map editor in the next release, in addition to much of the things that are currently in &lt;a href="https://github.com/openra/openra/pulls"&gt;our pull request queue&lt;/a&gt;. Beyond that, we will see… If you want to keep track of the development, keep an eye on the &lt;a href="https://github.com/OpenRA/OpenRA/milestones/Next%20release"&gt;release milestone&lt;/a&gt; and the &lt;a href="https://github.com/openra/openra/wiki/Changelog%20(bleed)"&gt;development changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We will also try to make more use of &lt;a href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig"&gt;our YouTube channel&lt;/a&gt; to show off new and little known existing features, provide mission walkthroughs and other content, so watch and subscribe!&lt;/p&gt;
+
+&lt;p&gt;Now enough with the talking! Head on over to our &lt;a href="/download/"&gt;download section&lt;/a&gt;, grab the installer for your OS, and enjoy the game!&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;iframe width="600" height="333" src="https://www.youtube-nocookie.com/embed/oK-paA7kRP0?rel=0" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;
+
+  &lt;p&gt;The long awaited sandworms and Carryalls have finally arrived in our Dune 2000 mod!&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150424-ra-country-dropdown.png" alt="Playable countries" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Red Alert now has playable country factions, and matching choices for random faction selection.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150424-cnc-server-browser.png" alt="Overhauled server browser" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The server browser now lists games from all available mods, and also allows joining games across mods.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150424-cnc-mission-difficulty.png" alt="Mission difficulty" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Some missions have received support for multiple difficulty levels.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150424-ra-refund-tooltip.png" alt="Refund tooltip" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;In sell mode, the tooltip will now show a structure’s expected refund value.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="images/news/20150424-ts-teaser.png" alt="Tiberian Sun teaser" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Behind the scenes, the still unreleased, work-in-progress Tiberian Sun mod has received support&lt;br /&gt;for some crucial features. Keep an eye out for more news and media about TS &lt;a href="https://facebook.com/openra"&gt;on our Facebook page&lt;/a&gt;!&lt;/p&gt;
+
+&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2015-04-18:/news/playtest-20150418/</id>
     <title type="html">Playtest 20150418</title>
@@ -71,6 +149,7 @@
   &lt;iframe width="600" height="450" src="https://www.youtube-nocookie.com/embed/SBU8XYuFk0M?rel=0" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;
 
   &lt;p&gt;Another sneak peek at our in-progress Tiberian Sun mod: How to deploy upgrades&lt;/p&gt;
+
 &lt;/div&gt;
 </content>
   </entry>
@@ -111,6 +190,7 @@
   &lt;p&gt;&lt;img src="/images/news/20150405-d2k-blendmodes.png" alt="Dune 2000 eye candy" /&gt;&lt;/p&gt;
 
   &lt;p&gt;The visual effects for explosions and missile trails have been improved for the Dune 2000 mod.&lt;/p&gt;
+
 &lt;/div&gt;
 </content>
   </entry>
@@ -162,55 +242,6 @@
   &lt;p&gt;&lt;img src="/images/news/20150329-ts-snow-preview.png" alt="Tiberian Sun Snow Preview" /&gt;&lt;/p&gt;
 
   &lt;p&gt;Behind the scenes, the work on the Tiberian Sun mod reached another milestone&lt;br /&gt;by completing support for the original game’s tilesets.&lt;/p&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2015-01-18:/news/playtest-20150118/</id>
-    <title type="html">Playtest 20150118</title>
-    <published>2015-01-18T10:18:00Z</published>
-    <updated>2015-01-18T10:18:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/playtest-20150118/"/>
-    <content type="html">&lt;p&gt;We wish everyone a late happy new year and prepared a new playtest which builds upon our &lt;a href="/news/release-20141029/"&gt;Halloween release&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The main focuses of this release were improving stability and performance, as well as implementing some of the missing features that make Dune 2000 unique.&lt;/p&gt;
-
-&lt;p&gt;These playtest builds provide a snapshot of our current development for feedback by our testers. You can help shape the future of OpenRA by testing them and &lt;a href="http://bugs.openra.net"&gt;reporting bugs&lt;/a&gt; or simply letting the &lt;a href="/community/"&gt;community&lt;/a&gt; know what you think.&lt;/p&gt;
-
-&lt;p&gt;Some highlights in this development build are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Added carryalls and sandworms to the Dune 2000 mod&lt;/li&gt;
-  &lt;li&gt;Added countries (with their own unique abilities) to the Red Alert mod.&lt;/li&gt;
-  &lt;li&gt;Added an often requested lobby option for disabling the “Short Game” mode.&lt;/li&gt;
-  &lt;li&gt;Improved performance and memory usage across the board.&lt;/li&gt;
-  &lt;li&gt;Added hardware cursors support for smoother mouse movements.&lt;/li&gt;
-  &lt;li&gt;Added new missions: GDI 03, Soviet 01 as well as Survival 01 and 02.&lt;/li&gt;
-  &lt;li&gt;Fixed Fort Lonestar and the Dropzone minigames not starting.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;See the &lt;a href="http://changelog.openra.net"&gt;changelog&lt;/a&gt; for more details on the playtest changes and bugfixes.&lt;/p&gt;
-
-&lt;p&gt;The playtest-20150118 build is available from the &lt;a href="/download/"&gt;download&lt;/a&gt; page.&lt;/p&gt;
-
-&lt;p&gt;We have put a lot of work into streamlining our development and release process, which included a shake-up of our Linux packages.  We now provide distro-specific RPM via the &lt;a href="https://software.opensuse.org/download.html?project=games:openra&amp;amp;package=openra"&gt;openSUSE Build Service&lt;/a&gt;, but recommend that most users install OpenRA from their main distribution repositories.  We have also fixed the “bad quality” package warning that occurs when installing our Ubuntu package.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20150118-ra-countries-dropdown.png" alt="Countries" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;The Red Alert mod introduces support for sub-factions inspired by the way Red Alert 2 introduced them. These countries have special units or support powers, but otherwise have a lot in common with the Allied or Soviet army they belong to.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20150118-cnc-colored-game-servers-heading.png" alt="Game server browser" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;We overhauled the server browser. It is grouped by mods with the currently loaded one on top, but you can now join any game if the mod is installed. The ingame interface has been updated to use the same new color scheme as the web-based &lt;a href="/games/"&gt;game server overview&lt;/a&gt;. We also added a filter for password-protected servers.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20150118-d2k-sandworm-carryall.png" alt="Sandworms and Carryalls" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Let your slow harvesters make use of the convenient airlift shuttle service, and save your units from becoming worm food! Carryalls and Sandworms are now included in our D2K mod. The worm balancing is a work in progress, and they can be disabled in the lobby options.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20150118-ts-heightmaps.png" alt="Heightmaps" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Paul is making good progress in implementing the height map support required for all next generation titles such as Tiberian Sun. It will take (at least) several months to polish this into a glitch-free experience that can be shipped in stable releases.&lt;/p&gt;
 &lt;/div&gt;
 </content>
   </entry>
