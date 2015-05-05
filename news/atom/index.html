@@ -2,13 +2,68 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2015-04-24T16:00:00Z</updated>
+  <updated>2015-05-05T21:00:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2015-05-05:/news/server-issues/</id>
+    <title type="html">Server Issues</title>
+    <published>2015-05-05T21:00:00Z</published>
+    <updated>2015-05-05T21:00:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/server-issues/"/>
+    <content type="html">&lt;p&gt;Many of you will already have noticed that we are having some server issues at the moment. The problem is being worked on and we hope to restore all services within the next few days.&lt;/p&gt;
+
+&lt;p&gt;We would like to inform you of the impacted services and their current status.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://resource.openra.net"&gt;OpenRA Resource Center&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style="padding-left:2em"&gt;
+This was probably among the two most visible effects of the outage. It is currently being restored from a backup and will hopefully be available again in the next few days.
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“Hetzner” dedicated servers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style="padding-left:2em"&gt;
+We were able to replace these relatively quickly with servers hosted on other hardware. Since May 5th, both the replacements and the original servers are up and running again, which is why some server names appear twice in the server browser, by the way.
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Player statistics on the website&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style="padding-left:2em"&gt;
+We had to remove these eventually to avoid visitors getting greeted with an error dialog. As of right now, they are back, however.
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The IRC channel bot&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style="padding-left:2em"&gt;
+Our orabot was sorely missed, but is finally among the living again! He says "]hi"!
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Game content mirror&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style="padding-left:2em"&gt;
+The server also hosted a mirror of our content packages. It was removed from the mirror list while it was down, and others servers from our mirror network took up its job. The mirror is back up and running again now.
+&lt;/p&gt;
+
+&lt;p&gt;In summary, only the Resource Center is still offline, but will come back eventually.&lt;/p&gt;
+
+&lt;p&gt;We would like to extend thanks to everyone who helped us while the server was down and who are helping us with restoring its function!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2015-04-24:/news/release-20150424/</id>
     <title type="html">Release 20150424</title>
@@ -191,57 +246,6 @@
 
   &lt;p&gt;The visual effects for explosions and missile trails have been improved for the Dune 2000 mod.&lt;/p&gt;
 
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2015-03-29:/news/playtest-20150329/</id>
-    <title type="html">Playtest 20150329</title>
-    <published>2015-03-29T11:00:00Z</published>
-    <updated>2015-03-29T11:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/playtest-20150329/"/>
-    <content type="html">&lt;p&gt;The next release is drawing closer as we enter the feature freeze phase of the development cycle with this new playtest.&lt;/p&gt;
-
-&lt;p&gt;You can help our efforts to create a stable and balanced release by testing and &lt;a href="http://bugs.openra.net"&gt;reporting bugs&lt;/a&gt; or &lt;a href="/community/"&gt;giving feedback&lt;/a&gt; on our various social media sites and forums, or simply in the comments section below.&lt;/p&gt;
-
-&lt;p&gt;Since the last playtest, we have continued our focus on the Dune 2000 mod, which has received a brand new sidebar. The sandworms feature has been polished, and harvester insurance has been added, so if you lose your only harvester to a sandworm, it will be replaced automatically, for free!&lt;/p&gt;
-
-&lt;p&gt;Those players that mourned the loss of the left-click orders option will be glad to hear that is has returned, better than ever. A new contributor took it upon himself to re-implement it in a way that avoided the numerous problems the earlier implementation had.&lt;/p&gt;
-
-&lt;p&gt;Other highlights include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;In sell mode, a structure’s tooltip will show the expected refund value.&lt;/li&gt;
-  &lt;li&gt;Spy planes in Red Alert will no longer lure your anti-air capable units across the map.&lt;/li&gt;
-  &lt;li&gt;Airplanes will now fly higher and not push helicopters out of their way anymore.&lt;/li&gt;
-  &lt;li&gt;Harvester logic has been improved to make use of all available refineries and to avoid blockages.&lt;/li&gt;
-  &lt;li&gt;New missions: Allies03b and Allies05a for Red Alert, and GDI05a, Nod02a and Nod02b for Tiberian Dawn.&lt;/li&gt;
-  &lt;li&gt;More memory usage and performance improvements.&lt;/li&gt;
-  &lt;li&gt;On Linux, the &lt;code&gt;.orarep&lt;/code&gt; file extension will be associated with OpenRA so that replays can be started from a file manager with a simple double-click.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href="http://changelog.openra.net"&gt;The changelog&lt;/a&gt; has the full list of fixes, changes and new features.&lt;/p&gt;
-
-&lt;p&gt;Head over to our &lt;a href="/download/"&gt;download section&lt;/a&gt; to find the playtest installers.&lt;/p&gt;
-
-&lt;p&gt;A note on map compatibility: already with the last playtest a new map format was introduced which is not backward-compatible with last October’s release-20141029. This means that if you have downloaded custom maps from &lt;a href="http://resource.openra.net"&gt;the Resource Center&lt;/a&gt; or elsewhere, these maps will have been automatically updated to the new map format once you have run this or the previous playtest. If you later go back to the release version, it will not be able to parse the new map format and crash. You can avoid the problem by either deleting the contents of your &lt;code&gt;map&lt;/code&gt; folder, or by making backups of the &lt;code&gt;map&lt;/code&gt; folder and restoring that when you switch back to release-20141029. We should have mentioned that in the news post for the last playtest already, and apologize for any inconvenience that omission caused.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20150329-ra-randomcountries-dropdown.png" alt="Random Countries" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;It is now possible to select a random country from among each side in Red Alert, Allies or Soviets.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20150329-cnc-refund-tooltip.png" alt="Refund value in tooltip" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Tooltips now show the refund value when sell mode is activated.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20150329-d2k-sidebar.png" alt="Dune 2000 sidebar" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;The new Dune 2000 sidebar.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20150329-ts-snow-preview.png" alt="Tiberian Sun Snow Preview" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Behind the scenes, the work on the Tiberian Sun mod reached another milestone&lt;br /&gt;by completing support for the original game’s tilesets.&lt;/p&gt;
 &lt;/div&gt;
 </content>
   </entry>
