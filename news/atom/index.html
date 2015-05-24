@@ -2,13 +2,84 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2015-05-05T21:00:00Z</updated>
+  <updated>2015-05-24T10:40:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2015-05-24:/news/playtest-20150524/</id>
+    <title type="html">Playtest 20150524</title>
+    <published>2015-05-24T10:40:00Z</published>
+    <updated>2015-05-24T10:40:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/playtest-20150524/"/>
+    <content type="html">&lt;p&gt;It has been a &lt;a href="https://github.com/OpenRA/OpenRA/pulse/monthly"&gt;month of busy development&lt;/a&gt;. Time to get back to testing!&lt;/p&gt;
+
+&lt;p&gt;The major changes this time around include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A whole new in-game map editor, with many benefits over the old editor.&lt;/li&gt;
+  &lt;li&gt;Improved system integration with &lt;code&gt;openra://&lt;/code&gt; server join URLs. Give it a try from our &lt;a href="/games/"&gt;live server list&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;Implemented production building upgrades that unlock additional technology for Dune 2000.&lt;/li&gt;
+  &lt;li&gt;Several enhanced classic missions have been added to the Tiberian Dawn mod.&lt;/li&gt;
+  &lt;li&gt;In the Red Alert and D2k mods you will now be notified upon encounter of enemy units.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Unfortunately, an oversight in the way that we package our windows installer meant that the performance of our Windows release-20150429 builds was much worse than it should have been. We have fixed this for playtest-20150524, so Windows players should find the game runs about 30% faster!&lt;br /&gt;
+Also general performance improvements have been integrated that affect all platforms. Kudos to &lt;a href="https://github.com/RoosterDragon"&gt;RoosterDragon&lt;/a&gt; for his continued effort to optimize our source code.&lt;/p&gt;
+
+&lt;p&gt;The refined system integration adds a lot of convenient features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hardware cursors will now work more reliably on Microsoft Windows.&lt;/li&gt;
+  &lt;li&gt;On Mac the dialogs won’t hijack finder and the dock icon won’t get lost upon restarting.&lt;/li&gt;
+  &lt;li&gt;Linux AppStream compatible software centers will now show a nice preview.&lt;/li&gt;
+  &lt;li&gt;Double-clicking an &lt;code&gt;.orarep&lt;/code&gt; file will now directly start playback of the replay.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Our new in-game map editor took over a year of development time, and it was worth it!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It is truly cross-platform as it uses our game UI; finally a map editor on Mac OS X!&lt;/li&gt;
+  &lt;li&gt;No more rendering glitches. Almost WYSIWYG editing, because we re-use the game renderer.&lt;/li&gt;
+  &lt;li&gt;Support for all file formats, i.e. voxels, isometric terrain and Dune 2000 sprite actors.&lt;/li&gt;
+  &lt;li&gt;You can now keep an overview of installed custom maps and delete them in the same menu.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Click &lt;code&gt;Extras&lt;/code&gt; - &lt;code&gt;Map Editor&lt;/code&gt; from the main menu in any mod. To all our enthusiastic mappers out there: Your feedback is invaluable at this stage. We will remove the legacy &lt;code&gt;OpenRA.Editor.exe&lt;/code&gt; in the nearby future.&lt;/p&gt;
+
+&lt;p&gt;Great news for tinkerers. You can now use voxels in your own mods and maps. See our updated &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Traits-(playtest)"&gt;trait documentation&lt;/a&gt;.
+The &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Lua-API-(playtest)"&gt;Lua API&lt;/a&gt; for mission scripting has also been enhanced while we proceed to implement remakes of the original campaigns.&lt;/p&gt;
+
+&lt;p&gt;More details and links to pull request can be found on our &lt;a href="http://changelog.openra.net/"&gt;changelog page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can find the installers for a variety of supported operating systems in our &lt;a href="/download/"&gt;download section&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please report problems &lt;a href="http://bugs.openra.net"&gt;on our bug tracker&lt;/a&gt;. We plan to do a new stable release based upon these changes soon.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150524-ra-map-chooser.png" alt="Red Alert map chooser" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Keep track of your thirdparty maps from &lt;a href="http://resource.openra.net/"&gt;OpenRA Resource Center&lt;/a&gt;&lt;br /&gt;and delete unwanted ones in the updated map chooser.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150524-cnc-nod06a.png" alt="Tiberian Dawn mission Nod06a" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;One by one the results of the student project to import the original Tiberian Dawn missions is integrated.&lt;br /&gt;Thanks to the &lt;a href="http://www.thm.de/site/en/"&gt;THM&lt;/a&gt; course instructors for their creative teaching methods.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150524-d2k-building-upgrades.png" alt="Dune 2000 building upgrades" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The on-going quest to &lt;a href="https://github.com/OpenRA/OpenRA/issues/7751"&gt;finalize the Dune 2000&lt;/a&gt; mod has reached a new milestone&lt;br /&gt;with building upgrades which re-create the original tech tree.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150524-ts-ingame-editor.png" alt="Tiberian Sun in-game map editor" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The in-game map editor is also a vital part of our &lt;a href="https://github.com/OpenRA/OpenRA/issues/5350"&gt;Tiberian Sun support&lt;/a&gt; initiative.&lt;/p&gt;
+
+&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2015-05-05:/news/server-issues/</id>
     <title type="html">Server Issues</title>
@@ -204,47 +275,6 @@ The server also hosted a mirror of our content packages. It was removed from the
   &lt;iframe width="600" height="450" src="https://www.youtube-nocookie.com/embed/SBU8XYuFk0M?rel=0" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;
 
   &lt;p&gt;Another sneak peek at our in-progress Tiberian Sun mod: How to deploy upgrades&lt;/p&gt;
-
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2015-04-05:/news/playtest-20150405/</id>
-    <title type="html">Playtest 20150405</title>
-    <published>2015-04-05T11:00:00Z</published>
-    <updated>2015-04-05T11:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/playtest-20150405/"/>
-    <content type="html">&lt;p&gt;We have received lots of feedback on our last playtest, for which we are very grateful. Let me take this opportunity to thank all our testers!&lt;/p&gt;
-
-&lt;p&gt;In fact, we have received so much feedback that we felt it was worth it to do another, hopefully last, playtest before the release.&lt;/p&gt;
-
-&lt;p&gt;This new playtest addresses most of the issues that have been reported. In particular, these are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The balancing in the Red Alert mod, while not finalized, has received some more touch-ups.&lt;/li&gt;
-  &lt;li&gt;Quite a number of crashes and other oddities have been fixed.&lt;/li&gt;
-  &lt;li&gt;The overly enthusiastic “Enemies approaching” warning has been removed from both Red Alert and Dune 2000.&lt;/li&gt;
-  &lt;li&gt;Even more performance improvements have been made.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The full list of changes can be found on &lt;a href="http://changelog.openra.net"&gt;our changelog page&lt;/a&gt; as usual.&lt;/p&gt;
-
-&lt;p&gt;Now head on over to our &lt;a href="/download/"&gt;download section&lt;/a&gt;, and go forth test some more! If all goes well, you can expect the release within a week!&lt;/p&gt;
-
-&lt;p&gt;A note on map compatibility: already with the first playtest a new map format was introduced which is not backward-compatible with last October’s release-20141029. This means that if you have downloaded custom maps from &lt;a href="http://resource.openra.net"&gt;the Resource Center&lt;/a&gt; or elsewhere, these maps will have been automatically updated to the new map format once you have run this or one of the previous playtests. If you later go back to the release version, it will not be able to parse the new map format and crash. You can avoid the problem by either deleting the contents of your &lt;code&gt;map&lt;/code&gt; folder, or by making backups of the &lt;code&gt;map&lt;/code&gt; folder and restoring that when you switch back to release-20141029.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20150405-ra-random-lobby.png" alt="Random factions - Lobby" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;The faction of players who selected a random faction in the lobby…&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20150405-ra-random-ingame.png" alt="Random factions - In-game" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;…will no longer be revealed to enemies in the game.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20150405-d2k-blendmodes.png" alt="Dune 2000 eye candy" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;The visual effects for explosions and missile trails have been improved for the Dune 2000 mod.&lt;/p&gt;
 
 &lt;/div&gt;
 </content>
