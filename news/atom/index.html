@@ -2,13 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2015-05-24T10:40:00Z</updated>
+  <updated>2015-05-31T10:00:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2015-05-31:/news/playtest-20150531/</id>
+    <title type="html">Playtest 20150531</title>
+    <published>2015-05-31T10:00:00Z</published>
+    <updated>2015-05-31T10:00:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/playtest-20150531/"/>
+    <content type="html">&lt;p&gt;We have received a small number of issues after last week’s playtest release. These issues have been addressed and so we are releasing a new playtest for you to check out!&lt;/p&gt;
+
+&lt;p&gt;The list of fixes is agreeably short, which is to be expected after this equally short development cycle. The fixed issues include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A number of issues pertaining to single-player missions in both Tiberian Dawn and Red Alert.&lt;/li&gt;
+  &lt;li&gt;A crash in Dune 2000 that happened when a Deviator hit a harvester being picked up by a Carryall.&lt;/li&gt;
+  &lt;li&gt;Rendering glitches which resulted in highly saturated range circles and blocky nuke explosion effects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For the full changelog, please refer to &lt;a href="http://changelog.openra.net"&gt;the changelog page on our wiki&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The installers for a number of supported operating systems can be found on &lt;a href="/download/"&gt;the download page&lt;/a&gt; as usual.&lt;/p&gt;
+
+&lt;p&gt;If you encounter any problems or bugs, don’t hesitate to report them &lt;a href="http://bugs.openra.net"&gt;on our bug tracker&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A note to modders: You may have seen these already on the wiki or when we linked to them in the last playtest announcement, but we did not explicitly mention them. In addition to the existing &lt;a href="http://wiki.openra.net/Traits"&gt;trait&lt;/a&gt; and &lt;a href="http://wiki.openra.net/Lua-API"&gt;Lua API&lt;/a&gt;  which cover the latest stable release, we now also provide documentation for the latest playtest. See the “&lt;a href="http://wiki.openra.net/Traits-(playtest)"&gt;Traits (playtest)&lt;/a&gt;” and “&lt;a href="http://wiki.openra.net/Lua-API-(playtest)"&gt;Lua API (playtest)&lt;/a&gt;” pages on our wiki. This will allow you to update your mods and maps to be compatible with an upcoming release ahead of time.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150531-ra-editor.png" alt="Ingame editor in Red Alert" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;A view of the new ingame editor in the Red Alert mod.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The old external editor is slated for removal after the upcoming release, so while the next release will feature both the ingame and legacy editors, it will be the last appearance for the latter. Reason enough to give the ingame editor a thorough testing!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2015-05-24:/news/playtest-20150524/</id>
     <title type="html">Playtest 20150524</title>
@@ -240,43 +274,6 @@ The server also hosted a mirror of our content packages. It was removed from the
 &lt;p&gt;We really hope that this will be the last playtest in this cycle and we will be able to give you a stable release next weekend. Nonetheless, should you encounter any bugs, problems, or have any suggestions, don’t hesitate to let us know &lt;a href="http://bugs.openra.net"&gt;on our bug tracker&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;A note on map compatibility: already with the first playtest a new map format was introduced which is not backward-compatible with last October’s release-20141029. This means that if you have downloaded custom maps from &lt;a href="http://resource.openra.net"&gt;the Resource Center&lt;/a&gt; or elsewhere, these maps will have been automatically updated to the new map format once you have run this or one of the previous playtests. If you later go back to the release version, it will not be able to parse the new map format and crash. You can avoid the problem by either deleting the contents of your &lt;code&gt;map&lt;/code&gt; folder, or by making backups of the &lt;code&gt;map&lt;/code&gt; folder and restoring that when you switch back to release-20141029.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2015-04-08:/news/playtest-20150408/</id>
-    <title type="html">Playtest 20150408</title>
-    <published>2015-04-08T10:00:00Z</published>
-    <updated>2015-04-08T10:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/playtest-20150408/"/>
-    <content type="html">&lt;p&gt;We have finalized the balancing for the Red Alert mod, so it’s time for another playtest!&lt;/p&gt;
-
-&lt;p&gt;The changes this time around include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;More balancing adjustments in Red Alert. Please see &lt;a href="http://changelog.openra.net"&gt;the changelog&lt;/a&gt; for a detailed list of changes.&lt;/li&gt;
-  &lt;li&gt;Fixed enemies erroneously getting an “(Ally)” suffix in chat messages.&lt;/li&gt;
-  &lt;li&gt;Games in progress that are password protected are now indicated as such in the server browser.&lt;/li&gt;
-  &lt;li&gt;Fixed helicopters wasting ammo by trying to shoot at targets directly below them.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;More details and links to pull request can be found on our &lt;a href="http://changelog.openra.net"&gt;changelog page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can find the installers for a variety of supported operating systems in our &lt;a href="/download/"&gt;download section&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This will likely be your last chance to give feedback and contribute to this release, so if you find bugs, encounter any problems are have other suggestions, don’t hesitate and report them &lt;a href="http://bugs.openra.net"&gt;on our bug tracker&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;A note on map compatibility: already with the first playtest a new map format was introduced which is not backward-compatible with last October’s release-20141029. This means that if you have downloaded custom maps from &lt;a href="http://resource.openra.net"&gt;the Resource Center&lt;/a&gt; or elsewhere, these maps will have been automatically updated to the new map format once you have run this or one of the previous playtests. If you later go back to the release version, it will not be able to parse the new map format and crash. You can avoid the problem by either deleting the contents of your &lt;code&gt;map&lt;/code&gt; folder, or by making backups of the &lt;code&gt;map&lt;/code&gt; folder and restoring that when you switch back to release-20141029.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20150408-d2k-serverbrowser.png" alt="Server browser with password protected games" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Protected games in the server browser.&lt;/p&gt;
-
-  &lt;iframe width="600" height="450" src="https://www.youtube-nocookie.com/embed/SBU8XYuFk0M?rel=0" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;
-
-  &lt;p&gt;Another sneak peek at our in-progress Tiberian Sun mod: How to deploy upgrades&lt;/p&gt;
-
-&lt;/div&gt;
 </content>
   </entry>
 </feed>
