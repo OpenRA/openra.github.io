@@ -2,13 +2,76 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2015-05-31T10:00:00Z</updated>
+  <updated>2015-06-14T10:00:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2015-06-14:/news/release-20150614/</id>
+    <title type="html">Release 20150614</title>
+    <published>2015-06-14T10:00:00Z</published>
+    <updated>2015-06-14T10:00:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/release-20150614/"/>
+    <content type="html">&lt;p&gt;We are proud to announce the June 2015 release of OpenRA!&lt;/p&gt;
+
+&lt;p&gt;As promised, it was our goal to reduce the length of this development cycle, and we succeeded! With about 22500 changed lines in just over 300 commits by a total of 25 developers since the last release, the list of new features is naturally a bit shorter than last time around, but it contains some good ones!&lt;/p&gt;
+
+&lt;p&gt;The standout feature of this release is of course the long-awaited in-game map editor. For the first time ever, we are offering a map editing ability for all our mods, on all supported operating systems. You can access the map editor from the “Extras” sub-menu of the main menu.&lt;/p&gt;
+
+&lt;p&gt;The new map editor offers the following benefits and features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fully cross-platform, just like the game itself. Finally, a map editor for OS X!&lt;/li&gt;
+  &lt;li&gt;Truly WYSIWYG. It uses the game renderer, so there are no more rendering glitches.&lt;/li&gt;
+  &lt;li&gt;Support for all mods. The legacy editor did not support Dune 2000 properly, and Tiberian Sun not at all.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Compared to the legacy editor, there is not yet full feature parity: the in-game editor is missing cut-and-paste operations, a display of the sum of resources on the map, and also does not show the coordinates of cells. These short-comings will be rectified in future releases. Meanwhile, they remain available in the legacy editor, which is still being shipped with this release. It will, however, be removed in the not too distant future.&lt;/p&gt;
+
+&lt;p&gt;Complementing the new editor is an improved map chooser dialog, which now separates official and custom maps. It also allows deleting one or all of your custom maps. We also took this chance to add the often-requested ability for all players to view the map chooser from the game lobby (but changing the map still remains the prerogative of the host).&lt;/p&gt;
+
+&lt;p&gt;Another new feature with a lot of potential is the added operating system integration of OpenRA. The installers will associate the game with OpenRA replay files and OpenRA server URLs. These will allow websites hosting replay archives to add one-click watching of replays, and creating alternative server browsers. As an example, our own &lt;a href="/games/"&gt;web-based server browser&lt;/a&gt; has been enhanced to offer clickable links to waiting games that will automatically start OpenRA and connect you to the server. You can also create bookmarks to your favourite OpenRA servers on your desktop! These associations are available on all supported operating systems as well.&lt;/p&gt;
+
+&lt;p&gt;Other minor additions include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The Dune 2000 mod has gained building upgrades, and now matches the original game’s tech tree.&lt;/li&gt;
+  &lt;li&gt;A total of six single-player missions have been added to the Tiberian Dawn mod. Enjoy!&lt;/li&gt;
+  &lt;li&gt;The “Team health colors” option now provides a better distinction between your own and allied units.&lt;/li&gt;
+  &lt;li&gt;Support powers can now be activated using configurable hotkeys.&lt;/li&gt;
+  &lt;li&gt;A “quick placement” mode has been added which will automatically pick up a completed building for placement when the player selects the corresponding production tab.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Aside from new features, the usual number of bug fixes has found its way into the code. Among them is a fix for a high-profile bug that caused the inability to undeploy construction yards. Several graphical problems, from glitches in the menus to occasionally missing mouse cursors have been resolved as well as issues in our single-player mission scripts.&lt;/p&gt;
+
+&lt;p&gt;Take a look at the &lt;a href="http://changelog.openra.net"&gt;full changelog&lt;/a&gt; for all the gory details.&lt;/p&gt;
+
+&lt;p&gt;Grab the installer now for your operating system from &lt;a href="/download/"&gt;our download page&lt;/a&gt;! We hope you’ll enjoy this newest installment of OpenRA!&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150614-ra-mapeditor.png" alt="Ingame map editor" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The new map editor was almost 18 months in the making!&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150614-web-server-browser.png" alt="Web-based server browser" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The added operating system integration allows connecting to games from links on websites or bookmarks.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150614-cnc-missions.png" alt="New single-player missions" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The work on our single-player campaigns &lt;a href="http://bugs.openra.net/4988"&gt;is progressing nicely&lt;/a&gt;.&lt;br /&gt;The Nod campaign is now almost half done!&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20150614-d2k-building-upgrades.png" alt="D2k building upgrades" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Building upgrades have been added to our Dune 2000 mod,&lt;br /&gt;which now allow us to almost match the original game’s tech tree.&lt;/p&gt;
+
+&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2015-05-31:/news/playtest-20150531/</id>
     <title type="html">Playtest 20150531</title>
@@ -245,35 +308,6 @@ The server also hosted a mirror of our content packages. It was removed from the
   &lt;p&gt;Behind the scenes, the still unreleased, work-in-progress Tiberian Sun mod has received support&lt;br /&gt;for some crucial features. Keep an eye out for more news and media about TS &lt;a href="https://facebook.com/openra"&gt;on our Facebook page&lt;/a&gt;!&lt;/p&gt;
 
 &lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2015-04-18:/news/playtest-20150418/</id>
-    <title type="html">Playtest 20150418</title>
-    <published>2015-04-18T10:00:00Z</published>
-    <updated>2015-04-18T10:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/playtest-20150418/"/>
-    <content type="html">&lt;p&gt;Our plan to release the stable release this weekend has unfortunately been thwarted by a few show-stopper bugs in the last playtest. Those have now all been fixed, so we have decided to do another playtest!&lt;/p&gt;
-
-&lt;p&gt;Here are the fixes contained in this release:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A bug in the pathfinder code which caused freezes of several seconds or even longer has been fixed.&lt;/li&gt;
-  &lt;li&gt;The minigame and dropzone maps would crash when selected in the lobby.&lt;/li&gt;
-  &lt;li&gt;The player’s faction in single-player missions was erroneously assigned at random.&lt;/li&gt;
-  &lt;li&gt;A race condition related to carryalls which caused crashes when met has been fixed.&lt;/li&gt;
-  &lt;li&gt;The unintended dependency on XQuartz for the OS X package has been removed.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In addition, the ore silo in Red Alert has been moved to the support structure queue.&lt;/p&gt;
-
-&lt;p&gt;All the details can be found on our &lt;a href="http://changelog.openra.net"&gt;changelog page&lt;/a&gt; as usual.&lt;/p&gt;
-
-&lt;p&gt;Head on over to the &lt;a href="/download/"&gt;download section&lt;/a&gt; to find the installer for your operating system.&lt;/p&gt;
-
-&lt;p&gt;We really hope that this will be the last playtest in this cycle and we will be able to give you a stable release next weekend. Nonetheless, should you encounter any bugs, problems, or have any suggestions, don’t hesitate to let us know &lt;a href="http://bugs.openra.net"&gt;on our bug tracker&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;A note on map compatibility: already with the first playtest a new map format was introduced which is not backward-compatible with last October’s release-20141029. This means that if you have downloaded custom maps from &lt;a href="http://resource.openra.net"&gt;the Resource Center&lt;/a&gt; or elsewhere, these maps will have been automatically updated to the new map format once you have run this or one of the previous playtests. If you later go back to the release version, it will not be able to parse the new map format and crash. You can avoid the problem by either deleting the contents of your &lt;code&gt;map&lt;/code&gt; folder, or by making backups of the &lt;code&gt;map&lt;/code&gt; folder and restoring that when you switch back to release-20141029.&lt;/p&gt;
 </content>
   </entry>
 </feed>
