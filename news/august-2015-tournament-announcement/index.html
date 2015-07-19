@@ -9,7 +9,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.openra.net/" />
     <meta property="og:image" content="http://www.openra.net/images/og-image.png" />
-    <title>OpenRA - Home</title>
+    <title>OpenRA - August 2015 Tournament Announcement</title>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -49,9 +49,9 @@
       <a id="ghbanner" href="https://github.com/OpenRA/OpenRA"><img src="/images/forkme.svg" alt="Fork me on GitHub"></a>
       <ul id="nav">
       
-        <li><a href="/" class="nav-selected">Home</a></li>
+        <li><a href="/">Home</a></li>
       
-        <li><a href="/news/">News</a></li>
+        <li><a href="/news/" class="nav-selected">News</a></li>
       
         <li><a href="/download/">Download</a></li>
       
@@ -60,71 +60,7 @@
         <li><a href="/community/">Community</a></li>
       
       </ul>
-      <div id="content"><div id="mainleft">
-  <div id="screenshot">
-
-      <img width="250" height="150" src="images/screenshots/ra-survival.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/ra-base.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/d2k-starport.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/d2k-base.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/cnc-squad.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/cnc-mammoths.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/cnc-harvest.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/20140927-aircraft.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/20140608-ra.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/20140608-d2k.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/20140405-ra.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/20140405-d2k.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/20140405-beacons.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/20131209-d2k-soft-spice.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/20131130-cnc.png" alt="" />
-
-      <img width="250" height="150" src="images/screenshots/20131130-allies02.png" alt="" />
-
-  </div>
-  <div id="so-links">
-    Find us on your favorite social network:
-    <ul>
-      
-        <li><a href="https://www.facebook.com/openra"><img src="/images/social/facebook.svg" alt="Facebook" title="Facebook" /></a></li>
-      
-        <li><a href="https://www.google.com/+OpenraNet" rel="publisher"><img src="/images/social/gplus.svg" alt="Google+" title="Google+" /></a></li>
-      
-        <li><a href="http://twitter.com/openRA"><img src="/images/social/twitter.svg" alt="Twitter" title="Twitter" /></a></li>
-      
-        <li><a href="http://www.moddb.com/games/openra"><img src="/images/social/moddb.svg" alt="ModDB" title="ModDB" /></a></li>
-      
-        <li><a href="http://www.reddit.com/r/openra"><img src="/images/social/reddit.svg" alt="Reddit" title="Reddit" /></a></li>
-      
-        <li><a href="https://github.com/OpenRA/OpenRA"><img src="/images/social/github.svg" alt="Github" title="Github" /></a></li>
-      
-    </ul>
-  </div>
-</div>
-<div>
-  <h2>Welcome Back, Commander</h2>
-  <p>OpenRA is a Libre/Free Real Time Strategy project that recreates the classic Command&nbsp;&amp;&nbsp;Conquer titles.</p>
-  <p>We include recreations of C&amp;C&nbsp;(Tiberian&nbsp;Dawn), C&amp;C:&nbsp;Red&nbsp;Alert, and Dune&nbsp;2000. These are not intended to be perfect copies, but instead combine the classic gameplay of the originals with modern improvements such as unit veterancy and the fog of war.</p>
-  <p>OpenRA's primary focus is cross-platform multiplayer between Windows, OS&nbsp;X, and Linux; however, we include a number of single-player missions, and also support skirmish games against AI bots.</p>
-</div>
-
-<h2 style="clear:both">Latest News</h2>
-<hr />
-<h3 class="newsTitle">August 2015 Tournament Announcement</h3>
+      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; August 2015 Tournament Announcement</h3>
 <p class="newsDetails">Posted by Christopher Grant at 2015-07-14 12:00 -0500</p>
 <hr />
 <p>Attention all OpenRA players! There is another tournament coming up, once again organized by Ripley!</p>
@@ -155,28 +91,7 @@
   else
     $('#disqus_thread').append('<div class="noscript">Comments are disabled for this domain.</div>');
 </script>
-
-
-<script>
-  function nextSlide() {
-    var x = $('#screenshot img:not(.active)');
-    return $(x[Math.floor(Math.random() * x.length)]);
-  }
-
-  function slideSwitch() {
-    var active = $('#screenshot img.active');
-    if (active.length == 0)
-      active = nextSlide();
-    var next = nextSlide();
-    active.addClass('last-active');
-    next.css({opacity: 0.0})
-      .addClass('active')
-      .animate({opacity: 1.0}, 1000, function() {
-          active.removeClass('active last-active');
-    });
-  }
-  $(function() { setInterval("slideSwitch()", 3500); });
-</script></div>
+</div>
       <div id="footer"><p>Copyright &copy; 2007-2015 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</p></div>
     </div>
   </body>
