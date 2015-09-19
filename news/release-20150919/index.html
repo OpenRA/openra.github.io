@@ -9,7 +9,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.openra.net/" />
     <meta property="og:image" content="http://www.openra.net/images/og-image.png" />
-    <title>OpenRA - Release 20121019</title>
+    <title>OpenRA - Release 20150919</title>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -60,29 +60,70 @@
         <li><a href="/community/">Community</a></li>
       
       </ul>
-      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; Release 20121019</h3>
-<p class="newsDetails">Posted by Curtis Shmyr at 2012-10-19 12:04:00 +0100</p>
+      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; Release 20150919</h3>
+<p class="newsDetails">Posted by Paul Chote at 2015-09-19 12:00 +0000</p>
 <hr />
-<p>We’ve finished release 20121019 - with four months worth of patches making their way out, there’s a ton of new stuff.</p>
+<div style="margin-left:40px; font-size: 0.9em;">
+<pre>
+LANDCOM 16 HQS.
+TOP SECRET
+TO: ALL FIELD COMMANDERS
 
-<p>Highlights of this release include:</p>
+AN INTERCEPTED COMMUNIQUE INDICATES THE IMMEDIATE AVAILABILITY OF A
+NEW SEPTEMBER 2015 OPENRA RELEASE.  SUBSEQUENT INTERROGATION OF THE
+MESSAGE COURIER REVEALED THAT 31 AUTHORS CONTRIBUTED MORE THAN 1150
+CHANGES TOWARDS THEIR WAR EFFORT IN THE LAST THREE MONTHS.  A LARGE
+COLLECTION OF BUG FIXES AND OTHER IMPROVEMENTS ARE SUSPECTED.
+
+YOUR ORDERS ARE TO PROCEED DIRECTLY TO <a href="/download/">www.openra.net/download/</a> AND
+DOWNLOAD THE NEW RELEASE.  RENDEZVOUS WITH OTHER COMMANDERS IN-GAME
+AND DESTROY ALL ENEMY OPPOSITION.
+
+TRANSMISSION ENDS.
+</pre>
+</div>
+<hr />
+
+<p>Our latest release includes changes and new features that implement several popular requests, including:</p>
 
 <ul>
-  <li>Added Dune 2000 mod (fronted by Matt)</li>
-  <li>Dedicated server support</li>
-  <li>UPnP support for multi-player</li>
-  <li>Option to pause the game (hit F3)</li>
-  <li>Two re-imagined RA missions are included, Allies01 and Allies02 (by Scott)</li>
-  <li>Improved logic for Harvesters and Ore Trucks</li>
-  <li>New map editor tiles to use for RA’s temperate theme (by Harisson)</li>
-  <li>Selection tool in editor for copy-pasting terrain</li>
-  <li>Four new RA units: Demo Truck, Sniper, Volkov and Chronotank</li>
-  <li>Seven new community made RA maps</li>
-  <li>Snow tileset for CnC (by Nyerguds)</li>
-  <li>Plenty of RA balance changes</li>
+  <li>Support for installing assets from an English “The First Decade” DVD.</li>
+  <li>Adding the ability to view the map after a match completes.</li>
+  <li>Adding a notification when a game admin selects a map with custom rules.</li>
+  <li>Recording replays for single player missions.</li>
+  <li>Removing the “Enemy Detected” warnings from RA and D2K.</li>
+  <li>Fixing bottlenecks in the AI and harvesters to dramatically improve late-game performance.</li>
 </ul>
 
-<p>The full user-friendly changelog can be found <a href="http://www.sleipnirstuff.com/forum/viewtopic.php?f=81&amp;p=283567#283567">on the forum</a>, or by viewing the <a href="https://raw.github.com/cjshmyr/OpenRA/e4beb8236e07d2940c131e5eb3787b9bf9d50278/CHANGELOG">commit on github</a>.</p>
+<p>Other notable changes include:</p>
+
+<ul>
+  <li>Completely overhauled in-game music behaviour (don’t forget to install the music from Extras → Music!).</li>
+  <li>Capture screenshots (saved to the support directory) using Ctrl/Cmd+P.</li>
+  <li>Units will no longer pursue enemies after they disappear under the fog of war.</li>
+  <li>Improved aircraft and paradrop behaviour in RA.</li>
+  <li>Added missions Atreides01a and Atreides01b and FMV installation to D2K.</li>
+</ul>
+
+<p>As usual, this is only a small sampling of the <a href="http://changelog.openra.net">full changelog</a> that is available on our wiki.</p>
+
+<p>Grab the installer now for your operating system from our <a href="/download/">download page</a>!<br />
+Once again we hope you’ll enjoy this newest installment of OpenRA!</p>
+
+<p>We know that many people are excited about our in-development Tiberian Sun mod, and we’re pleased to report that we have made significant progress during this release cycle.  The core engine changes to support the 2.5D isometric maps used by TS and RA2 are now complete, and we are making slow-but-forward progress on implementing the many missing gameplay features for TS.  There is still a lot of work to go, so we do not have a formal release schedule for these mods.</p>
+
+<div style="text-align:center">
+
+  <p><img src="/images/news/20150919-ra-spy.png" alt="New spy abilities" /></p>
+  <p>The spy in Red Alert has gained the ability to detect enemy spies and<br />infiltrate enemy production buildings to unlock veteran unit production.</p>
+
+  <p><img src="/images/news/20150919-returntomap.png" alt="Return to map" /></p>
+  <p>It is once again possible to view the map after a mission or match is complete.<br />It is now also possible to view replays of campaign missions.</p>
+
+  <p><img src="/images/news/20150919-d2k-repairs.png" alt="Carryall transports" /></p>
+  <p>Use the repair cursor to order damaged vehicles back to a service depot.<br />In D2K an idle carryall will give it a quick lift!</p>
+
+</div>
 
 <hr />
 
@@ -92,10 +133,10 @@
 <script type="text/javascript">
   if (document.domain == 'www.openra.net') {
     var disqus_shortname = 'openra';
-    var disqus_identifier = 'release-20121019';
+    var disqus_identifier = 'release-20150919';
 	// Future proofed permalink
-    var disqus_url = 'http://www.openra.net/news/release-20121019/';
-    var disqus_title = 'Release 20121019';
+    var disqus_url = 'http://www.openra.net/news/release-20150919/';
+    var disqus_title = 'Release 20150919';
 
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
