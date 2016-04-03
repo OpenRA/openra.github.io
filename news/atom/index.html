@@ -2,13 +2,150 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2016-03-29T16:00:00Z</updated>
+  <updated>2016-04-03T10:00:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2016-04-03:/news/playtest-20160403/</id>
+    <title type="html">Here we go again! New Playtest available!</title>
+    <published>2016-04-03T10:00:00Z</published>
+    <updated>2016-04-03T10:00:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/playtest-20160403/"/>
+    <content type="html">&lt;p&gt;We are pleased to announce the first playtest leading up to our next stable release!&lt;/p&gt;
+
+&lt;p&gt;We have finally entered the feature freeze phase of the development cycle, where we stop adding features and focus on fixing bugs found during playtesting. This is where &lt;em&gt;you&lt;/em&gt; come into play! We need &lt;em&gt;your&lt;/em&gt; help to give this playtest as wide a test coverage as possible to ensure another successful stable release of OpenRA!&lt;/p&gt;
+
+&lt;p&gt;We therefore ask you to please report any and all bugs and problems you encounter on &lt;a href="http://bugs.openra.net"&gt;our bug tracker&lt;/a&gt;, in the OpenRA &lt;a href="/community/"&gt;IRC channel&lt;/a&gt;, or here in the comments. We will strive to fix as many bugs as possible before a final release. Thank you for helping to improve OpenRA!&lt;/p&gt;
+
+&lt;p&gt;While there are the usual bug fixes and improvements, a big focus over the last six months has been reworking several fundamental parts of the OpenRA game engine, with changes that will be felt foremost by server operators, modders and mappers. In fact, some of these changes are so fundamental that we will address them in-depth in the articles covering future playtests.&lt;/p&gt;
+
+&lt;p&gt;But one thing after the other…&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h2 id="ingame-changes"&gt;Ingame changes&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Quite a few long-standing annoyances have been addressed during the last cycle. Just to name a few, players will no longer be kicked from the server after installing a map, walls now stop bullets reliably, and husks can finally be targeted on refineries.&lt;/p&gt;
+
+&lt;p&gt;Other changes and new features include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;By popular demand, a tech level without super-powers has been added to the Red Alert mod.&lt;/li&gt;
+  &lt;li&gt;Zooming is now possible by holding CTRL while scrolling your mouse wheel. For spectators and in the map editor, two additional zoom steps are available.&lt;/li&gt;
+  &lt;li&gt;Cancelling an entire build queue at once is now possible by using CTRL + right click.&lt;/li&gt;
+  &lt;li&gt;Static defenses will now stop tracking their targets once it is out of range. This also sometimes prevented camo pillboxes from cloaking.&lt;/li&gt;
+  &lt;li&gt;Line-building of walls can now be disabled by holding the Shift key while placing the wall element.&lt;/li&gt;
+  &lt;li&gt;A couple of issues related to left-click controls have been solved.&lt;/li&gt;
+  &lt;li&gt;Engineers will no longer be selected when you drag-select a group of combat units.&lt;/li&gt;
+  &lt;li&gt;Fragile diplomacy has been removed.&lt;/li&gt;
+  &lt;li&gt;Lots of minor fixes, UI polish and performance improvements.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As usual, both the Tiberian Dawn and Red Alert mod have received some balance changes. Additionally, a number of Red Alert maps have been revised to be more balanced. A complete list of all these changes can be found &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/2ce4c1d37618b85fb4af3964dd1e87ded5013de4"&gt;in the changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20160403-cnc-restart-dialog.png" alt="Restart dialog" /&gt;&lt;/p&gt;
+  &lt;p&gt;
+Players finally have a restart option after failing a mission or skirmish!
+&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20160403-ra-team-colors.png" alt="Team colors and health bar improvements" /&gt;&lt;/p&gt;
+  &lt;p&gt;
+When team colors are enabled in the settings, they will now be used on the radar map.&lt;br /&gt;
+You can also set health bars to only appear when units are damaged.
+&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20160403-cnc-nod-colors.png" alt="Nod units with proper color" /&gt;&lt;/p&gt;
+  &lt;p&gt;
+This is for the nostalgic ones among us (and who isn't?).&lt;br /&gt;
+Nod units in missions now show their proper silver colors known from the original game.
+&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src="/images/news/20160403-d2k-worm-trail.png" alt="Worm trails" /&gt;&lt;/p&gt;
+  &lt;p&gt;
+Worms have received some polish and now leave a trail similar to the one from the original game.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="mapping-and-modding-changes"&gt;Mapping and modding changes&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;The way that the game handles maps has changed significantly since the last release.  We will elaborate on the changes and the reasons for them in a future post, but for now you only really need to know three things:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Maps from release-20151224 and earlier must be upgraded before they will work.&lt;/li&gt;
+  &lt;li&gt;Maps are now installed into per-version subdirectories – like replays.&lt;/li&gt;
+  &lt;li&gt;Installing maps ingame and using the map editor works as normal.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20160403-web-resource-center-map-upgrade.png" alt="Upgrading maps in the resource center" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The maps currently available on &lt;a href="http://resource.openra.net"&gt;the OpenRA Resource Center&lt;/a&gt; are in the process of being updated,&lt;br /&gt;and we have added an option for you to upgrade your maps manually.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Support for third-party mods will significantly improve with the next release. It is now possible to create an archive of your whole mod (called “.oramod”). Installing it on other computers is then just a matter of placing that archive in the “mods” subdirectory of the Support folder.&lt;/p&gt;
+
+&lt;p&gt;The news post for the second playtest will detail what changes your mod needs to make it compatible with the upcoming release and to enable the .oramod packaging. All shipped mods have already been converted, so feel free to take a look at those.&lt;/p&gt;
+
+&lt;p&gt;In the future, OpenRA will feature an ingame mod browser that will allow you to search for and install mods directly from the Resource Center.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="dedicated-server-changes"&gt;Dedicated server changes&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Dedicated servers have been made a lot easier to operate for the next release.&lt;/p&gt;
+
+&lt;div style="font-family: monospace; font-size: 85%; border-radius: 4px; background-color: #272d2c; padding:10px; margin:10px;"&gt;
+&lt;em&gt;
+$ ./OpenRA.Server.exe Game.Mod=ra Server.Name="My Server" Server.DisableSinglePlayer=true &lt;br /&gt;
+[2016-04-02T16:06:10] Starting dedicated server for mod: ra&lt;br /&gt;
+[2016-04-02T16:06:11] Master server communication established.&lt;br /&gt;
+[2016-04-02T16:10:08] Antares has joined the game.&lt;br /&gt;
+[2016-04-02T16:10:56] Player has joined the game.&lt;br /&gt;
+[2016-04-02T16:11:49] Newbie has joined the game.&lt;br /&gt;
+[2016-04-02T16:12:16] Antares changed the map to Doughnut.&lt;br /&gt;
+[2016-04-02T16:13:41] Game started&lt;br /&gt;
+[2016-04-02T16:37:38] Player has disconnected.&lt;br /&gt;
+[2016-04-02T16:37:47] Antares has disconnected.&lt;br /&gt;
+[2016-04-02T16:37:54] Newbie has disconnected.&lt;br /&gt;
+[2016-04-02T16:37:54] No one is playing, shutting down...&lt;br /&gt;
+[2016-04-02T16:37:54] Starting a new server instance...&lt;br /&gt;
+[2016-04-02T16:37:55] Master server communication established.&lt;br /&gt;
+&lt;/em&gt;
+&lt;/div&gt;
+
+&lt;p&gt;First and foremost, the biggest change is that dedicated servers no longer need to sync maps with the Resource Center. Especially when you were running multiple servers of different versions, this could quickly become a headache. Another advantage is that the distinction between synced and unsynced servers will go away. That’s right: maps uploaded to the Resource Center will be available immediately, on all servers, without any further action required.&lt;/p&gt;
+
+&lt;p&gt;Another change is that there is now a dedicated executable for dedicated servers, &lt;code&gt;OpenRA.Server.exe&lt;/code&gt; (and a matching &lt;code&gt;/usr/bin/openra-server&lt;/code&gt; on Linux). As a consequence, the old &lt;code&gt;Server.Dedicated&lt;/code&gt; and &lt;code&gt;Server.DedicatedLoop&lt;/code&gt; command-line arguments no longer exist. If you are using custom scripts to start your server instances, you will need to adapt them accordingly.&lt;/p&gt;
+
+&lt;p&gt;One last, unrelated change is that the &lt;code&gt;Server.AllowBots&lt;/code&gt; flag has been removed in favor of a &lt;code&gt;Server.DisableSinglePlayer&lt;/code&gt; flag, which will allow people to play with bots on servers, but only if there is more than one human player in the game. &lt;code&gt;Server.DisableSinglePlayer&lt;/code&gt; defaults to &lt;code&gt;false&lt;/code&gt;, so be sure to set it if desired.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;So much for a general overview of the upcoming release. For a detailed list of changes, see &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/2ce4c1d37618b85fb4af3964dd1e87ded5013de4"&gt;the full changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;At this point we need to mention another thing. As many other open-source projects, we don’t have any clear idea how much our software is actually used. There is a huge discrepancy between the number of downloads (about 50,000 currently for the latest release) and the number of online players (60-75 players concurrently at peak times). In order to get a better idea of this, and also to help with steering the future direction of the project, we decided to add an anonymous, opt-out data gathering facility to OpenRA. When enabled, the game will send us your operating system and .NET framework version, supported OpenGL version of your graphics card, your language settings, as well as the current mod. As already mentioned, this data is sent to us anonymously, using a randomly generated ID. If you are still feeling uncomfortable with this, you can disable this functionality by unchecking the “Send System Information” checkbox in the advanced settings dialog.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20160403-d2k-adv-settings.png" alt="Advanced settings dialog" /&gt;&lt;/p&gt;
+  &lt;p&gt;
+With the help of the data gathered, we hope to be able to decide &amp;ndash; amongst other things &amp;ndash; when we can allow ourselves to drop Windows XP support, and also how much benefit there would be if OpenRA was translated to other languages, and if so, which languages should be prioritized.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can find the installer for your operating system &lt;a href="/download/"&gt;on our download page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thank you very much, and have fun!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2016-03-29:/news/ragl-announcement/</id>
     <title type="html">Announcing the Red Alert: Global League</title>
@@ -146,51 +283,6 @@ building statistics to more closely match the original game.&lt;/p&gt;
 
 &lt;p&gt;In the meantime, though, please give this (hopefully last!) playtest a good workout. You can download it, as always, from our &lt;a href="/download/"&gt;download page&lt;/a&gt;. The feature list is quite impressive and makes playing it very worth your time. Take a look at the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/5157ea6cce42eb43071eb759b09432f87e694c75"&gt;changelog page&lt;/a&gt; to see all the details. Also be sure to report any and all problems you find at our &lt;a href="http://bugs.openra.net"&gt;bug tracker&lt;/a&gt; or in our &lt;a href="/community/"&gt;IRC channel&lt;/a&gt;. Thank you very much!&lt;/p&gt;
 
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2015-11-29:/news/playtest-20151129/</id>
-    <title type="html">December Release Candidate 2</title>
-    <published>2015-11-29T15:00:00Z</published>
-    <updated>2015-11-29T15:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/playtest-20151129/"/>
-    <content type="html">&lt;p&gt;We received a lot of feedback on our last two playtests, and we tried to address as many of the reported issues as possible.  Thanks to everyone who has tried the playtests and reported bugs or other feedback!&lt;/p&gt;
-
-&lt;p&gt;We fixed some new, as well as some long-standing issues for this playtest, so hopefully this will be the final release candidate for the upcoming December release.  We encourage you to give this release a good try out, especially if you like to play competitively online, because if we don’t hear your balance complaints now then you will be stuck with them for the next few months until our next release!  You can report any issues you have by &lt;a href="http://bugs.openra.net"&gt;filing a bug&lt;/a&gt; or &lt;a href="/community/"&gt;joining our IRC channel&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The focus for this playtest was on:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fixing bugs with target acquisition with GPS and Gap Generators.&lt;/li&gt;
-  &lt;li&gt;Fixing issues with some Tiberian Dawn and Red Alert missions.&lt;/li&gt;
-  &lt;li&gt;Polishing the Dune 2000 thumpers, spiceblooms, Saboteurs and production structure decorations.&lt;/li&gt;
-  &lt;li&gt;Fixing some crashes.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In particular, we responded to the following issues reported during the last playtest:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fixed a crash in the GDI06 mission. (thanks, @Snurre86)&lt;/li&gt;
-  &lt;li&gt;Fixed a crash when refreshing the multiplayer server list. (thanks, @pi99y)&lt;/li&gt;
-  &lt;li&gt;Fixed a crash when spawning resources outside the map borders. (thanks, @Frount)&lt;/li&gt;
-  &lt;li&gt;Fixed an unintentional buff to missiles across all mods. (thanks, @Spy)&lt;/li&gt;
-  &lt;li&gt;Restored targeting cursor when hovering over disguised enemy spies. (thanks, @kyrylo)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As usual, you can find the full details about the changes on the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/36203a1fdc608d380964485bac9d8671a5658983"&gt;changelog page&lt;/a&gt; and the installer for your operating system on our &lt;a href="/download/"&gt;download page&lt;/a&gt;!&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20151129-d2k-production-decorations.png" alt="Editor copy/paste" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;In D2k production structures now have a proper “Primary” sign for primary structures,
-and use the green star to show that they are upgraded.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20151129-editor-actor-remap.png" alt="Editor copy/paste" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;A bit more polish for the Map Editor - the player color remap on actors such as Cameras and Spawn points was fixed.&lt;/p&gt;
-&lt;/div&gt;
 </content>
   </entry>
 </feed>
