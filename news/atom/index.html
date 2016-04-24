@@ -2,13 +2,112 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2016-04-03T10:00:00Z</updated>
+  <updated>2016-04-24T10:00:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2016-04-24:/news/playtest-20160424/</id>
+    <title type="html">Another playtest hot off the presses!</title>
+    <published>2016-04-24T10:00:00Z</published>
+    <updated>2016-04-24T10:00:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/playtest-20160424/"/>
+    <content type="html">&lt;p&gt;We are happy to present to you the second playtest in this release cycle!&lt;/p&gt;
+
+&lt;p&gt;Many users – indeed more than we anticipated (over 2000!) – have tried out the first playtest and gave us a lot of feedback. Almost inevitably, a number of bugs were reported (thanks to all the testers who took their time to do so!).&lt;/p&gt;
+
+&lt;p&gt;We have now fixed all of those issues, including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Crashes when opening the in-game menu on some maps (Fort Lonestar, for example)&lt;/li&gt;
+  &lt;li&gt;Broken left click orders&lt;/li&gt;
+  &lt;li&gt;Too many infantry units coming out of sold buildings&lt;/li&gt;
+  &lt;li&gt;Submarines not being targetable&lt;/li&gt;
+  &lt;li&gt;Stealth units being targetable even when stealthed under some circumstances&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Additionally, the Red Alert mod has seen more refinements to its map pool: a few lower quality maps have been removed, while some new tournament-grade maps have been added.&lt;/p&gt;
+
+&lt;p&gt;As usual, the complete list of changes can be seen &lt;a href="http://github.com/OpenRA/OpenRA/wiki/Changelog/4ad573f5615b1cdaebdd0d8c5a4c09bcb042798a"&gt;on our wiki&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We promised in the last news post to detail the new map format and other map-related changes here. Skip to below the break for the full scoop.&lt;/p&gt;
+
+&lt;p&gt;Installers for all supported operating systems are available from &lt;a href="/downloads"&gt;the download page&lt;/a&gt;. Of course we are still interested to hear about any bugs and issues you come across, so please don’t hesitate to report them &lt;a href="http://bugs.openra.net"&gt;on our bug tracker&lt;/a&gt;, in the OpenRA &lt;a href="/community/"&gt;IRC channel&lt;/a&gt;, or here in the comments.&lt;/p&gt;
+
+&lt;p&gt;At this point we’d like to address a topic already mentioned in the previous news post. In order to get a better understanding of the composition of our user base and the way our software is being used, we decided to add an anonymous, opt-out data gathering facility to OpenRA. When enabled, the game will send us a few technical details about your system.
+There was some controversy over this feature during the first playtest, so we would like to reiterate that this only sends the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An anonymous ID (e.g. “5ba68aa1-1ee8-4d6d-b197-51681347f252”)&lt;/li&gt;
+  &lt;li&gt;Your OS version (e.g. “Windows: Microsoft Windows NT 6.1.7601 Service Pack 1” or “OSX: Unix 14.5.0.0”)&lt;/li&gt;
+  &lt;li&gt;Your .NET runtime version (e.g. “.NET CLR 4.0.30319.42000” or “Mono 4.0.2 ((detached/c99aa0c) CLR 4.0.30319.17020”)&lt;/li&gt;
+  &lt;li&gt;Your GL driver version (e.g. “4.5.0 NVIDIA 352.63” or “3.0 Mesa 10.5.9”)&lt;/li&gt;
+  &lt;li&gt;Your OS language setting (e.g. “en” or “ru”)&lt;/li&gt;
+  &lt;li&gt;The OpenRA version / mod / modversion that you launched&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you are uncomfortable with this, you can disable this functionality by unchecking the “Send System Information” checkbox in the advanced settings dialog, manually editing your &lt;code&gt;settings.yaml&lt;/code&gt; file, or starting the game using the &lt;code&gt;Debug.SendSystemInformation=false&lt;/code&gt; argument.&lt;/p&gt;
+
+&lt;p&gt;The initial results from the first playtest have been promising: the vast majority (approximately 99%) of players are able to run the newer .NET runtime platform that we are hoping to make our minimum requirement in a future version. This means that we will be able to take advantage of new platform features to improve performance, identify bugs, and improve operating system integration without leaving many players behind. We also find that 40% of our players do not use English as their primary language, which suggests that it may be worthwhile for us to focus on translation support in a future OpenRA release. Of course, we realize that our playtesters are a biased sample of our overall player base, so we will wait for results from our next release build before we make any final decisions.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20160424-os-shares.png" alt="Share of operating systems of our users" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;This is the share of operating systems and languages among playtest users.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id="changes-to-map-handling"&gt;Changes to map handling&lt;/h3&gt;
+
+&lt;p&gt;Custom maps are now stored in an additional sub-directory per mod version (e.g. &lt;code&gt;My Documents\OpenRA\maps\ra\playtest-20160403&lt;/code&gt; on Windows).&lt;/p&gt;
+
+&lt;p&gt;To ensure that outdated maps will not cause problems during gameplay, these maps will not be automatically moved when you upgrade the game. You will have to download updated versions from the &lt;a href="http://resource.openra.net"&gt;Resource Center&lt;/a&gt; instead, or upgrade and move them yourself (see below). Note that the maps from the first playtest are compatible with this one (and will very likely also be compatible with the final release), so you can just copy them over, or rename the directory.&lt;/p&gt;
+
+&lt;h3 id="map-format-changes"&gt;Map format changes&lt;/h3&gt;
+
+&lt;p&gt;The current map format (from playtest-20160403 onwards) is version 11.&lt;/p&gt;
+
+&lt;p&gt;In previous versions (up to release-20151224), the game used to automatically update maps with earlier map formats to the latest one supported by that version. As of playtest-20160403, this is no longer the case. To update maps, you have three options:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Use the &lt;code&gt;--upgrade-map&lt;/code&gt; command of the OpenRA.Utility.&lt;/li&gt;
+  &lt;li&gt;Download an updated version of the map from the Resource Center, or&lt;/li&gt;
+  &lt;li&gt;Use the Resource Center to upgrade the map.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20160403-web-resource-center-map-upgrade.png" alt="Upgrading maps in the resource center" /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The new map format brings with it a couple advantages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Minimap preview is embeddeded into the map package as a separate PNG file,&lt;br /&gt;allowing third-party tools and websites immediate access.&lt;/li&gt;
+  &lt;li&gt;YAML rules and Lua scripts can be split into multiple files, which can be shared among multiple maps.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One noteable change that needs explanation is the removal of the &lt;code&gt;Description:&lt;/code&gt;, &lt;code&gt;Options:&lt;/code&gt;, and &lt;code&gt;Videos:&lt;/code&gt; blocks, whose properties have been moved to their corresponding traits. During map upgrades, these translations will happen automatically. Take a look at &lt;a href="https://github.com/OpenRA/OpenRA/blob/playtest-20160403/mods/ra/maps/allies-01"&gt;one of our single-player missions&lt;/a&gt; and the &lt;a href="https://github.com/OpenRA/OpenRA/blob/playtest-20160403/mods/ra/maps/fort-lonestar"&gt;Fort Lonestar map&lt;/a&gt; to see how these work now, or search for the following traits in our &lt;a href="http://wiki.openra.net/Traits%20(Playtest)"&gt;trait documentation&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/OpenRA/OpenRA/wiki/Traits%20%28playtest%29#missiondata"&gt;&lt;code&gt;MissionData&lt;/code&gt;&lt;/a&gt; (Description and videos)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/OpenRA/OpenRA/wiki/Traits%20%28playtest%29#mapoptions"&gt;&lt;code&gt;MapOptions&lt;/code&gt;&lt;/a&gt; (Tech level, difficulties, short game)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/OpenRA/OpenRA/wiki/Traits%20%28playtest%29#shroud"&gt;&lt;code&gt;Shroud&lt;/code&gt;&lt;/a&gt; (Fog, Shroud, Explored Map)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/OpenRA/OpenRA/wiki/Traits%20%28playtest%29#cratespawner"&gt;&lt;code&gt;CrateSpawner&lt;/code&gt;&lt;/a&gt; (Crates)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/OpenRA/OpenRA/wiki/Traits%20%28playtest%29#mapbuildradius"&gt;&lt;code&gt;MapBuildRadius&lt;/code&gt;&lt;/a&gt; (Build off Allies’ Conyards)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/OpenRA/OpenRA/wiki/Traits%20%28playtest%29#playerresources"&gt;&lt;code&gt;PlayerResources&lt;/code&gt;&lt;/a&gt; (Starting cash)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/OpenRA/OpenRA/wiki/Traits%20%28playtest%29#spawnmpunits"&gt;&lt;code&gt;SpawnMPUnits&lt;/code&gt;&lt;/a&gt; (Starting units)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/OpenRA/OpenRA/wiki/Traits%20%28playtest%29#mapcreeps"&gt;&lt;code&gt;MapCreeps&lt;/code&gt;&lt;/a&gt; (Viceroids, Worms)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/OpenRA/OpenRA/wiki/Traits%20%28playtest%29#developermode"&gt;&lt;code&gt;DeveloperMode&lt;/code&gt;&lt;/a&gt; (Cheats)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A more in-depth description of the map format and the various YAML fields is available &lt;a href="http://wiki.openra.net/Map-Format"&gt;on our wiki&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2016-04-03:/news/playtest-20160403/</id>
     <title type="html">Here we go again! New Playtest available!</title>
@@ -257,32 +356,6 @@ building statistics to more closely match the original game.&lt;/p&gt;
 &lt;p&gt;Grab the installer now for your operating system from &lt;a href="/download/"&gt;our download page&lt;/a&gt;!&lt;/p&gt;
 
 &lt;p&gt;We hope you’ll enjoy this newest installment of OpenRA! Have fun!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2015-12-13:/news/playtest-20151213/</id>
-    <title type="html">December Release Candidate 3</title>
-    <published>2015-12-13T19:00:00Z</published>
-    <updated>2015-12-13T19:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/playtest-20151213/"/>
-    <content type="html">&lt;p&gt;We are slowly making progress towards fixing all the crashes and issues our testers (you!) have found, and the final release is imminent. Thanks to everyone who took the time to play the previous playtests and report bugs!&lt;/p&gt;
-
-&lt;p&gt;We have fixed all but one of the remaining issues, so it’s time for another playtest. In particular, it contains the following fixes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A GPS-related crash has been fixed (reported by Zypres and abdcdefg30, thanks to both!).&lt;/li&gt;
-  &lt;li&gt;A crash that occured when producing an actor without any IOccupySpace traits in conjunction with UpgradeActorsNear has been fixed (reported by GraionDilach, thanks!).&lt;/li&gt;
-  &lt;li&gt;Hardware cursors will not be permanently disabled when their creation fails (reported by pi99y, thanks!).&lt;/li&gt;
-  &lt;li&gt;Using both mouse buttons at once when attack-moving will produce the expected results again (first reported by Aaron Lloyd, thanks!).&lt;/li&gt;
-  &lt;li&gt;In addition, rubberband selection will be possible again in Attack-Move mode (reported by ozzyyzzo, thanks!).&lt;/li&gt;
-  &lt;li&gt;A crash that could occur in the Dune 2000 mod when placing concrete outside of the map bounds was fixed (reported by kiores, thanks!).&lt;/li&gt;
-  &lt;li&gt;A minor issue with AI unit behaviour in Red Alert’s Survival02 mission has been addressed (reported by r34ch, thanks!).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The one remaining issue is a performance regression, the cause of which is as of now still eluding us. While it’s hardly noticeable unless you make a direct comparison, it would still be nice to fix that for the upcoming release, however we will probably not delay it indefinitely. So the next release may or may not include that performance regression.&lt;/p&gt;
-
-&lt;p&gt;In the meantime, though, please give this (hopefully last!) playtest a good workout. You can download it, as always, from our &lt;a href="/download/"&gt;download page&lt;/a&gt;. The feature list is quite impressive and makes playing it very worth your time. Take a look at the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/5157ea6cce42eb43071eb759b09432f87e694c75"&gt;changelog page&lt;/a&gt; to see all the details. Also be sure to report any and all problems you find at our &lt;a href="http://bugs.openra.net"&gt;bug tracker&lt;/a&gt; or in our &lt;a href="/community/"&gt;IRC channel&lt;/a&gt;. Thank you very much!&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
