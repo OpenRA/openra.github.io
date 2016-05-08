@@ -2,13 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2016-04-24T10:00:00Z</updated>
+  <updated>2016-05-08T18:00:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2016-05-08:/news/release-20160508/</id>
+    <title type="html">Release 20160508</title>
+    <published>2016-05-08T18:00:00Z</published>
+    <updated>2016-05-08T18:00:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/release-20160508/"/>
+    <content type="html">&lt;p&gt;&lt;img src="/images/news/20160508-newspost-banner.png" alt="OpenRA Release 20160508" style="border-radius:10px" /&gt;&lt;/p&gt;
+
+&lt;p&gt;We are proud to announce a new stable release of OpenRA!&lt;/p&gt;
+
+&lt;p&gt;Development for this release started about six months ago, and in this time 50 developers contributed a total of 1,232 commits that added more than 14,000 lines of code.&lt;/p&gt;
+
+&lt;p&gt;So what has changed?&lt;/p&gt;
+
+&lt;p&gt;A lot of work went into fixing minor bugs and omissions to make the game experience more pleasant:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Nod units in the Tiberian Dawn campaign finally use their original silver coloring.&lt;/li&gt;
+  &lt;li&gt;Starting a game after installing a map no longer causes the player to be kicked from the server.&lt;/li&gt;
+  &lt;li&gt;The lobby color validator will no longer complain as much as it used to.&lt;/li&gt;
+  &lt;li&gt;Walls now reliably stop bullets.&lt;/li&gt;
+  &lt;li&gt;Husks blocking refineries can now be targeted and destroyed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We have also added the much-requested feature to restart missions and skirmish games, but this does not yet extend to multi-player games. Furthermore, the minimap radar will now also make use of team colors if those are enabled. Health bars can be set to only appear when the unit is damaged. Finally, the “Fragile Diplomacy” option has been removed.&lt;/p&gt;
+
+&lt;p&gt;UI-wise, issues with the left-click orders have been fixed. Additionally, it is now possible to zoom using Ctrl/Cmd+Scrollwheel (the spectator view and map editor offer two additional zoom levels). Two new modifier keys allow disabling line-building of walls (hold Shift during placement) and canceling an entire build queue (hold Ctrl when clicking).&lt;/p&gt;
+
+&lt;p&gt;But besides all of that, the biggest changes have been under the hood of OpenRA. We already addressed these topics in the playtest news posts [&lt;a href="http://www.openra.net/news/playtest-20160403/#dedicated-server-changes"&gt;1&lt;/a&gt;] [&lt;a href="http://www.openra.net/news/playtest-20160424/#changes-to-map-handling"&gt;2&lt;/a&gt;], and wiki pages covering them have been updated or written from scratch, but to summarize them again:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;The dedicated server is now a stand-alone executable, and dedicated servers no longer need to synchronize maps with the resource center. See the &lt;a href="http://wiki.openra.net/Dedicated"&gt;dedicated server wiki page&lt;/a&gt; for details.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The map format has been updated, and the way that the game handles map upgrades has been changed. A &lt;a href="http://wiki.openra.net/map-format"&gt;wiki page&lt;/a&gt; has been created to describe the current map format.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In order to allow for packaging mods into single “.oramod” files, it was necessary to introduce a number of changes to the &lt;code&gt;mod.yaml&lt;/code&gt; metadata file. These changes, and the layout of the &lt;code&gt;mod.yaml&lt;/code&gt; file in general, are now documented &lt;a href="http://wiki.openra.net/mod-manifest"&gt;on the wiki&lt;/a&gt; as well.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you are interested, the wiki also has the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/3424a4767409ef53318d7fe6f6cc8bc22d06b992"&gt;full changelog&lt;/a&gt; which lists all of the changes included in this release.&lt;/p&gt;
+
+&lt;p&gt;You can find the installer for your operating system on our &lt;a href="/download/"&gt;download page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We hope you will enjoy this latest installment of OpenRA!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2016-04-24:/news/playtest-20160424/</id>
     <title type="html">Another playtest hot off the presses!</title>
@@ -297,65 +346,6 @@ With the help of the data gathered, we hope to be able to decide &amp;ndash; amo
 &lt;p&gt;As usual, the event will be covered by a number of casters. Channels and streams will be announced once the tournament starts.&lt;/p&gt;
 
 &lt;p&gt;We wish all participants good luck and a lot of fun!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2015-12-24:/news/release-20151224/</id>
-    <title type="html">Release 20151224</title>
-    <published>2015-12-24T12:00:00Z</published>
-    <updated>2015-12-24T12:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/release-20151224/"/>
-    <content type="html">&lt;div style="text-align:center"&gt;
-  &lt;p&gt;The OpenRA development team wishes you a Merry Christmas and a Happy New Year!&lt;/p&gt;
-
-  &lt;iframe src="https://gfycat.com/ifr/PastDelightfulIberianbarbel" frameborder="0" scrolling="no" width="600" height="300" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);"&gt;&lt;/iframe&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;We are proud to announce the Christmas 2015 release of OpenRA!&lt;/p&gt;
-
-&lt;div style="border-radius: 4px; background-color: #272d2c; padding:10px; margin:10px;"&gt;
-&lt;em&gt;
-I've got a present for ya!
-&lt;/em&gt;&lt;br /&gt;&lt;br /&gt;
-&amp;mdash; Commando
-&lt;/div&gt;
-
-&lt;p&gt;40 developer elves have toiled long and hard to fill your stocking with lots of fixes, improvements and long-awaited features.&lt;/p&gt;
-
-&lt;p&gt;In particular, this release introduces the global chat channel that is shared across all mods, which will allow you to meet up with other waiting players and arrange matches without joining servers. Going along with it is a re-design of the ingame server browser as well as the skirmish lobby.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20151031-multiplayer.png" alt="Global chat lobby" /&gt;&lt;/p&gt;
-  &lt;p&gt;
-The channel is available from outside the game as well,&lt;br /&gt;by connecting to irc.openra.net:6667 channel #lobby using your favourite IRC client.
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Also new in this release is a game speed selector, a feature that many people have often and repeatedly asked for over the years, and now it’s finally here, for multiplayer, single-player skirmish and missions!&lt;/p&gt;
-
-&lt;p&gt;In addition, OpenRA now offers an additional way of scrolling the map similar to the way it worked in the original Tiberian Sun and Red Alert 2 (by right-clicking and moving the mouse). To use it, select the “Joystick” scrolling option in the input settings dialog.&lt;/p&gt;
-
-&lt;p&gt;A change we are sure many will rejoice to hear is that units will now start with the “Defend” stance by default. No more losing units that decided to hunt after enemies without your explicit orders!&lt;/p&gt;
-
-&lt;p&gt;Another big focus of this release has been overhauling our Dune 2000 mod.  We have added Thumpers, spice blows, and rebalanced all unit and 
-building statistics to more closely match the original game.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20151031-d2k.png" alt="Dune 2000" /&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The Red Alert mod has received some much-needed balance changes, with a focus on making the country-specific units more interesting and useful. The changes are too numerous to list them all here, have a look at &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/9d09bd438465884fdeb11de66931a65d5fe5d6cc"&gt;the changelog&lt;/a&gt; for all the details. There are also a total of five new missions for the Soviet single-player campaign, which means that it is the first of our campaigns to be 50% complete!&lt;/p&gt;
-
-&lt;p&gt;The Tiberian Dawn mod also includes two new single-player missions, as well as some minor balance changes and several new multi-player maps.&lt;/p&gt;
-
-&lt;p&gt;As usual, we not only have treats for our players, but for modders as well. The map editor has seen further improvements, such as a cash counter and a copy and paste function. There are also new traits for weather and lighting effects, more flexible &lt;code&gt;Missile&lt;/code&gt; and &lt;code&gt;DeployToUpgrade&lt;/code&gt; logic, as well as new additions to the Lua API. As usual, use the OpenRA.Utility to upgrade your mods or maps to this new release. Be warned, however, that there are couple of changes this time around where it unfortunately wasn’t possible to offer an automated upgrade path. Most of these are mentioned in the changelog, the OpenRA.Utility will alert you to the remaining ones when it runs.&lt;/p&gt;
-
-&lt;p&gt;There are a lot more minor changes and bugfixes, so take a look at the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/9d09bd438465884fdeb11de66931a65d5fe5d6cc"&gt;full changelog&lt;/a&gt; if you want to unwrap all of the details.&lt;/p&gt;
-
-&lt;p&gt;Grab the installer now for your operating system from &lt;a href="/download/"&gt;our download page&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;We hope you’ll enjoy this newest installment of OpenRA! Have fun!&lt;/p&gt;
 </content>
   </entry>
 </feed>
