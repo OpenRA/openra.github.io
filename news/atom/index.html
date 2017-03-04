@@ -2,13 +2,87 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2017-01-10T20:00:00Z</updated>
+  <updated>2017-03-04T17:00:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2017-03-04:/news/playtest-20170304/</id>
+    <title type="html">Playtest 20170304</title>
+    <published>2017-03-04T17:00:00Z</published>
+    <updated>2017-03-04T17:00:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/playtest-20170304/"/>
+    <content type="html">&lt;p&gt;OpenRA had a very successful 2016: including two feature-packed releases, a &lt;a href="http://www.sleipnirstuff.com/forum/viewtopic.php?t=19525"&gt;map design contest&lt;/a&gt; that produced many great maps, and two seasons of the &lt;a href="http://www.sleipnirstuff.com/forum/viewtopic.php?f=82&amp;amp;t=19750"&gt;RA Global League&lt;/a&gt; which separated the wheat from the chaff across a grueling 544 battles.  Our online player numbers have nearly doubled since this time last year, and it’s now common to see more than 100 commanders &lt;a href="/players/"&gt;on the battlefield&lt;/a&gt; at peak times each day.&lt;/p&gt;
+
+&lt;p&gt;We aim to continue this trend through 2017, starting with a new playtest available today.  The playtest includes a collection of balance and map changes for our official mods that have been (often vigourously!) discussed and debated on our &lt;a href="http://www.sleipnirstuff.com/forum/viewforum.php?f=80"&gt;community forums&lt;/a&gt; and &lt;a href="https://github.com/OpenRA/OpenRA/issues/"&gt;Github issue tracker&lt;/a&gt;, plus several notable new features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;HiDPI font rendering for players with high resolution displays.&lt;/li&gt;
+  &lt;li&gt;Fixes for several multiplayer bugs that could stall or crash games when a player disconnects.&lt;/li&gt;
+  &lt;li&gt;The Red Alert “shell map” background is now muted.&lt;/li&gt;
+  &lt;li&gt;New behaviour for the Red Alert Gap Generator and Tiberian Dawn Obelisk.&lt;/li&gt;
+  &lt;li&gt;Fixes for asset installation on 32 bit operating systems and from the original RA95 CDs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The Dune 2000 mod in particular has many changes to make it better match the gameplay and graphical polish of the original game, plus 7 new campaign missions.&lt;/p&gt;
+
+&lt;p&gt;Check out &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/94da97fde0b142df1b5009c87e53c4006721ab7e"&gt;the full changelog&lt;/a&gt; for more details, and head over to the &lt;a href="/download/"&gt;download page&lt;/a&gt; to try it for yourself!  Your feedback on these playtests is important, because they are the last chance to catch any serious bugs or undo any controversial balance changes before they are included in an official release.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20170304-gapgen.png" alt="High resolution font rendering" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Red Alert Gap Generators now actively reduce enemy unit sight.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20170304-hidpi.png" alt="High resolution font rendering" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Players with high resolution laptop or 4k displays will appreciate crisper font rendering.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="about-todo-divider"&gt;&lt;/div&gt;
+
+&lt;p&gt;The biggest changes in this playtest are behind the scenes; technical improvements that are not visible to players, but important for our development and modding community:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A new &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Trait-Conditions"&gt;trait conditions&lt;/a&gt; system provides much better control over trait interactions.&lt;/li&gt;
+  &lt;li&gt;Actor vision has been overhauled, adding support for features like the RA active gap generators, D2K actors revealing themselves when attacking, and cliffs blocking vision in heightmap-enabled mods.&lt;/li&gt;
+  &lt;li&gt;Simplified weapon definitions using inherited yaml templates.&lt;/li&gt;
+  &lt;li&gt;Some initial steps towards removing code patterns that are not compatible with save game support.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;OpenRA grew out of the C&amp;amp;C modding community, and one of our major goals is to provide a flexible game engine that the community can use for their own projects.  Unfortunately, this goal has been hurt by OpenRA’s single-engine approach, meaning that every new release would unavoidably break community mods.&lt;/p&gt;
+
+&lt;p&gt;After many discussions, we have developed a new mod support strategy that we will implement over the next two OpenRA releases.  This playtest (and the subsequent final release) starts by adding support for parallel OpenRA installs, and we have started developing a &lt;a href="https://github.com/OpenRA/OpenRAModTemplate"&gt;mod template&lt;/a&gt; that includes instructions and scripts to simplify mod development and packaging.  Mods built using this template will be self contained games that function independently from our official mod installs.&lt;/p&gt;
+
+&lt;p&gt;The in-game multiplayer server list will now list games for &lt;em&gt;all&lt;/em&gt; the mods that a player has installed (even across multiple installations), and will allow players to directly switch to another mod when joining one.  This applies across versions as well as mods, meaning that future OpenRA releases will be able to coexist, and switching between release and playtest servers will be just as easy as switching between RA and TD servers today.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20170304-mpmodswitch.png" alt="New MP server list switcher" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The multiplayer server list is now smarter about multiple OpenRA installations.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The release after next (aiming for mid/late 2017) will complete the mod-support transition by removing the in-game mod chooser and support for manually installed mod packages: all mods (both official and community) will be listed individually with their own names and icons in your Start Menu / Dock / Launcher.  This overlaps with our previously announced plan for a new project logo, and so we are delaying that change to this future release.&lt;/p&gt;
+
+&lt;div class="about-todo-divider"&gt;&lt;/div&gt;
+
+&lt;p&gt;The Tiberian Sun mod has made exciting progress over the last four months, with support being merged for bridges, tunnels, subterranean units, jumpjets, and bouncy grenades.  Improvements to our terrain heightmap logic means that cliffs are finally able to block unit sight and projectiles.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20170304-tibsun.png" alt="Tiberian Sun mod update" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Progress continues on the Tiberian Sun mod.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The end of our “core feature TODO” list for Tiberian Sun is now in sight, but there’s still a fair amount of work to do before we can consider a public release.  We expect to have more updates on this progress later in 2017.&lt;/p&gt;
+
+&lt;div class="about-todo-divider"&gt;&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2017-01-10:/news/2017-01-stats-post/</id>
     <title type="html">OpenRA: A statistic</title>
@@ -267,54 +341,6 @@ TRANSMISSION ENDS.
 &lt;p&gt;You can find installers for all supported operating systems on our &lt;a href="/download/"&gt;download page&lt;/a&gt;. On that topic, OpenRA now requires .NET 4.5 (Windows) / Mono 3.2 or greater (OS X and Linux). Players using Ubuntu 12.04 or other Linux distributions that include Mono 2.10 can upgrade to a supported version by following the instructions on the &lt;a href="http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives"&gt;Mono site&lt;/a&gt;. Windows XP users will need to upgrade to a supported OS.&lt;/p&gt;
 
 &lt;p&gt;We hope you will enjoy this newest installment of OpenRA. Have fun!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2016-09-30:/news/playtest-20161001/</id>
-    <title type="html">Playtest 20161001</title>
-    <published>2016-09-30T20:00:00Z</published>
-    <updated>2016-09-30T20:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/playtest-20161001/"/>
-    <content type="html">&lt;p&gt;We are pleased to release the second playtest of this development cycle! This refines and fixes the many new features that we added in &lt;a href="/news/playtest-20160904/"&gt;playtest-20160904&lt;/a&gt; in preparation for a final release.&lt;/p&gt;
-
-&lt;p&gt;Over 5,000 people have tried out the previous playtest, which is about twice as many as usual. Thanks to everyone one of those people for testing and contributing back! Stable releases would not be possible without you. We now count on you to check out this playtest as rigorously as the first one. With any luck, this might be the last chance to report issues before the stable release, so don’t miss it!&lt;/p&gt;
-
-&lt;p&gt;As usual we have fixed quite a few bugs, many of them very visible and annoying. These include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Servers becoming unusable in various ways (grey ping, kicking players on joining, etc.).&lt;/li&gt;
-  &lt;li&gt;Some hotkeys not working (closing the ingame chat window, navigation hotkeys in the TD mod).&lt;/li&gt;
-  &lt;li&gt;Aircraft reloading behaviour still having problems.&lt;/li&gt;
-  &lt;li&gt;Support power speech notifications missing.&lt;/li&gt;
-  &lt;li&gt;Crashes for various reasons.&lt;/li&gt;
-  &lt;li&gt;Issues in mission scripts.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Additionally, we have tweaked the balance of the RA mod some more. Most notably, spies have received the ability to infiltrate and reveal fake buildings, and Soviet missile submarines now have an AA capability. Be sure to give those a good workout.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20161001-ra-lobby-mission-briefing.png" alt="Mission briefing shown in the lobby chat" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Selecting a multiplayer mission will now show the mission briefing in the lobby chat.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;To see the complete list of fixes and changes, have a look at the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/a102a48028e95521b5bdc313865e02985ba2a108"&gt;complete changelog&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Please be aware of the following two things when taking this playtest out for a spin:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Because we have changed which assets are copied, all players coming from one of the previous &lt;em&gt;stable&lt;/em&gt; releases will need to reinstall (or redownload) the assets for this playtest. These will be used for the future playtests and releases, so only needs to be done once.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Please note that OpenRA now requires .NET 4.5 / Mono 3.2 or greater. Players using Ubuntu 12.04 or other Linux distributions that include Mono 2.10 can upgrade to a supported version by following the instructions on the &lt;a href="http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives"&gt;Mono site&lt;/a&gt;. Windows XP users will need to upgrade to a supported OS.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;As usual, the installers for a variety of operating systems can be found on the &lt;a href="/download"&gt;Download&lt;/a&gt; page. Please remember to report any bugs or issues you encounter on our &lt;a href="http://bugs.openra.net"&gt;GitHub bug tracker&lt;/a&gt;, in &lt;a href="http://webchat.freenode.net/?channels=openra"&gt;our IRC channel&lt;/a&gt;, on the &lt;a href="http://www.sleipnirstuff.com/forum/viewforum.php?f=80"&gt;community forum&lt;/a&gt;, or in the comment section below.&lt;/p&gt;
-
-&lt;p&gt;Thank you very much, and have fun!&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
