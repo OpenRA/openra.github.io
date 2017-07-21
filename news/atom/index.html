@@ -2,13 +2,85 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2017-06-19T19:00:00Z</updated>
+  <updated>2017-07-21T20:00:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2017-07-21:/news/playtest-20170722/</id>
+    <title type="html">Playtest 20170722 out now!</title>
+    <published>2017-07-21T20:00:00Z</published>
+    <updated>2017-07-21T20:00:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/playtest-20170722/"/>
+    <content type="html">&lt;p&gt;We’re pleased to finally announce playtest-20170722, the first release candidate for what will be the biggest OpenRA release in many years.  Core development has focused on three areas, and we have included many other great improvements contributed by our open source community.&lt;/p&gt;
+
+&lt;p&gt;You’ll notice the first major change before you even start the playtest: the “OpenRA” launcher is no more, and has been replaced with individual launchers for Red Alert, Tiberian Dawn, and Dune 2000.  This is part of a major reorganisation of the project structure to improve backwards compatibility and modding support.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20170722-launchers.png" alt="New launchers" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Individual mods are now launched directly from your Desktop / Application Launcher.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The in-game mod chooser has been removed, but it is still possible to switch mods when joining a server from the Multiplayer list.  Even better, if you have multiple versions installed (e.g. Playtest and Release, which now install to different locations on Windows) the server list will show games from &lt;em&gt;all&lt;/em&gt; versions, and will switch to the correct version when you try to connect.&lt;/p&gt;
+
+&lt;p&gt;The second focus area relates to how you control your units on the battlefield.  For many years we have supported features like Attack Move, unit stances and queuing orders using hotkeys, but these have not always been obvious or intuitive to use.  We have added a long-planned command bar interface for these, and made some adjustments and bug fixes to make them better and behave more like the original games.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20170722-ra-commandbar.png" alt="Unit command bar" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;A new bottom command bar is now available for issuing common orders and changing unit stances.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The final focus area fundamentally changes the way that buildings occupy space and receive damage, taking inspiration from the original Dune 2000, which was more advanced than the earlier (and some later!) games.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20170722-td-buildinghitshapes.png" alt="Building hit boxes" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;New building physics improves the way that structures are targeted and take damage.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Some of the smaller but still important new features include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Automatic discovery of LAN games in the Multiplayer browser.&lt;/li&gt;
+  &lt;li&gt;Improvements to the Global Chat UI.&lt;/li&gt;
+  &lt;li&gt;New search and filtering options in the Map editor.&lt;/li&gt;
+  &lt;li&gt;Another 9 campaign missions for D2K, which is now half way complete!&lt;/li&gt;
+  &lt;li&gt;Missing maps can now be installed directly from the Replay browser.&lt;/li&gt;
+  &lt;li&gt;Significant performance and memory improvements when playing music.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please see the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/f4a27f19459d2dd35d4bc08a75a741363f146422"&gt;full changelog&lt;/a&gt; for information on many more improvements that we have not mentioned here.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20170722-d2k-editor.png" alt="New D2K missions" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;It is now possible to search and filter actors and tiles in the map editor.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This playtest includes big changes which may have broken your favourite feature, and which have definitely affected the game balance in all three mods.  This makes it more important than ever to play games on this and future playtests and let us know of any issues via &lt;a href="http://www.sleipnirstuff.com/forum/viewforum.php?f=80"&gt;our forum&lt;/a&gt;, our &lt;a href="https://github.com/OpenRA/OpenRA/issues"&gt;GitHub issue tracker&lt;/a&gt;, or in the comments below.&lt;/p&gt;
+
+&lt;p&gt;Don’t forget, if you’re on Windows or macOS you can have playtest-20170722 and release-20170527 installed at the same time, and switch between the two when joining servers with other players.  So head over to our &lt;a href="/download/"&gt;download page&lt;/a&gt; and give it a try!&lt;/p&gt;
+
+&lt;div class="about-todo-divider"&gt;&lt;/div&gt;
+
+&lt;p&gt;And now for a special note to our modding community:&lt;/p&gt;
+
+&lt;p&gt;As OpenRA modding grew in popularity it became clear that requiring players to manually install mods &lt;em&gt;on top of&lt;/em&gt; our OpenRA releases, with the in-game mod chooser to switch between mods, was more of a burden than a benefit.  We have listened to the feedback from both players and modders, and have spent the last few months working on a comprehensive solution.&lt;/p&gt;
+
+&lt;p&gt;We have done this by decoupling the game engine (OpenRA.Game.exe and support files) from our default mods, and have put &lt;em&gt;the mod&lt;/em&gt; in charge.  Mods now manage their own engine files, which means that they can exist &lt;em&gt;alongside&lt;/em&gt; our official mods with no dependencies between them.&lt;/p&gt;
+
+&lt;p&gt;Our new &lt;a href="https://github.com/OpenRA/OpenRAModSDK"&gt;mod SDK&lt;/a&gt; provides a development environment that simplifies the engine and dependency management, and allows you to generate proper installers for players to install your game.  Games built with the mod SDK will not be affected when the player upgrades or even uninstalls other OpenRA-based games.&lt;/p&gt;
+
+&lt;p&gt;The mod SDK is still a new project, and our documentation is still rough.  We encourage modders who want to port their projects over to the SDK to file issues if you have any problems, or visit our &lt;a href="irc://chat.freenode.net/openra"&gt;development IRC channel&lt;/a&gt; (&lt;a href="http://webchat.freenode.net/?channels=openra"&gt;webchat&lt;/a&gt;) if you have any questions during european-timezone evenings.&lt;/p&gt;
+
+&lt;div class="about-todo-divider"&gt;&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2017-06-19:/news/10th-anniversary/</id>
     <title type="html">10 years of OpenRA!</title>
@@ -241,59 +313,6 @@ If you want to get an impression of how RA:GL matches look, check out FiveAces�
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/T0cSz8cUgpA" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2017-04-01:/news/april-20170401/</id>
-    <title type="html">April 2017 Release Preparations</title>
-    <published>2017-04-01T11:00:00Z</published>
-    <updated>2017-04-01T11:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/april-20170401/"/>
-    <content type="html">&lt;p&gt;The next major OpenRA release is imminent, so you might want to have a look at the upcoming features. If not, just jump directly to the &lt;a href="/download/"&gt;downloads&lt;/a&gt; page and grab the latest playtest installer to help us getting feadback.&lt;/p&gt;
-
-&lt;h2 id="tibbucks"&gt;TibBucks&lt;/h2&gt;
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20170401-user-tib-bucks.png" alt="bucks" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Yes, we finally managed to add the highly demanded pay2win features to OpenRA!&lt;br /&gt;
-Buy TibBucks, our own virtual ingame currency and get your hands on our premium bonus content.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20170401-chrono-speed-up.png" alt="chronoshift icon" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Spend TibBucks to paradrop tank armies anywhere&lt;br /&gt; on the map or use it to speed your constructions up!&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20170401-mammoth-hats.png" alt="mammy_hats" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Customize your units by buying hats for them.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id="new-colorpicker"&gt;New ColorPicker&lt;/h2&gt;
-
-&lt;p&gt;Our color picker has often been criticized for blocking too many colors and not giving much to select from. Fortunately our fellow comrade ‘&lt;a href="http://www.sleipnirstuff.com/forum/viewtopic.php?f=82&amp;amp;p=294293&amp;amp;sid=17a2bc916bb5935e144cfbf0f49adac4#294293"&gt;pulse&lt;/a&gt;’ took a look at it.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20170401-color-picker.png" alt="color_picker" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;The old color picker was just not intuitive enough and has been replaced&lt;br /&gt; by this non-restrictive, user friendly gem.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id="brexit-news-britain-also-leaves-the-allies"&gt;Brexit news: Britain also leaves the Allies&lt;/h2&gt;
-
-&lt;p&gt;No worries! We plan to readd them later as own faction (“RTG”, the “Real Tough Guys”). They’ll be joined by other Commonwealth members/oceanian nations like Australia and Atlantis.&lt;/p&gt;
-
-&lt;p&gt;The United States of America will fill in the empty spot in the Allies’ rows. They got +200% build speed increase on concrete walls and also have access to Kennels and Guard Dogs. Instead of Tanya they’ll get their own hero unit: Donald J. Trump himself! His special abilities are: the best. Just believe us, he has the best and most tremendous abilities.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20170401-new-factions.png" alt="new_factions" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Furthermore, we removed the ability to form teams.&lt;br /&gt;It wasn’t a great feature to begin with.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src="/images/news/20170401-french-bonus.gif" alt="france" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;To compensate for the newly introduced factions,&lt;br /&gt;France will get a +210% faster surrender bonus.&lt;/p&gt;
-&lt;/div&gt;
 </content>
   </entry>
 </feed>
