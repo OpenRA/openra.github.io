@@ -2,13 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2017-09-02T20:00:00Z</updated>
+  <updated>2017-09-24T20:00:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2017-09-24:/news/playtest-20170923/</id>
+    <title type="html">Playtest 20170923 now available for testing</title>
+    <published>2017-09-24T20:00:00Z</published>
+    <updated>2017-09-24T20:00:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/playtest-20170923/"/>
+    <content type="html">&lt;p&gt;With two months and &lt;a href="http://www.openra.net/news/playtest-20170722/"&gt;two&lt;/a&gt; &lt;a href="http://www.openra.net/news/playtest-20170902/"&gt;playtests&lt;/a&gt; behind us, we are now almost ready to push the next OpenRA release!&lt;/p&gt;
+
+&lt;p&gt;We are today releasing one last (planned) playtest with two notable changes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An “Assault Move” modifier has been added to Attack Move to make units always target buildings (overriding their active stance) while attack moving.&lt;/li&gt;
+  &lt;li&gt;Music playback has been reworked to fix the pausing and skipping issues that have been reported by some players on the previous playtests.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;…plus a handful of other minor fixes that are listed in the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/220e5f8c63171bf17cbc9004514340e03d986e7d"&gt;full changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href="https://github.com/OpenRA/OpenRAModSDK/releases/tag/20170923"&gt;Mod SDK&lt;/a&gt; has also been updated to use the new engine version, and to create “portable” windows packages that do not require installation.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20170923-assaultmove.gif" alt="New civilian tech buildings" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Hold &lt;span style="color: #FFD700;"&gt;Ctrl&lt;/span&gt; when issuing an Attack Move order to activate Assault Move.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This playtest will be your last chance to report any bugs or balance issues, so we encourage everybody to play a few games, and let us know of any issues via &lt;a href="http://www.sleipnirstuff.com/forum/viewforum.php?f=80"&gt;our forum&lt;/a&gt;, our &lt;a href="https://github.com/OpenRA/OpenRA/issues"&gt;GitHub issue tracker&lt;/a&gt;, or in the comments below.  As usual, you can find playtest-20170923 on our &lt;a href="http://www.openra.net/download/"&gt;download page&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2017-09-02:/news/playtest-20170902/</id>
     <title type="html">Playtest 20170902 available!</title>
@@ -162,102 +190,6 @@ The changelog for this playtest (as well as the previous one) can be found here:
 &lt;/ul&gt;
 
 &lt;p&gt;So stay tuned and happy playing!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2017-05-23:/news/release-20170527/</id>
-    <title type="html">Release 20170527 hotfix now available</title>
-    <published>2017-05-23T13:00:00Z</published>
-    <updated>2017-05-23T13:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/release-20170527/"/>
-    <content type="html">&lt;div style="border-radius: 4px; background-color: #272d2c; padding: 5px"&gt;
-&lt;div style="margin: -10px 5px"&gt;
-    &lt;p&gt;We are today pushing a new bugfix release that addresses a collection of issues that were missed during the playtesting phase of release-20170421.&lt;/p&gt;
-
-    &lt;p&gt;The main changes in release-20170527 are:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;Disabled HiDPI support on Windows, fixing the graphical glitches this caused on non-HiDPI displays.&lt;/li&gt;
-      &lt;li&gt;Fixed cursor glitches introduced with the new Mono 5.0 runtime.&lt;/li&gt;
-      &lt;li&gt;Fixed graphical glitches with the Fullscreen (Legacy) mode on macOS.&lt;/li&gt;
-      &lt;li&gt;Added a new “Fast” game speed.&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;A collection of smaller fixes are listed in the  &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/798ebb12353ed12ed4569640d773cba7a6f45505"&gt;full changelog&lt;/a&gt;.&lt;/p&gt;
-
-    &lt;p&gt;Head on over to our &lt;a href="/download/"&gt;download page&lt;/a&gt; to grab the new release, and spread the word!&lt;/p&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;The &lt;a href="/news/release-20170421/"&gt;original announcement&lt;/a&gt; for release-20170421 is included below:&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Almost to the day half a year after our last stable release, we are proud to finally present to you our latest work - OpenRA Release 20170421!&lt;/p&gt;
-
-&lt;p&gt;With 43 developers producing just shy of 800 commits and touching almost 1800 files, this has very likely been one of our slowest release cycles ever. As such, the list of user-visible changes is not as long as you’ve come to expect in earlier years. However, behind the scenes, preparations for a fundamental transformation of the OpenRA engine are in the works. But more on that later.&lt;/p&gt;
-
-&lt;p&gt;As usual, this new release brings with it changes to the balance of both the Red Alert and Tiberian Dawn mods, as well as a huge number of new and overhauled multiplayer maps. In addition, it contains the following major fixes and features:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;HiDPI font rendering for players with high resolution displays.&lt;/li&gt;
-  &lt;li&gt;Fixes for several multiplayer bugs that could stall or crash games when a player disconnects.&lt;/li&gt;
-  &lt;li&gt;The Red Alert “shell map” background is now muted.&lt;/li&gt;
-  &lt;li&gt;New behaviour for the Red Alert Gap Generator and Tiberian Dawn Obelisk.&lt;/li&gt;
-  &lt;li&gt;Fixes for asset installation on 32 bit operating systems and from the original RA95 CDs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The Dune 2000 mod in particular has many changes to make it better match the gameplay and graphical polish of the original game, plus seven(!) new campaign missions.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20170421-td-hidpi.gif" alt="HiDPI support" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Comparing regular and high resolution UI rendering in the Tiberian Dawn map browser.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20170421-d2k-new-missions.png" alt="New Dune 2000 missions" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Dune 2000 now comes with 13 campaign missions.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20170421-ra-gapgen.png" alt="New Gap Generator behaviour" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;The re-written shroud-generating behaviour of the gap generator in action.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="about-todo-divider"&gt;&lt;/div&gt;
-
-&lt;p&gt;The biggest changes in this release are behind the scenes; technical improvements that are not visible to players, but important for our development and modding community:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A new &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Trait-Conditions"&gt;trait conditions&lt;/a&gt; system provides much better control over trait interactions.&lt;/li&gt;
-  &lt;li&gt;Actor vision has been overhauled, adding support for features like the RA active gap generators, D2K actors revealing themselves when attacking, and cliffs blocking vision in heightmap-enabled mods.&lt;/li&gt;
-  &lt;li&gt;Simplified weapon definitions using inherited yaml templates.&lt;/li&gt;
-  &lt;li&gt;Some initial steps towards removing code patterns that are not compatible with save game support.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;OpenRA grew out of the C&amp;amp;C modding community, and one of our major goals is to provide a flexible game engine that the community can use for their own projects.  Unfortunately, this goal has been hurt by OpenRA’s single-engine approach, meaning that every new release would unavoidably break community mods.&lt;/p&gt;
-
-&lt;p&gt;After many discussions, we have developed a new mod support strategy that we will implement over the next two OpenRA releases.  This release starts by adding support for parallel OpenRA installs, and we have started developing a &lt;a href="https://github.com/OpenRA/OpenRAModTemplate"&gt;mod template&lt;/a&gt; that includes instructions and scripts to simplify mod development and packaging.  Mods built using this template will be self contained games that function independently from our official mod installs.&lt;/p&gt;
-
-&lt;p&gt;The in-game multiplayer server list will now list games for &lt;em&gt;all&lt;/em&gt; the mods that a player has installed (even across multiple installations), and will allow players to directly switch to another mod when joining one.  This applies across versions as well as mods, meaning that future OpenRA releases will be able to coexist, and switching between release and playtest servers will be just as easy as switching between RA and TD servers today.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20170304-mpmodswitch.png" alt="New MP server list switcher" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;The multiplayer server list is now smarter about multiple OpenRA installations.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The next release (later this year) will complete the mod-support transition by removing the in-game mod chooser and support for manually installed mod packages: all mods (both official and community) will be listed individually with their own names and icons in your Start Menu / Dock / Launcher.&lt;/p&gt;
-
-&lt;p&gt;We hope these measures will give more visibility to third-party mods, and establish OpenRA as a viable and stable real-time strategy platform even for games not connected to the Command &amp;amp; Conquer universe.&lt;/p&gt;
-
-&lt;div class="about-todo-divider"&gt;&lt;/div&gt;
-
-&lt;p&gt;For the complete list of changes please see the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/33cef396555bd767f9126d4775e20324ae05c235"&gt;full changelog&lt;/a&gt;. You can find installers for all our supported operating systems on our &lt;a href="/download/"&gt;download page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We hope you’ll enjoy this newest installment of OpenRA!&lt;/p&gt;
 </content>
   </entry>
 </feed>
