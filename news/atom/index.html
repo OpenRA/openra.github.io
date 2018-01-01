@@ -2,13 +2,90 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2017-12-24T17:00:00Z</updated>
+  <updated>2018-01-01T22:30:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2018-01-01:/news/playtest-20180102/</id>
+    <title type="html">Playtest 20180102 now available</title>
+    <published>2018-01-01T22:30:00Z</published>
+    <updated>2018-01-01T22:30:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/playtest-20180102/"/>
+    <content type="html">&lt;p&gt;We are excited to welcome the new year with a new &lt;a href="/download/"&gt;OpenRA playtest&lt;/a&gt;!
+More than 700 commits from 42 contributors were merged over the last five months, with each commit helping to fix bugs, improve code quality, or add new features that improve the single- and multi-player experience.&lt;/p&gt;
+
+&lt;p&gt;This playtest is a timely opportunity to get community participation, as we celebrate a massive record of games played. At the end of November we passed 500,000 completed multiplayer games since August 2014, when we started recording online server statistics. This is a huge accomplishment for our community, congratulations!&lt;/p&gt;
+
+&lt;p&gt;The main focus of this development cycle was modernizing core parts of the engine and game code to support the work-in-progress Tiberian Sun mod and other community projects. These shouldn’t have visibly changed our released mods, but big changes always have a risk of introducing unexpected bugs or side-effects. Please note that changes to the way hotkeys are managed mean you will need to redefine any custom hotkeys in the Input settings.&lt;/p&gt;
+
+&lt;p&gt;The changes weren’t all behind the scenes; an overhaul of the multiplayer UI added long-requested features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The server browser shows the name/faction/team of connected players&lt;/li&gt;
+  &lt;li&gt;The server browser is now also available as a tab in the server lobby&lt;/li&gt;
+  &lt;li&gt;The main menu and server browser will notify you if a new release is available&lt;/li&gt;
+  &lt;li&gt;The Global Chat has been removed from the server browser and lobby&lt;/li&gt;
+  &lt;li&gt;A chat dialog has been added to the in-game menu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20180102-serverplayers.png" width="600" alt="Server player list" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The new server player list is one of several improvements to the multiplayer UI.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Of course, we realize that the vast majority of OpenRA players do not play online. We haven’t forgotten about you either!
+Improvements for the singleplayer experience include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The full Harkonnen campaign in D2K&lt;/li&gt;
+  &lt;li&gt;Refinements and improvements to several campaign missions in Red Alert and Tiberian Dawn&lt;/li&gt;
+  &lt;li&gt;A fix for the AI cheating when it uses superweapons and support powers&lt;/li&gt;
+  &lt;li&gt;Several other changes that should improve the AI behaviour and performance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20180102-airstrike.png" alt="AI Airstrike" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Improvements to the AI support power targeting mean that this will be a rarer sight.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Other notable changes include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;New lobby options to disable bounty, build radius, and re-packing Construction Yards&lt;/li&gt;
+  &lt;li&gt;Units will no longer target enemies revealed by the Red Alert GPS Satellite&lt;/li&gt;
+  &lt;li&gt;A collection of community-driven balance changes for Red Alert&lt;/li&gt;
+  &lt;li&gt;Fixes for many graphical glitches and polish issues&lt;/li&gt;
+  &lt;li&gt;Fixes for several platform integration issues on Windows and macOS&lt;/li&gt;
+  &lt;li&gt;Further improvements to memory usage and performance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20180102-mapoptions.png" width="600" alt="Expanded game options" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The Map Options tab includes several new settings, and can be customized by scripted maps.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20180102-winmacos.png" width="600" alt="Windows and macOS improvements" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Platform integration fixes include “Pin to taskbar” support on Windows and 64 bit support for macOS.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As always, we suggest you read the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/583535f22b30d8f744d55fe98f23345fed4d3664"&gt;full changelog&lt;/a&gt; if you’d like more information on the full list of changes.
+We make these playtests available to get feedback from the community about the future direction of OpenRA, and we value your feedback.
+Let us know what you think and please report any bugs you discover via &lt;a href="http://www.sleipnirstuff.com/forum/viewforum.php?f=80"&gt;our forum&lt;/a&gt;, our &lt;a href="https://github.com/OpenRA/OpenRA/issues"&gt;GitHub issue tracker&lt;/a&gt;, or in the comments below.&lt;/p&gt;
+
+&lt;p&gt;OpenRA playtest builds do not overwrite the release version if you are on Windows or macOS, and you can switch between the two when joining an online server. So head over to our &lt;a href="/download/"&gt;download page&lt;/a&gt; and give it a try!&lt;/p&gt;
+
+&lt;p&gt;This development cycle brought significant improvements for community mods, but we recommend that modders wait for a future playtest before updating their projects.  We plan to merge a new version of our semi-automated rule upgrader before the final release, which will simplify the process of updating your &lt;a href="https://github.com/OpenRA/OpenRAModSDK"&gt;Mod SDK&lt;/a&gt; based projects to the latest engine version. Stay tuned for more info!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2017-12-24:/news/christmas-2017/</id>
     <title type="html">Christmas 2017</title>
@@ -127,41 +204,6 @@ Back in April we announced the planned &lt;a href="/news/release-20170421/"&gt;m
 &lt;/div&gt;
 
 &lt;p&gt;This playtest will be your last chance to report any bugs or balance issues, so we encourage everybody to play a few games, and let us know of any issues via &lt;a href="http://www.sleipnirstuff.com/forum/viewforum.php?f=80"&gt;our forum&lt;/a&gt;, our &lt;a href="https://github.com/OpenRA/OpenRA/issues"&gt;GitHub issue tracker&lt;/a&gt;, or in the comments below.  As usual, you can find playtest-20170923 on our &lt;a href="http://www.openra.net/download/"&gt;download page&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2017-09-02:/news/playtest-20170902/</id>
-    <title type="html">Playtest 20170902 available!</title>
-    <published>2017-09-02T20:00:00Z</published>
-    <updated>2017-09-02T20:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/playtest-20170902/"/>
-    <content type="html">&lt;p&gt;A month after the previous playtest, we’re pleased to announce the new release candidate, &lt;a href="http://www.openra.net/download/"&gt;playtest-20170902&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In addition to all the new features and improvements &lt;a href="http://www.openra.net/news/playtest-20170722/"&gt;the previous playtest&lt;/a&gt; brought along, in this new playtest we fixed over 40 issues that were identified through feedback from players and modders. Among the more noticable ones were the movement ‘stuttering’ that ground units were showing, air units sporadically returning to base as well as some issues with the new command bar and some other UI hiccups.&lt;/p&gt;
-
-&lt;p&gt;Furthermore, the Red Alert mod in particular received a larger balance overhaul, along with a new map (Agenda). ‘Agenda’ and the updated ‘Great Sahara 2’ now serve as examples of more prominent use of civilian ‘tech’ structures that provide various benefits when captured.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20170902-agenda-civ-tech.png" alt="New civilian tech buildings" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;The new capturable civilian tech structures, displayed on the new map Agenda. Forward Command provides build space, Communications Center reveals terrain.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Tiberian Dawn’s balance received some further polishing as well, making bridges more robust (in particular to light weapons and flames) as well as making Orcas and rocket infantry less effective versus infantry in general.&lt;/p&gt;
-
-&lt;p&gt;A new version of the Mod SDK is &lt;a href="https://github.com/OpenRA/OpenRAModSDK/releases/tag/20170902"&gt;also now available&lt;/a&gt; with a few improvements and bug fixes.  The big new feature is the ability to &lt;a href="https://github.com/OpenRA/OpenRAModSDK/wiki/Generating-Release-Installers"&gt;automatically create installers&lt;/a&gt; for your mod “in the cloud”.  We encourage everyone who is working on mods for the last release to try out the Mod SDK and report back any issues you find or suggestions that you may have, so that we can iron out any remaining issues before the legacy oramod infrastructure is removed.&lt;/p&gt;
-
-&lt;p&gt;The new playtest can be &lt;a href="http://www.openra.net/download/"&gt;downloaded here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Just like with the last playtest, we ask you to give this a try and report any bugs or balance issues you might come across, as this will likely be the last playtest before the next release.
-The changelog for this playtest (as well as the previous one) can be found here: &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/04b8887b703daf31a2512edfe308cf61ee2a4169"&gt;changelog&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;In other news, Red Alert Global League public registration is closed now. There is still several days before the new season kicks off, but we can now firmly state that this is definitely the biggest open OpenRA tournament to date with a whopping 70 players registered! Will General FiveAces be ready to confront the now unbeatable Lorrydriver and grab back the reign as the triple League champion? Stay tuned for league updates and match highlights!&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20170902-ragl-iv-gnrl.jpg" alt="RAGL IV starting soon!" /&gt;&lt;/p&gt;
-&lt;/div&gt;
 </content>
   </entry>
 </feed>
