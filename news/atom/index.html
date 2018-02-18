@@ -2,13 +2,84 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2018-02-07T18:00:00Z</updated>
+  <updated>2018-02-18T20:00:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2018-02-18:/news/release-20180218/</id>
+    <title type="html">Release 20180218 now available</title>
+    <published>2018-02-18T20:00:00Z</published>
+    <updated>2018-02-18T20:00:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/release-20180218/"/>
+    <content type="html">&lt;p&gt;We are excited to announce the first &lt;a href="/download/"&gt;OpenRA release&lt;/a&gt; of this year!
+Over 700 commits from 43 contributors were merged over the last six months, with each commit helping to fix bugs, improve code quality, or add new features that improve the single- and multi-player experience.&lt;/p&gt;
+
+&lt;p&gt;The main focus of this development cycle was modernizing core parts of the engine and game code to support the work-in-progress Tiberian Sun mod and other community projects. Thanks to our contributors, and to everybody who tested the playtest and reported bugs! Please note that changes to the way hotkeys are managed mean you will need to redefine any custom hotkeys in the Input settings.&lt;/p&gt;
+
+&lt;p&gt;The changes weren’t all behind the scenes; an overhaul of the multiplayer UI added long-requested features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The server browser shows the name/faction/team of connected players&lt;/li&gt;
+  &lt;li&gt;The server browser is now also available as a tab in the server lobby&lt;/li&gt;
+  &lt;li&gt;The main menu and server browser will notify you if a new release is available&lt;/li&gt;
+  &lt;li&gt;The Global Chat has been removed from the server browser and lobby&lt;/li&gt;
+  &lt;li&gt;A chat dialog has been added to the in-game menu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20180102-serverplayers.png" width="600" alt="Server player list" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The new server player list is one of several improvements to the multiplayer UI.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Of course, we realize that the vast majority of OpenRA players do not play online. We haven’t forgotten about you either!
+Improvements for the singleplayer experience include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The full Harkonnen campaign in D2K&lt;/li&gt;
+  &lt;li&gt;Refinements and improvements to several campaign missions in Red Alert and Tiberian Dawn&lt;/li&gt;
+  &lt;li&gt;A fix for the AI cheating when it uses superweapons and support powers&lt;/li&gt;
+  &lt;li&gt;Several other changes that should improve the AI behaviour and performance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20180102-airstrike.png" alt="AI Airstrike" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Improvements to the AI support power targeting mean that this will be a rarer sight.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Other notable changes include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;New lobby options to disable bounty, build radius, and re-packing Construction Yards&lt;/li&gt;
+  &lt;li&gt;Units will no longer target enemies revealed by the Red Alert GPS Satellite&lt;/li&gt;
+  &lt;li&gt;A collection of community-driven balance changes for Red Alert and Tiberian Dawn&lt;/li&gt;
+  &lt;li&gt;Fixes for many graphical glitches and polish issues&lt;/li&gt;
+  &lt;li&gt;Fixes for several platform integration issues on Windows and macOS&lt;/li&gt;
+  &lt;li&gt;Further improvements to memory usage and performance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20180102-mapoptions.png" width="600" alt="Expanded game options" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The Map Options tab includes several new settings, and can be customized by scripted maps.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20180102-winmacos.png" width="600" alt="Windows and macOS improvements" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Platform integration fixes include “Pin to taskbar” support on Windows and 64 bit support for macOS.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As always, we suggest you read the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/1277bf3eb2b17e29fe9f2f6fd658c90771d7edbe"&gt;full changelog&lt;/a&gt; if you’d like more information on the full list of changes.&lt;/p&gt;
+
+&lt;p&gt;Now &lt;a href="/download/"&gt;download&lt;/a&gt; and head to the battlefield!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2018-02-07:/news/playtest-20180208/</id>
     <title type="html">Playtest 20180208 available for testing</title>
@@ -179,27 +250,6 @@ Back in April we announced the planned &lt;a href="/news/release-20170421/"&gt;m
 &lt;p&gt;Other improvements for modders include further adoption of trait conditions, improved error checks and logging, and a collection of new and improved game logic for energy walls, tunnels, and subterranean units.&lt;/p&gt;
 
 &lt;p&gt;It has been a long road to this release, and we hope you enjoy it!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2017-09-30:/news/playtest-20170930/</id>
-    <title type="html">Playtest 20170930</title>
-    <published>2017-09-30T18:00:00Z</published>
-    <updated>2017-09-30T18:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/playtest-20170930/"/>
-    <content type="html">&lt;p&gt;Thanks to everybody who reported issues with &lt;a href="http://www.openra.net/news/playtest-20170923/"&gt;playtest-20170923&lt;/a&gt; last week, today we are releasing another playtest with several more fixes. &lt;a href="http://www.openra.net/download/"&gt;Playtest 20170930&lt;/a&gt; includes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fixed in-game map installation on Linux and Windows&lt;/li&gt;
-  &lt;li&gt;Fixed a crash when using Attack Move&lt;/li&gt;
-  &lt;li&gt;Fixed incorrect global chat timestamps when returning to the lobby after a match&lt;/li&gt;
-  &lt;li&gt;Added RA minelayer deployment to the command-bar&lt;/li&gt;
-  &lt;li&gt;Improved attack-move cursor behaviour outside the map&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;See the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/2614e763116f1923d41589d2f5e365983e5c825f"&gt;full changelog&lt;/a&gt; if you are interested in finding more details on these fixes, or head on over to our &lt;a href="http://www.openra.net/download/"&gt;download page&lt;/a&gt; to try it out!&lt;/p&gt;
-
-&lt;p&gt;We believe that we have finally addressed all the major issues with the playtests, so our planned October release should be identical to this playtest. If you know of any remaining bugs that should be fixed before then, report them immediately via &lt;a href="http://www.sleipnirstuff.com/forum/viewforum.php?f=80"&gt;our forum&lt;/a&gt;, our &lt;a href="https://github.com/OpenRA/OpenRA/issues"&gt;GitHub issue tracker&lt;/a&gt;, or in the comments below.&lt;/p&gt;
 </content>
   </entry>
 </feed>
