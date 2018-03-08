@@ -2,13 +2,105 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2018-02-18T20:00:00Z</updated>
+  <updated>2018-03-07T23:00:00Z</updated>
   <link rel="alternate" href="http://www.openra.net/"/>
   <link rel="self" href="http://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>http://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2018-03-07:/news/release-20180307/</id>
+    <title type="html">Release 20180307 now available</title>
+    <published>2018-03-07T23:00:00Z</published>
+    <updated>2018-03-07T23:00:00Z</updated>
+    <link rel="alternate" href="http://www.openra.net/news/release-20180307/"/>
+    <content type="html">&lt;div style="border-radius: 4px; background-color: #272d2c; padding: 5px"&gt;
+&lt;div style="margin: -10px 5px"&gt;
+    &lt;p&gt;We are today pushing a new bugfix release that addresses a collection of issues that were missed during the playtesting phase of release-20180218.&lt;/p&gt;
+
+    &lt;p&gt;The changes in release-20180307 are:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Fixed an issue that could cause excessive debug log file sizes.&lt;/li&gt;
+      &lt;li&gt;Fixed a compatibility issue with mono 5.10 and newer.&lt;/li&gt;
+      &lt;li&gt;Increased the minimum required mono version to 4.2 (fixing the “Failed to query server list” issue).&lt;/li&gt;
+      &lt;li&gt;Fixed Windows build scripts to account for &lt;a href="https://blog.github.com/2018-02-23-weak-cryptographic-standards-removed/"&gt;GitHub API changes&lt;/a&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;Head on over to our &lt;a href="/download/"&gt;download page&lt;/a&gt; to grab the new release, and spread the word!&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The &lt;a href="/news/release-20180218/"&gt;original announcement&lt;/a&gt; for release-20180218 is included below:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;We are excited to announce the first &lt;a href="/download/"&gt;OpenRA release&lt;/a&gt; of this year!
+Over 700 commits from 43 contributors were merged over the last six months, with each commit helping to fix bugs, improve code quality, or add new features that improve the single- and multi-player experience.&lt;/p&gt;
+
+&lt;p&gt;The main focus of this development cycle was modernizing core parts of the engine and game code to support the work-in-progress Tiberian Sun mod and other community projects. Thanks to our contributors, and to everybody who tested the playtest and reported bugs! Please note that changes to the way hotkeys are managed mean you will need to redefine any custom hotkeys in the Input settings.&lt;/p&gt;
+
+&lt;p&gt;The changes weren’t all behind the scenes; an overhaul of the multiplayer UI added long-requested features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The server browser shows the name/faction/team of connected players&lt;/li&gt;
+  &lt;li&gt;The server browser is now also available as a tab in the server lobby&lt;/li&gt;
+  &lt;li&gt;The main menu and server browser will notify you if a new release is available&lt;/li&gt;
+  &lt;li&gt;The Global Chat has been removed from the server browser and lobby&lt;/li&gt;
+  &lt;li&gt;A chat dialog has been added to the in-game menu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20180102-serverplayers.png" width="600" alt="Server player list" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The new server player list is one of several improvements to the multiplayer UI.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Of course, we realize that the vast majority of OpenRA players do not play online. We haven’t forgotten about you either!
+Improvements for the singleplayer experience include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The full Harkonnen campaign in D2K&lt;/li&gt;
+  &lt;li&gt;Refinements and improvements to several campaign missions in Red Alert and Tiberian Dawn&lt;/li&gt;
+  &lt;li&gt;A fix for the AI cheating when it uses superweapons and support powers&lt;/li&gt;
+  &lt;li&gt;Several other changes that should improve the AI behaviour and performance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20180102-airstrike.png" alt="AI Airstrike" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Improvements to the AI support power targeting mean that this will be a rarer sight.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Other notable changes include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;New lobby options to disable bounty, build radius, and re-packing Construction Yards&lt;/li&gt;
+  &lt;li&gt;Units will no longer target enemies revealed by the Red Alert GPS Satellite&lt;/li&gt;
+  &lt;li&gt;A collection of community-driven balance changes for Red Alert and Tiberian Dawn&lt;/li&gt;
+  &lt;li&gt;Fixes for many graphical glitches and polish issues&lt;/li&gt;
+  &lt;li&gt;Fixes for several platform integration issues on Windows and macOS&lt;/li&gt;
+  &lt;li&gt;Further improvements to memory usage and performance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20180102-mapoptions.png" width="600" alt="Expanded game options" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The Map Options tab includes several new settings, and can be customized by scripted maps.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20180102-winmacos.png" width="600" alt="Windows and macOS improvements" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Platform integration fixes include “Pin to taskbar” support on Windows and 64 bit support for macOS.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As always, we suggest you read the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/1277bf3eb2b17e29fe9f2f6fd658c90771d7edbe"&gt;full changelog&lt;/a&gt; if you’d like more information on the full list of changes.&lt;/p&gt;
+
+&lt;p&gt;Now &lt;a href="/download/"&gt;download&lt;/a&gt; and head to the battlefield!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2018-02-18:/news/release-20180218/</id>
     <title type="html">Release 20180218 now available</title>
@@ -196,60 +288,6 @@ Let us know what you think and please report any bugs you discover via &lt;a hre
 
   &lt;p&gt;&lt;img src="/images/news/2017-christmas.gif" width="600" /&gt;&lt;/p&gt;
 &lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2017-10-14:/news/release-20171014/</id>
-    <title type="html">Release 20171014</title>
-    <published>2017-10-14T20:00:00Z</published>
-    <updated>2017-10-14T20:00:00Z</updated>
-    <link rel="alternate" href="http://www.openra.net/news/release-20171014/"/>
-    <content type="html">&lt;p&gt;After three months of public playtesting we are pleased to finally declare “Mission Accomplished” on the new OpenRA release!  Release 20171014 makes some fundamental changes to the way that the OpenRA game engine works, plus a few similarly important gameplay changes to the default mods.&lt;/p&gt;
-
-&lt;p&gt;The first big change will be visible as soon as you go to launch your favourite mod.  The in game mod chooser has been removed, and mods are now launched directly from your operating system.  This is part of a much larger set of changes to the game engine to support multiple OpenRA installations and the new &lt;a href="https://github.com/OpenRA/OpenRAModSDK"&gt;Mod SDK&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20171014-dmg.png" width="600" alt="New launchers" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;The mod chooser screen has been replaced by separate launchers for each mod.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The next big change is the new command bar at the bottom of the screen.  This new UI improves discoverability for several advanced unit commands and served as a focus for several gameplay changes related to unit stances and the Attack Move command – read through the in game button tooltips to find out more!&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20171014-commandbar.png" width="600" alt="Unit command bar" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;A new bottom command bar is now available for issuing common orders and changing unit stances.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The final group of big changes is less obvious, but just as important: the way that buildings are targeted and take damage has been reworked (taking inspiration from the original Dune 2000) to account for the size of the building footprint.  This has a range of balance implications, for example Tanya and Commandos no longer need to run to the center of buildings to demolish them.&lt;/p&gt;
-
-&lt;p&gt;Other great new features in this release include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Automatic discovery of LAN games in the Multiplayer browser.&lt;/li&gt;
-  &lt;li&gt;Nine more campaign missions for D2K, which is now half way complete!&lt;/li&gt;
-  &lt;li&gt;New search and filtering options in the Map editor.&lt;/li&gt;
-  &lt;li&gt;Installing missing maps from the Replay browser.&lt;/li&gt;
-  &lt;li&gt;Improvements to the Global Chat UI.&lt;/li&gt;
-  &lt;li&gt;Significant performance and memory improvements relating to music playback.&lt;/li&gt;
-  &lt;li&gt;Community-driven balance improvements to Red Alert and Tiberian Dawn.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;See the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/a67b1a681084e32579d4ef9e92afbb3207ed441e"&gt;full changelog&lt;/a&gt; for more details, or go directly to our &lt;a href="/download/"&gt;download page&lt;/a&gt; to try them out for yourself.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20170722-td-buildinghitshapes.png" alt="Building hit boxes" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;New building physics improves the way that structures are targeted and take damage.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Supporting the C&amp;amp;C modding community has always been an important goal for OpenRA, and this release takes a big, but disruptive, step forward in this area.
-Back in April we announced the planned &lt;a href="/news/release-20170421/"&gt;mod chooser removal&lt;/a&gt;, and in July we released the first version of the &lt;a href="/news/playtest-20170722/"&gt;OpenRA Mod SDK&lt;/a&gt; that replaces it.  From now on, all mods should be built using the SDK, which makes it easy for you to build your own stand-alone installers that do not rely on a base OpenRA installation.  See the SDK &lt;a href="https://github.com/OpenRA/OpenRAModSDK/wiki/Getting-Started"&gt;getting started&lt;/a&gt; wiki page for more details!&lt;/p&gt;
-
-&lt;p&gt;Other improvements for modders include further adoption of trait conditions, improved error checks and logging, and a collection of new and improved game logic for energy walls, tunnels, and subterranean units.&lt;/p&gt;
-
-&lt;p&gt;It has been a long road to this release, and we hope you enjoy it!&lt;/p&gt;
 </content>
   </entry>
 </feed>
