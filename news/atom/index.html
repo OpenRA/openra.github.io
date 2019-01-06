@@ -2,13 +2,71 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2018-12-15T22:00:00Z</updated>
+  <updated>2019-01-06T12:00:00Z</updated>
   <link rel="alternate" href="https://www.openra.net/"/>
   <link rel="self" href="https://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>https://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2019-01-06:/news/playtest-20190106/</id>
+    <title type="html">Playtest 20190106</title>
+    <published>2019-01-06T12:00:00Z</published>
+    <updated>2019-01-06T12:00:00Z</updated>
+    <link rel="alternate" href="https://www.openra.net/news/playtest-20190106/"/>
+    <content type="html">&lt;p&gt;Better late than never, OpenRA is celebrating the new year with our planned “2018 holiday-season” playtest. &lt;a href="/download/"&gt;Playtest 20190106&lt;/a&gt; brings some big changes to gameplay mechanics, more single-player content, and even more bug fixes and performance improvements.&lt;/p&gt;
+
+&lt;p&gt;The biggest change comes to the unit targeting logic, which has been reworked to better understand the Fog of War. This has fixed a collection of long-standing bugs (especially with artillery-style units), however, due to the subtle nature of these changes, more testing is required to predict the impact on overall gameplay and game balance. We hope that the community can rally behind testing and report any issues so that they can be addressed before the final release.&lt;/p&gt;
+
+&lt;p&gt;The specialised infantry in Red Alert have had a shake-down and a fix-up:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Engineers are now consumed when capturing buildings, after a short external wait&lt;/li&gt;
+  &lt;li&gt;The Hijacker is now the Thief, who can steal cash from refineries in addition to capturing vehicles&lt;/li&gt;
+  &lt;li&gt;Allied Mechanics now repair destroyed team-mate vehicles instead of capturing them&lt;/li&gt;
+  &lt;li&gt;New Attack Dog behaviour resolves many issues and behaves more like the original game&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20190106-dog-attack.gif" width="600" alt="Thieves and Attack Dogs" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Improvements to the Attack Dog and Thief should make them more viable on the battlefield.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Thanks to the hard work of several new contributors, seven new single-player missions have been ported from the original Red Alert, and another two from Tiberian Dawn. Behind the scenes, the underlying AI framework has been rewritten to support the development of some long-planned improvements in future releases.&lt;/p&gt;
+
+&lt;p&gt;Some other notable gameplay changes include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Units in the &lt;em&gt;Return Fire&lt;/em&gt; stance will no longer chase their attackers&lt;/li&gt;
+  &lt;li&gt;Infantry in Pillboxes in Red Alert no longer gain experience&lt;/li&gt;
+  &lt;li&gt;A new Ctrl modifier queues items at the front of the production queue&lt;/li&gt;
+  &lt;li&gt;The spectator UI now includes information on player army values&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20190106-missions-2x.png" width="600" alt="TD Campaign Mission: Nod 10b" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Nine more single-player missions have been adapted from the original games.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This release brings several improvements to the development tools. The map editor has been upgraded with a new actor property editor and improved copy/paste tool, and the tile selection sidebar now supports multi-category selections. The mod rule linter has been made more robust, and can now report errors in audio notifications. The &lt;a href="https://github.com/OpenRA/OpenRAModSDK/releases/tag/20190106"&gt;Mod SDK&lt;/a&gt; has also been updated to work with the new playtest and planned future changes to the &lt;a href="https://resource.openra.net/"&gt;OpenRA Resource Center&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20190106-editor-2x.png" width="600" alt="Map Editor Improvements Profiles" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The map editor now supports editing actor properties such as owner, health, facing, and stance.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;OpenRA is developed by volunteers who freely donate their spare time to build games that everybody can enjoy. Playtest 20190106 contains changes from 34 contributors over the last 5 months, and fixes bugs reported by many others. This post covers only some of the changes, so see the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/8da02c00e84314555e0f2436b3cf1627f262426d"&gt;full changelog&lt;/a&gt; to learn more.&lt;/p&gt;
+
+&lt;p&gt;The playtest releases are our way of crowdsourcing bug reports and feedback so that the next release can be the best it possibly can. This only works if you get involved, play games, and report your feedback. If you do have something to say, please let us know in the comments below, on &lt;a href="https://forum.openra.net/"&gt;our forum&lt;/a&gt;, &lt;a href="https://discord.gg/UcUztfr"&gt;Discord&lt;/a&gt;, or &lt;a href="https://github.com/OpenRA/OpenRA/issues"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Playtest releases do not overwrite the OpenRA release version, and you can automatically switch between the two versions when joining a multiplayer server. Head over to our &lt;a href="/download/"&gt;download page&lt;/a&gt; and give it a try!&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2018-12-16:/news/release-20181215-kknd/</id>
     <title type="html">Release 20181215 and KKnD Public Alpha</title>
@@ -171,38 +229,6 @@ Jim Vessella&lt;br /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;IceReaper, classic RTS enthusiast and lead developer of the KKnD remake, has also started a &lt;a href="https://www.youtube.com/playlist?list=PLfB8AMhujfIsFdjQ2-aFaupkyDUKNjmnP"&gt;video series&lt;/a&gt; that illustrates from first principles how to reverse-engineer the asset formats from an old game (Earth 2140) and build a stand-alone remake using OpenRA. We recommend following this series as it develops if you have some programming experience and would like to learn more about reverse engineering and creating projects using OpenRA.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2018-08-25:/news/playtest-20180825/</id>
-    <title type="html">Playtest 20180825</title>
-    <published>2018-08-25T21:00:00Z</published>
-    <updated>2018-08-25T21:00:00Z</updated>
-    <link rel="alternate" href="https://www.openra.net/news/playtest-20180825/"/>
-    <content type="html">&lt;p&gt;We are today releasing a &lt;a href="/download"&gt;new OpenRA playtest&lt;/a&gt; with fixes for various issues reported in &lt;a href="https://www.openra.net/news/playtest-20180729/"&gt;playtest-20180729&lt;/a&gt;. Thank you to everybody who reported bugs or provided other feedback!&lt;/p&gt;
-
-&lt;p&gt;Notable changes in playtest-20180825 include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Improvements and polish fixes for the player accounts system&lt;/li&gt;
-  &lt;li&gt;Improved asset detection for community-patched versions of “The Ultimate Collection”&lt;/li&gt;
-  &lt;li&gt;Fixed incorrect infantry death screams&lt;/li&gt;
-  &lt;li&gt;Fixed crashes related to text input and bots in the lobby&lt;/li&gt;
-  &lt;li&gt;Fixed the AI harvester control&lt;/li&gt;
-  &lt;li&gt;Fixed units not always returning after being Chronoshifted in RA&lt;/li&gt;
-  &lt;li&gt;Fixed crashes in several campaign missions&lt;/li&gt;
-  &lt;li&gt;Fixed AppImage compatibility with Linux Mint&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20180825-badges.png" width="600" alt="Updated Badge Selection" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;We are now also starting to award special profile badges to players who meet certain criteria.&lt;br /&gt;See &lt;a href="https://forum.openra.net/viewtopic.php?f=82&amp;amp;t=20613"&gt;this forum thread&lt;/a&gt; for more information.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This playtest removes a couple of features that were not ready for prime-time, including the threaded renderer performance optimization on Windows.  We found that this feature mysteriously interferes with the ability to restore minimized windows from the task bar, but don’t understand why! If you are a programmer with experience in multi-threaded OpenGL and SDL on Windows, please get in touch and help us debug this.&lt;/p&gt;
-
-&lt;p&gt;See the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/122c13bd912f00d4e0c75dc6cbb0e0efd4e424d3"&gt;full changelog&lt;/a&gt; for all of the changes in this playtest, and head on over to our &lt;a href="http://www.openra.net/download/"&gt;download page&lt;/a&gt; to try it out!  We hope that this will be the last playtest before the next OpenRA release, so please report any other issues you know of via &lt;a href="https://forum.openra.net"&gt;our forum&lt;/a&gt;, our &lt;a href="https://github.com/OpenRA/OpenRA/issues"&gt;GitHub issue tracker&lt;/a&gt;, or in the comments below.&lt;/p&gt;
 </content>
   </entry>
 </feed>
