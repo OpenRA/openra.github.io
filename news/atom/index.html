@@ -2,13 +2,69 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2019-02-09T20:00:00Z</updated>
+  <updated>2019-03-02T18:00:00Z</updated>
   <link rel="alternate" href="https://www.openra.net/"/>
   <link rel="self" href="https://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>https://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2019-03-02:/news/playtest-20190302/</id>
+    <title type="html">Playtest 20190302</title>
+    <published>2019-03-02T18:00:00Z</published>
+    <updated>2019-03-02T18:00:00Z</updated>
+    <link rel="alternate" href="https://www.openra.net/news/playtest-20190302/"/>
+    <content type="html">&lt;div style="border-radius: 4px; background-color: #272d2c; padding: 5px"&gt;
+&lt;div style="margin: -10px 5px"&gt;
+
+    &lt;p&gt;We are today pushing a new build that addresses a number of issues discovered in playtest-20190209.&lt;/p&gt;
+
+    &lt;p&gt;The changes in &lt;a href="/download/"&gt;playtest-20190302&lt;/a&gt; are:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Fixed target cursor issues with buildings under the fog&lt;/li&gt;
+      &lt;li&gt;Fixed inconsistent “Unit Ready” audio notifications&lt;/li&gt;
+      &lt;li&gt;Fixed harvesters moving to empty resource fields when unloading&lt;/li&gt;
+      &lt;li&gt;Fixed turrets “twitching” when targeting enemies at their maximum range&lt;/li&gt;
+      &lt;li&gt;Fixed a collection of map and mission issues in Red Alert&lt;/li&gt;
+      &lt;li&gt;Implemented community-driven &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/263d8e2b66e6292dfd798cbe369a7cc5befe4c1d#ra-balance-changes-20190302"&gt;balance changes&lt;/a&gt; for Red Alert&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;We expect this to be our final release candidate, which will be repackaged as a new release before the end of March if no further regressions are found.&lt;/p&gt;
+
+    &lt;p&gt;Head on over to our &lt;a href="/download/"&gt;download page&lt;/a&gt; to grab the new playtest, and prepare for battle!&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The &lt;a href="/news/playtest-20190209/"&gt;original announcement&lt;/a&gt; for playtest-20180209 is included below:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A &lt;a href="/download/"&gt;new playtest build&lt;/a&gt; is now available with a collection of fixes and improvements over &lt;a href="/news/playtest-20190106/"&gt;playtest-20190106&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The last playtest made some big changes to how targeting interacts with the Fog of War, which broke a lot more than we expected. Rather than reverting these changes, we decided to go all-in, and replaced even more of the targeting code - a job that we had originally planned for the release after next.&lt;/p&gt;
+
+&lt;p&gt;These new changes should fix not just the regressions in the last playtest, but also several other long-standing gameplay bugs and inconsistencies with the Fog of War, engineers, and aircraft. They also bring two long-requested features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tanks and other turreted units automatically target nearby units while moving&lt;/li&gt;
+  &lt;li&gt;Force-firing with long-range artillery style units targets the ground, allowing attacks to continue when vision is lost under the Fog of War.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We are excited for these new features, which should go a long way towards improving combat fluidness and the ability to micromanage your forces.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20190209-opportunityfire.gif" alt="Tanks targeting while moving" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Tanks now automatically target enemy forces while moving.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The audio notification changes introduced in the last playtest have been refined and expanded by adding click feedback to the sidebar, reducing the volume of the “cash tick” sounds, and normalizing the volume changes between different music tracks. The build is rounded out with fixes for bugs and crashes that were reported in the first playtest — see the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/7b4a50814a012c161e68378f7af533e6c2dfd5f7"&gt;full changelog&lt;/a&gt; and &lt;a href="/news/playtest-20190106/"&gt;playtest-20190106&lt;/a&gt; news post for more detail.&lt;/p&gt;
+
+&lt;p&gt;Head to the &lt;a href="/download/"&gt;download page&lt;/a&gt; to give it a try, and let us know what you think in the comments below, on &lt;a href="https://discord.me/openra"&gt;Discord&lt;/a&gt;, &lt;a href="https://forum.openra.net/"&gt;our forum&lt;/a&gt;, or &lt;a href="https://github.com/OpenRA/OpenRA/issues"&gt;GitHub&lt;/a&gt;!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2019-02-09:/news/playtest-20190209/</id>
     <title type="html">Playtest 20190209 and RAGL Season 7</title>
@@ -181,27 +237,6 @@ Jim Vessella&lt;br /&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2018-10-03:/news/ragls6-registrations/</id>
-    <title type="html">Red Alert Global League Season 6 Registrations</title>
-    <published>2018-10-03T18:00:00Z</published>
-    <updated>2018-10-03T18:00:00Z</updated>
-    <link rel="alternate" href="https://www.openra.net/news/ragls6-registrations/"/>
-    <content type="html">&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20181003-ragl-vi.png" alt="Red Alert Global League Season 6" /&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Attention, players!&lt;/p&gt;
-
-&lt;p&gt;Season 6 of the Red Alert Global League is starting soon, with registrations closing on October 10th. The tournament itself is to be held from October 15th till December 23rd, ending with a Masters Finals to decide the next League champion.&lt;/p&gt;
-
-&lt;p&gt;New to this season is the streamlining of the tier system, with Masters and Minions divisions set to be potentially increased (up to 16 players per group) and Recruits division removed in favour of a pre-season qualification stage that will be used to rank league newcomers and fill vacant Minions division slots. Also, the main stage is getting packed with action now, as league rounds are double-stacked per week, and each player is to play two best-of-2 matches in his division each week.&lt;/p&gt;
-
-&lt;p&gt;The major part of the tournament prize pool will again be split between players finishing in top 4 in Masters division and the winner of Minions division, but now every other participant who finishes the season proper is selected for a random draw of 3 minor prizes as well.&lt;/p&gt;
-
-&lt;p&gt;Check the full rulebook at the forums &lt;a href="https://forum.openra.net/viewtopic.php?f=85&amp;amp;t=20627"&gt;here&lt;/a&gt;; as always, there is a &lt;a href="https://forum.openra.net/viewtopic.php?f=85&amp;amp;t=20628"&gt;dedicated thread&lt;/a&gt; for league registrations and confirmations information.&lt;/p&gt;
 </content>
   </entry>
 </feed>
