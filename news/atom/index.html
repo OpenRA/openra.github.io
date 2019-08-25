@@ -2,13 +2,85 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2019-06-06T04:00:00Z</updated>
+  <updated>2019-08-25T12:00:00Z</updated>
   <link rel="alternate" href="https://www.openra.net/"/>
   <link rel="self" href="https://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>https://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2019-08-25:/news/playtest-20190825/</id>
+    <title type="html">Playtest 20190825</title>
+    <published>2019-08-25T12:00:00Z</published>
+    <updated>2019-08-25T12:00:00Z</updated>
+    <link rel="alternate" href="https://www.openra.net/news/playtest-20190825/"/>
+    <content type="html">&lt;p&gt;We are thrilled and relieved to finally announce the first public playtest for OpenRA’s second 2019 release. This playtest brings significant technical changes, so we felt it important to delay the “summer” release until we could be confident that the worst bugs and gameplay regressions had been fixed. With some help from our &lt;a href="https://forum.openra.net"&gt;Forum&lt;/a&gt; and &lt;a href="https://discord.openra.net"&gt;Discord&lt;/a&gt; community, we are now ready to release &lt;a href="/download/"&gt;playtest-20190825&lt;/a&gt; for wider testing and feedback.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href="/news/preview-20190606/"&gt;Summer Release Preview&lt;/a&gt; article outlined several of the new UI features, including &lt;span style="color: #d92c2c"&gt;savegame support&lt;/span&gt;, a new &lt;span style="color: #d92c2c"&gt;spectator UI&lt;/span&gt;, and a long planned &lt;span style="color: #d92c2c"&gt;Tiberian Dawn interface overhaul&lt;/span&gt;. This playtest adds a much improved &lt;span style="color: #d92c2c"&gt;hotkey configuration UI&lt;/span&gt; and many smaller UI fixes and polish improvements.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20190606-td-sidebar.gif" alt="The new Tiberian Dawn sidebar." width="600px" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The Tiberian Dawn in-game interface has received a long-awaited redesign.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20190606-savegame-d2k.png" alt="The savegame load screen in D2k." width="600px" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Missions and skirmish games can be saved and restarted later.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;On the gameplay front, the main focus for this release was to rewrite the logic that controls how units behave and respond to orders. This was a major task that spanned several months, more than 90 Pull Requests, and more than one debate about bug vs “accidental feature”.&lt;/p&gt;
+
+&lt;p&gt;Many of the changes will not be immediately obvious, but on closer inspection you should find that many long-standing quirks and annoyances in unit behaviour no longer occur.&lt;/p&gt;
+
+&lt;p&gt;The ability to queue commands using the Shift key has always been an important part of OpenRA’s gameplay, and this has received a major overhaul with this release. Part of the overhaul has moved the familiar targeting lines that display when you command units into the “Waypoint Mode” (Shift) overlay by default. The previous behaviour can be restored through the Settings menu (Target Lines: Automatic) if you prefer.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20190825-waypoint.png" alt="Waypoint mode." width="600px" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;The improved waypoint mode allows you to plan your attack strategies.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Other noteable changes to watch out for include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Force Move (Alt) can be used to undeploy Construction Yards and land helicopters&lt;/li&gt;
+  &lt;li&gt;Aircraft respond to Scatter orders from the Command Bar (Ctrl + X)&lt;/li&gt;
+  &lt;li&gt;Significantly improved behaviour for harvesters, aircraft, attack-move, and unit repair&lt;/li&gt;
+  &lt;li&gt;Aircraft-based support powers can be given an attack direction&lt;/li&gt;
+  &lt;li&gt;The controversial Allied Hind helicopter in RA has been replaced with the Black Hawk&lt;/li&gt;
+  &lt;li&gt;Two new-to-OpenRA missions from the RA Counterstrike expansion&lt;/li&gt;
+  &lt;li&gt;The D2k Death Hand missile now works like the original game&lt;/li&gt;
+  &lt;li&gt;A collection of &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/4e8c55f0a17caee09f0833a3fbf9fc0861b982f6#ra-balance-changes"&gt;Red Alert&lt;/a&gt; and &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/4e8c55f0a17caee09f0833a3fbf9fc0861b982f6#td-balance-changes"&gt;Tiberian Dawn&lt;/a&gt; balance changes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As always, the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/4e8c55f0a17caee09f0833a3fbf9fc0861b982f6"&gt;full changelog&lt;/a&gt; is available with more information on the changes and fixes.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20190606-directional-powers.gif" alt="Directional powers." width="600px" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Aircraft-based support powers can be given a direction by dragging the mouse while targeting.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As a .NET application, OpenRA relies on the Mono runtime for our Linux and macOS players. Unfortunately, the Mono packages provided by some major LTS distros are several years out of date and incompatible with the modern .NET standard. Worse, the new Debian Buster and Ubuntu 19.04 releases shipped with a serious Mono bug that causes unavoidable crashes OpenRA and other .NET applications.&lt;/p&gt;
+
+&lt;p&gt;Our solution for these issues is to package the parts of Mono that OpenRA requires inside the AppImage and macOS app releases. This means that you can finally play OpenRA without having to install any system-level dependencies. For players or packagers who prefer to compile OpenRA from source, Mono 5.4 or later and msbuild are now required.&lt;/p&gt;
+
+&lt;p&gt;Updating our base requirements has allowed several further improvements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Windows releases are now 64 bit by default (32 bit releases remain available)&lt;/li&gt;
+  &lt;li&gt;A fix for the macOS black-screen startup freeze after Mono or macOS upgrades&lt;/li&gt;
+  &lt;li&gt;Future support for the .NET Core runtime (this work is still in progress)&lt;/li&gt;
+  &lt;li&gt;Improved development tooling and IDE support for OpenRA and the &lt;a href="https://github.com/OpenRA/OpenRAModSDK"&gt;Mod SDK&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Playtest releases do not overwrite the OpenRA release version, and you can automatically switch between the two versions when joining a multiplayer server. Head over to our &lt;a href="/download/"&gt;download page&lt;/a&gt; and give it a try! This is your time to get involved, play games, and let us know what you think! If you discover a bug or have any other feedback, please let us know in the comments below, on &lt;a href="https://forum.openra.net"&gt;our forum&lt;/a&gt;, &lt;a href="https://discord.openra.net"&gt;Discord&lt;/a&gt;, or &lt;a href="https://github.com/OpenRA/OpenRA/issues"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2019-06-06:/news/preview-20190606/</id>
     <title type="html">Upcoming features for the summer release</title>
@@ -252,64 +324,6 @@
 &lt;p&gt;The tournament will build up on the structure changes made in the previous season, but coming engine modifications and improvements are sure to stir things up among the competition. We are also to see whether Barf will be able to break the RAGL tradition and become the first triple champion or this continues further with a new player crowned at the end. As usual, there will be an aim to achieve at any tier, with several spots providing monetary prizes from a publicly collected prize pool.&lt;/p&gt;
 
 &lt;p&gt;Visit our &lt;a href="https://forum.openra.net/viewtopic.php?f=85&amp;amp;t=20869"&gt;forum&lt;/a&gt; to read all about the tournament and join our &lt;a href="https://discord.openra.net"&gt;Discord server&lt;/a&gt; to stay informed on all the day-to-day activities in the community, as well as to discuss games, provide feedback and share your ideas on the project.&lt;/p&gt;
-
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2019-01-06:/news/playtest-20190106/</id>
-    <title type="html">Playtest 20190106</title>
-    <published>2019-01-06T12:00:00Z</published>
-    <updated>2019-01-06T12:00:00Z</updated>
-    <link rel="alternate" href="https://www.openra.net/news/playtest-20190106/"/>
-    <content type="html">&lt;p&gt;Better late than never, OpenRA is celebrating the new year with our planned “2018 holiday-season” playtest. &lt;a href="/download/"&gt;Playtest 20190106&lt;/a&gt; brings some big changes to gameplay mechanics, more single-player content, and even more bug fixes and performance improvements.&lt;/p&gt;
-
-&lt;p&gt;The biggest change comes to the unit targeting logic, which has been reworked to better understand the Fog of War. This has fixed a collection of long-standing bugs (especially with artillery-style units), however, due to the subtle nature of these changes, more testing is required to predict the impact on overall gameplay and game balance. We hope that the community can rally behind testing and report any issues so that they can be addressed before the final release.&lt;/p&gt;
-
-&lt;p&gt;The specialised infantry in Red Alert have had a shake-down and a fix-up:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Engineers are now consumed when capturing buildings, after a short external wait&lt;/li&gt;
-  &lt;li&gt;The Hijacker is now the Thief, who can steal cash from refineries in addition to capturing vehicles&lt;/li&gt;
-  &lt;li&gt;Allied Mechanics now repair destroyed team-mate vehicles instead of capturing them&lt;/li&gt;
-  &lt;li&gt;New Attack Dog behaviour resolves many issues and behaves more like the original game&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20190106-dog-attack.gif" width="600" alt="Thieves and Attack Dogs" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Improvements to the Attack Dog and Thief should make them more viable on the battlefield.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Thanks to the hard work of several new contributors, seven new single-player missions have been ported from the original Red Alert, and another two from Tiberian Dawn. Behind the scenes, the underlying AI framework has been rewritten to support the development of some long-planned improvements in future releases.&lt;/p&gt;
-
-&lt;p&gt;Some other notable gameplay changes include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Units in the &lt;em&gt;Return Fire&lt;/em&gt; stance will no longer chase their attackers&lt;/li&gt;
-  &lt;li&gt;Infantry in Pillboxes in Red Alert no longer gain experience&lt;/li&gt;
-  &lt;li&gt;A new Ctrl modifier queues items at the front of the production queue&lt;/li&gt;
-  &lt;li&gt;The spectator UI now includes information on player army values&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20190106-missions-2x.png" width="600" alt="TD Campaign Mission: Nod 10b" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Nine more single-player missions have been adapted from the original games.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This release brings several improvements to the development tools. The map editor has been upgraded with a new actor property editor and improved copy/paste tool, and the tile selection sidebar now supports multi-category selections. The mod rule linter has been made more robust, and can now report errors in audio notifications. The &lt;a href="https://github.com/OpenRA/OpenRAModSDK/releases/tag/20190106"&gt;Mod SDK&lt;/a&gt; has also been updated to work with the new playtest and planned future changes to the &lt;a href="https://resource.openra.net/"&gt;OpenRA Resource Center&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20190106-editor-2x.png" width="600" alt="Map Editor Improvements Profiles" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;The map editor now supports editing actor properties such as owner, health, facing, and stance.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;OpenRA is developed by volunteers who freely donate their spare time to build games that everybody can enjoy. Playtest 20190106 contains changes from 34 contributors over the last 5 months, and fixes bugs reported by many others. This post covers only some of the changes, so see the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/8da02c00e84314555e0f2436b3cf1627f262426d"&gt;full changelog&lt;/a&gt; to learn more.&lt;/p&gt;
-
-&lt;p&gt;The playtest releases are our way of crowdsourcing bug reports and feedback so that the next release can be the best it possibly can. This only works if you get involved, play games, and report your feedback. If you do have something to say, please let us know in the comments below, on &lt;a href="https://forum.openra.net/"&gt;our forum&lt;/a&gt;, &lt;a href="https://discord.gg/UcUztfr"&gt;Discord&lt;/a&gt;, or &lt;a href="https://github.com/OpenRA/OpenRA/issues"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Playtest releases do not overwrite the OpenRA release version, and you can automatically switch between the two versions when joining a multiplayer server. Head over to our &lt;a href="/download/"&gt;download page&lt;/a&gt; and give it a try!&lt;/p&gt;
 
 </content>
   </entry>
