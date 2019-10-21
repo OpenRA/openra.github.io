@@ -2,13 +2,68 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2019-08-25T12:00:00Z</updated>
+  <updated>2019-10-21T21:00:00Z</updated>
   <link rel="alternate" href="https://www.openra.net/"/>
   <link rel="self" href="https://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>https://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2019-10-21:/news/playtest-20191021/</id>
+    <title type="html">Playtest 20191021 and other updates</title>
+    <published>2019-10-21T21:00:00Z</published>
+    <updated>2019-10-21T21:00:00Z</updated>
+    <link rel="alternate" href="https://www.openra.net/news/playtest-20191021/"/>
+    <content type="html">&lt;p&gt;A new playtest is now available for OpenRA’s increasingly poorly named “Summer 2019” release. Thanks to everybody who tested the last playtest, this build should address all the issues and feedback that have been reported so far.&lt;/p&gt;
+
+&lt;p&gt;The key changes in playtest-20191021 from the previous &lt;a href="/news/playtest-20190825"&gt;playtest-20190825&lt;/a&gt; include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fixes for several issues with game loading/saving&lt;/li&gt;
+  &lt;li&gt;Fixes for several crashes and a desync issue&lt;/li&gt;
+  &lt;li&gt;Fixes for several glitches related to unit movement&lt;/li&gt;
+  &lt;li&gt;Fixes for several mission related issues in Red Alert and Tiberian Dawn&lt;/li&gt;
+  &lt;li&gt;Fixes for several compatibility issues with Linux and FreeBSD&lt;/li&gt;
+  &lt;li&gt;Refinements to the new spectator UI&lt;/li&gt;
+  &lt;li&gt;Further Red Alert balance adjustments&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We hope this will be the last playtest build, and if no further issues are found we expect a new release version in a few weeks time.
+Head on over to our &lt;a href="/download/"&gt;download page&lt;/a&gt;, try it out, and let us know if you find any issues or have any other feedback before it is too late!
+As always, the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/e9727bc4e669cdbd5d5b3bfa1e26946d2c4708c7"&gt;full changelog&lt;/a&gt; is available on GitHub if you would like to find out more.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Season 8 of the Red Alert Global League is well underway. Resident RAGL wrangler netnazgul has been posting weekly wrap-up reports on the forum (&lt;a href="https://forum.openra.net/viewtopic.php?f=85&amp;amp;t=21029"&gt;Week 1&lt;/a&gt;, &lt;a href="https://forum.openra.net/viewtopic.php?f=85&amp;amp;t=21031"&gt;Week 2&lt;/a&gt;), covering the highlights and providing links to stream VODs for everybody who would like to keep up with the action.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20191021-ragl.gif" alt="Explosive RAGL action" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;RAGL Season 8 has been packed with explosive action.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;We have been relatively quiet about OpenRA’s Tiberian Sun mod lately, but this does not mean it has been abandoned. Development has been focused mainly on resolving low-level game engine issues, which has been slow due to the complexity of the work involved and relative lack of manpower.&lt;/p&gt;
+
+&lt;p&gt;Examples of this work can be seen in &lt;a href="/news/release-20180923/"&gt;release-20180923&lt;/a&gt; which included renderer changes that roughly doubled TS’s in-game performance, in &lt;a href="news/release-20190314"&gt;release-20190314&lt;/a&gt; which fixed a collection of game-breaking bugs with Nod’s cloak generator technology, and in the upcoming release which significantly improves deployable units and aircraft.&lt;/p&gt;
+
+&lt;p&gt;Deployable units were a big part of Tiberian Sun, with several combat units, support units, and even production facilities (in the Firestorm expansion) all having the ability to switch between mobile and stationary modes. OpenRA’s unit-deploy code was originally written for the classic Construction Yards, and was poorly suited for the more dynamic gameplay cases used in Tiberian Sun.&lt;/p&gt;
+
+&lt;p&gt;This code has been overhauled to add missing features and additional quality of life improvements. Deploy commands can now be queued between other orders (great for managing transports!), and deployed units can be ordered to undeploy and move to another location (including into a transport, or onto a service depot) as a single action. The risk of accidentally packing your Construction Yard with a misclick has been reduced by requiring the force-move hotkey to be held while issuing these orders.&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+  &lt;p&gt;&lt;img src="/images/news/20191021-tibsun.png" alt="Tiberian Sun update" /&gt;&lt;/p&gt;
+
+  &lt;p&gt;Aircraft and deployable units work much better in the under-development Tiberian Sun mod.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The code defining aircraft and helicopter movement has also been rewritten, implementing many of the flight dynamics needed for Banshees, Orcas, and Carryalls. The Carryall’s transport behavior has also been refined, with unit pick-up behaving much like the original game, but unit unloading now requiring an explicit order like other transports. This makes it possible to queue multiple transport runs, or to land the Carryall without releasing its cargo. Carryalls can now also be ordered to pick up deployed units, which will undeploy for pickup once the Carryall arrives.&lt;/p&gt;
+
+&lt;p&gt;We are slowly working through our list of must-have features for a public release, but there are still many more to go. We still cannot predict a release date, but the Tiberian Sun mod is developed in the open on &lt;a href="https://github.com/OpenRA/OpenRA"&gt;GitHub&lt;/a&gt; (like everything else in OpenRA) so everybody is welcome to follow the progress and participate in this work.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2019-08-25:/news/playtest-20190825/</id>
     <title type="html">Playtest 20190825</title>
@@ -281,50 +336,6 @@
 &lt;p&gt;The audio notification changes introduced in the last playtest have been refined and expanded by adding click feedback to the sidebar, reducing the volume of the “cash tick” sounds, and normalizing the volume changes between different music tracks. The build is rounded out with fixes for bugs and crashes that were reported in the first playtest — see the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/7b4a50814a012c161e68378f7af533e6c2dfd5f7"&gt;full changelog&lt;/a&gt; and &lt;a href="/news/playtest-20190106/"&gt;playtest-20190106&lt;/a&gt; news post for more detail.&lt;/p&gt;
 
 &lt;p&gt;Head to the &lt;a href="/download/"&gt;download page&lt;/a&gt; to give it a try, and let us know what you think in the comments below, on &lt;a href="https://discord.openra.net"&gt;Discord&lt;/a&gt;, &lt;a href="https://forum.openra.net/"&gt;our forum&lt;/a&gt;, or &lt;a href="https://github.com/OpenRA/OpenRA/issues"&gt;GitHub&lt;/a&gt;!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2019-02-09:/news/playtest-20190209/</id>
-    <title type="html">Playtest 20190209 and RAGL Season 7</title>
-    <published>2019-02-09T20:00:00Z</published>
-    <updated>2019-02-09T20:00:00Z</updated>
-    <link rel="alternate" href="https://www.openra.net/news/playtest-20190209/"/>
-    <content type="html">
-&lt;p&gt;A &lt;a href="/download/"&gt;new playtest build&lt;/a&gt; is now available with a collection of fixes and improvements over &lt;a href="/news/playtest-20190106/"&gt;playtest-20190106&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The last playtest made some big changes to how targeting interacts with the Fog of War, which broke a lot more than we expected. Rather than reverting these changes, we decided to go all-in, and replaced even more of the targeting code - a job that we had originally planned for the release after next.&lt;/p&gt;
-
-&lt;p&gt;These new changes should fix not just the regressions in the last playtest, but also several other long-standing gameplay bugs and inconsistencies with the Fog of War, engineers, and aircraft. They also bring two long-requested features:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Tanks and other turreted units automatically target nearby units while moving&lt;/li&gt;
-  &lt;li&gt;Force-firing with long-range artillery style units targets the ground, allowing attacks to continue when vision is lost under the Fog of War.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;We are excited for these new features, which should go a long way towards improving combat fluidness and the ability to micromanage your forces.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20190209-opportunityfire.gif" alt="Tanks targeting while moving" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Tanks now automatically target enemy forces while moving.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The audio notification changes introduced in the last playtest have been refined and expanded by adding click feedback to the sidebar, reducing the volume of the “cash tick” sounds, and normalizing the volume changes between different music tracks. The build is rounded out with fixes for bugs and crashes that were reported in the first playtest — see the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/7b4a50814a012c161e68378f7af533e6c2dfd5f7"&gt;full changelog&lt;/a&gt; and &lt;a href="/news/playtest-20190106/"&gt;playtest-20190106&lt;/a&gt; news post for more detail.&lt;/p&gt;
-
-&lt;p&gt;Head to the &lt;a href="/download/"&gt;download page&lt;/a&gt; to give it a try, and let us know what you think in the comments below, on &lt;a href="https://discord.openra.net"&gt;Discord&lt;/a&gt;, &lt;a href="https://forum.openra.net/"&gt;our forum&lt;/a&gt;, or &lt;a href="https://github.com/OpenRA/OpenRA/issues"&gt;GitHub&lt;/a&gt;!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20190209-ragl-banner.png" alt="Red Alert Global League Season 6" /&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;We are also back into competitive scene, with Red Alert Global League running its seventh season in March and April. New signups are possible until February 27th; check &lt;a href="https://forum.openra.net/viewtopic.php?f=85&amp;amp;t=20868"&gt;the registrations thread&lt;/a&gt; for the relevant information on how you can participate.&lt;/p&gt;
-
-&lt;p&gt;The tournament will build up on the structure changes made in the previous season, but coming engine modifications and improvements are sure to stir things up among the competition. We are also to see whether Barf will be able to break the RAGL tradition and become the first triple champion or this continues further with a new player crowned at the end. As usual, there will be an aim to achieve at any tier, with several spots providing monetary prizes from a publicly collected prize pool.&lt;/p&gt;
-
-&lt;p&gt;Visit our &lt;a href="https://forum.openra.net/viewtopic.php?f=85&amp;amp;t=20869"&gt;forum&lt;/a&gt; to read all about the tournament and join our &lt;a href="https://discord.openra.net"&gt;Discord server&lt;/a&gt; to stay informed on all the day-to-day activities in the community, as well as to discuss games, provide feedback and share your ideas on the project.&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
