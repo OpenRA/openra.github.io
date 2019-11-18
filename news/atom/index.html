@@ -2,13 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://www.openra.net/</id>
   <title>OpenRA - News Feed</title>
-  <updated>2019-11-02T19:00:00Z</updated>
+  <updated>2019-11-17T22:00:00Z</updated>
   <link rel="alternate" href="https://www.openra.net/"/>
   <link rel="self" href="https://www.openra.net/news/atom/"/>
   <author>
     <name>OpenRA developers</name>
     <uri>https://www.openra.net</uri>
   </author>
+  <entry>
+    <id>tag:www.openra.net,2019-11-17:/news/release-20191117/</id>
+    <title type="html">Release 20191117</title>
+    <published>2019-11-17T22:00:00Z</published>
+    <updated>2019-11-17T22:00:00Z</updated>
+    <link rel="alternate" href="https://www.openra.net/news/release-20191117/"/>
+    <content type="html">&lt;p&gt;Just in time for the holiday season, OpenRA release-20191117 is now available with all of the features and fixes that have been tested and refined in the playtest builds over the past few months.&lt;/p&gt;
+
+&lt;p&gt;Big new features like save-game support, new UI for Tiberian Dawn and spectators, and completely overhauled unit behaviours make this one of our most exciting releases to date!&lt;/p&gt;
+
+&lt;p&gt;For more details, we hand over to FiveAces who has put togther a comprehensive video introduction:&lt;/p&gt;
+
+&lt;div style="text-align:center"&gt;
+
+  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x6uXAiTHAhI" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;If you don’t like videos, the main changes have been outlined in previous news posts [&lt;a href="http://www.openra.net/news/preview-20190606/"&gt;one&lt;/a&gt;, &lt;a href="http://www.openra.net/news/playtest-20190825/"&gt;two&lt;/a&gt;, &lt;a href="http://www.openra.net/news/playtest-20191021/"&gt;three&lt;/a&gt;], and, as always, in the  &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/501a7ebe7d9bc8e02161db135272fc49439e17e6"&gt;full changelog&lt;/a&gt;. A new &lt;a href="https://github.com/OpenRA/OpenRAModSDK/releases/tag/20191117"&gt;Mod SDK&lt;/a&gt; release is also available for the modding community to take advantage of the new release.&lt;/p&gt;
+
+&lt;p&gt;Grab the installer now for your operating system from &lt;a href="/download/"&gt;our download page&lt;/a&gt;! It has been a long road to this release, and we hope you enjoy it!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.openra.net,2019-11-02:/news/playtest-20191102/</id>
     <title type="html">Playtest 20191102</title>
@@ -293,74 +316,6 @@ As always, the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/e9727
 
 &lt;p&gt;You can take a peek at our &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog-(bleed)/5ad4377a7ba21abc017d6c0367750d0ea279d4b0"&gt;development changelog&lt;/a&gt; if you are interested in the entire list of upcoming changes.&lt;/p&gt;
 
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.openra.net,2019-03-14:/news/release-20190314/</id>
-    <title type="html">Release 20190314</title>
-    <published>2019-03-14T20:30:00Z</published>
-    <updated>2019-03-14T20:30:00Z</updated>
-    <link rel="alternate" href="https://www.openra.net/news/release-20190314/"/>
-    <content type="html">&lt;p&gt;We are pleased to announce &lt;a href="/download/"&gt;Release 20190314&lt;/a&gt;, which brings changes developed between August 2018 and January 2019 and polished with the help of player feedback &lt;a href="/news/playtest-20190106/"&gt;across&lt;/a&gt; &lt;a href="/news/playtest-20190209/"&gt;three&lt;/a&gt; &lt;a href="/news/playtest-20190302/"&gt;playtests&lt;/a&gt; during the last 10 weeks.&lt;/p&gt;
-
-&lt;p&gt;The most exciting change in this release comes from a complete overhaul of the unit targeting logic, which fixes many long-standing bugs and introduces some important improvements to gameplay fluidity:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Tanks and other turreted units automatically target nearby units while moving&lt;/li&gt;
-  &lt;li&gt;Automatic targeting now properly accounts for the Fog of War&lt;/li&gt;
-  &lt;li&gt;Force-firing with long-range artillery style units targets the ground, allowing attacks to continue when vision is lost under the Fog of War&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20190209-opportunityfire.gif" alt="Tanks targeting while moving" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Tanks now automatically target enemy forces while moving.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The specialised infantry in Red Alert have had a shake-down and a fix-up:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Engineers are now consumed when capturing buildings, after a short external wait&lt;/li&gt;
-  &lt;li&gt;The Hijacker has been promoted to thief, who can steal cash from refineries as well as vehicles&lt;/li&gt;
-  &lt;li&gt;Allied Mechanics now repair destroyed team-mate vehicles instead of capturing them&lt;/li&gt;
-  &lt;li&gt;New Attack Dog behaviour resolves many issues and behaves more like the original game&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20190106-dog-attack.gif" width="600" alt="Thieves and Attack Dogs" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Improvements to the Attack Dog and Thief should make them more viable on the battlefield.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Thanks to the hard work of several new contributors, Red Alert now features an additional seven single-player missions, and Tiberian Dawn another two. Behind the scenes, the underlying AI framework has been rewritten to support the development of some long-planned improvements in future releases.&lt;/p&gt;
-
-&lt;p&gt;Some other notable gameplay changes include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Units in the &lt;em&gt;Return Fire&lt;/em&gt; stance will no longer chase their attackers&lt;/li&gt;
-  &lt;li&gt;Infantry in Pillboxes in Red Alert no longer gain experience&lt;/li&gt;
-  &lt;li&gt;Red Alert &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/80d63d9768e3b8a3fc2ce742fa8cd0184cab587c#ra-balance-changes"&gt;Balance changes&lt;/a&gt; include adjustments to the long-controversial Allied Artillery&lt;/li&gt;
-  &lt;li&gt;A new Ctrl modifier queues items at the front of the production queue&lt;/li&gt;
-  &lt;li&gt;The spectator UI now includes information on player army values&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20190106-missions-2x.png" width="600" alt="TD Campaign Mission: Nod 10b" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;Nine more single-player missions have been adapted from the original games.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This release brings several improvements to the map editor, including a map actor editor, a new Copy/Paste filter, and the ability to select multiple terrain categories in the sidebar.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;p&gt;&lt;img src="/images/news/20190106-editor-2x.png" width="600" alt="Map Editor Improvements Profiles" /&gt;&lt;/p&gt;
-
-  &lt;p&gt;The map editor now supports editing actor properties such as owner, health, facing, and stance.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;There are a lot more minor changes and bugfixes, so take a look at the &lt;a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/80d63d9768e3b8a3fc2ce742fa8cd0184cab587c"&gt;full changelog&lt;/a&gt; if you want to unwrap all of the details. Grab the installer now for your operating system from &lt;a href="/download/"&gt;our download page&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;We hope you’ll enjoy this newest installment of OpenRA! Have fun!&lt;/p&gt;
 </content>
   </entry>
 </feed>
