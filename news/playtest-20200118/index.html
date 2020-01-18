@@ -9,7 +9,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.openra.net/" />
     <meta property="og:image" content="https://www.openra.net/images/og-image.png" />
-    <title>OpenRA - Playtest 20131211</title>
+    <title>OpenRA - Playtest 20200118</title>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <link href="/style.css" rel="stylesheet">
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -60,35 +60,53 @@
       
       <li><a href="https://forum.openra.net">Forum</a></li>
       </ul>
-      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; Playtest 20131211</h3>
-<p class="newsDetails">Posted by Matthias Mailänder at 2013-12-11 22:17 +0100</p>
+      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; Playtest 20200118</h3>
+<p class="newsDetails">Posted by Paul Chote at 2020-01-18 18:00 +0000</p>
 <hr />
-<p><strong>Update: We have now released a fourth playtest (20131220) which fixes a few additional issues.</strong></p>
+<div style="border-radius: 4px; background-color: #272d2c; padding: 5px">
+<div style="margin: -10px 5px">
 
-<p>This is the second release candidate playtest after several days of intensive testing and fixing regressions. Our <a href="https://github.com/OpenRA/OpenRA/issues?labels=&amp;milestone=4&amp;page=1&amp;state=open">stable release milestone</a> indicates the remaining blockers which is a countdown to zero based on community input. Thanks to everyone who helped testing and reported bugs!</p>
+    <p>We are releasing a new playtest today that refines and fixes several issues in the current release.</p>
 
-<p>The new features in this build which require special attention to the testing volunteers:</p>
+    <p><a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/c552313bead52fbe4eb2d268e67609ad365205c6">The full Changelog</a> includes:</p>
 
-<ul>
-  <li>Added support for Command &amp; Conquer: Tiberian Dawn and Dune 2000 shroud rendering.</li>
-  <li>Improved the way cliffs, smudges and player color remaps in the d2k mod are rendered.</li>
-</ul>
+    <ul>
+      <li>Fixed significant performance and behaviour regressions with aircraft</li>
+      <li>Fixed rare crashes during gameplay and when loading saved games</li>
+      <li>Fixed several behaviour issues with unit and bot AI</li>
+      <li>Fixed missing team chat in game replays</li>
+      <li>Fixed build failures caused by an <a href="https://blog.maxmind.com/2019/12/18/significant-changes-to-accessing-and-using-geolite2-databases/">upstream API change</a></li>
+      <li>Improved build icon layout in RA and D2k sidebars</li>
+      <li>Improved in-game menu option layout</li>
+    </ul>
 
-<p>Checkout the <a href="http://open-ra.org/news/">news section</a> on our website to get an idea what the previous playtests introduced. As usual, the <a href="https://github.com/OpenRA/OpenRA/blob/playtest-20131211/CHANGELOG">changelog</a> contains all the details, including a list of changes that affect maps and mods.
-If you run into any problems or have any feedback, then create a ticket on our <a href="http://bugs.open-ra.org">Github issue tracker</a> or <a href="http://webchat.freenode.net/?channels=openra">find us on IRC</a>.</p>
+    <p>A new <a href="https://github.com/OpenRA/OpenRAModSDK/releases/tag/20200118">Mod SDK</a> release is also available with a number of additional fixes for modders.</p>
+
+    <p>Since we expect this to be the only playtest before a final hotfix release around the start of February, we encourage everybody (especially those who like to play in multiplayer team games) to try a game or two, and to let us know if we have missed any other issues or accidentally introduced new ones.</p>
+
+    <p>As always, we welcome feedback in the comments below, on <a href="https://forum.openra.net">our forum</a>, <a href="https://discord.openra.net">Discord</a>, or <a href="https://github.com/OpenRA/OpenRA/">GitHub</a> pages.</p>
+
+  </div>
+</div>
+<p>The <a href="/news/release-20191117/">original announcement</a> for release-20191117 is included below:</p>
+
+<hr />
+
+<p>Just in time for the holiday season, OpenRA release-20191117 is now available with all of the features and fixes that have been tested and refined in the playtest builds over the past few months.</p>
+
+<p>Big new features like save-game support, new UI for Tiberian Dawn and spectators, and completely overhauled unit behaviours make this one of our most exciting releases to date!</p>
+
+<p>For more details, we hand over to FiveAces who has put together a comprehensive video introduction:</p>
 
 <div style="text-align:center">
 
-  <p><img src="/images/news/20131211-cnc-shroud.png" alt="Tiberian Dawn Shroud" /></p>
-
-  <p>The Tiberian Dawn mod now uses the original shroud artwork and has smoother transitions between shroud to fog and visible terrain.</p>
-
-  <p><img src="/images/news/20131211-d2k-shroud.png" alt="Dune 2000 Shroud" /></p>
-
-  <p>The Dune 2000 mod now uses the original shroud and crater artwork. This also showcases the <a href="http://open-ra.org/news/playtest-20131209/">recently improved spice rendering</a>.</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/x6uXAiTHAhI" frameborder="0" allowfullscreen=""></iframe>
 
 </div>
 
+<p>If you don’t like videos, the main changes have been outlined in previous news posts [<a href="http://www.openra.net/news/preview-20190606/">one</a>, <a href="http://www.openra.net/news/playtest-20190825/">two</a>, <a href="http://www.openra.net/news/playtest-20191021/">three</a>], and, as always, in the  <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/501a7ebe7d9bc8e02161db135272fc49439e17e6">full changelog</a>. A new <a href="https://github.com/OpenRA/OpenRAModSDK/releases/tag/20191117">Mod SDK</a> release is also available for the modding community to take advantage of the new release.</p>
+
+<p>Grab the installer now for your operating system from <a href="/download/">our download page</a>! It has been a long road to this release, and we hope you enjoy it!</p>
 
 <hr />
 
@@ -98,10 +116,10 @@ If you run into any problems or have any feedback, then create a ticket on our <
 <script type="text/javascript">
   if (document.domain == 'www.openra.net') {
     var disqus_shortname = 'openra';
-    var disqus_identifier = 'playtest-20131211';
+    var disqus_identifier = 'release-20191117';
 	// Future proofed permalink
-    var disqus_url = 'https://www.openra.net/news/playtest-20131211/';
-    var disqus_title = 'Playtest 20131211';
+    var disqus_url = 'https://www.openra.net/news/playtest-20200118/';
+    var disqus_title = 'Playtest 20200118';
 
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
