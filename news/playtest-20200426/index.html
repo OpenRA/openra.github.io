@@ -9,7 +9,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.openra.net/" />
     <meta property="og:image" content="https://www.openra.net/images/og-image.png" />
-    <title>OpenRA - Home</title>
+    <title>OpenRA - Playtest 20200426</title>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <link href="/style.css" rel="stylesheet">
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -46,9 +46,9 @@
       <a id="ghbanner" href="https://github.com/OpenRA/OpenRA"><img src="/images/forkme.svg" alt="Fork me on GitHub"></a>
       <ul id="nav">
       
-        <li><a href="/" class="nav-selected">Home</a></li>
+        <li><a href="/">Home</a></li>
       
-        <li><a href="/news/">News</a></li>
+        <li><a href="/news/" class="nav-selected">News</a></li>
       
         <li><a href="/about/">About</a></li>
       
@@ -60,78 +60,7 @@
       
       <li><a href="https://forum.openra.net">Forum</a></li>
       </ul>
-      <div id="content"><div id="toppanel">
-  <div id="screenshot-banner"><img src="images/banner.svg"></div>
-  <div id="screenshot">
-
-      <img width="500" height="275" class="active" src="images/screenshots/ra-yaks.png" alt="" />
-
-      <img width="500" height="275" style="opacity: 0" src="images/screenshots/ra-snowfight.png" alt="" />
-
-      <img width="500" height="275" style="opacity: 0" src="images/screenshots/ra-stealth.png" alt="" />
-
-      <img width="500" height="275" style="opacity: 0" src="images/screenshots/cnc-airstrike.png" alt="" />
-
-      <img width="500" height="275" style="opacity: 0" src="images/screenshots/cnc-defend.png" alt="" />
-
-      <img width="500" height="275" style="opacity: 0" src="images/screenshots/d2k-starport.png" alt="" />
-
-      <img width="500" height="275" style="opacity: 0" src="images/screenshots/ra-base.png" alt="" />
-
-      <img width="500" height="275" style="opacity: 0" src="images/screenshots/d2k-base.png" alt="" />
-
-      <img width="500" height="275" style="opacity: 0" src="images/screenshots/d2k-carryallworm.png" alt="" />
-
-      <img width="500" height="275" style="opacity: 0" src="images/screenshots/d2k-battle.png" alt="" />
-
-      <img width="500" height="275" style="opacity: 0" src="images/screenshots/cnc-mammoths.png" alt="" />
-
-      <img width="500" height="275" style="opacity: 0" src="images/screenshots/cnc-squad.png" alt="" />
-
-      <img width="500" height="275" style="opacity: 0" src="images/screenshots/ra-allies02.png" alt="" />
-
-      <img width="500" height="275" style="opacity: 0" src="images/screenshots/cnc-beachhead.png" alt="" />
-
-  </div>
-  <div id="rightpanel">
-    <p>Classic strategy games, rebuilt for the modern era.</p>
-	<p>Open Source. Free. For all modern operating systems.</p>
-    <ul class="mainlinks">
-      <li><a id="download" href="/download/" alt="Install now!" title="Install now!">Install now!</a></li>
-    </ul>
-    <div id="so-links">
-	  <p>Find us on social media:</p>
-      <ul>
-      
-        <li><a href="https://www.facebook.com/openra"><img src="/images/social/facebook.svg" alt="Facebook" title="Facebook" /></a></li>
-      
-        <li><a href="https://discord.openra.net"><img src="/images/social/discord.svg" alt="Discord" title="Discord" /></a></li>
-      
-        <li><a href="https://twitter.com/openRA"><img src="/images/social/twitter.svg" alt="Twitter" title="Twitter" /></a></li>
-      
-        <li><a href="https://www.reddit.com/r/openra"><img src="/images/social/reddit.svg" alt="Reddit" title="Reddit" /></a></li>
-      
-        <li><a href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig"><img src="/images/social/youtube.svg" alt="Youtube" title="Youtube" /></a></li>
-      
-        <li><a href="https://steamcommunity.com/groups/openra/"><img src="/images/social/steam.svg" alt="Steam" title="Steam" /></a></li>
-      
-        <li><a href="https://openra.itch.io/openra"><img src="/images/social/itchio.svg" alt="itch.io" title="itch.io" /></a></li>
-      
-        <li><a href="https://www.gamereplays.org/openra/"><img src="/images/social/gamereplays.svg" alt="GameReplays" title="GameReplays" /></a></li>
-      
-        <li><a href="https://github.com/OpenRA/OpenRA"><img src="/images/social/github.svg" alt="Github" title="Github" /></a></li>
-      
-        <li><a href="http://www.moddb.com/games/openra"><img src="/images/social/moddb.svg" alt="ModDB" title="ModDB" /></a></li>
-      
-      </ul>
-    </div>
-  </div>
-</div>
-
-<br style="clear:both" />
-<hr />
-<h2 id="newsbanner">Latest News</h2>
-<h3 class="newsTitle">Playtest 20200426</h3>
+      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; Playtest 20200426</h3>
 <p class="newsDetails">Posted by Paul Chote at 2020-04-26 14:00 +0000</p>
 <hr />
 <div style="border-radius: 4px; background-color: #272d2c; padding: 5px">
@@ -227,28 +156,6 @@ We have taken a step back from gameplay this time around, focusing instead on co
   }
   else
     $('#disqus_thread').append('<div class="noscript">Comments are disabled for this domain.</div>');
-</script>
-
-
-<script>
-  function nextSlide() {
-    var x = $('#screenshot img:not(.active)');
-    return $(x[Math.floor(Math.random() * x.length)]);
-  }
-
-  function slideSwitch() {
-    var active = $('#screenshot img.active');
-    if (active.length == 0)
-      active = nextSlide();
-    var next = nextSlide();
-    active.addClass('last-active');
-    next.css({opacity: 0.0})
-      .addClass('active')
-      .animate({opacity: 1.0}, 1000, function() {
-          active.removeClass('active last-active');
-    });
-  }
-  $(function() { setInterval("slideSwitch()", 4000); });
 </script>
 </div>
       <div id="footer"><p>Copyright &copy; 2007-2020 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</p></div>
