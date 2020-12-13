@@ -115,7 +115,7 @@ $(document).ready(function(){
 	<li>Stable releases are recommended for players who want to play multiplayer games online.</li>
 	<li>Playtests provide a preview of the latest improvements for players who want to help test and shape the future releases of OpenRA.</li>
 </ul>
-<p>The latest stable release is <span class="versionlabel">release-20200503</span>.</p>
+<p>The latest stable release is <span class="versionlabel">release-20200503</span>, and the latest playtest is <span class="versionlabel">playtest-20201213</span>.</p>
 <p>Older releases can be found in the <a href="https://github.com/OpenRA/OpenRA/releases">GitHub Releases</a> archive.</p>
 <p>The OpenRA game engine is free software released under the <a href="/legal">GPL3 license</a>. The OpenRA mods require files from the original games, which are used under the license granted by the <a href="https://www.ea.com/games/command-and-conquer/command-and-conquer-remastered/modding-faq">C&amp;C Franchise Modding Guidelines</a>. These files are not covered by the OpenRA license, and you will be prompted to download or copy them the first time you run a mod.</p>
 <p>EA has not endorsed and does not support this product.</p>
@@ -143,18 +143,19 @@ $(document).ready(function(){
   <p>OpenRA works on most computers running Windows 7 or later that support OpenGL rendering.<br />You may need to install additional drivers supplied by your GPU vendor to enable OpenGL support.</p>
   <ul class="downloadlinks">
     <li><a href="https://github.com/OpenRA/OpenRA/releases/download/release-20200503/OpenRA-release-20200503-x64.exe" title="Download release-20200503">Download release-20200503<br />(23.31 MB)</a></li>
-    <li><span>No playtest available<br />(release is newer)</span></li>
+    <li><a href="https://github.com/OpenRA/OpenRA/releases/download/playtest-20201213/OpenRA-playtest-20201213-x64.exe" title="Download playtest-20201213">Download playtest-20201213<br />(26.41 MB)</a></li>
   </ul>
   <p>Installers for 32-bit Windows can be found in the <a href="https://github.com/OpenRA/OpenRA/releases">GitHub Releases</a> archive.</p>
 </div>
 <div id="osx" class="tab">
   <hr />
   <h3><img src="/images/platforms/osx-small.svg" class="downloadsmallplatform" />macOS Applications</h3>
-  <p>OpenRA works on all macs running macOS 10.9 or later.</p>
+  <p>OpenRA works best on a mac running macOS 10.13 or later.</p>
   <ul class="downloadlinks">
     <li><a href="https://github.com/OpenRA/OpenRA/releases/download/release-20200503/OpenRA-release-20200503.dmg" title="Download release-20200503">Download release-20200503<br />(60.23 MB)</a></li>
-    <li><span>No playtest available<br />(release is newer)</span></li>
+    <li><a href="https://github.com/OpenRA/OpenRA/releases/download/playtest-20201213/OpenRA-playtest-20201213.dmg" title="Download playtest-20201213">Download playtest-20201213<br />(60.75 MB)</a></li>
   </ul>
+  <p>A separate "compat" release for OS X 10.9 &ndash; 10.12 can be found in the <a href="https://github.com/OpenRA/OpenRA/releases">GitHub Releases</a> archive.</p>
   <p>Stable releases are also available from <a href="https://formulae.brew.sh/cask/openra">Homebrew</a>:</p>
   <pre>$ brew cask install openra</pre>
   <p class="downloadthirdparty">We do not maintain this external package source, so there may be delays when a new version is released.<br />Please contact the downstream repository maintainers about any packaging issues.</p>
@@ -166,11 +167,11 @@ $(document).ready(function(){
   <p>Download the mods you want to play, <a href="https://github.com/OpenRA/OpenRA/wiki/AppImages">make the AppImage files executable</a>, then double click to play!<br />Install the optional <a href="https://github.com/AppImage/appimaged">appimaged</a> utility to integrate OpenRA with your system launcher and web browser.</p>
   <ul class="downloadlinks">
     <li><a class="ra" href="https://github.com/OpenRA/OpenRA/releases/download/release-20200503/OpenRA-Red-Alert-x86_64.AppImage" title="Download Red Alert">Download Red Alert<br />(18.97 MB)</a></li>
-    <li><span class="ra">No playtest available<br />(release is newer)</span></li>
+    <li><a class="ra" href="https://github.com/OpenRA/OpenRA/releases/download/playtest-20201213/OpenRA-Red-Alert-playtest-x86_64.AppImage" title="Download Red Alert (Playtest)">Download Red Alert (Playtest)<br />(19.50 MB)</a></li>
     <li><a class="cnc" href="https://github.com/OpenRA/OpenRA/releases/download/release-20200503/OpenRA-Tiberian-Dawn-x86_64.AppImage" title="Download Tiberian Dawn">Download Tiberian Dawn<br />(20.13 MB)</a></li>
-    <li><span class="cnc">No playtest available<br />(release is newer)</span></li>
+    <li><a class="cnc" href="https://github.com/OpenRA/OpenRA/releases/download/playtest-20201213/OpenRA-Tiberian-Dawn-playtest-x86_64.AppImage" title="Download Tiberian Dawn (Playtest)">Download Tiberian Dawn (Playtest)<br />(21.11 MB)</a></li>
     <li><a class="d2k" href="https://github.com/OpenRA/OpenRA/releases/download/release-20200503/OpenRA-Dune-2000-x86_64.AppImage" title="Download Dune 2000">Download Dune 2000<br />(24.58 MB)</a></li>
-    <li><span class="d2k">No playtest available<br />(release is newer)</span></li>
+    <li><a class="d2k" href="https://github.com/OpenRA/OpenRA/releases/download/playtest-20201213/OpenRA-Dune-2000-playtest-x86_64.AppImage" title="Download Dune 2000 (Playtest)">Download Dune 2000 (Playtest)<br />(26.16 MB)</a></li>
   </ul>
   <h3>Community-maintained packages</h3>
   <p>OpenRA may also be installed using packages provided by your Linux distribution or other third parties. These packages will provide better integration with your system, but may not always offer the latest release. Please contact the downstream repository maintainers about any packaging issues.</p>
@@ -220,7 +221,7 @@ $ flatpak install --from https://flathub.org/beta-repo/appstream/net.openra.Open
   <p>Refer to the <a href="https://github.com/OpenRA/OpenRA/wiki/Compiling">OpenRA Wiki</a> for detailed compilation instructions.</p>
   <ul class="downloadlinks">
     <li><a href="https://github.com/OpenRA/OpenRA/releases/download/release-20200503/OpenRA-release-20200503-source.tar.bz2" title="Download release-20200503">Download release-20200503<br />(25.19 MB)</a></li>
-    <li><span>No playtest available<br />(release is newer)</span></li>
+    <li><a href="https://github.com/OpenRA/OpenRA/releases/download/playtest-20201213/OpenRA-playtest-20201213-source.tar.bz2" title="Download playtest-20201213">Download playtest-20201213<br />(size unknown)</a></li>
   </ul>
 </div>
 </div>
