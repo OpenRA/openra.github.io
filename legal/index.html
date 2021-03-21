@@ -11,7 +11,7 @@
   <meta property="og:description" content="Classic strategy games rebuilt for the modern era" />
   <meta property="og:url" content="https://www.openra.net" />
   <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
-  <meta property="og:image" content="/images/social.jpg?t=2021-03-21-19-37" />
+  <meta property="og:image" content="/images/social.jpg?t=2021-03-21-19-57" />
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@openRA">
@@ -19,7 +19,7 @@
   <meta name="twitter:title" content="OpenRA">
   <meta name="twitter:description" content="Classic strategy games rebuilt for the modern era">
   <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
-  <meta name="twitter:image" content="/images/social.jpg?t=2021-03-21-19-37">
+  <meta name="twitter:image" content="/images/social.jpg?t=2021-03-21-19-57">
 
   <title>OpenRA - Classic strategy games rebuilt for the modern era</title>
   <link rel="stylesheet" href="/styles/normalize.css" />
@@ -63,7 +63,7 @@
         <a class="site-header__nav__link" href="/news" tabindex="0">News</a>
         <a class="site-header__nav__link" href="/about" tabindex="0">About</a>
         <a class="site-header__nav__link" href="/download" tabindex="0">Download</a>
-        <a class="site-header__nav__link is-active" href="/games" tabindex="0">Games</a>
+        <a class="site-header__nav__link" href="/games" tabindex="0">Games</a>
         <a class="site-header__nav__link" href="/community" tabindex="0">Community</a>
         <a class="site-header__nav__link" href="https://forum.openra.net" tabindex="0">
           Forum
@@ -143,150 +143,13 @@
       <div class="site-content">
       <section class="site-section">
   <div class="site-section__content">
-    <h1 class="site-section__heading">Server Browser</h1>
-    <p class="text--large">People from around the world use OpenRA to play <strong>Red Alert</strong>, <strong>Command & Conquer</strong>, <strong>Dune 2000</strong>, and a variety of <strong>community mods</strong>. Use the server browser below to join in on the multiplayer fun!</p>
+    <h1 class="site-section__heading">Legal</h1>
+    <img src="/images/gplv3.svg" class="u-float-right" />
+    OpenRA is free software, licenced under the GPL3 license. This means that you are free to do (almost) whatever you wish, as long as you make the source code available for any binary releases you distribute. See the <a href="/legal#license">full GPL 3 licence</a> for more information.
+    <p>The original game assets are not covered by this license and remain property of Electronic Arts Inc. We provide asset packages based on the freeware releases of these games as a convenience to our players, which we believe falls under the spirit of the <a href="https://www.ea.com/games/command-and-conquer/command-and-conquer-remastered/modding-faq">Command &amp; Conquer&trade; Franchise Modding Guidelines</a>.</p>
+    <p>Command & Conquer™ and Command & Conquer: Red Alert™ are trademarks or registered trademarks of Electronic Arts Inc. EA has not endorsed and does not support this product.</p>
   </div>
 </section>
-
-<hr class="site-section__divider" />
-
-<section id="server-browser" class="servers site-section">
-  <div class="site-section__content">
-    <div class="servers__controls">
-      <div class="servers__filters">
-        <label class="button">
-          <input class="servers__filters__waiting" type="checkbox" checked /> Waiting
-        </label>
-        <label class="button">
-          <input class="servers__filters__playing" type="checkbox" checked /> Playing
-        </label>
-        <label class="button">
-          <input class="servers__filters__empty" type="checkbox" /> Empty
-        </label>
-      </div>
-      <div class="servers__info text--small">
-        <span class="servers__counts">Showing <var class="servers__server-count">0</var> servers hosting <var class="servers__player-count">0</var> players.</span>
-        <button class="servers__refresh">Refresh</button>
-      </div>
-    </div>
-    <div class="u-mobile-full-width">
-      <table class="servers__list text--small table--hover-rows table--metal-panel">
-        <thead class="servers__list__header">
-          <tr>
-            <th class="servers__list__header__name" colspan="2">
-              <a class="servers__list__header__sort-toggle servers__sort__name" href="#sort-by-name">
-                Name
-                <svg class="icon">
-                  <use xlink:href="/images/icons/icons.svg#icon-chevron-down"></use>
-                </svg>
-              </a>
-            </th>
-            <th class="servers__list__header__status">
-              <a class="servers__list__header__sort-toggle servers__sort__status" href="#sort-by-status">
-                Status
-                <svg class="icon">
-                  <use xlink:href="/images/icons/icons.svg#icon-chevron-down"></use>
-                </svg>
-              </a>
-            </th>
-            <th class="servers__list__header__players">
-              <a class="servers__list__header__sort-toggle servers__sort__players" href="#sort-by-players">
-                Players
-                <svg class="icon">
-                  <use xlink:href="/images/icons/icons.svg#icon-chevron-down"></use>
-                </svg>
-              </a>
-            </th>
-            <th class="servers__list__header__location">
-              <a class="servers__list__header__sort-toggle servers__sort__location" href="#sort-by-location">
-                Location
-                <svg class="icon">
-                  <use xlink:href="/images/icons/icons.svg#icon-chevron-down"></use>
-                </svg>
-              </a>
-            </th>
-          </tr>
-        </thead>
-        <tbody class="servers__list__body">
-          <tr>
-            <td>
-              <noscript>JavaScript must be enabled to use the Server Browser</noscript>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div class="servers__list__tooltip-container" style="pointer-events: none;"></div>
-</section>
-
-<hr class="site-section__divider" />
-
-<section class="site-section">
-  <div class="site-section__content">
-    <h2 class="site-section__heading">Player Activity</h2>
-    <p>View the numbers of people <strong class="color--playing">playing</strong> and <strong class="color--waiting">waiting</strong> over the last two weeks:</p>
-    <div
-      id="players"
-      class="flot-chart"
-      style="width: 100%; height: 300px;">
-      Loading...
-    </div>
-    <p>More detailed graphs are available at the <a href="/players">player statistics</a> page.</p>
-  </div>
-</section>
-
-<template id="server-row-template">
-  <tr class="servers__listing">
-    <td class="servers__listing__name"></td>
-    <td class="servers__listing__join"></td>
-    <td class="servers__listing__status"></td>
-    <td class="servers__listing__players"></td>
-    <td class="servers__listing__location"></td>
-  </tr>
-</template>
-
-<template id="server-group-header-template">
-  <tr class="servers__list__group">
-    <td colspan="3">
-      <div class="servers__list__group__info">
-        <a class="servers__list__group__mod-link"></a>
-        <span class="servers__list__group__version"></span>
-      </div>
-    </td>
-    <td colspan="2">
-      <span class="servers__list__group__players"><var></var></span>
-    </td>
-  </tr>
-</template>
-
-<template id="server-listing-tooltip-template">
-  <div class="servers__list__tooltip">
-    <div class="servers__list__tooltip__map">
-      <div class="minimap">
-        <var class="minimap__hash"></var>
-        <div class="minimap__bounds">
-          <img class="minimap__image" />
-          <ul class="minimap__spawnpoints"></ul>
-        </div>
-      </div>
-      <div class="servers__list__tooltip__map__title">-</div>
-    </div>
-    <div class="servers__list__tooltip__clients">
-      <table>
-        <thead>
-          <tr>
-            <th>Player</th>
-            <th>Team</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-  </div>
-</template>
-
       </div>
 
       <footer class="site-footer">
@@ -407,32 +270,6 @@
 <script src="/scripts/vendor/svgxuse.min.js" async></script>
 <script src="/scripts/vendor/lite-youtube-embed.js" async></script>
 <script src="/scripts/global.js"></script>
-
-  <script type="text/javascript" src="/scripts/vendor/popper.js"></script>
-
-  <script type="text/javascript" src="/scripts/vendor/jquery.hoverintent.min.js"></script>
-
-  <script type="text/javascript" src="/scripts/server-browser.js"></script>
-
-  <script type="text/javascript" src="/scripts/vendor/flot.js"></script>
-
-  <script type="text/javascript" src="/scripts/vendor/flot-selection.js"></script>
-
-  <script type="text/javascript" src="/scripts/vendor/flot-stack.js"></script>
-
-  <script type="text/javascript" src="/scripts/vendor/flot-time.js"></script>
-
-  <script type="text/javascript" src="/scripts/vendor/flot-tooltip.js"></script>
-
-  <script type="text/javascript" src="/scripts/vendor/flot-resize.js"></script>
-
-  <script type="text/javascript" src="/scripts/vendor/javascript-rrd.js"></script>
-
-  <script type="text/javascript" src="/scripts/vendor/rrd-flot.js"></script>
-
-  <script type="text/javascript" src="/scripts/vendor/rrd-flot-async.js"></script>
-
-  <script type="text/javascript" src="/scripts/player-charts.js"></script>
 
   </body>
 </html>
