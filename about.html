@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <meta name="description" content="Classic staregy games rebuilt for the modern era" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="OpenRA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Classic staregy games rebuilt for the modern era" />
+  <meta property="og:url" content="https://www.openra.net" />
+  <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
+  <meta property="og:image" content="/images/social.jpg/images/social.jpg?t=2021-03-21-19-15" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@openRA">
+  <meta name="twitter:creator" content="@openRA">
+  <meta name="twitter:title" content="OpenRA">
+  <meta name="twitter:description" content="Classic staregy games rebuilt for the modern era">
+  <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
+  <meta name="twitter:image" content="/images/social.jpg?t=2021-03-21-19-15">
+
+  <title>OpenRA - Classic strategy games rebuilt for the modern era</title>
+  <link rel="stylesheet" href="/styles/normalize.css" />
+  <link rel="stylesheet" href="/styles/index.css" />
+  <link rel="stylesheet" href="/styles/lite-youtube-embed.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <!-- hack to prevent Firefox from doing a "FOUC" -->
+  <!-- the contents of the <script> aren't important, just that it is here -->
+  <script>var PREVENT_FOUC = true;</script>
+</head>
+
+
+  <body>
+    <div class="site">
+
+      
+
+<header class="site-header">
+  <div class="site-header__main">
+    <button class="site-header__menu-toggle" aria-label="Open Site Menu">
+      <svg class="icon">
+        <use xlink:href="/images/icons/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <a href="/">
+      <img 
+        class="site-header__logo"
+        src="/images/openra-logo-with-text.svg"
+        alt="OpenRA" />
+    </a>
+
+    <div class="site-header__menu">
+      <button class="site-header__menu-close" aria-label="Open Site Menu">
+        <svg class="icon">
+          <use xlink:href="/images/icons/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+
+      <nav class="site-header__nav">
+        <a class="site-header__nav__link" href="/news" tabindex="0">News</a>
+        <a class="site-header__nav__link is-active" href="/about" tabindex="0">About</a>
+        <a class="site-header__nav__link" href="/download" tabindex="0">Download</a>
+        <a class="site-header__nav__link" href="/games" tabindex="0">Games</a>
+        <a class="site-header__nav__link" href="/community" tabindex="0">Community</a>
+        <a class="site-header__nav__link" href="https://forum.openra.net" tabindex="0">
+          Forum
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-external-link"></use>
+          </svg>
+        </a>
+        <a class="site-header__nav__link" href="https://resource.openra.net" tabindex="0">
+          Resources
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-external-link"></use>
+          </svg>
+        </a>
+      </nav>
+
+      <nav class="site-header__social-nav">
+        <div class="site-header__social-nav__row">
+          <a class="site-header__social-nav__link" href="https://github.com/OpenRA/OpenRA" tabindex="0">
+            <span class="text--hidden">GitHub</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-github"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://discord.openra.net/" tabindex="0">
+            <span class="text--hidden">Discord</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-discord"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://openra.itch.io/openra" tabindex="0">
+            <span class="text--hidden">Itch</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-itch"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.facebook.com/openra" tabindex="0">
+            <span class="text--hidden">Facebook</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="site-header__social-nav__row">
+          <a class="site-header__social-nav__link" href="https://twitter.com/openRA" tabindex="0">
+            <span class="text--hidden">Twitter</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.reddit.com/r/openra" tabindex="0">
+            <span class="text--hidden">Reddit</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-reddit"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig" tabindex="0">
+            <span class="text--hidden">YouTube</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://steamcommunity.com/groups/openra/" tabindex="0">
+            <span class="text--hidden">Steam</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-steam"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <hr class="site-header__hr" />
+  
+</header>
+
+      <div class="site-content">
+      <section class="site-section">
+  <div class="site-section__content">
+    <h1 class="site-section__heading">What is OpenRA?</h1>
+    <p class="text--large">OpenRA is an <a href="https://github.com/OpenRA">open source project</a> that recreates and modernizes classic real time strategy games, like <strong>Red Alert</strong>, <strong>Command & Conquer</strong>, and <strong>Dune 2000</strong>.</p>
+    <div>
+      <figure class="about__video-embed">
+        <lite-youtube videoid="93b7TKooj-M"></lite-youtube>
+        <figcaption>OpenRA's 10th Anniversary Trailer (2017)</figcaption>
+      </figure>
+      <p>We’ve developed a flexible game engine (<a href="https://github.com/OpenRA/OpenRA">the OpenRA engine</a>) that provides a common platform for rebuilding and reimagining classic 2D and 2.5D RTS games. The OpenRA engine is not restricted by the technical limitations of the original games. It includes <strong>native support for modern operating systems</strong> (like Windows 10, macOS, and Linux) and screen resolutions without relying on emulation or hacks, and <a href="/games">integrated online multiplayer</a>.</p>
+      <p><em>EA has not endorsed and does not support this product.</em></p>
+    </div>
+  </div>
+</section>
+
+<hr class="site-section__divider" />
+
+<section class="site-section">
+  <div class="site-section__content">
+    <h2 class="site-section__heading">Modernizing Classic RTS Games</h2>
+    <p>While we love the classic RTS gameplay, multiplayer game design has evolved significantly since the 1990s. The OpenRA engine includes <strong>new features and gameplay improvements</strong> that are standard in more recent RTS games:</p>
+    <ul class="u-two-column">
+      <li>A choice between <strong>“right click”</strong> and classic <strong>“left click”</strong> control schemes</li>
+      <li>Overhauled sidebar interfaces with support for <strong>hotkeys and production queues</strong></li>
+      <li>Improved unit controls with features such as <strong>Attack-Move and stances</strong></li>
+      <li>The <strong>“fog of war”</strong> that obscures the battlefield outside your units' line of sight</li>
+      <li>Other modern RTS features such as capturable <strong>tech structures and unit veterancy</strong></li>
+      <li>Support for <strong>game replays and an observer interface</strong> designed for streaming games online</li>
+    </ul>
+    <p>These core changes and continuous balance refinements to support the active multiplayer community mean that the OpenRA gameplay has evolved from the classic releases, with heavy influences from later C&C titles.</p>
+    <p><strong>OpenRA is 100% free</strong>, and comes bundled with three distinct mods. When you run a mod for the first time the game can automatically download the original game assets, or you can use the original game disks. </p>
+  </div>
+</section>
+
+<hr class="site-section__divider" />
+
+<section class="site-section">
+  <div class="site-section__content">
+    <h2 class="site-section__heading">The OpenRA Games (<span class="text--small-caps">aka</span> Mods)</h2>
+    <p>Games built using the OpenRA engine are known as <strong>“mods”</strong>. The OpenRA development team maintain the three official mods that can be downloaded from this website, but many more are developed and maintained by the OpenRA community.</p>
+
+    <div class="u-dark-zone">
+      <ul class="about__mod-list list--no-style">
+        <li class="about__mod-list__mod">
+          <div class="about__mod-list__mod__info">
+            <h3 class="color--cnc">Tiberian Dawn <img class="about__mod-list__mod__icon" src="/images/icons/cnc_64x64.png" /></h3>
+            <p>An alliance of nations fights to protect Europe and northern Africa from a mysterious terrorist organization and the valuable but toxic alien mineral, Tiberium, that is slowly spreading over the world.</p>
+            <p>The Tiberian Dawn mod focuses on <strong>fast and fluid</strong> play, taking heavy influences from modern RTS games with features like multiple-queue production. </p>
+          </div>
+          <div class="about__mod-list__mod__images">
+            <img class="about__mod-list__mod__image" src="/images/about/command-and-conquer.png" />
+          </div>
+        </li>
+        <li class="about__mod-list__mod about__mod-list__mod--alt">
+          <div class="about__mod-list__mod__info">
+            <h3 class="color--ra">Red Alert <img class="about__mod-list__mod__icon" src="/images/icons/ra_64x64.png" /></h3>
+            <p>In a world where Hitler was assassinated and the Third Reich never existed, the Soviet Union seeks power over all of Europe. Allied against this Evil Empire, the free world faces a Cold War turned red hot.</p>
+            <p>The Red Alert mod focuses on <strong>strategy</strong>, providing a range of units and tactics to conquer the <strong>land</strong>, <strong>sea</strong>, and <strong>air</strong>. </p>
+          </div>
+          <div class="about__mod-list__mod__images">
+            <img class="about__mod-list__mod__image" src="/images/about/red-alert.png" />
+          </div>
+        </li>
+        <li class="about__mod-list__mod">
+          <div class="about__mod-list__mod__info">
+            <h3 class="color--d2k">Dune 2000 <img class="about__mod-list__mod__icon" src="/images/icons/d2k_64x64.png" /></h3>
+            <p>Three great houses fight for the precious spice melange. <em>He who controls the spice controls the universe!</em> Establish a foothold on the desert planet Arrakis, where your biggest threat is the environment.</p>
+            <p>The Dune 2000 mod currently focuses on providing an experience that is <strong>authentic</strong> to the original game. </p>
+          </div>
+          <div class="about__mod-list__mod__images">
+            <img class="about__mod-list__mod__image" src="/images/about/dune-2000.png" />
+          </div>
+        </li>
+        <li class="about__mod-list__under-construction">
+          <p>
+            <strong>⚠ Under Construction: </strong>
+            Some mods are playable, but still in development. You can help them along by downloading them and reporting bugs to their respective projects. These mods must be installed separately.
+          </p>
+        </li>
+        <li class="about__mod-list__mod about__mod-list__mod--alt">
+          <div class="about__mod-list__mod__info">
+            <h3 class="color--ts">Tiberian Sun <img class="about__mod-list__mod__icon" src="/images/icons/ts_64x64.png" /></h3>
+            <p>The next major goal for OpenRA is to support the second generation of Command & Conquer games, starting with Tiberian Sun.</p>
+            <p>The game engine features to support Tiberian Sun are still in development. The mod is <strong>not included with the OpenRA installer</strong>, but the source code is available in our <a href="https://github.com/OpenRA/OpenRA">GitHub repository</a>. Please note that we do not provide support for incomplete development builds. </p>
+          </div>
+          <div class="about__mod-list__mod__images">
+            <img class="about__mod-list__mod__image" src="/images/about/tiberian-sun.jpg" />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr class="site-section__divider" />
+
+<section class="site-section">
+  <div class="site-section__content">
+    <h2 class="site-section__heading">Building Custom Mods</h2>
+    <div>
+      <figure class="about__custom-mods__screenshot">
+        <img src="/images/about/fractured-realms.jpg" />
+        <figcaption>Find community mods on <a href="https://www.moddb.com/games/openra">ModDB</a></figcaption>
+      </figure>
+      <p>
+        OpenRA is designed as a general purpose RTS game engine with <strong>strong modding support</strong>.
+        <a href="https://github.com/OpenRA/OpenRAModSDK">The OpenRA Mod SDK</a> provides tools to develop and release your own projects. Each new OpenRA release brings many improvements and fixes created for, and by, the modding community.
+        A collection of community-built mods and games can be found on OpenRA's <a href="http://www.moddb.com/games/openra/mods">ModDB page</a>.
+      </p>
+    </div>
+  </div>
+</section>
+      </div>
+
+      <footer class="site-footer">
+  <hr class="site-footer__hr" />
+  <div class="site-footer__main u-centered-content u-centered-content--small">
+    <a class="site-footer__logo-link" href="/">
+      <img class="site-footer__logo" src="/images/openra-logo-with-text.svg" alt="OpenRA" />
+    </a>
+    <div class="site-footer__legal">©2007-2021 The OpenRA Developers (<a href="/legal">Legal notices</a>)</div>
+    <nav class="site-footer__nav">
+      <div>
+        <a href="/news" tabindex="0">News</a>
+      </div>
+      <div>
+        <a href="/about" tabindex="0">About</a>
+      </div>
+      <div>
+        <a href="/download" tabindex="0">Download</a>
+      </div>
+      <div>
+        <a href="/games" tabindex="0">Games</a>
+      </div>
+      <div>
+        <a href="/community" tabindex="0">Community</a>
+      </div>
+      <div>
+        <a href="https://forum.openra.net" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-conversation"></use>
+          </svg>
+          Forum
+        </a>
+      </div>
+      <div>
+        <a href="https://resource.openra.net" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-wrench"></use>
+          </svg>
+          Resources
+        </a>
+      </div>
+    </nav>
+    <nav class="site-footer__social-nav">
+      <div>
+        <a href="https://github.com/OpenRA/OpenRA" class="color--github" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-github"></use>
+          </svg>
+          GitHub
+        </a>
+      </div>
+      <div>
+        <a href="https://discord.openra.net/" class="color--discord" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-discord"></use>
+          </svg>
+          Discord
+        </a>
+      </div>
+      <div>
+        <a href="https://openra.itch.io/openra" class="color--itch" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-itch"></use>
+          </svg>
+          Itch
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/openra" class="color--facebook" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-facebook"></use>
+          </svg>
+          Facebook
+        </a>
+      </div>
+      <div>
+        <a href="https://twitter.com/openRA" class="color--twitter" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-twitter"></use>
+          </svg>
+          Twitter
+        </a>
+      </div>
+      <div>
+        <a href="https://www.reddit.com/r/openra" class="color--reddit" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-reddit"></use>
+          </svg>
+          Reddit
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig" class="color--youtube" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-youtube"></use>
+          </svg>
+          YouTube
+        </a>
+      </div>
+      <div>
+        <a href="https://steamcommunity.com/groups/openra/" class="color--steam" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-steam"></use>
+          </svg>
+          Steam
+        </a>
+      </div>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+
+    <script
+  src="/scripts/vendor/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<script src="/scripts/vendor/svgxuse.min.js" async></script>
+<script src="/scripts/vendor/lite-youtube-embed.js" async></script>
+<script src="/scripts/global.js"></script>
+
+  </body>
+</html>

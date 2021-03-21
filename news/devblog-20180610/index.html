@@ -1,80 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=1024" />
-    <meta name="description" content="Open Source reimplementation of Westwood Studios' 2D Command and Conquer games" />
-    <meta name="keywords" content="OpenRA, RTS, game engine, RTS game engine, strategy, mods, C&amp;C, Command and Conquer, C&amp;C95, C&quot;C1, C&amp;C95 Online, Online, LAN, multiplayer, Red Alert, Red, Alert, RA, RA1, RA95, Tiberian, Tiberian Dawn, TD, Dune, Dune 2000, Dune2000, D2K, Tiberian Sun, Tiberium, Sun, TS, Red Alert 2, RA2, Kane, GDI, Nod, Brotherhood of Nod, Global Defense Initiative, Atreides, Ordos, Harkonnen, Allies, Soviets, Westwood" />
-    <meta property="og:title" content="OpenRA" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.openra.net/" />
-    <meta property="og:image" content="https://www.openra.net/images/og-image.png" />
-    <title>OpenRA - A few development topics</title>
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <link href="/style.css" rel="stylesheet">
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="/news/atom/" rel="alternate" type="application/atom+xml">
-    <script>
-    function supportsSVG() {
-      return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
-    }
-    $(document).ready(function(){
-      if (!supportsSVG()) {
-        document.documentElement.className += ' no-svg';
-        $('img[src$=".svg"]').attr('src', function(){return $(this).attr('src').replace('.svg', '-fallback.png');});
-      }
-    });
-    </script>
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <meta name="description" content="Classic staregy games rebuilt for the modern era" />
 
-      ga('create', 'UA-48361645-1', 'auto');
-      ga('set', 'anonymizeIp', true);
-      ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
-  </head>
+  <!-- OpenGraph -->
+  <meta property="og:title" content="OpenRA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Classic staregy games rebuilt for the modern era" />
+  <meta property="og:url" content="https://www.openra.net" />
+  <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
+  <meta property="og:image" content="/images/social.jpg/images/social.jpg?t=2021-03-21-19-15" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@openRA">
+  <meta name="twitter:creator" content="@openRA">
+  <meta name="twitter:title" content="OpenRA">
+  <meta name="twitter:description" content="Classic staregy games rebuilt for the modern era">
+  <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
+  <meta name="twitter:image" content="/images/social.jpg?t=2021-03-21-19-15">
+
+  <title>OpenRA - Classic strategy games rebuilt for the modern era</title>
+  <link rel="stylesheet" href="/styles/normalize.css" />
+  <link rel="stylesheet" href="/styles/index.css" />
+  <link rel="stylesheet" href="/styles/lite-youtube-embed.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <!-- hack to prevent Firefox from doing a "FOUC" -->
+  <!-- the contents of the <script> aren't important, just that it is here -->
+  <script>var PREVENT_FOUC = true;</script>
+</head>
+
+
   <body>
-    <div id="container">
+    <div class="site">
+
       
-      <div id="header"><h1><img src="/images/soviet-logo.svg" alt="OpenRA Logo" />OpenRA</h1></div>
-      
-      <a id="ghbanner" href="https://github.com/OpenRA/OpenRA"><img src="/images/forkme.svg" alt="Fork me on GitHub"></a>
-      <ul id="nav">
-      
-        <li><a href="/">Home</a></li>
-      
-        <li><a href="/news/" class="nav-selected">News</a></li>
-      
-        <li><a href="/about/">About</a></li>
-      
-        <li><a href="/download/">Download</a></li>
-      
-        <li><a href="/games/">Games</a></li>
-      
-        <li><a href="/community/">Community</a></li>
-      
-      <li><a href="https://forum.openra.net">Forum</a></li>
-      </ul>
-      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; A few development topics</h3>
-<p class="newsDetails">Posted by Paul Chote at 2018-06-10 13:00 +0000</p>
-<hr />
-<p>Development has slowed down a lot recently, but OpenRA is far from dead. I wanted to write something to bridge the news gap until our next official news post, so here’s a brief update on a couple of recent projects. We hope to ship these plus many other changes in a new playtest series starting in a few weeks.</p>
+
+<header class="site-header">
+  <div class="site-header__main">
+    <button class="site-header__menu-toggle" aria-label="Open Site Menu">
+      <svg class="icon">
+        <use xlink:href="/images/icons/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <a href="/">
+      <img 
+        class="site-header__logo"
+        src="/images/openra-logo-with-text.svg"
+        alt="OpenRA" />
+    </a>
+
+    <div class="site-header__menu">
+      <button class="site-header__menu-close" aria-label="Open Site Menu">
+        <svg class="icon">
+          <use xlink:href="/images/icons/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+
+      <nav class="site-header__nav">
+        <a class="site-header__nav__link is-active" href="/news" tabindex="0">News</a>
+        <a class="site-header__nav__link" href="/about" tabindex="0">About</a>
+        <a class="site-header__nav__link" href="/download" tabindex="0">Download</a>
+        <a class="site-header__nav__link" href="/games" tabindex="0">Games</a>
+        <a class="site-header__nav__link" href="/community" tabindex="0">Community</a>
+        <a class="site-header__nav__link" href="https://forum.openra.net" tabindex="0">
+          Forum
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-external-link"></use>
+          </svg>
+        </a>
+        <a class="site-header__nav__link" href="https://resource.openra.net" tabindex="0">
+          Resources
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-external-link"></use>
+          </svg>
+        </a>
+      </nav>
+
+      <nav class="site-header__social-nav">
+        <div class="site-header__social-nav__row">
+          <a class="site-header__social-nav__link" href="https://github.com/OpenRA/OpenRA" tabindex="0">
+            <span class="text--hidden">GitHub</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-github"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://discord.openra.net/" tabindex="0">
+            <span class="text--hidden">Discord</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-discord"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://openra.itch.io/openra" tabindex="0">
+            <span class="text--hidden">Itch</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-itch"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.facebook.com/openra" tabindex="0">
+            <span class="text--hidden">Facebook</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="site-header__social-nav__row">
+          <a class="site-header__social-nav__link" href="https://twitter.com/openRA" tabindex="0">
+            <span class="text--hidden">Twitter</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.reddit.com/r/openra" tabindex="0">
+            <span class="text--hidden">Reddit</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-reddit"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig" tabindex="0">
+            <span class="text--hidden">YouTube</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://steamcommunity.com/groups/openra/" tabindex="0">
+            <span class="text--hidden">Steam</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-steam"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <hr class="site-header__hr" />
+  
+</header>
+
+      <div class="site-content">
+        <section class="developer-update-detail site-section">
+          <div class="site-section__content">
+            <div class="dark-panel">
+              <div class="dark-panel__header">
+                <a class="developer-update-detail__view-all" href="/news">
+                  <svg class="icon">
+                    <use xlink:href="/images/icons/icons.svg#icon-chevron-left"></use>
+                  </svg>
+                  View All Updates
+                </a>
+              </div>
+
+              <article class="developer-update">
+  <header class="developer-update__header">
+    <div class="developer-update__subheading text--medium">
+      Posted by <strong class="developer-update__author">Paul Chote</strong> on <time>10 June 2018</time>
+    </div>
+    <h3 class="developer-update__heading">A few development topics</h3>
+  </header>
+  <div class="developer-update__body">
+    <p>Development has slowed down a lot recently, but OpenRA is far from dead. I wanted to write something to bridge the news gap until our next official news post, so here’s a brief update on a couple of recent projects. We hope to ship these plus many other changes in a new playtest series starting in a few weeks.</p>
 
 <p>One big change affects how we package and distribute our “official” OpenRA builds on Linux. For many years we have automatically generated a deb package, but then relied on downstream packages for other distributions. This has worked well in most respects, but sometimes delays in updates would strand players on older versions, stopping them from playing online. Another long-standing issue on many distros is the (lack of) support for installing playtests and releases at the same time, as players are able to on Windows and macOS.</p>
 
 <p>Our solution to these problems is to adopt the <a href="https://github.com/OpenRA/OpenRA/wiki/Appimages">AppImage</a> packaging format, which allows us to distribute a portable version of OpenRA that should work on most modern Linux distributions. AppImages can exist alongside normal distro packages and even other versions of OpenRA, which makes it perfect for trying out playtest versions without overwriting the stable release. We will be retiring our deb packages and OBS repository as part of this change, but fear not because stable OpenRA releases are also available on <a href="https://flathub.org/apps/details/net.openra.OpenRA">Flathub</a> if you prefer a “proper” installation that integrates more closely with your system.</p>
 
-<div style="text-align:center">
-  <p><img src="/images/news/20180610-download.png" width="600" alt="OpenRA Download page" /></p>
-
-  <p>A sneak-preview of the new download page featuring Linux AppImages.</p>
-
-</div>
+<figure>
+  <img src="/images/news/20180610-download.png" style="width: 600px" alt="OpenRA Download page" />
+  <figcaption>A sneak-preview of the new download page featuring Linux AppImages.</figcaption>
+</figure>
 
 <p>Our modding community has continued to be a major focus, driven in a large part by active discussions with and Pull Requests from the modders themselves. We have recently achieved two major modding milestones which we are looking forward to support from the next playtest:</p>
 <ul>
@@ -87,12 +183,10 @@
 
 <p>The main driver for this work has been a project to improve OpenRA’s performance on the latest Raspberry Pi devices. These changes have improved performance from a painful 10 FPS during large battles (using the Red Alert main menu as a test case) to a more tolerable 20 FPS. We are still not happy with performance on the Pi, and have identified several areas in the game code that could be targeted to improve performance further. We hope to be able to officially support a Raspbian release in the future once performance has improved to an acceptable level.</p>
 
-<div style="text-align:center">
-  <p><img src="/images/news/20180610-pifps.png" alt="Raspberry Pi Performance" /></p>
-
-  <p>Renderer improvements (red and orange lines) significantly improve performance on a Raspberry Pi 3B+.<br />The next target for optimisation will be the tick_time (light blue line).</p>
-
-</div>
+<figure>
+  <img src="/images/news/20180610-pifps.png" alt="Raspberry Pi Performance" />
+  <figcaption>Renderer improvements (red and orange lines) significantly improve performance on a Raspberry Pi 3B+.<br />The next target for optimisation will be the tick_time (light blue line).</figcaption>
+</figure>
 
 <p>The upcoming playtest includes several other great features that I haven’t covered above as well as the usual set of iterative balance tweaks and bug fixes. Keep an eye on the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog-(bleed)">development changelog</a> and <a href="https://github.com/OpenRA/OpenRA/milestone/20">release milestone</a> over the next few weeks if you are curious about the full feature set and progress towards a release.</p>
 
@@ -100,12 +194,10 @@
 
 <p>We still receive a lot of questions about a release date for the Tiberian Sun mod, and unfortunately the answer has not changed in the last year: we don’t know, but it won’t be soon unless we can attract new developers with the right skills to help. Progress is still being made on gameplay features (e.g. we recently merged support for placing gates on top of walls, and the special logic for tiberium critters), but a release is blocked by a handful of critical bugs and missing features that cut deep into some of the oldest and ugliest parts of OpenRA’s code. Resolving these issues takes a significant amount of work, and we currently only have one person (with very limited time) with the knowledge required to tackle them.</p>
 
-<div style="text-align:center">
-  <p><img src="/images/news/20180610-tibsun.png" width="600" alt="Tiberian Sun mod" /></p>
-
-  <p>Tiberian Sun progress has all but stalled due to lack of manpower.</p>
-
-</div>
+<figure>
+  <img src="/images/news/20180610-tibsun.png" style="width: 600px" alt="Tiberian Sun mod" />
+  <figcaption>Tiberian Sun progress has all but stalled due to lack of manpower.</figcaption>
+</figure>
 
 <p>While the mod is broadly playable, it is still missing some important features (e.g. super weapons) and other important features contain game-breaking bugs (e.g. subterranean units, cloak generators). We would have to disable these features if we wanted to release a public build now (like we did in the early days of Red Alert, Tiberian Dawn, and Dune 2000), and try to rebalance the rest of the game around their absense. This is not a path we want to repeat after our experiences with Red Alert.</p>
 
@@ -113,40 +205,170 @@
 
 <p>This dichotomy between “Original Red Alert” and “Original OpenRA” has caused significant conflict among our players and contributors on the forum and the community Discord channels. These discussions were reignited last year by the change to building auto-targeting, and have increased in passion with recent discussions about finding a way to move Hinds back to Soviets and removing Kill Bounties as a default feature. On one side of the issue are thoughts that the RA mod should abandon some of the changes that don’t make sense in the world of Red Alert 1 (e.g. Kill Bounties, but not the Flak Truck) and instead double down on the things that made the Command and Conquer series memorable. On the other side are thoughts that it is exactly these changes that made <em>OpenRA</em> great, and that it is an insult to our community to discard these features motivated by misplaced nostalgia.</p>
 
-<div style="text-align:center">
-  <p><img src="/images/news/20180610-hinds.png" width="600" alt="Allied Hind" /></p>
-
-  <p>The Allied Hind. Hero, or heresy? Let us know what you think about OpenRA’s gameplay changes below!</p>
-
-</div>
+<figure>
+  <img src="/images/news/20180610-hinds.png" style="width: 600px" alt="Allied Hind" />
+  <figcaption>The Allied Hind. Hero, or heresy? Let us know what you think about OpenRA's gameplay changes below!</figcaption>
+</figure>
 
 <p>We would greatly value input from the wider OpenRA community on the topic, so leave your thoughts in the comments below or <a href="https://forum.openra.net">on our new forum</a>. The results of this discussion will steer the future direction of OpenRA’s Red Alert mod. Please aim to be polite and constructive; comments that insult or abuse others will be moderated.</p>
 
-
-<hr />
-
-<div id="disqus_thread">
-  <noscript><div class="noscript">Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></div></noscript>
-</div>
-<script type="text/javascript">
+  </div>
+  <footer class="developer-update__footer">
+    <div id="disqus_thread"></div>
+<script>
   if (document.domain == 'www.openra.net') {
-    var disqus_shortname = 'openra';
-    var disqus_identifier = 'devblog-20180610';
-	// Future proofed permalink
-    var disqus_url = 'https://www.openra.net/news/devblog-20180610/';
-    var disqus_title = 'A few development topics';
+    var disqus_config = function () {
+      this.page.url = "" || window.location.href;
+      this.page.identifier = "devblog-20180610";
+    };
 
     (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      var d = document, s = d.createElement('script');
+      s.src = '//openra.disqus.com/embed.js';
+      s.async = true;
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
     })();
   }
   else
-    $('#disqus_thread').append('<div class="noscript">Comments are disabled for this domain.</div>');
+  {
+    var warn = document.createElement("p");
+    warn.appendChild(document.createTextNode("Comments are disabled for this domain."));
+    warn.classList.add("text--warning");
+    warn.classList.add("text--small");
+    document.getElementById("disqus_thread").appendChild(warn);
+  }
 </script>
-</div>
-      <div id="footer"><p>Copyright &copy; 2007-2021 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</p></div>
+<noscript>
+  Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments—powered by Disqus.</a>
+</noscript>
+  </footer>
+</article>
+            
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="site-footer">
+  <hr class="site-footer__hr" />
+  <div class="site-footer__main u-centered-content u-centered-content--small">
+    <a class="site-footer__logo-link" href="/">
+      <img class="site-footer__logo" src="/images/openra-logo-with-text.svg" alt="OpenRA" />
+    </a>
+    <div class="site-footer__legal">©2007-2021 The OpenRA Developers (<a href="/legal">Legal notices</a>)</div>
+    <nav class="site-footer__nav">
+      <div>
+        <a href="/news" tabindex="0">News</a>
+      </div>
+      <div>
+        <a href="/about" tabindex="0">About</a>
+      </div>
+      <div>
+        <a href="/download" tabindex="0">Download</a>
+      </div>
+      <div>
+        <a href="/games" tabindex="0">Games</a>
+      </div>
+      <div>
+        <a href="/community" tabindex="0">Community</a>
+      </div>
+      <div>
+        <a href="https://forum.openra.net" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-conversation"></use>
+          </svg>
+          Forum
+        </a>
+      </div>
+      <div>
+        <a href="https://resource.openra.net" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-wrench"></use>
+          </svg>
+          Resources
+        </a>
+      </div>
+    </nav>
+    <nav class="site-footer__social-nav">
+      <div>
+        <a href="https://github.com/OpenRA/OpenRA" class="color--github" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-github"></use>
+          </svg>
+          GitHub
+        </a>
+      </div>
+      <div>
+        <a href="https://discord.openra.net/" class="color--discord" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-discord"></use>
+          </svg>
+          Discord
+        </a>
+      </div>
+      <div>
+        <a href="https://openra.itch.io/openra" class="color--itch" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-itch"></use>
+          </svg>
+          Itch
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/openra" class="color--facebook" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-facebook"></use>
+          </svg>
+          Facebook
+        </a>
+      </div>
+      <div>
+        <a href="https://twitter.com/openRA" class="color--twitter" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-twitter"></use>
+          </svg>
+          Twitter
+        </a>
+      </div>
+      <div>
+        <a href="https://www.reddit.com/r/openra" class="color--reddit" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-reddit"></use>
+          </svg>
+          Reddit
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig" class="color--youtube" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-youtube"></use>
+          </svg>
+          YouTube
+        </a>
+      </div>
+      <div>
+        <a href="https://steamcommunity.com/groups/openra/" class="color--steam" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-steam"></use>
+          </svg>
+          Steam
+        </a>
+      </div>
+    </nav>
+  </div>
+</footer>
+
     </div>
+
+    <script
+  src="/scripts/vendor/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<script src="/scripts/vendor/svgxuse.min.js" async></script>
+<script src="/scripts/vendor/lite-youtube-embed.js" async></script>
+<script src="/scripts/global.js"></script>
+
   </body>
 </html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <meta name="description" content="Classic staregy games rebuilt for the modern era" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="OpenRA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Classic staregy games rebuilt for the modern era" />
+  <meta property="og:url" content="https://www.openra.net" />
+  <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
+  <meta property="og:image" content="/images/social.jpg/images/social.jpg?t=2021-03-21-19-15" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@openRA">
+  <meta name="twitter:creator" content="@openRA">
+  <meta name="twitter:title" content="OpenRA">
+  <meta name="twitter:description" content="Classic staregy games rebuilt for the modern era">
+  <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
+  <meta name="twitter:image" content="/images/social.jpg?t=2021-03-21-19-15">
+
+  <title>OpenRA - Classic strategy games rebuilt for the modern era</title>
+  <link rel="stylesheet" href="/styles/normalize.css" />
+  <link rel="stylesheet" href="/styles/index.css" />
+  <link rel="stylesheet" href="/styles/lite-youtube-embed.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <!-- hack to prevent Firefox from doing a "FOUC" -->
+  <!-- the contents of the <script> aren't important, just that it is here -->
+  <script>var PREVENT_FOUC = true;</script>
+</head>
+
+
+  <body>
+    <div class="site">
+
+      
+
+<header class="site-header">
+  <div class="site-header__main">
+    <button class="site-header__menu-toggle" aria-label="Open Site Menu">
+      <svg class="icon">
+        <use xlink:href="/images/icons/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <a href="/">
+      <img 
+        class="site-header__logo"
+        src="/images/openra-logo-with-text.svg"
+        alt="OpenRA" />
+    </a>
+
+    <div class="site-header__menu">
+      <button class="site-header__menu-close" aria-label="Open Site Menu">
+        <svg class="icon">
+          <use xlink:href="/images/icons/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+
+      <nav class="site-header__nav">
+        <a class="site-header__nav__link" href="/news" tabindex="0">News</a>
+        <a class="site-header__nav__link" href="/about" tabindex="0">About</a>
+        <a class="site-header__nav__link" href="/download" tabindex="0">Download</a>
+        <a class="site-header__nav__link is-active" href="/games" tabindex="0">Games</a>
+        <a class="site-header__nav__link" href="/community" tabindex="0">Community</a>
+        <a class="site-header__nav__link" href="https://forum.openra.net" tabindex="0">
+          Forum
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-external-link"></use>
+          </svg>
+        </a>
+        <a class="site-header__nav__link" href="https://resource.openra.net" tabindex="0">
+          Resources
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-external-link"></use>
+          </svg>
+        </a>
+      </nav>
+
+      <nav class="site-header__social-nav">
+        <div class="site-header__social-nav__row">
+          <a class="site-header__social-nav__link" href="https://github.com/OpenRA/OpenRA" tabindex="0">
+            <span class="text--hidden">GitHub</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-github"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://discord.openra.net/" tabindex="0">
+            <span class="text--hidden">Discord</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-discord"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://openra.itch.io/openra" tabindex="0">
+            <span class="text--hidden">Itch</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-itch"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.facebook.com/openra" tabindex="0">
+            <span class="text--hidden">Facebook</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="site-header__social-nav__row">
+          <a class="site-header__social-nav__link" href="https://twitter.com/openRA" tabindex="0">
+            <span class="text--hidden">Twitter</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.reddit.com/r/openra" tabindex="0">
+            <span class="text--hidden">Reddit</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-reddit"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig" tabindex="0">
+            <span class="text--hidden">YouTube</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://steamcommunity.com/groups/openra/" tabindex="0">
+            <span class="text--hidden">Steam</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-steam"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <hr class="site-header__hr" />
+  
+</header>
+
+      <div class="site-content">
+      <section class="site-section">
+  <div class="site-section__content">
+    <h1 class="site-section__heading">Server Browser</h1>
+    <p class="text--large">People from around the world use OpenRA to play <strong>Red Alert</strong>, <strong>Command & Conquer</strong>, <strong>Dune 2000</strong>, and a variety of <strong>community mods</strong>. Use the server browser below to join in on the multiplayer fun!</p>
+  </div>
+</section>
+
+<hr class="site-section__divider" />
+
+<section id="server-browser" class="servers site-section">
+  <div class="site-section__content">
+    <div class="servers__controls">
+      <div class="servers__filters">
+        <label class="button">
+          <input class="servers__filters__waiting" type="checkbox" checked /> Waiting
+        </label>
+        <label class="button">
+          <input class="servers__filters__playing" type="checkbox" checked /> Playing
+        </label>
+        <label class="button">
+          <input class="servers__filters__empty" type="checkbox" /> Empty
+        </label>
+      </div>
+      <div class="servers__info text--small">
+        <span class="servers__counts">Showing <var class="servers__server-count">0</var> servers hosting <var class="servers__player-count">0</var> players.</span>
+        <button class="servers__refresh">Refresh</button>
+      </div>
+    </div>
+    <div class="u-mobile-full-width">
+      <table class="servers__list text--small table--hover-rows table--metal-panel">
+        <thead class="servers__list__header">
+          <tr>
+            <th class="servers__list__header__name" colspan="2">
+              <a class="servers__list__header__sort-toggle servers__sort__name" href="#sort-by-name">
+                Name
+                <svg class="icon">
+                  <use xlink:href="/images/icons/icons.svg#icon-chevron-down"></use>
+                </svg>
+              </a>
+            </th>
+            <th class="servers__list__header__status">
+              <a class="servers__list__header__sort-toggle servers__sort__status" href="#sort-by-status">
+                Status
+                <svg class="icon">
+                  <use xlink:href="/images/icons/icons.svg#icon-chevron-down"></use>
+                </svg>
+              </a>
+            </th>
+            <th class="servers__list__header__players">
+              <a class="servers__list__header__sort-toggle servers__sort__players" href="#sort-by-players">
+                Players
+                <svg class="icon">
+                  <use xlink:href="/images/icons/icons.svg#icon-chevron-down"></use>
+                </svg>
+              </a>
+            </th>
+            <th class="servers__list__header__location">
+              <a class="servers__list__header__sort-toggle servers__sort__location" href="#sort-by-location">
+                Location
+                <svg class="icon">
+                  <use xlink:href="/images/icons/icons.svg#icon-chevron-down"></use>
+                </svg>
+              </a>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="servers__list__body">
+          <tr>
+            <td>
+              <noscript>JavaScript must be enabled to use the Server Browser</noscript>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="servers__list__tooltip-container" style="pointer-events: none;"></div>
+</section>
+
+<hr class="site-section__divider" />
+
+<section class="site-section">
+  <div class="site-section__content">
+    <h2 class="site-section__heading">Player Activity</h2>
+    <p>View the numbers of people <strong class="color--playing">playing</strong> and <strong class="color--waiting">waiting</strong> over the last two weeks:</p>
+    <div
+      id="players"
+      class="flot-chart"
+      style="width: 100%; height: 300px;">
+      Loading...
+    </div>
+    <p>More detailed graphs are available at the <a href="/players">player statistics</a> page.</p>
+  </div>
+</section>
+
+<template id="server-row-template">
+  <tr class="servers__listing">
+    <td class="servers__listing__name"></td>
+    <td class="servers__listing__join"></td>
+    <td class="servers__listing__status"></td>
+    <td class="servers__listing__players"></td>
+    <td class="servers__listing__location"></td>
+  </tr>
+</template>
+
+<template id="server-group-header-template">
+  <tr class="servers__list__group">
+    <td colspan="3">
+      <div class="servers__list__group__info">
+        <a class="servers__list__group__mod-link"></a>
+        <span class="servers__list__group__version"></span>
+      </div>
+    </td>
+    <td colspan="2">
+      <span class="servers__list__group__players"><var></var></span>
+    </td>
+  </tr>
+</template>
+
+<template id="server-listing-tooltip-template">
+  <div class="servers__list__tooltip">
+    <div class="servers__list__tooltip__map">
+      <div class="minimap">
+        <var class="minimap__hash"></var>
+        <div class="minimap__bounds">
+          <img class="minimap__image" />
+          <ul class="minimap__spawnpoints"></ul>
+        </div>
+      </div>
+      <div class="servers__list__tooltip__map__title">-</div>
+    </div>
+    <div class="servers__list__tooltip__clients">
+      <table>
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Team</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</template>
+
+      </div>
+
+      <footer class="site-footer">
+  <hr class="site-footer__hr" />
+  <div class="site-footer__main u-centered-content u-centered-content--small">
+    <a class="site-footer__logo-link" href="/">
+      <img class="site-footer__logo" src="/images/openra-logo-with-text.svg" alt="OpenRA" />
+    </a>
+    <div class="site-footer__legal">©2007-2021 The OpenRA Developers (<a href="/legal">Legal notices</a>)</div>
+    <nav class="site-footer__nav">
+      <div>
+        <a href="/news" tabindex="0">News</a>
+      </div>
+      <div>
+        <a href="/about" tabindex="0">About</a>
+      </div>
+      <div>
+        <a href="/download" tabindex="0">Download</a>
+      </div>
+      <div>
+        <a href="/games" tabindex="0">Games</a>
+      </div>
+      <div>
+        <a href="/community" tabindex="0">Community</a>
+      </div>
+      <div>
+        <a href="https://forum.openra.net" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-conversation"></use>
+          </svg>
+          Forum
+        </a>
+      </div>
+      <div>
+        <a href="https://resource.openra.net" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-wrench"></use>
+          </svg>
+          Resources
+        </a>
+      </div>
+    </nav>
+    <nav class="site-footer__social-nav">
+      <div>
+        <a href="https://github.com/OpenRA/OpenRA" class="color--github" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-github"></use>
+          </svg>
+          GitHub
+        </a>
+      </div>
+      <div>
+        <a href="https://discord.openra.net/" class="color--discord" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-discord"></use>
+          </svg>
+          Discord
+        </a>
+      </div>
+      <div>
+        <a href="https://openra.itch.io/openra" class="color--itch" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-itch"></use>
+          </svg>
+          Itch
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/openra" class="color--facebook" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-facebook"></use>
+          </svg>
+          Facebook
+        </a>
+      </div>
+      <div>
+        <a href="https://twitter.com/openRA" class="color--twitter" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-twitter"></use>
+          </svg>
+          Twitter
+        </a>
+      </div>
+      <div>
+        <a href="https://www.reddit.com/r/openra" class="color--reddit" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-reddit"></use>
+          </svg>
+          Reddit
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig" class="color--youtube" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-youtube"></use>
+          </svg>
+          YouTube
+        </a>
+      </div>
+      <div>
+        <a href="https://steamcommunity.com/groups/openra/" class="color--steam" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-steam"></use>
+          </svg>
+          Steam
+        </a>
+      </div>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+
+    <script
+  src="/scripts/vendor/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<script src="/scripts/vendor/svgxuse.min.js" async></script>
+<script src="/scripts/vendor/lite-youtube-embed.js" async></script>
+<script src="/scripts/global.js"></script>
+
+  <script type="text/javascript" src="/scripts/vendor/popper.js"></script>
+
+  <script type="text/javascript" src="/scripts/vendor/jquery.hoverintent.min.js"></script>
+
+  <script type="text/javascript" src="/scripts/server-browser.js"></script>
+
+  <script type="text/javascript" src="/scripts/vendor/flot.js"></script>
+
+  <script type="text/javascript" src="/scripts/vendor/flot-selection.js"></script>
+
+  <script type="text/javascript" src="/scripts/vendor/flot-stack.js"></script>
+
+  <script type="text/javascript" src="/scripts/vendor/flot-time.js"></script>
+
+  <script type="text/javascript" src="/scripts/vendor/flot-tooltip.js"></script>
+
+  <script type="text/javascript" src="/scripts/vendor/flot-resize.js"></script>
+
+  <script type="text/javascript" src="/scripts/vendor/javascript-rrd.js"></script>
+
+  <script type="text/javascript" src="/scripts/vendor/rrd-flot.js"></script>
+
+  <script type="text/javascript" src="/scripts/vendor/rrd-flot-async.js"></script>
+
+  <script type="text/javascript" src="/scripts/player-charts.js"></script>
+
+  </body>
+</html>

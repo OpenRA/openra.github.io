@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <meta name="description" content="Classic staregy games rebuilt for the modern era" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="OpenRA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Classic staregy games rebuilt for the modern era" />
+  <meta property="og:url" content="https://www.openra.net" />
+  <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
+  <meta property="og:image" content="/images/social.jpg/images/social.jpg?t=2021-03-21-19-15" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@openRA">
+  <meta name="twitter:creator" content="@openRA">
+  <meta name="twitter:title" content="OpenRA">
+  <meta name="twitter:description" content="Classic staregy games rebuilt for the modern era">
+  <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
+  <meta name="twitter:image" content="/images/social.jpg?t=2021-03-21-19-15">
+
+  <title>OpenRA - Classic strategy games rebuilt for the modern era</title>
+  <link rel="stylesheet" href="/styles/normalize.css" />
+  <link rel="stylesheet" href="/styles/index.css" />
+  <link rel="stylesheet" href="/styles/lite-youtube-embed.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <!-- hack to prevent Firefox from doing a "FOUC" -->
+  <!-- the contents of the <script> aren't important, just that it is here -->
+  <script>var PREVENT_FOUC = true;</script>
+</head>
+
+
+  <body>
+    <div class="site">
+
+      
+
+<header class="site-header">
+  <div class="site-header__main">
+    <button class="site-header__menu-toggle" aria-label="Open Site Menu">
+      <svg class="icon">
+        <use xlink:href="/images/icons/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <a href="/">
+      <img 
+        class="site-header__logo"
+        src="/images/openra-logo-with-text.svg"
+        alt="OpenRA" />
+    </a>
+
+    <div class="site-header__menu">
+      <button class="site-header__menu-close" aria-label="Open Site Menu">
+        <svg class="icon">
+          <use xlink:href="/images/icons/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+
+      <nav class="site-header__nav">
+        <a class="site-header__nav__link" href="/news" tabindex="0">News</a>
+        <a class="site-header__nav__link" href="/about" tabindex="0">About</a>
+        <a class="site-header__nav__link" href="/download" tabindex="0">Download</a>
+        <a class="site-header__nav__link" href="/games" tabindex="0">Games</a>
+        <a class="site-header__nav__link is-active" href="/community" tabindex="0">Community</a>
+        <a class="site-header__nav__link" href="https://forum.openra.net" tabindex="0">
+          Forum
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-external-link"></use>
+          </svg>
+        </a>
+        <a class="site-header__nav__link" href="https://resource.openra.net" tabindex="0">
+          Resources
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-external-link"></use>
+          </svg>
+        </a>
+      </nav>
+
+      <nav class="site-header__social-nav">
+        <div class="site-header__social-nav__row">
+          <a class="site-header__social-nav__link" href="https://github.com/OpenRA/OpenRA" tabindex="0">
+            <span class="text--hidden">GitHub</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-github"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://discord.openra.net/" tabindex="0">
+            <span class="text--hidden">Discord</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-discord"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://openra.itch.io/openra" tabindex="0">
+            <span class="text--hidden">Itch</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-itch"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.facebook.com/openra" tabindex="0">
+            <span class="text--hidden">Facebook</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="site-header__social-nav__row">
+          <a class="site-header__social-nav__link" href="https://twitter.com/openRA" tabindex="0">
+            <span class="text--hidden">Twitter</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.reddit.com/r/openra" tabindex="0">
+            <span class="text--hidden">Reddit</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-reddit"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig" tabindex="0">
+            <span class="text--hidden">YouTube</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://steamcommunity.com/groups/openra/" tabindex="0">
+            <span class="text--hidden">Steam</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-steam"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <hr class="site-header__hr" />
+  
+</header>
+
+      <div class="site-content">
+      <section class="site-section">
+  <div class="site-section__content">
+    <h1 class="site-section__heading">Community</h1>
+    <p class="text--large">OpenRA is a game created <strong>by the community, for the community</strong>. You can contribute in a variety of ways, from giving help to the development team, to finding and reporting bugs, to just playing the game!</p>
+  </div>
+</section>
+
+<hr class="site-section__divider" />
+
+<section class="site-section">
+  <div class="site-section__content">
+    <div class="community__section dark-panel">
+      <div class="dark-panel__header"><strong class="text--caps">Join the Discussion</strong></div>
+      <div class="community__section__content">
+        <div>
+          If you've got questions or you just feel like chatting, come on down to our <a href="https://discord.openra.net/">community Discord</a> or <a href="irc://chat.freenode.net/openra">#openra on Freenode</a>.
+          <p>Join our <a href="https://forum.openra.net">Community Forum</a> for longer form discussions about events, maps, balance, or anything else! Your OpenRA forum account can be linked with your in-game player profile to display badges and join private servers.</p>
+        </div>
+        <img class="community__section__illustration" src="/images/community/discussion-sites.png" />
+      </div>
+      <div class="community__section__links">
+        <a class="button button--discord" href="https://discord.openra.net/">
+          Discord
+          <svg class="button__icon icon">
+            <use xlink:href="/images/icons/icons.svg#icon-discord"></use>
+          </svg>
+        </a>
+        <a class="button button--freenode" href="irc://chat.freenode.net/openra">
+          #openra
+          <svg class="button__icon icon">
+            <use xlink:href="/images/icons/icons.svg#icon-conversation"></use>
+          </svg>
+        </a>
+        <a class="button button--primary" href="https://forum.openra.net">
+          Forum
+          <svg class="button__icon icon">
+            <use xlink:href="/images/icons/icons.svg#icon-conversation"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="community__section dark-panel">
+      <div class="dark-panel__header"><strong class="text--caps">Help Build OpenRA</strong></div>
+      <div class="community__section__content">
+        <div>
+          OpenRA is built by a team of volunteers and we're <strong>always</strong> looking for help. If you run into trouble, check out the <a href="https://github.com/OpenRA/OpenRA/wiki/FAQ">FAQ</a> — if you find a bug, make sure to report it with the <a href="https://github.com/OpenRA/OpenRA/issues/">OpenRA bug tracker</a>. If you're looking to contribute code, feel free to take a look at the <a href="https://github.com/OpenRA/OpenRA/wiki#development-topics">Development Topics article in our wiki</a>, or reach out to the team on Discord, IRC, or the forums. 
+        </div>
+        <img class="community__section__illustration" src="/images/community/help-the-devs-sites.png" />
+      </div>
+      <div class="community__section__links">
+        <a class="button button--github" href="https://github.com/OpenRA">
+          GitHub
+          <svg class="button__icon icon">
+            <use xlink:href="/images/icons/icons.svg#icon-github"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="community__section dark-panel">
+      <div class="dark-panel__header"><strong class="text--caps">Create or Download Maps for OpenRA</strong></div>
+      <div class="community__section__content">
+        <div>
+          No real time strategy game would be complete without its maps. OpenRA has its own resource website where you can find <em>over 9,000</em> maps to add all sorts of variety to the game. You can even <strong>create and upload your own maps</strong> for other people to play!
+        </div>
+        <img class="community__section__illustration" src="/images/community/resource-sites.png" />
+      </div>
+      <div class="community__section__links">
+        <a class="button button--openra-resource" href="https://resource.openra.net">
+          OpenRA Resource
+          <svg class="button__icon icon">
+            <use xlink:href="/images/icons/icons.svg#icon-wrench"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="community__section dark-panel">
+      <div class="dark-panel__header"><strong class="text--caps">Connect With Us on Social Media</strong></div>
+      <div class="community__section__content">
+        <div>
+          We're active on <a href="https://reddit.com/r/openra">Reddit</a>, <a href="https://twitter.com/openra">Twitter</a>, and <a href="https://facebook.com/openra">Facebook</a>. Follow us there to get the latest news on features and releases!
+          <p>Subscribe to our <a href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig">YouTube channel</a> for all sorts of video content, including previews of upcoming features.</p>
+        </div>
+        <img class="community__section__illustration" src="/images/community/social-media-sites.png" />
+      </div>
+      <div class="community__section__links">
+        <a class="button button--reddit" href="https://reddit.com/r/openra">
+          Reddit
+          <svg class="button__icon icon">
+            <use xlink:href="/images/icons/icons.svg#icon-reddit"></use>
+          </svg>
+        </a>
+        <a class="button button--twitter" href="https://twitter.com/openra">
+          Twitter
+          <svg class="button__icon icon">
+            <use xlink:href="/images/icons/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+        <a class="button button--facebook" href="https://facebook.com/openra">
+          Facebook
+          <svg class="button__icon icon">
+            <use xlink:href="/images/icons/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a class="button button--youtube" href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig">
+          YouTube
+          <svg class="button__icon icon">
+            <use xlink:href="/images/icons/icons.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="community__section dark-panel">
+      <div class="dark-panel__header"><strong class="text--caps">Join us in the Gaming Community</strong></div>
+      <div class="community__section__content">
+        <div>
+          OpenRA is involved in gaming communities as well! Support the mod by following and rating OpenRA on <a href="https://openra.itch.io/openra">itch.io</a> and <a href="https://www.moddb.com/games/openra">ModDb</a>.
+        </div>
+        <img class="community__section__illustration" src="/images/community/gaming-community-sites.png" />
+      </div>
+      <div class="community__section__links">
+        <a class="button button--itch" href="https://openra.itch.io/openra">
+          Itch.io
+          <svg class="button__icon icon">
+            <use xlink:href="/images/icons/icons.svg#icon-itch"></use>
+          </svg>
+        </a>
+        <a class="button button--moddb" href="https://www.moddb.com/games/openra">
+          ModDB
+          <svg class="button__icon icon">
+            <use xlink:href="/images/icons/icons.svg#icon-moddb"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </div>
+
+      <footer class="site-footer">
+  <hr class="site-footer__hr" />
+  <div class="site-footer__main u-centered-content u-centered-content--small">
+    <a class="site-footer__logo-link" href="/">
+      <img class="site-footer__logo" src="/images/openra-logo-with-text.svg" alt="OpenRA" />
+    </a>
+    <div class="site-footer__legal">©2007-2021 The OpenRA Developers (<a href="/legal">Legal notices</a>)</div>
+    <nav class="site-footer__nav">
+      <div>
+        <a href="/news" tabindex="0">News</a>
+      </div>
+      <div>
+        <a href="/about" tabindex="0">About</a>
+      </div>
+      <div>
+        <a href="/download" tabindex="0">Download</a>
+      </div>
+      <div>
+        <a href="/games" tabindex="0">Games</a>
+      </div>
+      <div>
+        <a href="/community" tabindex="0">Community</a>
+      </div>
+      <div>
+        <a href="https://forum.openra.net" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-conversation"></use>
+          </svg>
+          Forum
+        </a>
+      </div>
+      <div>
+        <a href="https://resource.openra.net" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-wrench"></use>
+          </svg>
+          Resources
+        </a>
+      </div>
+    </nav>
+    <nav class="site-footer__social-nav">
+      <div>
+        <a href="https://github.com/OpenRA/OpenRA" class="color--github" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-github"></use>
+          </svg>
+          GitHub
+        </a>
+      </div>
+      <div>
+        <a href="https://discord.openra.net/" class="color--discord" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-discord"></use>
+          </svg>
+          Discord
+        </a>
+      </div>
+      <div>
+        <a href="https://openra.itch.io/openra" class="color--itch" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-itch"></use>
+          </svg>
+          Itch
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/openra" class="color--facebook" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-facebook"></use>
+          </svg>
+          Facebook
+        </a>
+      </div>
+      <div>
+        <a href="https://twitter.com/openRA" class="color--twitter" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-twitter"></use>
+          </svg>
+          Twitter
+        </a>
+      </div>
+      <div>
+        <a href="https://www.reddit.com/r/openra" class="color--reddit" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-reddit"></use>
+          </svg>
+          Reddit
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig" class="color--youtube" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-youtube"></use>
+          </svg>
+          YouTube
+        </a>
+      </div>
+      <div>
+        <a href="https://steamcommunity.com/groups/openra/" class="color--steam" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-steam"></use>
+          </svg>
+          Steam
+        </a>
+      </div>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+
+    <script
+  src="/scripts/vendor/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<script src="/scripts/vendor/svgxuse.min.js" async></script>
+<script src="/scripts/vendor/lite-youtube-embed.js" async></script>
+<script src="/scripts/global.js"></script>
+
+  </body>
+</html>

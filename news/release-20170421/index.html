@@ -1,69 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=1024" />
-    <meta name="description" content="Open Source reimplementation of Westwood Studios' 2D Command and Conquer games" />
-    <meta name="keywords" content="OpenRA, RTS, game engine, RTS game engine, strategy, mods, C&amp;C, Command and Conquer, C&amp;C95, C&quot;C1, C&amp;C95 Online, Online, LAN, multiplayer, Red Alert, Red, Alert, RA, RA1, RA95, Tiberian, Tiberian Dawn, TD, Dune, Dune 2000, Dune2000, D2K, Tiberian Sun, Tiberium, Sun, TS, Red Alert 2, RA2, Kane, GDI, Nod, Brotherhood of Nod, Global Defense Initiative, Atreides, Ordos, Harkonnen, Allies, Soviets, Westwood" />
-    <meta property="og:title" content="OpenRA" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.openra.net/" />
-    <meta property="og:image" content="https://www.openra.net/images/og-image.png" />
-    <title>OpenRA - Release 20170421</title>
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <link href="/style.css" rel="stylesheet">
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="/news/atom/" rel="alternate" type="application/atom+xml">
-    <script>
-    function supportsSVG() {
-      return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
-    }
-    $(document).ready(function(){
-      if (!supportsSVG()) {
-        document.documentElement.className += ' no-svg';
-        $('img[src$=".svg"]').attr('src', function(){return $(this).attr('src').replace('.svg', '-fallback.png');});
-      }
-    });
-    </script>
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <meta name="description" content="Classic staregy games rebuilt for the modern era" />
 
-      ga('create', 'UA-48361645-1', 'auto');
-      ga('set', 'anonymizeIp', true);
-      ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
-  </head>
+  <!-- OpenGraph -->
+  <meta property="og:title" content="OpenRA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Classic staregy games rebuilt for the modern era" />
+  <meta property="og:url" content="https://www.openra.net" />
+  <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
+  <meta property="og:image" content="/images/social.jpg/images/social.jpg?t=2021-03-21-19-15" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@openRA">
+  <meta name="twitter:creator" content="@openRA">
+  <meta name="twitter:title" content="OpenRA">
+  <meta name="twitter:description" content="Classic staregy games rebuilt for the modern era">
+  <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
+  <meta name="twitter:image" content="/images/social.jpg?t=2021-03-21-19-15">
+
+  <title>OpenRA - Classic strategy games rebuilt for the modern era</title>
+  <link rel="stylesheet" href="/styles/normalize.css" />
+  <link rel="stylesheet" href="/styles/index.css" />
+  <link rel="stylesheet" href="/styles/lite-youtube-embed.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <!-- hack to prevent Firefox from doing a "FOUC" -->
+  <!-- the contents of the <script> aren't important, just that it is here -->
+  <script>var PREVENT_FOUC = true;</script>
+</head>
+
+
   <body>
-    <div id="container">
+    <div class="site">
+
       
-      <div id="header"><h1><img src="/images/soviet-logo.svg" alt="OpenRA Logo" />OpenRA</h1></div>
-      
-      <a id="ghbanner" href="https://github.com/OpenRA/OpenRA"><img src="/images/forkme.svg" alt="Fork me on GitHub"></a>
-      <ul id="nav">
-      
-        <li><a href="/">Home</a></li>
-      
-        <li><a href="/news/" class="nav-selected">News</a></li>
-      
-        <li><a href="/about/">About</a></li>
-      
-        <li><a href="/download/">Download</a></li>
-      
-        <li><a href="/games/">Games</a></li>
-      
-        <li><a href="/community/">Community</a></li>
-      
-      <li><a href="https://forum.openra.net">Forum</a></li>
-      </ul>
-      <div id="content"><h3><a href="/news/">Archived News</a> &raquo; Release 20170421</h3>
-<p class="newsDetails">Posted by Oliver Brakmann at 2017-04-21 20:00 +0000</p>
-<hr />
-<p>Almost to the day half a year after our last stable release, we are proud to finally present to you our latest work - OpenRA Release 20170421!</p>
+
+<header class="site-header">
+  <div class="site-header__main">
+    <button class="site-header__menu-toggle" aria-label="Open Site Menu">
+      <svg class="icon">
+        <use xlink:href="/images/icons/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <a href="/">
+      <img 
+        class="site-header__logo"
+        src="/images/openra-logo-with-text.svg"
+        alt="OpenRA" />
+    </a>
+
+    <div class="site-header__menu">
+      <button class="site-header__menu-close" aria-label="Open Site Menu">
+        <svg class="icon">
+          <use xlink:href="/images/icons/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+
+      <nav class="site-header__nav">
+        <a class="site-header__nav__link is-active" href="/news" tabindex="0">News</a>
+        <a class="site-header__nav__link" href="/about" tabindex="0">About</a>
+        <a class="site-header__nav__link" href="/download" tabindex="0">Download</a>
+        <a class="site-header__nav__link" href="/games" tabindex="0">Games</a>
+        <a class="site-header__nav__link" href="/community" tabindex="0">Community</a>
+        <a class="site-header__nav__link" href="https://forum.openra.net" tabindex="0">
+          Forum
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-external-link"></use>
+          </svg>
+        </a>
+        <a class="site-header__nav__link" href="https://resource.openra.net" tabindex="0">
+          Resources
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-external-link"></use>
+          </svg>
+        </a>
+      </nav>
+
+      <nav class="site-header__social-nav">
+        <div class="site-header__social-nav__row">
+          <a class="site-header__social-nav__link" href="https://github.com/OpenRA/OpenRA" tabindex="0">
+            <span class="text--hidden">GitHub</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-github"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://discord.openra.net/" tabindex="0">
+            <span class="text--hidden">Discord</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-discord"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://openra.itch.io/openra" tabindex="0">
+            <span class="text--hidden">Itch</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-itch"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.facebook.com/openra" tabindex="0">
+            <span class="text--hidden">Facebook</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="site-header__social-nav__row">
+          <a class="site-header__social-nav__link" href="https://twitter.com/openRA" tabindex="0">
+            <span class="text--hidden">Twitter</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.reddit.com/r/openra" tabindex="0">
+            <span class="text--hidden">Reddit</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-reddit"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig" tabindex="0">
+            <span class="text--hidden">YouTube</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://steamcommunity.com/groups/openra/" tabindex="0">
+            <span class="text--hidden">Steam</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-steam"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <hr class="site-header__hr" />
+  
+</header>
+
+      <div class="site-content">
+        <section class="developer-update-detail site-section">
+          <div class="site-section__content">
+            <div class="dark-panel">
+              <div class="dark-panel__header">
+                <a class="developer-update-detail__view-all" href="/news">
+                  <svg class="icon">
+                    <use xlink:href="/images/icons/icons.svg#icon-chevron-left"></use>
+                  </svg>
+                  View All Updates
+                </a>
+              </div>
+
+              <article class="developer-update">
+  <header class="developer-update__header">
+    <div class="developer-update__subheading text--medium">
+      Posted by <strong class="developer-update__author">Oliver Brakmann</strong> on <time>21 April 2017</time>
+    </div>
+    <h3 class="developer-update__heading">Release 20170421</h3>
+  </header>
+  <div class="developer-update__body">
+    <p>Almost to the day half a year after our last stable release, we are proud to finally present to you our latest work - OpenRA Release 20170421!</p>
 
 <p>With 43 developers producing just shy of 800 commits and touching almost 1800 files, this has very likely been one of our slowest release cycles ever. As such, the list of user-visible changes is not as long as you’ve come to expect in earlier years. However, behind the scenes, preparations for a fundamental transformation of the OpenRA engine are in the works. But more on that later.</p>
 
@@ -79,29 +177,27 @@
 
 <p>The Dune 2000 mod in particular has many changes to make it better match the gameplay and graphical polish of the original game, plus seven(!) new campaign missions.</p>
 
-<div style="text-align:center">
-  <p><img src="/images/news/20170421-td-hidpi.gif" alt="HiDPI support" /></p>
+<figure>
+  <img src="/images/news/20170421-td-hidpi.gif" alt="HiDPI support" />
+  <figcaption>Comparing regular and high resolution UI rendering in the Tiberian Dawn map browser.</figcaption>
+</figure>
+<p><br /></p>
+<figure>
+  <img src="/images/news/20170421-d2k-new-missions.png" alt="New Dune 2000 missions" />
+  <figcaption>Dune 2000 now comes with 13 campaign missions.</figcaption>
+</figure>
+<p><br /></p>
+<figure>
+  <img src="/images/news/20170421-ra-gapgen.png" alt="New Gap Generator behaviour" />
+  <figcaption>The re-written shroud-generating behaviour of the gap generator in action.</figcaption>
+</figure>
 
-  <p>Comparing regular and high resolution UI rendering in the Tiberian Dawn map browser.</p>
-</div>
-
-<div style="text-align:center">
-  <p><img src="/images/news/20170421-d2k-new-missions.png" alt="New Dune 2000 missions" /></p>
-
-  <p>Dune 2000 now comes with 13 campaign missions.</p>
-</div>
-
-<div style="text-align:center">
-  <p><img src="/images/news/20170421-ra-gapgen.png" alt="New Gap Generator behaviour" /></p>
-
-  <p>The re-written shroud-generating behaviour of the gap generator in action.</p>
-</div>
 <div class="about-todo-divider"></div>
 
 <p>The biggest changes in this release are behind the scenes; technical improvements that are not visible to players, but important for our development and modding community:</p>
 
 <ul>
-  <li>A new <a href="https://github.com/OpenRA/OpenRA/wiki/Trait-Conditions">trait conditions</a> system provides much better control over trait interactions.</li>
+  <li>A new <a href="https://github.com/OpenRA/OpenRA/wiki/Conditions">trait conditions</a> system provides much better control over trait interactions.</li>
   <li>Actor vision has been overhauled, adding support for features like the RA active gap generators, D2K actors revealing themselves when attacking, and cliffs blocking vision in heightmap-enabled mods.</li>
   <li>Simplified weapon definitions using inherited yaml templates.</li>
   <li>Some initial steps towards removing code patterns that are not compatible with save game support.</li>
@@ -109,15 +205,14 @@
 
 <p>OpenRA grew out of the C&amp;C modding community, and one of our major goals is to provide a flexible game engine that the community can use for their own projects.  Unfortunately, this goal has been hurt by OpenRA’s single-engine approach, meaning that every new release would unavoidably break community mods.</p>
 
-<p>After many discussions, we have developed a new mod support strategy that we will implement over the next two OpenRA releases.  This release starts by adding support for parallel OpenRA installs, and we have started developing a <a href="https://github.com/OpenRA/OpenRAModTemplate">mod template</a> that includes instructions and scripts to simplify mod development and packaging.  Mods built using this template will be self contained games that function independently from our official mod installs.</p>
+<p>After many discussions, we have developed a new mod support strategy that we will implement over the next two OpenRA releases.  This release starts by adding support for parallel OpenRA installs, and we have started developing a <a href="https://github.com/OpenRA/OpenRAModSDK">mod template</a> that includes instructions and scripts to simplify mod development and packaging.  Mods built using this template will be self contained games that function independently from our official mod installs.</p>
 
 <p>The in-game multiplayer server list will now list games for <em>all</em> the mods that a player has installed (even across multiple installations), and will allow players to directly switch to another mod when joining one.  This applies across versions as well as mods, meaning that future OpenRA releases will be able to coexist, and switching between release and playtest servers will be just as easy as switching between RA and TD servers today.</p>
 
-<div style="text-align:center">
-  <p><img src="/images/news/20170304-mpmodswitch.png" alt="New MP server list switcher" /></p>
-
-  <p>The multiplayer server list is now smarter about multiple OpenRA installations.</p>
-</div>
+<figure>
+  <img src="/images/news/20170304-mpmodswitch.png" alt="New MP server list switcher" />
+  <figcaption>The multiplayer server list is now smarter about multiple OpenRA installations.</figcaption>
+</figure>
 
 <p>The next release (later this year) will complete the mod-support transition by removing the in-game mod chooser and support for manually installed mod packages: all mods (both official and community) will be listed individually with their own names and icons in your Start Menu / Dock / Launcher.</p>
 
@@ -125,34 +220,167 @@
 
 <div class="about-todo-divider"></div>
 
-<p>For the complete list of changes please see the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/33cef396555bd767f9126d4775e20324ae05c235">full changelog</a>. You can find installers for all our supported operating systems on our <a href="/download/">download page</a>.</p>
+<p>For the complete list of changes please see the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/33cef396555bd767f9126d4775e20324ae05c235">full changelog</a>. You can find installers for all our supported operating systems on our <a href="/download">download page</a>.</p>
 
 <p>We hope you’ll enjoy this newest installment of OpenRA!</p>
 
-<hr />
-
-<div id="disqus_thread">
-  <noscript><div class="noscript">Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></div></noscript>
-</div>
-<script type="text/javascript">
+  </div>
+  <footer class="developer-update__footer">
+    <div id="disqus_thread"></div>
+<script>
   if (document.domain == 'www.openra.net') {
-    var disqus_shortname = 'openra';
-    var disqus_identifier = 'release-20170421';
-	// Future proofed permalink
-    var disqus_url = 'https://www.openra.net/news/release-20170421/';
-    var disqus_title = 'Release 20170421';
+    var disqus_config = function () {
+      this.page.url = "" || window.location.href;
+      this.page.identifier = "release-20170421";
+    };
 
     (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      var d = document, s = d.createElement('script');
+      s.src = '//openra.disqus.com/embed.js';
+      s.async = true;
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
     })();
   }
   else
-    $('#disqus_thread').append('<div class="noscript">Comments are disabled for this domain.</div>');
+  {
+    var warn = document.createElement("p");
+    warn.appendChild(document.createTextNode("Comments are disabled for this domain."));
+    warn.classList.add("text--warning");
+    warn.classList.add("text--small");
+    document.getElementById("disqus_thread").appendChild(warn);
+  }
 </script>
-</div>
-      <div id="footer"><p>Copyright &copy; 2007-2021 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</p></div>
+<noscript>
+  Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments—powered by Disqus.</a>
+</noscript>
+  </footer>
+</article>
+            
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="site-footer">
+  <hr class="site-footer__hr" />
+  <div class="site-footer__main u-centered-content u-centered-content--small">
+    <a class="site-footer__logo-link" href="/">
+      <img class="site-footer__logo" src="/images/openra-logo-with-text.svg" alt="OpenRA" />
+    </a>
+    <div class="site-footer__legal">©2007-2021 The OpenRA Developers (<a href="/legal">Legal notices</a>)</div>
+    <nav class="site-footer__nav">
+      <div>
+        <a href="/news" tabindex="0">News</a>
+      </div>
+      <div>
+        <a href="/about" tabindex="0">About</a>
+      </div>
+      <div>
+        <a href="/download" tabindex="0">Download</a>
+      </div>
+      <div>
+        <a href="/games" tabindex="0">Games</a>
+      </div>
+      <div>
+        <a href="/community" tabindex="0">Community</a>
+      </div>
+      <div>
+        <a href="https://forum.openra.net" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-conversation"></use>
+          </svg>
+          Forum
+        </a>
+      </div>
+      <div>
+        <a href="https://resource.openra.net" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-wrench"></use>
+          </svg>
+          Resources
+        </a>
+      </div>
+    </nav>
+    <nav class="site-footer__social-nav">
+      <div>
+        <a href="https://github.com/OpenRA/OpenRA" class="color--github" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-github"></use>
+          </svg>
+          GitHub
+        </a>
+      </div>
+      <div>
+        <a href="https://discord.openra.net/" class="color--discord" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-discord"></use>
+          </svg>
+          Discord
+        </a>
+      </div>
+      <div>
+        <a href="https://openra.itch.io/openra" class="color--itch" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-itch"></use>
+          </svg>
+          Itch
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/openra" class="color--facebook" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-facebook"></use>
+          </svg>
+          Facebook
+        </a>
+      </div>
+      <div>
+        <a href="https://twitter.com/openRA" class="color--twitter" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-twitter"></use>
+          </svg>
+          Twitter
+        </a>
+      </div>
+      <div>
+        <a href="https://www.reddit.com/r/openra" class="color--reddit" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-reddit"></use>
+          </svg>
+          Reddit
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig" class="color--youtube" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-youtube"></use>
+          </svg>
+          YouTube
+        </a>
+      </div>
+      <div>
+        <a href="https://steamcommunity.com/groups/openra/" class="color--steam" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-steam"></use>
+          </svg>
+          Steam
+        </a>
+      </div>
+    </nav>
+  </div>
+</footer>
+
     </div>
+
+    <script
+  src="/scripts/vendor/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<script src="/scripts/vendor/svgxuse.min.js" async></script>
+<script src="/scripts/vendor/lite-youtube-embed.js" async></script>
+<script src="/scripts/global.js"></script>
+
   </body>
 </html>
