@@ -7,10 +7,10 @@
 
   
   <!-- OpenGraph -->
-  <meta property="og:title" content="Upcoming features for the summer release | OpenRA" />
+  <meta property="og:title" content="Playtest 20221203 | OpenRA" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Classic strategy games rebuilt for the modern era" />
-  <meta property="og:url" content="https://www.openra.net/news/preview-20190606/" />
+  <meta property="og:url" content="https://www.openra.net/news/playtest-20221203/" />
   <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
   <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2022-12-03-00-02" />
   <!-- Twitter -->
@@ -19,9 +19,9 @@
   <meta name="twitter:creator" content="@openRA">
 
   
-  <title>Upcoming features for the summer release | OpenRA</title>
+  <title>Playtest 20221203 | OpenRA</title>
 
-  <link rel="canonical" href="https://www.openra.net/news/preview-20190606/" />
+  <link rel="canonical" href="https://www.openra.net/news/playtest-20221203/" />
 
   <link rel="stylesheet" href="/styles/normalize.css" />
   <link rel="stylesheet" href="/styles/index.css" />
@@ -158,76 +158,96 @@
               <article class="developer-update">
   <header class="developer-update__header">
     <div class="developer-update__subheading text--medium">
-      Posted by <strong class="developer-update__author">Lukas Franke</strong> on <time>06 June 2019</time>
+      Posted by <strong class="developer-update__author">PunkPun</strong> on <time>03 December 2022</time>
     </div>
-    <h3 class="developer-update__heading">Upcoming features for the summer release</h3>
+    <h3 class="developer-update__heading">Playtest 20221203</h3>
   </header>
   <div class="developer-update__body">
-    <p>It has been quite a while since our last release, but not to worry, we are still going - mostly rewriting tons of code not visible to the outside eye. While not presenting a full playtest we want to take the time to introduce the community to some upcoming changes to look forward to.</p>
+    <p>Welcome back, Commanders! After more than a year and a half the OpenRA team proudly presents <a href="/download">Playtest 20221203</a>. It is finally here!</p>
 
-<h3 id="singleplayer-savegames">Singleplayer savegames</h3>
+<p>There have been tons of massive changes under the hood, and with reduced contributor activity it took us a very long time to catch and squash all those pesky bugs. With the help of our third party mods and people testing the devtest builds we believe we have finally got a stable release on our hands. We are incredibly excited to showcase a number of new features and improvements that have been built up over the last year and a half.</p>
 
-<p>Probably the most wanted missing feature, the next version will include support for savegames in both skirmish and the campaigns. No more losing all progress to a stray dog eating your Tanya!</p>
-
-<figure>
-  <img src="/images/news/20190606-savegame-d2k.png" alt="The savegame load screen in D2k" />
-  <figcaption>Longer missions can now be played in several takes instead of needing you to pull through in one go.</figcaption>
-</figure>
-
-<h3 id="spectator-ui-and-new-tiberian-dawn-sidebar">Spectator UI and new Tiberian Dawn sidebar</h3>
-
-<p>Our spectator UI has always been noted to be clunky and take too much space on the screen. With the next update we are happy to finally introduce a more slim and focused spectator UI.</p>
+<p>One highlight feature is the new hierarchical pathfinder, which massively increases performance on large or more complex maps.</p>
 
 <figure>
-  <img src="/images/news/20190606-spectator-UI.png" alt="A new spectator UI" />
-  <figcaption>The new transparent overlay is a huge quality of live upgrade for both casters and casual spectators.</figcaption>
+  <img src="/images/news/20221203-hpf.png" style="width: 600px" alt="HPF helps units better predict obstacles ahead of them" />
+  <figcaption>HPF helps units to better predict obstacles ahead of them.</figcaption>
 </figure>
 
-<p>Our second most visible update features yet another long standing UI rework that was just completed last month after sitting on the shelf for years. The sidebar in Tiberian Dawn was completely overhauled and looks better than ever.</p>
-
-<h3 id="polished-building-placement-previews">Polished building placement previews</h3>
-
-<p>There is not much to say here, the images will tell the story. The tweaked placement preview in RA, TD, and D2k makes it easier to see both the building being placed and any cells that are blocked by units or debris.</p>
-
-<p>On a side node for the modders reading this: With the coming update the core engine will also support placing building variants in your mod (if you like north and south facing refineries for example).</p>
+<p>Our new netcode brings major improvements to multiplayer. Your games should feel much smoother and units more responsive in both low and high latency settings.</p>
 
 <figure>
-  <img src="/images/news/20190606-td-sidebar.gif" alt="The new Tiberian Dawn sidebar" />
-  <figcaption>The new Tiberian Dawn UI includes a refreshed building placement overlay and brand new sidebars.</figcaption>
+  <video width="700" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-td.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-td.ogv" type="video/ogg" />
+    <img src="/images/news/20221203-td.png" width="700" />
+  </video>
 </figure>
 
-<h3 id="polished-map-previews">Polished map previews</h3>
-
-<p>The ingame UI was not the only thing getting an upgrade. We overhauled the map previews of the map chooser to look the same as ingame.</p>
+<p>We have added transient text notifications matching speech notifications. Now you can play without sound!</p>
 
 <figure>
-  <img src="/images/news/20190606-map-previews.gif" alt="Overhauled map previews" />
-  <figcaption>The new previews include the positions of forests and civilian structures.</figcaption>
+  <video width="700" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-transient.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-transient.ogv" type="video/ogg" />
+    <img src="/images/news/20221203-transient.png" width="700" />
+  </video>
+  <figcaption>Nuke incoming!</figcaption>
 </figure>
 
-<h3 id="setting-support-power-directions">Setting support power directions</h3>
-
-<p>Parabombs and airstrikes have long been a point of both frustration (when taking too long to reach their destination) and joy (when immediately wiping out an army at the map edge). We kept the joy aspect, but removed the frustration! The upcoming release will allow you to conveniently select the approach vector by dragging into a specific direction while placing the power.</p>
+<p>The fairly recent Dune film has brought many players to Dune 2000 and a decently sized multiplayer community was born. With the feedback from the community Dune 2000 has received a number of balance and polish changes.</p>
 
 <figure>
-  <img src="/images/news/20190606-directional-powers.gif" alt="Directional powers" />
-  <figcaption>Want to avoid air defenses by sending your troopers in from the south? We've got your back.</figcaption>
+  <video width="700" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-dune.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-dune.ogv" type="video/ogg" />
+    <img src="/images/news/20221203-dune.png" width="700" />
+  </video>
 </figure>
 
-<h3 id="even-more-upcoming-changes">Even more upcoming changes</h3>
+<p>Tiberian Sun has also received its fair share of features and bug fixes. This time around the highlight is tilting on slopes.</p>
 
-<p>The list is long, too long for this post. A few other noteworthy changes include:</p>
+<figure>
+  <video width="700" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-slope.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-slope.ogv" type="video/ogg" />
+    <img src="/images/news/20221203-slope.png" width="700" />
+  </video>
+  <figcaption>OpenRA now supports tilting on slopes!</figcaption>
+</figure>
+
+<p><br /></p>
+
+<p>Some of the more visible new features and improvements include:</p>
 <ul>
-<li>A new time limit lobby option for multiplayer and skirmish games</li>
-<li>Many fixes for queued unit orders, aircraft, and harvesters</li>
-<li>Removed Mono requirement on macOS and Linux</li>
-<li>A new name and artwork for the long-controversial Allied Hind in Red Alert</li>
-<li>Many new tweaks and traits for modders</li>
-<li>Even more bug and performance improvements</li>
+  <li>Measures against sound / notification overlap. No more u-u-u-u-unit lost</li>
+  <li>Measures against spamming the multiplayer lobby and in-game chat</li>
+  <li>The ability to mute players</li>
+  <li>Support for disabling the chat in replays</li>
+  <li>New Red Alert missions</li>
+  <li>An ingame encyclopedia in Dune 2000</li>
 </ul>
 
-<p>You can take a peek at our <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog-(bleed)/5ad4377a7ba21abc017d6c0367750d0ea279d4b0">development changelog</a> if you are interested in the entire list of upcoming changes.</p>
+<p>Notable changes for mappers and modders include:</p>
+<ul>
+  <li>Automatic map reloading in the background</li>
+  <li>A change to the way speed is calculated for ground units</li>
+  <li>A new map format which includes the map preview (minimap) in the map versioning (map hash)</li>
+  <li>Loaders for more audio formats (e.g., mp3 and ogg), and formats used by the remasters</li>
+  <li>Many linting and documentation updates</li>
+</ul>
 
+<p>As well as some other changes worth mentioning:</p>
+<ul>
+  <li>Toolchain and changes to support the .NET 6 runtime</li>
+  <li>A massive amount of upgrades to both ingame and client UI</li>
+  <li>Many more hotkeys became rebindable</li>
+  <li>Substantial progress towards localisation</li>
+</ul>
+
+<p>All in all, 615 pull requests were merged since last release and 552 issues were closed bringing the total number of open tickets down by 141.</p>
+
+<p>This post covered just a small subset of all the changes and improvements added since the last release. We encourage anybody interested in finding out more to read the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/907eabad94fef9233e5a376241ad0f06269eda83">full changelog</a>. Head on over to the <a href="/download">download page</a> to install the new playtest and let us know what you think in the comments below, on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a> or on <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. Happy playtesting!</p>
 
   </div>
   <footer class="developer-update__footer">
@@ -236,7 +256,7 @@
   if (document.domain == 'www.openra.net') {
     var disqus_config = function () {
       this.page.url = "" || window.location.href;
-      this.page.identifier = "preview-20190606";
+      this.page.identifier = "playtest-20221203";
     };
 
     (function() {

@@ -12,7 +12,7 @@
   <meta property="og:description" content="Classic strategy games rebuilt for the modern era" />
   <meta property="og:url" content="https://www.openra.net/" />
   <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
-  <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2022-12-02-23-50" />
+  <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2022-12-03-00-02" />
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@openRA">
@@ -292,44 +292,96 @@
         <article class="developer-update">
   <header class="developer-update__header">
     <div class="developer-update__subheading text--medium">
-      Posted by <strong class="developer-update__author">Paul Chote</strong> on <time>21 March 2021</time>
+      Posted by <strong class="developer-update__author">PunkPun</strong> on <time>03 December 2022</time>
     </div>
-    <h3 class="developer-update__heading">Release 20210321 and a new website</h3>
+    <h3 class="developer-update__heading">Playtest 20221203</h3>
   </header>
   <div class="developer-update__body">
-    <p>Today is the day that many have been waiting for: the new stable OpenRA <a href="/download">Release 20210321</a> is now available!</p>
+    <p>Welcome back, Commanders! After more than a year and a half the OpenRA team proudly presents <a href="/download">Playtest 20221203</a>. It is finally here!</p>
 
-<p>We had originally planned to announce this release with a new <a href="https://www.youtube.com/playlist?list=PLwJbJ_UtmkDaL4cClS2QYd3uXueES4KEq">patch spotlight</a> video, but an unfortunately timed computer failure has left FiveAces’ battlefield control offline until repairs are completed. Rather than continue to delay the release, we have commissioned our best artist to make the placeholder image below, and will post the real spotlight once it is available.</p>
+<p>There have been tons of massive changes under the hood, and with reduced contributor activity it took us a very long time to catch and squash all those pesky bugs. With the help of our third party mods and people testing the devtest builds we believe we have finally got a stable release on our hands. We are incredibly excited to showcase a number of new features and improvements that have been built up over the last year and a half.</p>
+
+<p>One highlight feature is the new hierarchical pathfinder, which massively increases performance on large or more complex maps.</p>
 
 <figure>
-  <img src="/images/news/20210321-spotlight-soon.jpg" style="width: 600px" alt="Release spotlight placeholder" />
-  <figcaption>The 20210321 release spotlight has been temporarily delayed. Stay tuned for updates!</figcaption>
+  <img src="/images/news/20221203-hpf.png" style="width: 600px" alt="HPF helps units better predict obstacles ahead of them" />
+  <figcaption>HPF helps units to better predict obstacles ahead of them.</figcaption>
 </figure>
 
-<p>Many of the biggest changes in this release were focused around the in-development Tiberian Sun mod, which continues to make slow progress in our development repository. There are many great changes for Red Alert, Tiberian Dawn, and Dune 2000 too, focusing mainly around streamlining some awkward gameplay mechanics, improving community integration, and improving our singleplayer content:</p>
+<p>Our new netcode brings major improvements to multiplayer. Your games should feel much smoother and units more responsive in both low and high latency settings.</p>
 
+<figure>
+  <video width="700" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-td.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-td.ogv" type="video/ogg" />
+    <img src="/images/news/20221203-td.png" width="700" />
+  </video>
+</figure>
+
+<p>We have added transient text notifications matching speech notifications. Now you can play without sound!</p>
+
+<figure>
+  <video width="700" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-transient.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-transient.ogv" type="video/ogg" />
+    <img src="/images/news/20221203-transient.png" width="700" />
+  </video>
+  <figcaption>Nuke incoming!</figcaption>
+</figure>
+
+<p>The fairly recent Dune film has brought many players to Dune 2000 and a decently sized multiplayer community was born. With the feedback from the community Dune 2000 has received a number of balance and polish changes.</p>
+
+<figure>
+  <video width="700" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-dune.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-dune.ogv" type="video/ogg" />
+    <img src="/images/news/20221203-dune.png" width="700" />
+  </video>
+</figure>
+
+<p>Tiberian Sun has also received its fair share of features and bug fixes. This time around the highlight is tilting on slopes.</p>
+
+<figure>
+  <video width="700" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-slope.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-slope.ogv" type="video/ogg" />
+    <img src="/images/news/20221203-slope.png" width="700" />
+  </video>
+  <figcaption>OpenRA now supports tilting on slopes!</figcaption>
+</figure>
+
+<p><br /></p>
+
+<p>Some of the more visible new features and improvements include:</p>
 <ul>
-  <li>Support for Discord integration and community-run ladders</li>
-  <li>New lobby features for player handicaps and disabling spawn points</li>
-  <li>Community balance updates and a refreshed map selection for Red Alert and Tiberian Dawn</li>
-  <li>Further adjustments to make Dune 2000 more faithful to the original game</li>
-  <li>More fluid infantry combat after fixing several long-standing combat bugs</li>
-  <li>Nine more campaign missions have been ported for Red Alert</li>
-  <li>Improved AI behaviour and performance</li>
+  <li>Measures against sound / notification overlap. No more u-u-u-u-unit lost</li>
+  <li>Measures against spamming the multiplayer lobby and in-game chat</li>
+  <li>The ability to mute players</li>
+  <li>Support for disabling the chat in replays</li>
+  <li>New Red Alert missions</li>
+  <li>An ingame encyclopedia in Dune 2000</li>
 </ul>
 
-<p>These features and more will be explained in more detail in the upcoming release spotlight, but for now you can look back over the previous news posts [<a href="/news/devblog-20200629/">1</a>, <a href="/news/playtest-20201213/">2</a>, <a href="/news/playtest-20210131/">3</a>] or the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/79cc9e906649e1043e24e1f77a275e3b689d0d44">full changelog</a> for more information.</p>
+<p>Notable changes for mappers and modders include:</p>
+<ul>
+  <li>Automatic map reloading in the background</li>
+  <li>A change to the way speed is calculated for ground units</li>
+  <li>A new map format which includes the map preview (minimap) in the map versioning (map hash)</li>
+  <li>Loaders for more audio formats (e.g., mp3 and ogg), and formats used by the remasters</li>
+  <li>Many linting and documentation updates</li>
+</ul>
 
-<p>An important compatibility note is that OpenRA now requires GPU support for either OpenGL 3.2, DirectX 11, or OpenGL ES 3. Moving away from the legacy OpenGL 2.1 is important for future compatibility with modern rendering APIs (Vulkan/Metal) and for improving rendering performance with Tiberian Sun and the C&amp;C Remastered Collection. This does unfortunately mean dropping support for some older systems (typically 10+ years old) that currently can run OpenRA, but we believe that this is a necessary tradeoff for the future.</p>
+<p>As well as some other changes worth mentioning:</p>
+<ul>
+  <li>Toolchain and changes to support the .NET 6 runtime</li>
+  <li>A massive amount of upgrades to both ingame and client UI</li>
+  <li>Many more hotkeys became rebindable</li>
+  <li>Substantial progress towards localisation</li>
+</ul>
 
-<figure>
-  <img src="/images/news/20210321-website.png" style="width: 600px" alt="New OpenRA website" />
-  <figcaption>The new OpenRA website brings a new look and improved functionality.</figcaption>
-</figure>
+<p>All in all, 615 pull requests were merged since last release and 552 issues were closed bringing the total number of open tickets down by 141.</p>
 
-<p>We are also today deploying a brand new website design. Lead by <a href="https://github.com/Fauntleroy">@Fauntleroy</a> with feedback from our GitHub and Discord communities, the fresh look also brings some important technology upgrades that improve the website behaviour on mobile devices, and adds new features for the <a href="/games">live games list</a>. We expect to continue improving and iterating on the new site, so let us know if you think that something important is missing or simply doesn’t look right.</p>
-
-<p>Let us know what you think of the new release and updated website in the comments below, on <a href="https://forum.openra.net">our forum</a>, <a href="https://discord.openra.net">community discord</a>, or <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. We hope you’ll enjoy these new updates! Have fun!</p>
+<p>This post covered just a small subset of all the changes and improvements added since the last release. We encourage anybody interested in finding out more to read the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/907eabad94fef9233e5a376241ad0f06269eda83">full changelog</a>. Head on over to the <a href="/download">download page</a> to install the new playtest and let us know what you think in the comments below, on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a> or on <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. Happy playtesting!</p>
 
   </div>
   <footer class="developer-update__footer">
@@ -338,7 +390,7 @@
   if (document.domain == 'www.openra.net') {
     var disqus_config = function () {
       this.page.url = "" || window.location.href;
-      this.page.identifier = "release-20210321";
+      this.page.identifier = "playtest-20221203";
     };
 
     (function() {
