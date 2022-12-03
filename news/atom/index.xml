@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.openra.net/news/atom/index.xml" rel="self" type="application/atom+xml" /><link href="https://www.openra.net/" rel="alternate" type="text/html" /><updated>2022-12-03T12:16:44+00:00</updated><id>https://www.openra.net/news/atom/index.xml</id><title type="html">OpenRA</title><subtitle>OpenRA is an open source project that recreates and modernizes classic real time strategy games, like Red Alert, Command &amp; Conquer, and Dune 2000.</subtitle><entry><title type="html">Playtest 20221203</title><link href="https://www.openra.net/news/playtest-20221203/" rel="alternate" type="text/html" title="Playtest 20221203" /><published>2022-12-03T00:00:00+00:00</published><updated>2022-12-03T00:00:00+00:00</updated><id>https://www.openra.net/news/playtest-20221203</id><content type="html" xml:base="https://www.openra.net/news/playtest-20221203/">&lt;p&gt;Welcome back, Commanders! After more than a year and a half the OpenRA team proudly presents &lt;a href=&quot;/download&quot;&gt;Playtest 20221203&lt;/a&gt;. It is finally here!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.openra.net/news/atom/index.xml" rel="self" type="application/atom+xml" /><link href="https://www.openra.net/" rel="alternate" type="text/html" /><updated>2022-12-03T12:31:05+00:00</updated><id>https://www.openra.net/news/atom/index.xml</id><title type="html">OpenRA</title><subtitle>OpenRA is an open source project that recreates and modernizes classic real time strategy games, like Red Alert, Command &amp; Conquer, and Dune 2000.</subtitle><entry><title type="html">Playtest 20221203</title><link href="https://www.openra.net/news/playtest-20221203/" rel="alternate" type="text/html" title="Playtest 20221203" /><published>2022-12-03T00:00:00+00:00</published><updated>2022-12-03T00:00:00+00:00</updated><id>https://www.openra.net/news/playtest-20221203</id><content type="html" xml:base="https://www.openra.net/news/playtest-20221203/">&lt;p&gt;Welcome back, Commanders! After more than a year and a half the OpenRA team proudly presents &lt;a href=&quot;/download&quot;&gt;Playtest 20221203&lt;/a&gt;. It is finally here!&lt;/p&gt;
 
 &lt;p&gt;There have been tons of massive changes under the hood, and with reduced contributor activity it took us a very long time to catch and squash all those pesky bugs. With the help of our third party mods and people testing the devtest builds we believe we have finally got a stable release on our hands. We are incredibly excited to showcase a number of new features and improvements that have been built up over the last year and a half:&lt;/p&gt;
 
@@ -7,7 +7,7 @@
 &lt;/ul&gt;
 
 &lt;figure&gt;
-  &lt;img src=&quot;/images/news/20221203-hpf.png&quot; style=&quot;width: 600px&quot; alt=&quot;HPF helps units better predict obstacles ahead of them&quot; /&gt;
+  &lt;img src=&quot;/images/news/20221203-hpf.png&quot; style=&quot;width: 800px&quot; alt=&quot;HPF helps units better predict obstacles ahead of them&quot; /&gt;
   &lt;figcaption&gt;HPF helps units to better predict obstacles ahead of them.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -21,7 +21,7 @@
   &lt;video width=&quot;800&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
     &lt;source src=&quot;/images/news/20221203-td.mp4&quot; type=&quot;video/mp4&quot; /&gt;
     &lt;source src=&quot;/images/news/20221203-td.ogv&quot; type=&quot;video/ogg&quot; /&gt;
-    &lt;img src=&quot;/images/news/20221203-td.png&quot; width=&quot;700&quot; /&gt;
+    &lt;img src=&quot;/images/news/20221203-td.png&quot; width=&quot;800&quot; /&gt;
   &lt;/video&gt;
 &lt;/figure&gt;
 
@@ -33,7 +33,7 @@
   &lt;video width=&quot;800&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
     &lt;source src=&quot;/images/news/20221203-transient.mp4&quot; type=&quot;video/mp4&quot; /&gt;
     &lt;source src=&quot;/images/news/20221203-transient.ogv&quot; type=&quot;video/ogg&quot; /&gt;
-    &lt;img src=&quot;/images/news/20221203-transient.png&quot; width=&quot;700&quot; /&gt;
+    &lt;img src=&quot;/images/news/20221203-transient.png&quot; width=&quot;800&quot; /&gt;
   &lt;/video&gt;
 &lt;/figure&gt;
 
@@ -45,7 +45,7 @@
   &lt;video width=&quot;800&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
     &lt;source src=&quot;/images/news/20221203-dune.mp4&quot; type=&quot;video/mp4&quot; /&gt;
     &lt;source src=&quot;/images/news/20221203-dune.ogv&quot; type=&quot;video/ogg&quot; /&gt;
-    &lt;img src=&quot;/images/news/20221203-dune.png&quot; width=&quot;700&quot; /&gt;
+    &lt;img src=&quot;/images/news/20221203-dune.png&quot; width=&quot;800&quot; /&gt;
   &lt;/video&gt;
 &lt;/figure&gt;
 
@@ -57,7 +57,7 @@
   &lt;video width=&quot;800&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
     &lt;source src=&quot;/images/news/20221203-slope.mp4&quot; type=&quot;video/mp4&quot; /&gt;
     &lt;source src=&quot;/images/news/20221203-slope.ogv&quot; type=&quot;video/ogg&quot; /&gt;
-    &lt;img src=&quot;/images/news/20221203-slope.png&quot; width=&quot;700&quot; /&gt;
+    &lt;img src=&quot;/images/news/20221203-slope.png&quot; width=&quot;800&quot; /&gt;
   &lt;/video&gt;
   &lt;figcaption&gt;OpenRA now supports tilting on slopes!&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -93,7 +93,7 @@
 
 &lt;p&gt;All in all, 615 pull requests were merged since last release and 552 issues were closed bringing the total number of open tickets down by 141.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;This post covered just a small subset of all the changes and improvements added since the last release. We encourage anybody interested in finding out more to read the &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/907eabad94fef9233e5a376241ad0f06269eda83&quot;&gt;full changelog&lt;/a&gt;. Head on over to the &lt;a href=&quot;/download&quot;&gt;download page&lt;/a&gt; to install the new playtest and let us know what you think in the comments below, on &lt;a href=&quot;https://forum.openra.net/&quot;&gt;our forum&lt;/a&gt;, &lt;a href=&quot;https://discord.openra.net&quot;&gt;community Discord server&lt;/a&gt; or on &lt;a href=&quot;https://github.com/OpenRA/OpenRA/issues&quot;&gt;GitHub&lt;/a&gt;. Happy playtesting!&lt;/p&gt;</content><author><name>PunkPun</name></author><category term="news" /><summary type="html">Welcome back, Commanders! After more than a year and a half the OpenRA team proudly presents Playtest 20221203. It is finally here!</summary></entry><entry><title type="html">Release 20210321 and a new website</title><link href="https://www.openra.net/news/release-20210321/" rel="alternate" type="text/html" title="Release 20210321 and a new website" /><published>2021-03-21T00:00:00+00:00</published><updated>2021-03-21T00:00:00+00:00</updated><id>https://www.openra.net/news/release-20210321</id><content type="html" xml:base="https://www.openra.net/news/release-20210321/">&lt;p&gt;Today is the day that many have been waiting for: the new stable OpenRA &lt;a href=&quot;/download&quot;&gt;Release 20210321&lt;/a&gt; is now available!&lt;/p&gt;
 
