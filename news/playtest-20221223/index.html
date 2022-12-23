@@ -7,10 +7,10 @@
 
   
   <!-- OpenGraph -->
-  <meta property="og:title" content="New OpenRA Logo | OpenRA" />
+  <meta property="og:title" content="Playtest 20221223 | OpenRA" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Classic strategy games rebuilt for the modern era" />
-  <meta property="og:url" content="https://www.openra.net/news/new-project-logo/" />
+  <meta property="og:url" content="https://www.openra.net/news/playtest-20221223/" />
   <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
   <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2022-12-23-18-48" />
   <!-- Twitter -->
@@ -19,9 +19,9 @@
   <meta name="twitter:creator" content="@openRA">
 
   
-  <title>New OpenRA Logo | OpenRA</title>
+  <title>Playtest 20221223 | OpenRA</title>
 
-  <link rel="canonical" href="https://www.openra.net/news/new-project-logo/" />
+  <link rel="canonical" href="https://www.openra.net/news/playtest-20221223/" />
 
   <link rel="stylesheet" href="/styles/normalize.css" />
   <link rel="stylesheet" href="/styles/index.css" />
@@ -158,56 +158,136 @@
               <article class="developer-update">
   <header class="developer-update__header">
     <div class="developer-update__subheading text--medium">
-      Posted by <strong class="developer-update__author">Paul Chote</strong> on <time>23 December 2016</time>
+      Posted by <strong class="developer-update__author">PunkPun</strong> on <time>23 December 2022</time>
     </div>
-    <h3 class="developer-update__heading">New OpenRA Logo</h3>
+    <h3 class="developer-update__heading">Playtest 20221223</h3>
   </header>
   <div class="developer-update__body">
-    <p>Today we’re pleased to show off the results of a long-overdue project: a new logo for OpenRA!</p>
+    <div style="border-radius: 4px; background-color: #272d2c; padding: 5px">
+<div style="margin: -10px 5px">
 
-<div style="text-align:center">
-  <p><img src="/images/news/20161223-new-logo.png" alt="" /></p>
+    <p>Just in time for the holiday season, we are releasing <a href="/download">Playtest 20221223</a> with <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/e5fda938ada5be95883b9631e2dd1a3609fead45">several important fixes and minor features</a>:</p>
+
+    <ul>
+      <li>Added macOS universal binaries for Apple Silicon</li>
+      <li>Dropped support for macOS 10.9 and 10.10</li>
+      <li>Updated macOS packaging, linux and macOS dependencies</li>
+      <li>Fixed several pathfinder-related crashes</li>
+      <li>Fixed the victory condition in a few of the Red Alert missions</li>
+      <li>Fixed carryalls in rare cases destroying their cargo</li>
+      <li>Added caryalls to the Dune 2000 spectator economy statistics</li>
+      <li>Added new maps to the Dune 2000 map pool</li>
+      <li>Other minor fixes</li>
+    </ul>
+
+    <p>We expect this will be our final playtest before a full release, so we highly encourage everybody to play some games and missions and let us know if you find any issues in the comments below, on <a href="https://forum.openra.net">our forum</a>, <a href="https://discord.openra.net">Community Discord</a>, or on <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>.</p>
+
+  </div>
 </div>
 
-<p>This logo will be used to represent the OpenRA project as a whole, with the Soviet star logo being kept for the Red Alert mod.
-If community feedback is positive then we plan to roll this out with the next OpenRA release.</p>
+<p>The <a href="/news/playtest-20221203/">original playtest-20221203 announcement</a> is included below:</p>
 
-<h3 id="why-do-we-need-a-new-logo">Why do we need a new logo?</h3>
+<hr />
 
-<p>Using the same logo for OpenRA (the project) and the Red Alert mod causes a lot of confusion, both for new players who may not know that OpenRA contains multiple separate games and for community-run events that need separate logos to distinguish between OpenRA as a whole and the three main mods.  These problems will only get worse in the future when the Tiberian Sun mod is eventually released.  Another issue is that the Soviet star symbol has strong symbolism associated with it, making difficult for us to use it in contexts where people may not be familiar with OpenRA or Red Alert in general.</p>
+<p>Welcome back, Commanders! After more than a year and a half the OpenRA team proudly presents <a href="/download">Playtest 20221203</a>. It is finally here!</p>
 
-<h3 id="but-why-this-design">But why this design?</h3>
-
-<p>We started the design process with three key requirements:</p>
+<p>There have been tons of massive changes under the hood, and with reduced contributor activity it took us a very long time to catch and squash all those pesky bugs. With the help of our third party mods and people testing the devtest builds we believe we have finally got a stable release on our hands. We are incredibly excited to showcase a number of new features and improvements that have been built up over the last year and a half:</p>
 
 <ul>
-  <li>Reflect OpenRA’s identity as a modern RTS game that leverages classic gameplay and artwork.</li>
-  <li>Not tied to a specific game or universe (so no mammoth tanks, tiberium, or faction logos).</li>
-  <li>Can be recreated in a SVG vector format for the website and other media.</li>
+  <li>One highlight feature is the new hierarchical pathfinder, which massively increases performance on large or more complex maps.</li>
 </ul>
 
-<p>After a brainstorming session in our IRC channel there was one stand-out winner, which was prototyped and refined to produce the design we are showing today.</p>
+<figure>
+  <img src="/images/news/20221203-hpf.png" style="width: 800px" alt="HPF helps units better predict obstacles ahead of them" />
+  <figcaption>HPF helps units to better predict obstacles ahead of them.</figcaption>
+</figure>
 
-<h3 id="how-does-it-look">How does it look?</h3>
+<p></p>
 
-<p>We have developed mockups of how the logo will look in different contexts:</p>
+<ul>
+  <li>Our new netcode brings major improvements to multiplayer. Your games should feel much smoother and units more responsive in both low and high latency settings.</li>
+</ul>
 
 <figure>
-  <img src="/images/news/20161223-new-logo-modchooser.png" alt="New logo in the mod chooser" />
-  <figcaption>A preview of the ingame mod chooser with the new project logo.</figcaption>
+  <video width="800" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-td.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-td.webm" type="video/webm" />
+    <img src="/images/news/20221203-td.png" width="800" />
+  </video>
 </figure>
+
+<ul>
+  <li>We have added transient text notifications matching speech notifications. Now you can play without sound!</li>
+</ul>
+
+<figure>
+  <video width="800" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-transient.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-transient.webm" type="video/webm" />
+    <img src="/images/news/20221203-transient.png" width="800" />
+  </video>
+</figure>
+
+<ul>
+  <li>The fairly recent Dune film has brought many players to Dune 2000 and a decently sized multiplayer community was born. With the feedback from the community Dune 2000 has received a number of balance and polish changes.</li>
+</ul>
+
+<figure>
+  <video width="800" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-dune.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-dune.webm" type="video/webm" />
+    <img src="/images/news/20221203-dune.png" width="800" />
+  </video>
+</figure>
+
+<ul>
+  <li>Tiberian Sun was not forgotten either. Although still not ready for a release, it has also received its fair share of features and bug fixes. This time around the highlight is tilting on slopes.</li>
+</ul>
+
+<figure>
+  <video width="800" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-slope.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-slope.webm" type="video/webm" />
+    <img src="/images/news/20221203-slope.png" width="800" />
+  </video>
+  <figcaption>OpenRA now supports tilting on slopes!</figcaption>
+</figure>
+
 <p><br /></p>
-<figure>
-  <img src="/images/news/20161223-new-logo-launchers.png" alt="New logo in OS launchers" />
-  <figcaption>OpenRA icons in your operating system of choice.</figcaption>
-</figure>
-<p><br /></p>
-<figure>
-  <img src="/images/news/20161223-new-logo-facebook.png" alt="New logo on Facebook" />
-  <figcaption>The new project logo on Facebook.</figcaption>
-</figure>
 
-<p>Love it? Hate it? Let us know what you think in the comments below!</p>
+<p>Some of the more visible new features and improvements include:</p>
+<ul>
+  <li>Measures against sound / notification overlap. No more u-u-u-u-unit lost</li>
+  <li>Measures against spamming the multiplayer lobby and in-game chat</li>
+  <li>The ability to mute players</li>
+  <li>Support for disabling the chat in replays</li>
+  <li>An ingame encyclopedia in Dune 2000</li>
+  <li>New Red Alert missions</li>
+  <li>Community balance changes for all mods</li>
+</ul>
+
+<p>Notable changes for mappers and modders include:</p>
+<ul>
+  <li>Automatic map reloading in the background</li>
+  <li>A change to the way speed is calculated for ground units</li>
+  <li>A new map format which includes the map preview (minimap) in the map versioning (map hash)</li>
+  <li>Loaders for more audio formats (e.g., mp3 and ogg), and formats used by the remasters</li>
+  <li>Many linting and documentation updates</li>
+</ul>
+
+<p>As well as some other changes worth mentioning:</p>
+<ul>
+  <li>Toolchain and changes to support the .NET 6 runtime</li>
+  <li>A massive amount of upgrades to both ingame and client UI</li>
+  <li>Many more hotkeys became rebindable</li>
+  <li>Substantial progress towards localisation</li>
+</ul>
+
+<p>All in all, 615 pull requests were merged since last release and 552 issues were closed bringing the total number of open tickets down by 141.</p>
+
+<hr />
+
+<p>This post covered just a small subset of all the changes and improvements added since the last release. We encourage anybody interested in finding out more to read the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/907eabad94fef9233e5a376241ad0f06269eda83">full changelog</a>. Head on over to the <a href="/download">download page</a> to install the new playtest and let us know what you think in the comments below, on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a> or on <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. Happy playtesting!</p>
 
   </div>
   <footer class="developer-update__footer">
@@ -215,8 +295,8 @@ If community feedback is positive then we plan to roll this out with the next Op
 <script>
   if (document.domain == 'www.openra.net') {
     var disqus_config = function () {
-      this.page.url = window.location.origin + "/news/new-project-logo/";
-      this.page.identifier = "new-project-logo";
+      this.page.url = window.location.origin + "/news/playtest-20221223/";
+      this.page.identifier = "playtest-20221223";
     };
 
     (function() {
