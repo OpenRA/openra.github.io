@@ -1,4 +1,130 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.openra.net/news/atom/index.xml" rel="self" type="application/atom+xml" /><link href="https://www.openra.net/" rel="alternate" type="text/html" /><updated>2023-01-10T20:44:30+00:00</updated><id>https://www.openra.net/news/atom/index.xml</id><title type="html">OpenRA</title><subtitle>OpenRA is an open source project that recreates and modernizes classic real time strategy games, like Red Alert, Command &amp; Conquer, and Dune 2000.</subtitle><entry><title type="html">Playtest 20221223</title><link href="https://www.openra.net/news/playtest-20221223/" rel="alternate" type="text/html" title="Playtest 20221223" /><published>2022-12-23T00:00:00+00:00</published><updated>2022-12-23T00:00:00+00:00</updated><id>https://www.openra.net/news/playtest-20221223</id><content type="html" xml:base="https://www.openra.net/news/playtest-20221223/">&lt;p&gt;&lt;strong&gt;⚠ Update 2022-12-24: &lt;/strong&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.openra.net/news/atom/index.xml" rel="self" type="application/atom+xml" /><link href="https://www.openra.net/" rel="alternate" type="text/html" /><updated>2023-01-10T21:07:43+00:00</updated><id>https://www.openra.net/news/atom/index.xml</id><title type="html">OpenRA</title><subtitle>OpenRA is an open source project that recreates and modernizes classic real time strategy games, like Red Alert, Command &amp; Conquer, and Dune 2000.</subtitle><entry><title type="html">Playtest 20230110</title><link href="https://www.openra.net/news/playtest-20230110/" rel="alternate" type="text/html" title="Playtest 20230110" /><published>2023-01-10T00:00:00+00:00</published><updated>2023-01-10T00:00:00+00:00</updated><id>https://www.openra.net/news/playtest-20230110</id><content type="html" xml:base="https://www.openra.net/news/playtest-20230110/">&lt;div style=&quot;border-radius: 4px; background-color: #272d2c; padding: 5px&quot;&gt;
+&lt;div style=&quot;margin: -10px 5px&quot;&gt;
+
+    &lt;p&gt;We are kicking off New Year with a new playtest!&lt;/p&gt;
+
+    &lt;p&gt;Notable changes in &lt;a href=&quot;/download&quot;&gt;Playtest 20230110&lt;/a&gt; include:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Fixed sound device detection on linux&lt;/li&gt;
+      &lt;li&gt;Fixed Discord game invites&lt;/li&gt;
+      &lt;li&gt;Fixed replays locking up when one of the players dropped connection&lt;/li&gt;
+      &lt;li&gt;Fixed Dune 2000 service depot being uncapturable&lt;/li&gt;
+      &lt;li&gt;Removed crashing tiles from Red Alert temperate tileset bridge template&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;For more information see the &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/759df343555c6aa6b52590ead98d1260f51f9572&quot;&gt;full changelog&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;p&gt;We are nearing a full release. To make sure it is as stable as it can be we highly encourage everybody to play some games and report any issues in the comments below, on &lt;a href=&quot;https://forum.openra.net&quot;&gt;our forum&lt;/a&gt;, &lt;a href=&quot;https://discord.openra.net&quot;&gt;Community Discord&lt;/a&gt;, or on &lt;a href=&quot;https://github.com/OpenRA/OpenRA/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The &lt;a href=&quot;/news/playtest-20221203/&quot;&gt;original playtest-20221203 announcement&lt;/a&gt; is included below:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Welcome back, Commanders! After more than a year and a half the OpenRA team proudly presents &lt;a href=&quot;/download&quot;&gt;Playtest 20221203&lt;/a&gt;. It is finally here!&lt;/p&gt;
+
+&lt;p&gt;There have been tons of massive changes under the hood, and with reduced contributor activity it took us a very long time to catch and squash all those pesky bugs. With the help of our third party mods and people testing the devtest builds we believe we have finally got a stable release on our hands. We are incredibly excited to showcase a number of new features and improvements that have been built up over the last year and a half:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;One highlight feature is the new hierarchical pathfinder, which massively increases performance on large or more complex maps.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/images/news/20221203-hpf.png&quot; style=&quot;width: 800px&quot; alt=&quot;HPF helps units better predict obstacles ahead of them&quot; /&gt;
+  &lt;figcaption&gt;HPF helps units to better predict obstacles ahead of them.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Our new netcode brings major improvements to multiplayer. Your games should feel much smoother and units more responsive in both low and high latency settings.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+  &lt;video width=&quot;800&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
+    &lt;source src=&quot;/images/news/20221203-td.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;source src=&quot;/images/news/20221203-td.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;img src=&quot;/images/news/20221203-td.png&quot; width=&quot;800&quot; /&gt;
+  &lt;/video&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We have added transient text notifications matching speech notifications. Now you can play without sound!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+  &lt;video width=&quot;800&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
+    &lt;source src=&quot;/images/news/20221203-transient.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;source src=&quot;/images/news/20221203-transient.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;img src=&quot;/images/news/20221203-transient.png&quot; width=&quot;800&quot; /&gt;
+  &lt;/video&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The fairly recent Dune film has brought many players to Dune 2000 and a decently sized multiplayer community was born. With the feedback from the community Dune 2000 has received a number of balance and polish changes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+  &lt;video width=&quot;800&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
+    &lt;source src=&quot;/images/news/20221203-dune.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;source src=&quot;/images/news/20221203-dune.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;img src=&quot;/images/news/20221203-dune.png&quot; width=&quot;800&quot; /&gt;
+  &lt;/video&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tiberian Sun was not forgotten either. Although still not ready for a release, it has also received its fair share of features and bug fixes. This time around the highlight is tilting on slopes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+  &lt;video width=&quot;800&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
+    &lt;source src=&quot;/images/news/20221203-slope.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;source src=&quot;/images/news/20221203-slope.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;img src=&quot;/images/news/20221203-slope.png&quot; width=&quot;800&quot; /&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;OpenRA now supports tilting on slopes!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Some of the more visible new features and improvements include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Measures against sound / notification overlap. No more u-u-u-u-unit lost&lt;/li&gt;
+  &lt;li&gt;Measures against spamming the multiplayer lobby and in-game chat&lt;/li&gt;
+  &lt;li&gt;The ability to mute players&lt;/li&gt;
+  &lt;li&gt;Support for disabling the chat in replays&lt;/li&gt;
+  &lt;li&gt;An ingame encyclopedia in Dune 2000&lt;/li&gt;
+  &lt;li&gt;New Red Alert missions&lt;/li&gt;
+  &lt;li&gt;Community balance changes for all mods&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Notable changes for mappers and modders include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Automatic map reloading in the background&lt;/li&gt;
+  &lt;li&gt;A change to the way speed is calculated for ground units&lt;/li&gt;
+  &lt;li&gt;A new map format which includes the map preview (minimap) in the map versioning (map hash)&lt;/li&gt;
+  &lt;li&gt;Loaders for more audio formats (e.g., mp3 and ogg), and formats used by the remasters&lt;/li&gt;
+  &lt;li&gt;Many linting and documentation updates&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As well as some other changes worth mentioning:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Toolchain and changes to support the .NET 6 runtime&lt;/li&gt;
+  &lt;li&gt;A massive amount of upgrades to both ingame and client UI&lt;/li&gt;
+  &lt;li&gt;Many more hotkeys became rebindable&lt;/li&gt;
+  &lt;li&gt;Added macOS universal binaries for Apple Silicon&lt;/li&gt;
+  &lt;li&gt;Dropped support for macOS 10.9 and 10.10&lt;/li&gt;
+  &lt;li&gt;Substantial progress towards localisation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All in all, 615 pull requests were merged since last release and 552 issues were closed bringing the total number of open tickets down by 141.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This post covered just a small subset of all the changes and improvements added since the last release. We encourage anybody interested in finding out more to read the &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/907eabad94fef9233e5a376241ad0f06269eda83&quot;&gt;full changelog&lt;/a&gt;. Head on over to the &lt;a href=&quot;/download&quot;&gt;download page&lt;/a&gt; to install the new playtest and let us know what you think in the comments below, on &lt;a href=&quot;https://forum.openra.net/&quot;&gt;our forum&lt;/a&gt;, &lt;a href=&quot;https://discord.openra.net&quot;&gt;community Discord server&lt;/a&gt; or on &lt;a href=&quot;https://github.com/OpenRA/OpenRA/issues&quot;&gt;GitHub&lt;/a&gt;. Happy playtesting!&lt;/p&gt;</content><author><name>PunkPun</name></author><category term="news" /><summary type="html"></summary></entry><entry><title type="html">Playtest 20221223</title><link href="https://www.openra.net/news/playtest-20221223/" rel="alternate" type="text/html" title="Playtest 20221223" /><published>2022-12-23T00:00:00+00:00</published><updated>2022-12-23T00:00:00+00:00</updated><id>https://www.openra.net/news/playtest-20221223</id><content type="html" xml:base="https://www.openra.net/news/playtest-20221223/">&lt;p&gt;&lt;strong&gt;⚠ Update 2022-12-24: &lt;/strong&gt;
 A &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/429b4d4e42e745743d6e1a27ecffd70a1bb1fefc&quot;&gt;hotfix version&lt;/a&gt; with a critical fix for singleplayer missions as well as a fix for Macs with notches is now available from the &lt;a href=&quot;/download&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div style=&quot;border-radius: 4px; background-color: #272d2c; padding: 5px&quot;&gt;
@@ -574,77 +700,4 @@ We have taken a step back from gameplay this time around, focusing instead on co
 
 &lt;p&gt;See the &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/86ffd2229ebf8ac4280e07946a891dbc9ba0dd36&quot;&gt;full changelog&lt;/a&gt; for a more detailed overview of all the changes, and head on over to our &lt;a href=&quot;/download&quot;&gt;download page&lt;/a&gt; to try it out!  Please report any other issues you find on &lt;a href=&quot;https://forum.openra.net&quot;&gt;our forum&lt;/a&gt;, the community &lt;a href=&quot;https://discord.openra.net&quot;&gt;Discord server&lt;/a&gt;, our &lt;a href=&quot;https://github.com/OpenRA/OpenRA/issues&quot;&gt;GitHub issue tracker&lt;/a&gt;, or in the comments below.&lt;/p&gt;
 
-&lt;p&gt;We hope you enjoy it!&lt;/p&gt;</content><author><name>Paul Chote</name></author><category term="news" /><summary type="html"></summary></entry><entry><title type="html">Playtest 20200329</title><link href="https://www.openra.net/news/playtest-20200329/" rel="alternate" type="text/html" title="Playtest 20200329" /><published>2020-03-29T00:00:00+00:00</published><updated>2020-03-29T00:00:00+00:00</updated><id>https://www.openra.net/news/playtest-20200329</id><content type="html" xml:base="https://www.openra.net/news/playtest-20200329/">&lt;div style=&quot;border-radius: 4px; background-color: #272d2c; padding: 5px&quot;&gt;
-&lt;div style=&quot;margin: -10px 5px&quot;&gt;
-
-    &lt;p&gt;Today’s playtest addresses the issues discovered in the previous playtest, and hopefully constitutes our last release candidate for this cycle.&lt;/p&gt;
-
-    &lt;p&gt;The &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/194f0089b2b1c0a6f9a2fe882a0412c878873392&quot;&gt;changes in playtest-20200329&lt;/a&gt; include:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;The return of the ability to use right-click orders and scrolling at the same time&lt;/li&gt;
-      &lt;li&gt;A fix for aircraft not taking off when no rallypoint is set&lt;/li&gt;
-      &lt;li&gt;Further pathfinding improvements for infantry&lt;/li&gt;
-      &lt;li&gt;Adaptations to the weather overlay for smooth scrolling&lt;/li&gt;
-      &lt;li&gt;Reworked airstrip exits in Tiberian Dawn to prevent traffic jams&lt;/li&gt;
-      &lt;li&gt;Fixed spicebloom behaviour in Dune 2000&lt;/li&gt;
-      &lt;li&gt;Two additional campaign missions for Tiberian Dawn and one more mission for Dune 2000&lt;/li&gt;
-      &lt;li&gt;Community balance changes for Red Alert&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;As usual, this playtest also comes with a new &lt;a href=&quot;https://github.com/OpenRA/OpenRAModSDK/releases/tag/20200329&quot;&gt;ModSDK release&lt;/a&gt; for our modding community.&lt;/p&gt;
-
-    &lt;p&gt;We plan to release our next stable version within the next three weeks, so this will be the last chance to report any remaining issues that should be fixed. Head on over to our &lt;a href=&quot;/download&quot;&gt;download page&lt;/a&gt; to give the new playtest a try!&lt;/p&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;The &lt;a href=&quot;/news/playtest-20200303/&quot;&gt;original playtest-20200303 announcement&lt;/a&gt; is included below:&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;With the recent &lt;a href=&quot;/news/release-20200202/&quot;&gt;hotfix release&lt;/a&gt; addressing the worst bugs on the stable branch, we have been able to focus on completing work for the next big release.
-We have taken a step back from gameplay this time around, focusing instead on core engine logic and improved UI features.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/download&quot;&gt;Playtest 20200303&lt;/a&gt; is now available, with a overhauled renderer that adds several long-awaited features:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;span class=&quot;about-highlight&quot;&gt;Smooth Zooming:&lt;/span&gt; The previous “pixel doubling” feature has been updated with the ability to smoothly zoom the battlefield using the mouse wheel or new hotkeys (&lt;span class=&quot;about-highlight&quot;&gt;[&lt;/span&gt; and &lt;span class=&quot;about-highlight&quot;&gt;]&lt;/span&gt;). The default zoom level can be changed using the new Battlefield Camera option in the settings menu.&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;about-highlight&quot;&gt;UI size options:&lt;/span&gt; Players with larger screen resolutions can increase the size of the menus, sidebar, and other UI elements using the new UI Scale option in the settings menu.&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;about-highlight&quot;&gt;Improved HiDPI support:&lt;/span&gt; OpenRA can now detect HiDPI rendering modes on Windows and Linux, fixing the blurry rendering for players on Windows with higher resolution screens. Many UI elements now include high resolution artwork, staying crisp when drawn at larger sizes.&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;about-highlight&quot;&gt;New introduction screen:&lt;/span&gt; A new screen is displayed when launching the game for the first time to introduce the most important display and control options.&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;about-highlight&quot;&gt;Overhauled settings menu:&lt;/span&gt; The Display and Input settings panels have been refreshed with new options and a new layout.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;We note that &lt;span class=&quot;about-highlight&quot;&gt;OpenGL 3.2 or OpenGL ES 3 are now required&lt;/span&gt;. Moving away from OpenGL 2 is important for future compatibility with modern rendering APIs (Vulkan/Metal). This does unfortunately mean dropping support for some older systems (typically 10+ years old) that currently can run OpenRA, but we believe that this is a necessary tradeoff for the future.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/images/news/20200303-introduction.png&quot; style=&quot;width: 600px&quot; alt=&quot;The new first-run introduction dialog.&quot; loading=&quot;lazy&quot; /&gt;
-  &lt;figcaption&gt;The new introduction screen shows the most important control and display options.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Other notable changes in playtest-20200303 include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;span class=&quot;about-highlight&quot;&gt;Updated production rallypoints:&lt;/span&gt; Rally points can now be queued (&lt;span class=&quot;about-highlight&quot;&gt;Shift + Click&lt;/span&gt;) to define more complicated paths, and are now hidden until explicitly set.&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;about-highlight&quot;&gt;New hotkeys:&lt;/span&gt; Shortcuts have been added to select and cycle harvesters (&lt;span class=&quot;about-highlight&quot;&gt;N&lt;/span&gt;) and the production structure associated with the sidebar (&lt;span class=&quot;about-highlight&quot;&gt;Tab&lt;/span&gt;).&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;about-highlight&quot;&gt;New spectator Army tab:&lt;/span&gt; A new spectator view provides another way to compare player strength.&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;about-highlight&quot;&gt;Notarized macOS releases:&lt;/span&gt; OpenRA is no longer blocked by the Gatekeeper on recent macOS versions.&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;about-highlight&quot;&gt;Improved pathfinding logic:&lt;/span&gt; Units are now smarter about moving when their original path is blocked.&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;about-highlight&quot;&gt;Map editor improvements:&lt;/span&gt; Undo/Redo is now supported, and improvements have been made to Copy/Paste and the actor property editor.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/images/news/20200303-rallypoint.gif&quot; alt=&quot;Rally point changes.&quot; loading=&quot;lazy&quot; /&gt;
-  &lt;figcaption&gt;Production rally points can now define queued paths.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img src=&quot;/images/news/20200303-specarmy.png&quot; style=&quot;width: 600px&quot; alt=&quot;The spectator army tab in Red Alert.&quot; loading=&quot;lazy&quot; /&gt;
-  &lt;figcaption&gt;The spectator Army tab provides an overview of each player's forces.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The playtest also includes a collection of modder-focused changes, and marks further progress towards the work-in-progress Tiberian Sun mod with fixes for low-level rendering bugs and new logic for production exits, EMP vs Aircraft, and the Firestorm Generator.&lt;/p&gt;
-
-&lt;p&gt;See the &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/86ffd2229ebf8ac4280e07946a891dbc9ba0dd36&quot;&gt;full changelog&lt;/a&gt; for a more detailed overview of all the changes, and head on over to our &lt;a href=&quot;/download&quot;&gt;download page&lt;/a&gt; to try it out!  Please report any other issues you find on &lt;a href=&quot;https://forum.openra.net&quot;&gt;our forum&lt;/a&gt;, the community &lt;a href=&quot;https://discord.openra.net&quot;&gt;Discord server&lt;/a&gt;, our &lt;a href=&quot;https://github.com/OpenRA/OpenRA/issues&quot;&gt;GitHub issue tracker&lt;/a&gt;, or in the comments below.&lt;/p&gt;
-
-&lt;p&gt;We hope you enjoy it!&lt;/p&gt;</content><author><name>Lukas Franke</name></author><category term="news" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;We hope you enjoy it!&lt;/p&gt;</content><author><name>Paul Chote</name></author><category term="news" /><summary type="html"></summary></entry></feed>

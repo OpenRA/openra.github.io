@@ -7,10 +7,10 @@
 
   
   <!-- OpenGraph -->
-  <meta property="og:title" content="Release 20160508 | OpenRA" />
+  <meta property="og:title" content="Playtest 20230110 | OpenRA" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Classic strategy games rebuilt for the modern era" />
-  <meta property="og:url" content="https://www.openra.net/news/release-20160508/" />
+  <meta property="og:url" content="https://www.openra.net/news/playtest-20230110/" />
   <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
   <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2023-01-10-21-07" />
   <!-- Twitter -->
@@ -19,9 +19,9 @@
   <meta name="twitter:creator" content="@openRA">
 
   
-  <title>Release 20160508 | OpenRA</title>
+  <title>Playtest 20230110 | OpenRA</title>
 
-  <link rel="canonical" href="https://www.openra.net/news/release-20160508/" />
+  <link rel="canonical" href="https://www.openra.net/news/playtest-20230110/" />
 
   <link rel="stylesheet" href="/styles/normalize.css" />
   <link rel="stylesheet" href="/styles/index.css" />
@@ -158,54 +158,138 @@
               <article class="developer-update">
   <header class="developer-update__header">
     <div class="developer-update__subheading text--medium">
-      Posted by <strong class="developer-update__author">Oliver Brakmann</strong> on <time>08 May 2016</time>
+      Posted by <strong class="developer-update__author">PunkPun</strong> on <time>10 January 2023</time>
     </div>
-    <h3 class="developer-update__heading">Release 20160508</h3>
+    <h3 class="developer-update__heading">Playtest 20230110</h3>
   </header>
   <div class="developer-update__body">
-    <div style="text-align: center">
-<img src="/images/news/20160508-newspost-banner.png" alt="OpenRA Release 20160508" style="border-radius:10px" />
+    <div style="border-radius: 4px; background-color: #272d2c; padding: 5px">
+<div style="margin: -10px 5px">
+
+    <p>We are kicking off New Year with a new playtest!</p>
+
+    <p>Notable changes in <a href="/download">Playtest 20230110</a> include:</p>
+
+    <ul>
+      <li>Fixed sound device detection on linux</li>
+      <li>Fixed Discord game invites</li>
+      <li>Fixed replays locking up when one of the players dropped connection</li>
+      <li>Fixed Dune 2000 service depot being uncapturable</li>
+      <li>Removed crashing tiles from Red Alert temperate tileset bridge template</li>
+    </ul>
+
+    <p>For more information see the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/759df343555c6aa6b52590ead98d1260f51f9572">full changelog</a>.</p>
+
+    <p>We are nearing a full release. To make sure it is as stable as it can be we highly encourage everybody to play some games and report any issues in the comments below, on <a href="https://forum.openra.net">our forum</a>, <a href="https://discord.openra.net">Community Discord</a>, or on <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>.</p>
+
+  </div>
 </div>
 
-<p>We are proud to announce a new stable release of OpenRA!</p>
+<p>The <a href="/news/playtest-20221203/">original playtest-20221203 announcement</a> is included below:</p>
 
-<p>Development for this release started about six months ago, and in this time 50 developers contributed a total of 1,232 commits that added more than 14,000 lines of code.</p>
+<hr />
 
-<p>So what has changed?</p>
+<p>Welcome back, Commanders! After more than a year and a half the OpenRA team proudly presents <a href="/download">Playtest 20221203</a>. It is finally here!</p>
 
-<p>A lot of work went into fixing minor bugs and omissions to make the game experience more pleasant:</p>
+<p>There have been tons of massive changes under the hood, and with reduced contributor activity it took us a very long time to catch and squash all those pesky bugs. With the help of our third party mods and people testing the devtest builds we believe we have finally got a stable release on our hands. We are incredibly excited to showcase a number of new features and improvements that have been built up over the last year and a half:</p>
 
 <ul>
-  <li>Nod units in the Tiberian Dawn campaign finally use their original silver coloring.</li>
-  <li>Starting a game after installing a map no longer causes the player to be kicked from the server.</li>
-  <li>The lobby color validator will no longer complain as much as it used to.</li>
-  <li>Walls now reliably stop bullets.</li>
-  <li>Husks blocking refineries can now be targeted and destroyed.</li>
+  <li>One highlight feature is the new hierarchical pathfinder, which massively increases performance on large or more complex maps.</li>
 </ul>
 
-<p>We have also added the much-requested feature to restart missions and skirmish games, but this does not yet extend to multi-player games. Furthermore, the minimap radar will now also make use of team colors if those are enabled. Health bars can be set to only appear when the unit is damaged. Finally, the “Fragile Diplomacy” option has been removed.</p>
+<figure>
+  <img src="/images/news/20221203-hpf.png" style="width: 800px" alt="HPF helps units better predict obstacles ahead of them" />
+  <figcaption>HPF helps units to better predict obstacles ahead of them.</figcaption>
+</figure>
 
-<p>UI-wise, issues with the left-click orders have been fixed. Additionally, it is now possible to zoom using Ctrl/Cmd+Scrollwheel (the spectator view and map editor offer two additional zoom levels). Two new modifier keys allow disabling line-building of walls (hold Shift during placement) and canceling an entire build queue (hold Ctrl when clicking).</p>
+<p></p>
 
-<p>But besides all of that, the biggest changes have been under the hood of OpenRA. We already addressed these topics in the playtest news posts [<a href="/news/playtest-20160403/#dedicated-server-changes">1</a>] [<a href="/news/playtest-20160424/#changes-to-map-handling">2</a>], and wiki pages covering them have been updated or written from scratch, but to summarize them again:</p>
+<ul>
+  <li>Our new netcode brings major improvements to multiplayer. Your games should feel much smoother and units more responsive in both low and high latency settings.</li>
+</ul>
 
-<ol>
-  <li>
-    <p>The dedicated server is now a stand-alone executable, and dedicated servers no longer need to synchronize maps with the resource center. See the <a href="https://wiki.openra.net/Dedicated">dedicated server wiki page</a> for details.</p>
-  </li>
-  <li>
-    <p>The map format has been updated, and the way that the game handles map upgrades has been changed. A <a href="https://wiki.openra.net/map-format">wiki page</a> has been created to describe the current map format.</p>
-  </li>
-  <li>
-    <p>In order to allow for packaging mods into single “.oramod” files, it was necessary to introduce a number of changes to the <code class="language-plaintext highlighter-rouge">mod.yaml</code> metadata file. These changes, and the layout of the <code class="language-plaintext highlighter-rouge">mod.yaml</code> file in general, are now documented <a href="https://wiki.openra.net/mod-manifest">on the wiki</a> as well.</p>
-  </li>
-</ol>
+<figure>
+  <video width="800" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-td.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-td.webm" type="video/webm" />
+    <img src="/images/news/20221203-td.png" width="800" />
+  </video>
+</figure>
 
-<p>If you are interested, the wiki also has the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/3424a4767409ef53318d7fe6f6cc8bc22d06b992">full changelog</a> which lists all of the changes included in this release.</p>
+<ul>
+  <li>We have added transient text notifications matching speech notifications. Now you can play without sound!</li>
+</ul>
 
-<p>You can find the installer for your operating system on our <a href="/download">download page</a>.</p>
+<figure>
+  <video width="800" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-transient.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-transient.webm" type="video/webm" />
+    <img src="/images/news/20221203-transient.png" width="800" />
+  </video>
+</figure>
 
-<p>We hope you will enjoy this latest installment of OpenRA!</p>
+<ul>
+  <li>The fairly recent Dune film has brought many players to Dune 2000 and a decently sized multiplayer community was born. With the feedback from the community Dune 2000 has received a number of balance and polish changes.</li>
+</ul>
+
+<figure>
+  <video width="800" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-dune.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-dune.webm" type="video/webm" />
+    <img src="/images/news/20221203-dune.png" width="800" />
+  </video>
+</figure>
+
+<ul>
+  <li>Tiberian Sun was not forgotten either. Although still not ready for a release, it has also received its fair share of features and bug fixes. This time around the highlight is tilting on slopes.</li>
+</ul>
+
+<figure>
+  <video width="800" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-slope.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-slope.webm" type="video/webm" />
+    <img src="/images/news/20221203-slope.png" width="800" />
+  </video>
+  <figcaption>OpenRA now supports tilting on slopes!</figcaption>
+</figure>
+
+<p><br /></p>
+
+<p>Some of the more visible new features and improvements include:</p>
+<ul>
+  <li>Measures against sound / notification overlap. No more u-u-u-u-unit lost</li>
+  <li>Measures against spamming the multiplayer lobby and in-game chat</li>
+  <li>The ability to mute players</li>
+  <li>Support for disabling the chat in replays</li>
+  <li>An ingame encyclopedia in Dune 2000</li>
+  <li>New Red Alert missions</li>
+  <li>Community balance changes for all mods</li>
+</ul>
+
+<p>Notable changes for mappers and modders include:</p>
+<ul>
+  <li>Automatic map reloading in the background</li>
+  <li>A change to the way speed is calculated for ground units</li>
+  <li>A new map format which includes the map preview (minimap) in the map versioning (map hash)</li>
+  <li>Loaders for more audio formats (e.g., mp3 and ogg), and formats used by the remasters</li>
+  <li>Many linting and documentation updates</li>
+</ul>
+
+<p>As well as some other changes worth mentioning:</p>
+<ul>
+  <li>Toolchain and changes to support the .NET 6 runtime</li>
+  <li>A massive amount of upgrades to both ingame and client UI</li>
+  <li>Many more hotkeys became rebindable</li>
+  <li>Added macOS universal binaries for Apple Silicon</li>
+  <li>Dropped support for macOS 10.9 and 10.10</li>
+  <li>Substantial progress towards localisation</li>
+</ul>
+
+<p>All in all, 615 pull requests were merged since last release and 552 issues were closed bringing the total number of open tickets down by 141.</p>
+
+<hr />
+
+<p>This post covered just a small subset of all the changes and improvements added since the last release. We encourage anybody interested in finding out more to read the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/907eabad94fef9233e5a376241ad0f06269eda83">full changelog</a>. Head on over to the <a href="/download">download page</a> to install the new playtest and let us know what you think in the comments below, on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a> or on <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. Happy playtesting!</p>
 
   </div>
   <footer class="developer-update__footer">
@@ -213,8 +297,8 @@
 <script>
   if (document.domain == 'www.openra.net') {
     var disqus_config = function () {
-      this.page.url = window.location.origin + "/news/release-20160508/";
-      this.page.identifier = "release-20160508";
+      this.page.url = window.location.origin + "/news/playtest-20230110/";
+      this.page.identifier = "playtest-20221223";
     };
 
     (function() {
