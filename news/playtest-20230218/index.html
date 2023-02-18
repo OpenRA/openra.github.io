@@ -7,10 +7,10 @@
 
   
   <!-- OpenGraph -->
-  <meta property="og:title" content="Announcing Hecthor Doomhammer&#39;s Red Alert Tournament | OpenRA" />
+  <meta property="og:title" content="Playtest 20230218 | OpenRA" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Classic strategy games rebuilt for the modern era" />
-  <meta property="og:url" content="https://www.openra.net/news/doomhammer-tournament-announcement/" />
+  <meta property="og:url" content="https://www.openra.net/news/playtest-20230218/" />
   <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
   <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2023-02-18-18-05" />
   <!-- Twitter -->
@@ -19,9 +19,9 @@
   <meta name="twitter:creator" content="@openRA">
 
   
-  <title>Announcing Hecthor Doomhammer&#39;s Red Alert Tournament | OpenRA</title>
+  <title>Playtest 20230218 | OpenRA</title>
 
-  <link rel="canonical" href="https://www.openra.net/news/doomhammer-tournament-announcement/" />
+  <link rel="canonical" href="https://www.openra.net/news/playtest-20230218/" />
 
   <link rel="stylesheet" href="/styles/normalize.css" />
   <link rel="stylesheet" href="/styles/index.css" />
@@ -158,31 +158,137 @@
               <article class="developer-update">
   <header class="developer-update__header">
     <div class="developer-update__subheading text--medium">
-      Posted by <strong class="developer-update__author">Oliver Brakmann</strong> on <time>21 June 2016</time>
+      Posted by <strong class="developer-update__author">PunkPun</strong> on <time>18 February 2023</time>
     </div>
-    <h3 class="developer-update__heading">Announcing Hecthor Doomhammer&#39;s Red Alert Tournament</h3>
+    <h3 class="developer-update__heading">Playtest 20230218</h3>
   </header>
   <div class="developer-update__body">
-    <figure>
-  <lite-youtube videoid="o9XJ-vqoh98"></lite-youtube>
+    <div style="border-radius: 4px; background-color: #272d2c; padding: 5px">
+<div style="margin: -10px 5px">
+
+    <p>After a month of testing we present <a href="/download">Playtest 20230218</a>!</p>
+
+    <p>Notable changes include:</p>
+
+    <ul>
+      <li>Fixed Windows requiring the Visual C++ 2015-2022 redistributable</li>
+      <li>Fixed minimap videos crashing</li>
+      <li>Polished the Dune 2000 encyclopedia</li>
+      <li>Fixed MacOS missing the utility tool executable</li>
+    </ul>
+
+    <p>For more information see the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/bab2c14140d2db4819a59f742634a7ddd23c1cad">full changelog</a>.</p>
+
+    <p>We highly encourage everybody to play some games and missions and let us know if you find any issues in the comments below, on <a href="https://forum.openra.net">our forum</a>, <a href="https://discord.openra.net">Community Discord</a>, or on <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>.</p>
+
+  </div>
+</div>
+
+<p>The <a href="/news/playtest-20221203/">original playtest-20221203 announcement</a> is included below:</p>
+
+<hr />
+
+<p>Welcome back, Commanders! After more than a year and a half the OpenRA team proudly presents <a href="/download">Playtest 20221203</a>. It is finally here!</p>
+
+<p>There have been tons of massive changes under the hood, and with reduced contributor activity it took us a very long time to catch and squash all those pesky bugs. With the help of our third party mods and people testing the devtest builds we believe we have finally got a stable release on our hands. We are incredibly excited to showcase a number of new features and improvements that have been built up over the last year and a half:</p>
+
+<ul>
+  <li>One highlight feature is the new hierarchical pathfinder, which massively increases performance on large or more complex maps.</li>
+</ul>
+
+<figure>
+  <img src="/images/news/20221203-hpf.png" style="width: 800px" alt="HPF helps units better predict obstacles ahead of them" />
+  <figcaption>HPF helps units to better predict obstacles ahead of them.</figcaption>
 </figure>
 
-<p>Greetings ladies and gentlemen,</p>
+<p></p>
 
-<p>Our good friend Hecthor Doomhammer welcomes you all to the first ever Hecthor Doomhammer Red Alert 1vs1 Tournament!</p>
+<ul>
+  <li>Our new netcode brings major improvements to multiplayer. Your games should feel much smoother and units more responsive in both low and high latency settings.</li>
+</ul>
 
-<p>A Tournament unlike any other where contestants are subjected to a new challenge each round to keep them out of their comfort zone and constantly on their toes.</p>
+<figure>
+  <video width="800" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-td.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-td.webm" type="video/webm" />
+    <img src="/images/news/20221203-td.png" width="800" />
+  </video>
+</figure>
 
-<p>Starting July 2nd at 10:00am GMT/12:00pm CEST a field of 16 challengers will be waging a two-weekend war to decide who will take the honor, glory and the prize money on July 10th.</p>
+<ul>
+  <li>We have added transient text notifications matching speech notifications. Now you can play without sound!</li>
+</ul>
 
-<p>The prize pool currently consists of a whopping €160 and will be scaled according to the number of signups. In the case of only eight to twelve contestants signing up it will be decreased to €100, should there be seven or less to €60.</p>
+<figure>
+  <video width="800" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-transient.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-transient.webm" type="video/webm" />
+    <img src="/images/news/20221203-transient.png" width="800" />
+  </video>
+</figure>
 
-<p>The complete tournament will be hosted and livestreamed from <a href="https://www.twitch.tv/pauljongejans">Hecthor Doomhammer’s Twitch channel</a>. Joining him will be his fellow casters SoScared and FiveAces as well as well-known community figures Jazz_KCS and Ripsn as tournament officials.</p>
+<ul>
+  <li>The fairly recent Dune film has brought many players to Dune 2000 and a decently sized multiplayer community was born. With the feedback from the community Dune 2000 has received a number of balance and polish changes.</li>
+</ul>
 
-<p>To register visit the <a href="https://forum.openra.net/viewtopic.php?t=19594">tournament thread on the forum</a>. You will also find all about the specific tournament rules in that thread. Registrations will close on June 26th, so hurry hup!</p>
+<figure>
+  <video width="800" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-dune.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-dune.webm" type="video/webm" />
+    <img src="/images/news/20221203-dune.png" width="800" />
+  </video>
+</figure>
 
-<p><a href="https://goo.gl/oxRGP3">The clock is ticking… </a></p>
+<ul>
+  <li>Tiberian Sun was not forgotten either. Although still not ready for a release, it has also received its fair share of features and bug fixes. This time around the highlight is tilting on slopes.</li>
+</ul>
 
+<figure>
+  <video width="800" autoplay="" loop="" muted="">
+    <source src="/images/news/20221203-slope.mp4" type="video/mp4" />
+    <source src="/images/news/20221203-slope.webm" type="video/webm" />
+    <img src="/images/news/20221203-slope.png" width="800" />
+  </video>
+  <figcaption>OpenRA now supports tilting on slopes!</figcaption>
+</figure>
+
+<p><br /></p>
+
+<p>Some of the more visible new features and improvements include:</p>
+<ul>
+  <li>Measures against sound / notification overlap. No more u-u-u-u-unit lost</li>
+  <li>Measures against spamming the multiplayer lobby and in-game chat</li>
+  <li>The ability to mute players</li>
+  <li>Support for disabling the chat in replays</li>
+  <li>An ingame encyclopedia in Dune 2000</li>
+  <li>New Red Alert missions</li>
+  <li>Community balance changes for all mods</li>
+</ul>
+
+<p>Notable changes for mappers and modders include:</p>
+<ul>
+  <li>Automatic map reloading in the background</li>
+  <li>A change to the way speed is calculated for ground units</li>
+  <li>A new map format which includes the map preview (minimap) in the map versioning (map hash)</li>
+  <li>Loaders for more audio formats (e.g., mp3 and ogg), and formats used by the remasters</li>
+  <li>Many linting and documentation updates</li>
+</ul>
+
+<p>As well as some other changes worth mentioning:</p>
+<ul>
+  <li>Toolchain and changes to support the .NET 6 runtime</li>
+  <li>A massive amount of upgrades to both ingame and client UI</li>
+  <li>Many more hotkeys became rebindable</li>
+  <li>Added macOS universal binaries for Apple Silicon</li>
+  <li>Dropped support for macOS 10.9 and 10.10</li>
+  <li>Substantial progress towards localisation</li>
+</ul>
+
+<p>All in all, 615 pull requests were merged since last release and 552 issues were closed bringing the total number of open tickets down by 141.</p>
+
+<hr />
+
+<p>This post covered just a small subset of all the changes and improvements added since the last release. We encourage anybody interested in finding out more to read the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/907eabad94fef9233e5a376241ad0f06269eda83">full changelog</a>. Head on over to the <a href="/download">download page</a> to install the new playtest and let us know what you think in the comments below, on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a> or on <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. Happy playtesting!</p>
 
   </div>
   <footer class="developer-update__footer">
@@ -190,8 +296,8 @@
 <script>
   if (document.domain == 'www.openra.net') {
     var disqus_config = function () {
-      this.page.url = window.location.origin + "/news/doomhammer-tournament-announcement/";
-      this.page.identifier = "hdTourney";
+      this.page.url = window.location.origin + "/news/playtest-20230218/";
+      this.page.identifier = "playtest-20221223";
     };
 
     (function() {
