@@ -7,10 +7,10 @@
 
   
   <!-- OpenGraph -->
-  <meta property="og:title" content="Christmas 2017 | OpenRA" />
+  <meta property="og:title" content="Release 20230225 | OpenRA" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Classic strategy games rebuilt for the modern era" />
-  <meta property="og:url" content="https://www.openra.net/news/christmas-2017/" />
+  <meta property="og:url" content="https://www.openra.net/news/release-20230225/" />
   <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
   <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2023-02-25-18-50" />
   <!-- Twitter -->
@@ -19,9 +19,9 @@
   <meta name="twitter:creator" content="@openRA">
 
   
-  <title>Christmas 2017 | OpenRA</title>
+  <title>Release 20230225 | OpenRA</title>
 
-  <link rel="canonical" href="https://www.openra.net/news/christmas-2017/" />
+  <link rel="canonical" href="https://www.openra.net/news/release-20230225/" />
 
   <link rel="stylesheet" href="/styles/normalize.css" />
   <link rel="stylesheet" href="/styles/index.css" />
@@ -158,17 +158,28 @@
               <article class="developer-update">
   <header class="developer-update__header">
     <div class="developer-update__subheading text--medium">
-      Posted by <strong class="developer-update__author">Lukas Franke</strong> on <time>24 December 2017</time>
+      Posted by <strong class="developer-update__author">PunkPun</strong> on <time>25 February 2023</time>
     </div>
-    <h3 class="developer-update__heading">Christmas 2017</h3>
+    <h3 class="developer-update__heading">Release 20230225</h3>
   </header>
   <div class="developer-update__body">
-    <p>We are sad to report that Santa’s sleigh was shot down by an Allied AA gun, and our planned Christmas Playtest was lost overboard! We are working hard towards recovering the new build in the coming weeks.</p>
+    <p>Today we have a special occasion on our hands. We have been waiting for this moment for almost two years: A new stable OpenRA <a href="/download">Release 20230225</a> is out now!</p>
 
 <figure>
-  <img src="/images/news/2017-christmas.gif" style="width: 600px" alt="Happy holidays" />
-  <figcaption>Happy holidays from the OpenRA community!</figcaption>
+  <video autoplay="" loop="" muted="">
+    <source src="/images/news/20230225-2023.mp4" type="video/mp4" />
+    <source src="/images/news/20230225-2023.webm" type="video/webm" />
+    <img src="/images/news/20230225-2023.png" />
+  </video>
 </figure>
+
+<p>A lot of features have built up over the two years. This release is packed to the brim with goodies small and large. Several major systems have been added and overhauled, a great deal of rougher edges smoothed out. For details see the previous playtest news posts [<a href="/news/playtest-20221203/">one</a>, <a href="/news/playtest-20221223/">two</a>, <a href="/news/playtest-20230110/">three</a>, <a href="/news/playtest-20230218/">four</a>] and, as always, for a full overview - <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/dc394e2f3532e7fe830118716ebdbaaa4e945eaf">the full changelog</a>.</p>
+
+<p>But wait, there’s more! This release brings major behind-the-scenes changes towards supporting the C&amp;C Remastered Collection assets. This support is still incomplete, but works well enough that we are today also releasing a development preview of “Tiberian Dawn HD”. It is a separate release and can be <a href="https://github.com/OpenRA/TiberianDawnHD/releases/tag/release-20230225">downloaded here</a>. This preview is multiplayer-compatible with the main 20230225 release, but performance, memory usage, and loading times have not been optimized, and do not reflect the expected final requirements. The C&amp;C Remastered Collection must be installed through Steam or Origin, and the project README provides <a href="https://github.com/OpenRA/TiberianDawnHD#asset-installation">installation instructions for macOS and Linux</a>.</p>
+
+<p>In case you were wondering wether we ran out of treats, worry not! Modders will also be feasting sweet this time. There were major updates to <a href="https://docs.openra.net/en/release">our documentation</a>, and our tooling was joined by the <a href="https://marketplace.visualstudio.com/items?itemName=openra.oraide-vscode">OpenRA (Mini)YAML Language Extension</a> and the <a href="https://marketplace.visualstudio.com/items?itemName=openra.vscode-openra-lua">OpenRA Lua API extension</a>.</p>
+
+<p>It has been a long road to this release, so we hope you’ll enjoy this newest installment of OpenRA! Good luck on the battlefield commanders, and have fun!</p>
 
   </div>
   <footer class="developer-update__footer">
@@ -176,8 +187,8 @@
 <script>
   if (document.domain == 'www.openra.net') {
     var disqus_config = function () {
-      this.page.url = window.location.origin + "/news/christmas-2017/";
-      this.page.identifier = "christmas-2017";
+      this.page.url = window.location.origin + "/news/release-20230225/";
+      this.page.identifier = "release-20230225";
     };
 
     (function() {

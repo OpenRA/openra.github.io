@@ -3,13 +3,13 @@
 
 {
   "release": {
-    "ra": "https://github.com/OpenRA/OpenRA/releases/download/release-20210321/OpenRA-Red-Alert-x86_64.AppImage.zsync",
-    "cnc": "https://github.com/OpenRA/OpenRA/releases/download/release-20210321/OpenRA-Tiberian-Dawn-x86_64.AppImage.zsync",
-    "d2k": "https://github.com/OpenRA/OpenRA/releases/download/release-20210321/OpenRA-Dune-2000-x86_64.AppImage.zsync"
+    "ra": "https://github.com/OpenRA/OpenRA/releases/download/release-20230225/OpenRA-Red-Alert-x86_64.AppImage.zsync",
+    "cnc": "https://github.com/OpenRA/OpenRA/releases/download/release-20230225/OpenRA-Tiberian-Dawn-x86_64.AppImage.zsync",
+    "d2k": "https://github.com/OpenRA/OpenRA/releases/download/release-20230225/OpenRA-Dune-2000-x86_64.AppImage.zsync"
   },
   "playtest": {
-    "ra": "https://github.com/OpenRA/OpenRA/releases/download/playtest-20230218/OpenRA-Red-Alert-playtest-x86_64.AppImage.zsync",
-    "cnc": "https://github.com/OpenRA/OpenRA/releases/download/playtest-20230218/OpenRA-Tiberian-Dawn-playtest-x86_64.AppImage.zsync",
-    "d2k": "https://github.com/OpenRA/OpenRA/releases/download/playtest-20230218/OpenRA-Dune-2000-playtest-x86_64.AppImage.zsync"
+    "ra": "https://github.com/OpenRA/OpenRA/releases/download//OpenRA-Red-Alert-playtest-x86_64.AppImage.zsync",
+    "cnc": "https://github.com/OpenRA/OpenRA/releases/download//OpenRA-Tiberian-Dawn-playtest-x86_64.AppImage.zsync",
+    "d2k": "https://github.com/OpenRA/OpenRA/releases/download//OpenRA-Dune-2000-playtest-x86_64.AppImage.zsync"
   }
 }
