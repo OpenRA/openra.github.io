@@ -7,10 +7,10 @@
 
   
   <!-- OpenGraph -->
-  <meta property="og:title" content="Release 20161015 | OpenRA" />
+  <meta property="og:title" content="Playtest 20230808 | OpenRA" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Classic strategy games rebuilt for the modern era" />
-  <meta property="og:url" content="https://www.openra.net/news/release-20161015/" />
+  <meta property="og:url" content="https://www.openra.net/news/playtest-20230808/" />
   <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
   <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2023-08-08-16-33" />
   <!-- Twitter -->
@@ -19,9 +19,9 @@
   <meta name="twitter:creator" content="@openRA">
 
   
-  <title>Release 20161015 | OpenRA</title>
+  <title>Playtest 20230808 | OpenRA</title>
 
-  <link rel="canonical" href="https://www.openra.net/news/release-20161015/" />
+  <link rel="canonical" href="https://www.openra.net/news/playtest-20230808/" />
 
   <link rel="stylesheet" href="/styles/normalize.css" />
   <link rel="stylesheet" href="/styles/index.css" />
@@ -158,52 +158,62 @@
               <article class="developer-update">
   <header class="developer-update__header">
     <div class="developer-update__subheading text--medium">
-      Posted by <strong class="developer-update__author">Oliver Brakmann</strong> on <time>15 October 2016</time>
+      Posted by <strong class="developer-update__author">PunkPun</strong> on <time>08 August 2023</time>
     </div>
-    <h3 class="developer-update__heading">Release 20161015</h3>
+    <h3 class="developer-update__heading">Playtest 20230808</h3>
   </header>
   <div class="developer-update__body">
-    <p>Today we are happy to announce the latest stable release of OpenRA!</p>
+    <div style="border-radius: 4px; background-color: #272d2c; padding: 5px">
+<div style="margin: -10px 5px">
 
-<p>While this cycle has seen relatively little changes to the core game code with just about 28,000 changed lines, the new features and fixes it yields make up for it by being very visible.</p>
+    <p>Another week, another playtest! Notable changes include:</p>
 
-<p>The first place you will notice this is the much improved game content installer. It is now able to copy and install game assets from many more installation sources, such as the original release CDs, the First Decade DVDs, installed copies of the Dune 2000 Gruntsmod edition and even the C&amp;C Ultimate Edition from Origin. Additionally, for the first time ever, the content installer will now also automatically install the campaign briefing videos, which means you no longer have to do that manually.</p>
+    <ul>
+      <li>Added new Red Alert mission “Soviet13b”</li>
+      <li>Fixed dedicated servers not allowing maps with Lua scripts to be played</li>
+      <li>Fixed the rare aircraft visual jitter while steering</li>
+      <li>Fixed the map importer crashing when trying to convert maps with tile errors</li>
+      <li>Fixed the low power notification never playing</li>
+    </ul>
 
-<figure>
-  <img src="/images/news/20161015-ra-contentinstaller.png" alt="Game content installer" />
-  <figcaption>The new game content installer.</figcaption>
-</figure>
+    <p>For more information, see the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/b9b8aeb58667d08595d6471378fdf0d593b12de2">full changelog</a>.</p>
 
-<p>This features comes with one minor down-side: since the new assets are installed into a different place than in previous versions of OpenRA, every player is required to install the game assets again when launching this new version for the first time.</p>
+    <p>And of course the Tiberian Dawn HD playtest can be <a href="https://github.com/OpenRA/TiberianDawnHD/releases/tag/playtest-20230808">downloaded here</a>. For more information see the <a href="/news/playtest-20230801/">original playtest-20230801 announcement</a>.</p>
 
-<p>As usual, our quest to complete porting the original campaign missions to OpenRA is ongoing. This time around, there are seven new missions for Tiberian Dawn, and one each for Red Alert and Dune 2000. For Red Alert, there are also three new missions which can be played in both single- and cooperative multiplayer mode and which long-time players may find to be vaguely familiar.</p>
+    <p>In an effort of pushing out a swift release we highly encourage everybody to play some games and report any issues you may find in the comments below, on <a href="https://forum.openra.net">our forum</a>, <a href="https://discord.openra.net">Community Discord</a>, or <a href="https://github.com/OpenRA/OpenRA/">GitHub</a>. Good luck on the battlefield, commanders!</p>
 
-<p>Other new features and fixes include the following:</p>
+  </div>
+</div>
+
+<p>The <a href="/news/playtest-20230801/">original playtest-20230801 announcement</a> is included below:</p>
+
+<hr />
+
+<p>As summer is in full swing, we are excited to kick off the playtest series for the upcoming OpenRA release! This time around, it is all about spring cleaning: squashing bugs, implementing minor requested features, and preparing for larger reworks. But fear not! We still have a bunch of cool stuff lined up just for you! Without further ado, here are some notable changes you can expect in <a href="/download">Playtest 20230801</a>:</p>
 
 <ul>
-  <li>Fixes to a lot of crashes.</li>
-  <li>Fixes to a number of bugs that impacted game servers, such as the infamous “grey ping bug”.</li>
-  <li>New configuration options for customizing mouse scrolling behaviour.</li>
-  <li>New hotkeys for navigating to map edges, and bookmarking positions on the map.</li>
-  <li>New hotkeys for controlling the music player, as well as producing five units at once.</li>
-  <li>Improved aircraft reloading behaviour.</li>
+  <li>Added new Covert Ops missions for Tiberian Dawn: “Eviction Notice” and “Twist of Fate”</li>
+  <li>Added new Red Alert missions “Allies10b” and “Soviet13a” and the Counter-Strike mission “Mousetrap”</li>
+  <li>Fixed several palette remapping issues and restored the ability to select darker player colors</li>
+  <li>Implemented a new custom Lua wrapper which improves error reporting for map scripters</li>
+  <li>Introduced a modular asset installer which allows for installation of the classic assets via Steam or the EA app</li>
+  <li>Reworked sprite sequences, significantly improving third party modding support</li>
 </ul>
 
-<p>There are many more changes than we are able to mention here, including the usual round of balance changes. Head on over to the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/561383b9ba791a557cde37616f42a8df7d8a3182">Changelog page on our wiki</a> to see the complete list.</p>
-
 <figure>
-  <img src="/images/news/20161015-d2k-scorescreen.png" alt="Score Screen" />
-  <figcaption>Instead of kills and losses the score screen now shows an actual score comprised of the amount of kills as well as other gameplay actions such as capturing and infiltrating buildings, repairing an allies' units and buildings, and sending them supplies.</figcaption>
-</figure>
-<p><br /></p>
-<figure>
-  <img src="/images/news/20161015-td-burningtrees.png" alt="Burning trees" />
-  <figcaption>Burning trees now provide nice visual effects for flame throwers and nukes.</figcaption>
+  <video autoplay="" loop="" muted="">
+    <source src="/images/news/20230801-smoke.mp4" type="video/mp4" />
+    <source src="/images/news/20230801-smoke.webm" type="video/webm" />
+    <img src="/images/news/20230801-smoke.png" />
+  </video>
+  <figcaption>One of the smaller features is a new smoke emitter for D2k's damaged vehicles which better matches the original</figcaption>
 </figure>
 
-<p>You can find installers for all supported operating systems on our <a href="/download">download page</a>. On that topic, OpenRA now requires .NET 4.5 (Windows) / Mono 3.2 or greater (OS X and Linux). Players using Ubuntu 12.04 or other Linux distributions that include Mono 2.10 can upgrade to a supported version by following the instructions on the <a href="https://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives">Mono site</a>. Windows XP users will need to upgrade to a supported OS.</p>
+<p>For more information see the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/dc43bf4e0213eb50e2f4b6a3090f8bab031079d3">full changelog</a>.</p>
 
-<p>We hope you will enjoy this newest installment of OpenRA. Have fun!</p>
+<p>And before we wrap up, we would like mention that this release contains significant progress towards C&amp;C Remastered Collection support, including compatibility with the new EA app. The “Tiberian Dawn HD” playtest is a separate release and can be <a href="https://github.com/OpenRA/TiberianDawnHD/releases/tag/playtest-20230801">downloaded here</a>. This preview is multiplayer-compatible with the main 20230801 playtest. However, please keep in mind that performance, memory usage and loading times have not been optimized yet. The C&amp;C Remastered Collection must be installed through Steam or the EA App, and in case you are using macOS or Linux the project README provides you <a href="https://github.com/OpenRA/TiberianDawnHD#asset-installation">detailed installation instructions</a>.</p>
+
+<p>Stay tuned for more updates and be sure to take part in the playtest. Don’t forget to share your feedback with us on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a>, or <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. Enjoy the summer gaming season with OpenRA!</p>
 
   </div>
   <footer class="developer-update__footer">
@@ -211,8 +221,8 @@
 <script>
   if (document.domain == 'www.openra.net') {
     var disqus_config = function () {
-      this.page.url = window.location.origin + "/news/release-20161015/";
-      this.page.identifier = "release-20161015";
+      this.page.url = window.location.origin + "/news/playtest-20230808/";
+      this.page.identifier = "playtest-20230801";
     };
 
     (function() {
