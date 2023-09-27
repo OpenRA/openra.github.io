@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.openra.net/news/atom/index.xml" rel="self" type="application/atom+xml" /><link href="https://www.openra.net/" rel="alternate" type="text/html" /><updated>2023-08-08T16:33:18+00:00</updated><id>https://www.openra.net/news/atom/index.xml</id><title type="html">OpenRA</title><subtitle>OpenRA is an open source project that recreates and modernizes classic real time strategy games, like Red Alert, Command &amp; Conquer, and Dune 2000.</subtitle><entry><title type="html">Playtest 20230808</title><link href="https://www.openra.net/news/playtest-20230808/" rel="alternate" type="text/html" title="Playtest 20230808" /><published>2023-08-08T00:00:00+00:00</published><updated>2023-08-08T00:00:00+00:00</updated><id>https://www.openra.net/news/playtest-20230808</id><content type="html" xml:base="https://www.openra.net/news/playtest-20230808/">&lt;div style=&quot;border-radius: 4px; background-color: #272d2c; padding: 5px&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.openra.net/news/atom/index.xml" rel="self" type="application/atom+xml" /><link href="https://www.openra.net/" rel="alternate" type="text/html" /><updated>2023-09-27T09:45:23+00:00</updated><id>https://www.openra.net/news/atom/index.xml</id><title type="html">OpenRA</title><subtitle>OpenRA is an open source project that recreates and modernizes classic real time strategy games, like Red Alert, Command &amp; Conquer, and Dune 2000.</subtitle><entry><title type="html">Playtest 20230927</title><link href="https://www.openra.net/news/playtest-20230927/" rel="alternate" type="text/html" title="Playtest 20230927" /><published>2023-09-27T00:00:00+00:00</published><updated>2023-09-27T00:00:00+00:00</updated><id>https://www.openra.net/news/playtest-20230927</id><content type="html" xml:base="https://www.openra.net/news/playtest-20230927/">&lt;div style=&quot;border-radius: 4px; background-color: #272d2c; padding: 5px&quot;&gt;
+&lt;div style=&quot;margin: -10px 5px&quot;&gt;
+
+    &lt;p&gt;Two months went by, and bam! Another playtest!&lt;/p&gt;
+
+    &lt;p&gt;Notable changes include:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Added the ability to vote to kick players&lt;/li&gt;
+      &lt;li&gt;Fixed a crash on specific 32-bit Windows machines&lt;/li&gt;
+      &lt;li&gt;Fixed AI not reacting to its units being shelled&lt;/li&gt;
+      &lt;li&gt;Fixed Dune 2000 carryalls sometimes kidnapping harvesters&lt;/li&gt;
+      &lt;li&gt;Improved the utility, making it easier to update to new sprite sequences&lt;/li&gt;
+      &lt;li&gt;Sped up the ending of the Red Alert mission Sarin Gas 3&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;For more information, see the &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/74bf2ec59e6b64cd8a453861f2013111c1c416cd&quot;&gt;full changelog&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;p&gt;In an effort of pushing out a swift release we highly encourage everybody to play some games and report any issues you may find in the comments below, on &lt;a href=&quot;https://forum.openra.net&quot;&gt;our forum&lt;/a&gt;, &lt;a href=&quot;https://discord.openra.net&quot;&gt;Community Discord&lt;/a&gt;, or &lt;a href=&quot;https://github.com/OpenRA/OpenRA/&quot;&gt;GitHub&lt;/a&gt;. Good luck on the battlefield, commanders!&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The &lt;a href=&quot;/news/playtest-20230801/&quot;&gt;original playtest-20230801 announcement&lt;/a&gt; is included below:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;As summer is in full swing, we are excited to kick off the playtest series for the upcoming OpenRA release! This time around, it is all about spring cleaning: squashing bugs, implementing minor requested features, and preparing for larger reworks. But fear not! We still have a bunch of cool stuff lined up just for you! Without further ado, here are some notable changes you can expect in &lt;a href=&quot;/download&quot;&gt;Playtest 20230801&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added new Covert Ops missions for Tiberian Dawn: “Eviction Notice” and “Twist of Fate”&lt;/li&gt;
+  &lt;li&gt;Added new Red Alert missions “Allies10b” and “Soviet13a” and the Counter-Strike mission “Mousetrap”&lt;/li&gt;
+  &lt;li&gt;Fixed several palette remapping issues and restored the ability to select darker player colors&lt;/li&gt;
+  &lt;li&gt;Implemented a new custom Lua wrapper which improves error reporting for map scripters&lt;/li&gt;
+  &lt;li&gt;Introduced a modular asset installer which allows for installation of the classic assets via Steam or the EA app&lt;/li&gt;
+  &lt;li&gt;Reworked sprite sequences, significantly improving third party modding support&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+  &lt;video autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
+    &lt;source src=&quot;/images/news/20230801-smoke.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;source src=&quot;/images/news/20230801-smoke.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;img src=&quot;/images/news/20230801-smoke.png&quot; /&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;One of the smaller features is a new smoke emitter for D2k's damaged vehicles which better matches the original&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For more information see the &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/dc43bf4e0213eb50e2f4b6a3090f8bab031079d3&quot;&gt;full changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And before we wrap up, we would like mention that this release contains significant progress towards C&amp;amp;C Remastered Collection support, including compatibility with the new EA app. The “Tiberian Dawn HD” playtest is a separate release and can be &lt;a href=&quot;https://github.com/OpenRA/TiberianDawnHD/releases/tag/playtest-20230801&quot;&gt;downloaded here&lt;/a&gt;. This preview is multiplayer-compatible with the main 20230801 playtest. However, please keep in mind that performance, memory usage and loading times have not been optimized yet. The C&amp;amp;C Remastered Collection must be installed through Steam or the EA App, and in case you are using macOS or Linux the project README provides you &lt;a href=&quot;https://github.com/OpenRA/TiberianDawnHD#asset-installation&quot;&gt;detailed installation instructions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Stay tuned for more updates and be sure to take part in the playtest. Don’t forget to share your feedback with us on &lt;a href=&quot;https://forum.openra.net/&quot;&gt;our forum&lt;/a&gt;, &lt;a href=&quot;https://discord.openra.net&quot;&gt;community Discord server&lt;/a&gt;, or &lt;a href=&quot;https://github.com/OpenRA/OpenRA/issues&quot;&gt;GitHub&lt;/a&gt;. Enjoy the summer gaming season with OpenRA!&lt;/p&gt;</content><author><name>PunkPun</name></author><category term="news" /><summary type="html"></summary></entry><entry><title type="html">Playtest 20230808</title><link href="https://www.openra.net/news/playtest-20230808/" rel="alternate" type="text/html" title="Playtest 20230808" /><published>2023-08-08T00:00:00+00:00</published><updated>2023-08-08T00:00:00+00:00</updated><id>https://www.openra.net/news/playtest-20230808</id><content type="html" xml:base="https://www.openra.net/news/playtest-20230808/">&lt;div style=&quot;border-radius: 4px; background-color: #272d2c; padding: 5px&quot;&gt;
 &lt;div style=&quot;margin: -10px 5px&quot;&gt;
 
     &lt;p&gt;Another week, another playtest! Notable changes include:&lt;/p&gt;
@@ -671,49 +721,4 @@ A &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/429b4d4e42e74
 
 &lt;p&gt;This post has covered just a small subset of the &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/d207b07fe1713e2dedf547dbb09e03d120cffe9b&quot;&gt;full changelog&lt;/a&gt;, and we encourage anybody interested in finding out more to read the full list. Head on over to the &lt;a href=&quot;/download&quot;&gt;download page&lt;/a&gt; to install the new playtest, and let us know what you think in the comments below, on &lt;a href=&quot;https://forum.openra.net/&quot;&gt;our forum&lt;/a&gt;, &lt;a href=&quot;https://discord.gg/UcUztfr&quot;&gt;community Discord server&lt;/a&gt;, or &lt;a href=&quot;https://github.com/OpenRA/OpenRA/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Remember that playtests install alongside the OpenRA release version, and you can automatically switch between the two versions when joining a multiplayer server, so there is no reason not to give it a try!&lt;/p&gt;</content><author><name>Paul Chote</name></author><category term="news" /><summary type="html"></summary></entry><entry><title type="html">Playtest 20201213</title><link href="https://www.openra.net/news/playtest-20201213/" rel="alternate" type="text/html" title="Playtest 20201213" /><published>2020-12-13T00:00:00+00:00</published><updated>2020-12-13T00:00:00+00:00</updated><id>https://www.openra.net/news/playtest-20201213</id><content type="html" xml:base="https://www.openra.net/news/playtest-20201213/">&lt;figure&gt;
-  &lt;video width=&quot;700&quot; autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
-    &lt;source src=&quot;/images/news/20201213-christmas-mp4.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-    &lt;source src=&quot;/images/news/20201213-christmas-ogv.ogv&quot; type=&quot;video/ogg&quot; /&gt;
-    &lt;img src=&quot;/images/news/20201213-christmas-static.png&quot; width=&quot;700&quot; /&gt;
-  &lt;/video&gt;
-  &lt;figcaption&gt;Happy holidays from the OpenRA community!&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Just in time for the holiday period, we are kicking off a new playtest series for the next OpenRA release. Recent development has focused on building the foundation for future features, including a lot of work towards the Tiberian Sun mod which we described in our &lt;a href=&quot;/news/devblog-20200629/&quot;&gt;last news post&lt;/a&gt;. But this does not mean that this release is short on new features!&lt;/p&gt;
-
-&lt;p&gt;Some of the new changes to look out for in &lt;a href=&quot;/download&quot;&gt;playtest-20201213&lt;/a&gt; include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;New lobby options for Stealth Deliveries in Tiberian Dawn and Automatic Concrete in Dune 2000&lt;/li&gt;
-  &lt;li&gt;Disable spawn points in a game lobby by right-clicking on the map preview&lt;/li&gt;
-  &lt;li&gt;Share OpenRA status and game invites on Discord&lt;/li&gt;
-  &lt;li&gt;More fluid infantry combat after fixing several long-standing combat bugs&lt;/li&gt;
-  &lt;li&gt;Battlefield zooming is now centered on the mouse cursor&lt;/li&gt;
-  &lt;li&gt;Red Alert Spies can now reset support powers by infiltrating the structure that grants them&lt;/li&gt;
-  &lt;li&gt;Servers can be configured to save replays, enabling the creation of community ladders&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Red Alert and Tiberian Dawn include an updated set of skirmish/multiplayer maps, and community balance changes refresh their multiplayer meta. Dune 2000 features new weapon damage calculations that are more faithful to the original game, plus a number of other small consistency fixes. For single-player fans, Red Alert includes 8 more missions from the original game, and the AI behavior and performance has been improved across the board.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/images/news/20201213-discord.png&quot; style=&quot;width: 600px&quot; alt=&quot;Players who use Discord can now share their status and post game invites&quot; /&gt;
-  &lt;figcaption&gt;Players who use Discord can now share their status and post game invites in their favorite channels.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Another topic from our &lt;a href=&quot;/news/devblog-20200629/&quot;&gt;previous development update&lt;/a&gt; was the announcement that we plan to support the C&amp;amp;C Remastered Collection game assets in OpenRA’s Red Alert and Tiberian Dawn mods. The initial prototyping for this feature has been completed, and we are now working to integrate the required changes into the game engine for a future release.&lt;/p&gt;
-
-&lt;p&gt;Supporting these new assets will require optimizations that are not compatible with our legacy OpenGL 2.1 support, which is now disabled by default. On Windows, OpenRA will now use DirectX 11 (via the ANGLE library) for rendering. Please let us know if you encounter any unexpected graphical or performance issues!&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;lite-youtube videoid=&quot;Vqsferf8iSc&quot;&gt;&lt;/lite-youtube&gt;
-  &lt;figcaption&gt;An early sneak-preview of OpenRA with the C&amp;amp;C Remastered Collection game assets.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Another technical focus for this release has been making preparations to migrate OpenRA to the modern cross-platform .NET (previously .NET Core) runtime. This release still uses the legacy .NET Framework and Mono, but makes significant changes behind the scenes which may require server hosts and package maintainers to adapt their build and run scripts. We anticipate that the next major OpenRA release will require .NET 5 (preferred) or Mono &amp;gt;= 6.4.&lt;/p&gt;
-
-&lt;p&gt;Our main macOS release now requires 10.13 or newer, but we plan to keep supporting players on 10.9 – 10.12 using a new “compat” release that can be downloaded from our &lt;a href=&quot;https://github.com/OpenRA/OpenRA/releases&quot;&gt;GitHub Release Milestones&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This post has covered just a small subset of the &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/d207b07fe1713e2dedf547dbb09e03d120cffe9b&quot;&gt;full changelog&lt;/a&gt;, and we encourage anybody interested in finding out more to read the full list. Head on over to the &lt;a href=&quot;/download&quot;&gt;download page&lt;/a&gt; to install the new playtest, and let us know what you think in the comments below, on &lt;a href=&quot;https://forum.openra.net/&quot;&gt;our forum&lt;/a&gt;, &lt;a href=&quot;https://discord.openra.net&quot;&gt;community Discord server&lt;/a&gt;, or &lt;a href=&quot;https://github.com/OpenRA/OpenRA/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Remember that playtests install alongside the OpenRA release version, and you can automatically switch between the two versions when joining a multiplayer server, so there is no reason not to give it a try!&lt;/p&gt;</content><author><name>Paul Chote</name></author><category term="news" /><summary type="html">Happy holidays from the OpenRA community!</summary></entry></feed>
+&lt;p&gt;Remember that playtests install alongside the OpenRA release version, and you can automatically switch between the two versions when joining a multiplayer server, so there is no reason not to give it a try!&lt;/p&gt;</content><author><name>Paul Chote</name></author><category term="news" /><summary type="html"></summary></entry></feed>

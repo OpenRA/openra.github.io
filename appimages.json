@@ -8,8 +8,8 @@
     "d2k": "https://github.com/OpenRA/OpenRA/releases/download/release-20230225/OpenRA-Dune-2000-x86_64.AppImage.zsync"
   },
   "playtest": {
-    "ra": "https://github.com/OpenRA/OpenRA/releases/download/playtest-20230808/OpenRA-Red-Alert-playtest-x86_64.AppImage.zsync",
-    "cnc": "https://github.com/OpenRA/OpenRA/releases/download/playtest-20230808/OpenRA-Tiberian-Dawn-playtest-x86_64.AppImage.zsync",
-    "d2k": "https://github.com/OpenRA/OpenRA/releases/download/playtest-20230808/OpenRA-Dune-2000-playtest-x86_64.AppImage.zsync"
+    "ra": "https://github.com/OpenRA/OpenRA/releases/download/playtest-20230927/OpenRA-Red-Alert-playtest-x86_64.AppImage.zsync",
+    "cnc": "https://github.com/OpenRA/OpenRA/releases/download/playtest-20230927/OpenRA-Tiberian-Dawn-playtest-x86_64.AppImage.zsync",
+    "d2k": "https://github.com/OpenRA/OpenRA/releases/download/playtest-20230927/OpenRA-Dune-2000-playtest-x86_64.AppImage.zsync"
   }
 }
