@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.openra.net/news/atom/index.xml" rel="self" type="application/atom+xml" /><link href="https://www.openra.net/" rel="alternate" type="text/html" /><updated>2024-11-17T00:26:39+00:00</updated><id>https://www.openra.net/news/atom/index.xml</id><title type="html">OpenRA</title><subtitle>OpenRA is an open source project that recreates and modernizes classic real time strategy games, like Red Alert, Command &amp; Conquer, and Dune 2000.</subtitle><entry><title type="html">Playtest 20241116</title><link href="https://www.openra.net/news/playtest-20241116/" rel="alternate" type="text/html" title="Playtest 20241116" /><published>2024-11-16T00:00:00+00:00</published><updated>2024-11-16T00:00:00+00:00</updated><id>https://www.openra.net/news/playtest-20241116</id><content type="html" xml:base="https://www.openra.net/news/playtest-20241116/">&lt;p&gt;Welcome back, Commanders!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.openra.net/news/atom/index.xml" rel="self" type="application/atom+xml" /><link href="https://www.openra.net/" rel="alternate" type="text/html" /><updated>2024-11-17T08:17:43+00:00</updated><id>https://www.openra.net/news/atom/index.xml</id><title type="html">OpenRA</title><subtitle>OpenRA is an open source project that recreates and modernizes classic real time strategy games, like Red Alert, Command &amp; Conquer, and Dune 2000.</subtitle><entry><title type="html">Playtest 20241116</title><link href="https://www.openra.net/news/playtest-20241116/" rel="alternate" type="text/html" title="Playtest 20241116" /><published>2024-11-16T00:00:00+00:00</published><updated>2024-11-16T00:00:00+00:00</updated><id>https://www.openra.net/news/playtest-20241116</id><content type="html" xml:base="https://www.openra.net/news/playtest-20241116/">&lt;p&gt;Welcome back, Commanders!&lt;/p&gt;
 
-&lt;p&gt;After a whole year of development, the OpenRA team proudly presents &lt;a href=&quot;/download&quot;&gt;Playtest 20241116&lt;/a&gt;. This latest installment elevates your OpenRA experience with enhanced visuals, new tools, and improved performance across the board.&lt;/p&gt;
+&lt;p&gt;After a whole year of development, the OpenRA team proudly presents &lt;a href=&quot;/download&quot;&gt;Playtest 20241116&lt;/a&gt;. This latest installment elevates your OpenRA experience with enhanced visuals, new tools and improved performance across the board.&lt;/p&gt;
 
 &lt;figure&gt;
    &lt;video autoplay=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
@@ -11,7 +11,7 @@
   &lt;figcaption&gt;OpenRA now supports post-processing effects out of the box!&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Introducing the newly revamped Map Editor, designed with modern interface and a cohesive design. We took notice how players use the editor and reimagined it to better align with your creative needs.&lt;/p&gt;
+&lt;p&gt;Introducing the newly revamped Map Editor, designed with a modern interface and a cohesive design. We took notice of how players use the editor and reimagined it to better align with your creative needs.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img src=&quot;/images/news/20241116-map-editor.webp&quot; style=&quot;width: 800px&quot; alt=&quot;Map Editor&quot; /&gt;
@@ -35,19 +35,19 @@
   &lt;figcaption&gt;New EVA Database!&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;This latest release has significantly improved support for HD art assets. You should feel faster load times and overall performance improvements for the “Tiberian Dawn HD” project. It is packaged as a separate release and can be &lt;a href=&quot;https://github.com/OpenRA/TiberianDawnHD/releases/tag/playtest-20241116&quot;&gt;downloaded here&lt;/a&gt;. This preview is multiplayer-compatible with the main 20241116 playtest. The C&amp;amp;C Remastered Collection must be installed through Steam or the EA App, and in case you are using macOS or Linux the project README provides you &lt;a href=&quot;https://github.com/OpenRA/TiberianDawnHD#asset-installation&quot;&gt;detailed installation instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This latest release has significantly improved support for HD art assets. You should notice faster load times and overall performance improvements for the “Tiberian Dawn HD” project. It is packaged as a separate release and can be &lt;a href=&quot;https://github.com/OpenRA/TiberianDawnHD/releases/tag/playtest-20241116&quot;&gt;downloaded here&lt;/a&gt;. This preview is multiplayer-compatible with the main 20241116 playtest. The C&amp;amp;C Remastered Collection must be installed through Steam or the EA App, and if using macOS or Linux, the project README provides &lt;a href=&quot;https://github.com/OpenRA/TiberianDawnHD#asset-installation&quot;&gt;detailed installation instructions&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Other notable changes include:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;game assets can now be installed from the Steam release of The Ultimate Collection&lt;/li&gt;
-  &lt;li&gt;switched to high-quality Dune 2000 assets and included loads of extra visual polish&lt;/li&gt;
+  &lt;li&gt;switched to high-quality Dune 2000 assets and included lots of extra visual polish&lt;/li&gt;
   &lt;li&gt;added two Red Alert missions and improved the quality of many others&lt;/li&gt;
   &lt;li&gt;Red Alert and Dune 2000 balance changes&lt;/li&gt;
   &lt;li&gt;skirmish options no longer reset between matches&lt;/li&gt;
   &lt;li&gt;behind the scenes we made significant progress towards supporting additional languages in future releases.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;As always, the &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/c3c68631b0b29b354d29dcf70c44c3d0274e9042&quot;&gt;full changelog&lt;/a&gt; is available on GitHub if you would like to find out more.&lt;/p&gt;
+&lt;p&gt;As always, the &lt;a href=&quot;https://github.com/OpenRA/OpenRA/wiki/Changelog/151b0777e7bdda9e672212acedfc0773f8312dc7&quot;&gt;full changelog&lt;/a&gt; is available on GitHub if you would like to find out more.&lt;/p&gt;
 
 &lt;p&gt;Don’t forget to share your feedback with us on &lt;a href=&quot;https://forum.openra.net/&quot;&gt;our forum&lt;/a&gt;, &lt;a href=&quot;https://discord.openra.net&quot;&gt;community Discord server&lt;/a&gt;, or &lt;a href=&quot;https://github.com/OpenRA/OpenRA/issues&quot;&gt;GitHub&lt;/a&gt;. We hope you’ll enjoy this newest installment of OpenRA! Good luck on the battlefield, Commanders!&lt;/p&gt;</content><author><name>PunkPun</name></author><category term="news" /><summary type="html">Welcome back, Commanders!</summary></entry><entry><title type="html">Release 20231010 and the Community</title><link href="https://www.openra.net/news/release-20231010/" rel="alternate" type="text/html" title="Release 20231010 and the Community" /><published>2023-10-10T00:00:00+00:00</published><updated>2023-10-10T00:00:00+00:00</updated><id>https://www.openra.net/news/release-20231010</id><content type="html" xml:base="https://www.openra.net/news/release-20231010/">&lt;p&gt;With two months of successful playtesting behind us, we are pleased to finally announce &lt;a href=&quot;/download&quot;&gt;Release 20231010&lt;/a&gt;, which brings the public release up to date with development changes from November 2022 through to August 2023. The new release contains some long-awaited UI and UX improvements and many polish changes overall. It also serves as a jump-off point for many of the larger upcoming features, so do expect great things in the future!&lt;/p&gt;
 
