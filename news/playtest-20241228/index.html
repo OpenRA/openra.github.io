@@ -7,10 +7,10 @@
 
   
   <!-- OpenGraph -->
-  <meta property="og:title" content="OpenRA: A statistic | OpenRA" />
+  <meta property="og:title" content="Playtest 20241228 | OpenRA" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Classic strategy games rebuilt for the modern era" />
-  <meta property="og:url" content="https://www.openra.net/news/2017-01-stats-post/" />
+  <meta property="og:url" content="https://www.openra.net/news/playtest-20241228/" />
   <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
   <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2024-12-28-20-51" />
   <!-- Twitter -->
@@ -19,9 +19,9 @@
   <meta name="twitter:creator" content="@openRA">
 
   
-  <title>OpenRA: A statistic | OpenRA</title>
+  <title>Playtest 20241228 | OpenRA</title>
 
-  <link rel="canonical" href="https://www.openra.net/news/2017-01-stats-post/" />
+  <link rel="canonical" href="https://www.openra.net/news/playtest-20241228/" />
 
   <link rel="stylesheet" href="/styles/normalize.css" />
   <link rel="stylesheet" href="/styles/index.css" />
@@ -158,77 +158,88 @@
               <article class="developer-update">
   <header class="developer-update__header">
     <div class="developer-update__subheading text--medium">
-      Posted by <strong class="developer-update__author">Oliver Brakmann</strong> on <time>10 January 2017</time>
+      Posted by <strong class="developer-update__author">PunkPun</strong> on <time>28 December 2024</time>
     </div>
-    <h3 class="developer-update__heading">OpenRA: A statistic</h3>
+    <h3 class="developer-update__heading">Playtest 20241228</h3>
   </header>
   <div class="developer-update__body">
-    <p>The current release has been out for almost three months now. Time to take a look at some statistics!</p>
+    <div style="border-radius: 4px; background-color: #272d2c; padding: 5px">
+<div style="margin: -10px 5px">
 
-<p>At the time when this post was drafted, there have been a recorded 53953 downloads of the latest release from the official OpenRA homepage. Not unsurprisingly, most downloaded packages are for the Windows platform (almost 75%!), with Linux being a distant second at 13% and OS X coming last with the remaining 12%. It is notable that the shares of both Linux and OS X are much larger than their respective share of the desktop market.</p>
+    <p>Just in time for the New Year, we are releasing <a href="/download">Playtest 20241228</a> with <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/6f9f128d81e599f7836637e59b108ca6d39fdfd7">several important fixes and minor features</a>:</p>
 
-<p>When launching OpenRA for the first time, players get greeted by a question whether to send system information back to the OpenRA project — the very data which is used to compile these statistics! Of these more than 50k downloads, almost 22,000 individuals (thanks to every one of you!) opted in to this data gathering, which comes out to about 40%.</p>
+    <p>Notable changes include:</p>
+    <ul>
+      <li>Saboteurs can now cloak while moving</li>
+      <li>added delete area button to the map editor</li>
+      <li>improved Battlefield News dropdown</li>
+      <li>improved formatting of unit descriptions and encyclopedias</li>
+      <li>fixed Dune 2000 not detecting installed music and videos</li>
+      <li>fixed harvesters not always acting correctly with queued orders</li>
+      <li>fixed a bug where the game window could glitch out on Windows 10</li>
+      <li>fixed several crashes</li>
+      <li>and fixed a few other minor bugs</li>
+    </ul>
 
-<figure>
-  <img src="/images/news/20170110-stats-downloads-vs-users.png" alt="Download count" />
-  <figcaption>While we know that many use third-party sources such as PlayDeb for their downloads, the download count from our official site is the only hard number we can rely on.</figcaption>
-</figure>
-<p><br /></p>
-<figure>
-  <img src="/images/news/20170110-stats-enable-sysinfo-checkbox.png" alt="System information preference" />
-  <figcaption>If you like this post and happen to have OpenRA configured so that is doesn't send system information, you can easily re-enable it in the "Advanced" tab of the settings.</figcaption>
-</figure>
+    <p>And of course the Tiberian Dawn HD playtest can be <a href="https://github.com/OpenRA/TiberianDawnHD/releases/tag/playtest-20241228">downloaded here</a>.</p>
 
-<p>When the game is allowed to send system information, the time of the last update is recorded in our database. Thanks to this, we know that about 5,000 users have played OpenRA in the first week of 2017. This also allows us to see how “loyal” players are to OpenRA in general:</p>
+    <p>Stay tuned for more updates and be sure to take part in the playtest. Don’t forget to share your feedback with us on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a>, or <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. Good luck on the battlefield, Commanders, and happy holidays!</p>
 
-<figure>
-  <img src="/images/news/20170110-stats-last-launches.png" alt="Cumulative players" />
-  <figcaption>It is an unfathomable idea, but it sure looks like there are users who don't play OpenRA every day!</figcaption>
-</figure>
+  </div>
+</div>
 
-<p>We can also get a general idea of the composition of our player base by looking at the language settings that get sent back to us. As expected, the vast majority of players use English (~57%) as their primary language, followed by German-speaking people (16%), which combined make up almost three-fourth of all our users. Surprisingly, the relatively small Netherlands come in at third place with 4.5% of the total. Also noteworthy is a quiet Chinese minority of ~2% at seventh place.</p>
+<p>Welcome back, Commanders!</p>
 
-<figure>
-  <img src="/images/news/20170110-stats-languages.png" alt="System languages" />
-</figure>
-
-<p>It is no big secret that Red Alert is the most popular mod, but just by how much? Here’s the answer:</p>
+<p>After a whole year of development, the OpenRA team proudly presents <a href="/download">Playtest 20241116</a>. This latest installment elevates your OpenRA experience with enhanced visuals, new tools and improved performance across the board.</p>
 
 <figure>
-  <img src="/images/news/20170110-stats-mod-popularity.png" alt="Online matches" />
-  <figcaption>Since system information is also sent by people who are not playing online matches, the obvious conclusion here is that Tiberian Dawn and Dune 2000 players are much more invested in single-player and/or skirmish games against the AI.</figcaption>
+   <video autoplay="" loop="" muted="">
+    <source src="/images/news/20241116-chrono.mp4" type="video/mp4" alt="chrono vortex" />
+    <source src="/images/news/20241116-chrono.webm" type="video/webm" alt="chrono vortex" />
+    <img src="/images/news/20241116-vortex.webp" alt="chrono vortex" />
+  </video>
+  <figcaption>OpenRA now supports post-processing effects out of the box!</figcaption>
 </figure>
 
-<p>Another interesting way to look at this data is to find out which mods are popular in which countries:</p>
+<p>Introducing the newly revamped Map Editor, designed with a modern interface and a cohesive design. We took notice of how players use the editor and reimagined it to better align with your creative needs.</p>
 
 <figure>
-  <img src="/images/news/20170110-stats-mod-popularity.png" alt="Regional mod popularity" />
-  <figcaption>Dune 2000 has a relatively larger following in Russia, the Czech Republic, Poland and Italy, while the Scandinavian countries are deep in the Red Alert camp. Tiberian Dawn is stronger in Hungary and Italy.</figcaption>
+  <img src="/images/news/20241116-map-editor.webp" style="width: 800px" alt="Map Editor" />
+  <figcaption>New Map Editor!</figcaption>
 </figure>
 
-<p>The OpenRA master server also records the maps on which online matches are played. The top ten most popular ones are these:</p>
+<p>New Map Editor features include:</p>
+<ul>
+  <li>draggable selections</li>
+  <li>draggable actors</li>
+  <li>measurement tools</li>
+  <li>a marker layer</li>
+  <li>a play button</li>
+  <li>and more!</li>
+</ul>
+
+<p>We added an encyclopedia to the Tiberian Dawn mod! This feature was inspired by the community’s desire for an in-game resource to consolidate knowledge about units, structures, and technologies. While fan-made wikis have been invaluable, many have become outdated or inconsistent as the game evolves.</p>
 
 <figure>
-  <img src="/images/news/20170110-stats-top-ten-mp-maps.png" alt="Multiplayer map popularity" />
+  <img src="/images/news/20241116-eva.webp" style="width: 800px" alt="Tiberian Dawn EVA Database" />
+  <figcaption>New EVA Database!</figcaption>
 </figure>
 
-<p>Here is the complete list of the top 40 (well, top 38) maps, all those with more than 250 plays. Red Alert’s dominance is again felt here, as every single one of those maps belongs to that mod.</p>
+<p>This latest release has significantly improved support for HD art assets. You should notice faster load times and overall performance improvements for the “Tiberian Dawn HD” project. It is packaged as a separate release and can be <a href="https://github.com/OpenRA/TiberianDawnHD/releases/tag/playtest-20241116">downloaded here</a>. This preview is multiplayer-compatible with the main 20241116 playtest. The C&amp;C Remastered Collection must be installed through Steam or the EA App, and if using macOS or Linux, the project README provides <a href="https://github.com/OpenRA/TiberianDawnHD#asset-installation">detailed installation instructions</a>.</p>
 
-<figure>
-  <img src="/images/news/20170110-stats-most-popular-maps.png" alt="All maps popularity" />
-  <figcaption>Personally, I find immense joy in the fact that two of the three multiplayer cooperative missions that have been added in the last release found a spot in the top 40!</figcaption>
-</figure>
+<p>Other notable changes include:</p>
+<ul>
+  <li>game assets can now be installed from the Steam release of The Ultimate Collection</li>
+  <li>switched to high-quality Dune 2000 assets and included lots of extra visual polish</li>
+  <li>added two Red Alert missions and improved the quality of many others</li>
+  <li>Red Alert and Dune 2000 balance changes</li>
+  <li>skirmish options no longer reset between matches</li>
+  <li>behind the scenes we made significant progress towards supporting additional languages in future releases.</li>
+</ul>
 
-<p>To round off this post, let’s look at the length of OpenRA online matches. The average length is 24 minutes and 18 seconds. There is a little bit of variation between mods, as can be seen in the graph below.</p>
+<p>As always, the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/151b0777e7bdda9e672212acedfc0773f8312dc7">full changelog</a> is available on GitHub if you would like to find out more.</p>
 
-<figure>
-  <img src="/images/news/20170110-stats-avg-match-length.png" alt="Match length" />
-  <figcaption>The faster-paced Tiberian Dawn with its shallow tech tree has shorter matches on average, while the slower gameplay and sprawling tech tree of Dune 2000 lead to longer games.</figcaption>
-</figure>
-
-<p>Now, there are a surprising number of very long matches in our databases. A total of 124 matches lasted longer than three hours, and 29 of those even longer than six hours. The longest game — by a wide margin, I might add — that was recorded on our servers was a match amongst four players (and one spectator) on the Red Alert map Doubles that lasted one day and eight hours. Yes, you read that correctly, a 32-hour match.</p>
-
-<p>Stay hydrated, guys!</p>
+<p>Don’t forget to share your feedback with us on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a>, or <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. We hope you’ll enjoy this newest installment of OpenRA! Good luck on the battlefield, Commanders!</p>
 
   </div>
   <footer class="developer-update__footer">
@@ -236,8 +247,8 @@
 <script>
   if (document.domain == 'www.openra.net') {
     var disqus_config = function () {
-      this.page.url = window.location.origin + "/news/2017-01-stats-post/";
-      this.page.identifier = "2017.01-stats-post";
+      this.page.url = window.location.origin + "/news/playtest-20241228/";
+      this.page.identifier = "playtest-20241116";
     };
 
     (function() {
