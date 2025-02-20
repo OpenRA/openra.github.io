@@ -7,10 +7,10 @@
 
   
   <!-- OpenGraph -->
-  <meta property="og:title" content="Release 20180307 now available | OpenRA" />
+  <meta property="og:title" content="Playtest 20250220 | OpenRA" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Classic strategy games rebuilt for the modern era" />
-  <meta property="og:url" content="https://www.openra.net/news/release-20180307/" />
+  <meta property="og:url" content="https://www.openra.net/news/playtest-20250220/" />
   <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
   <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2025-02-20-17-43" />
   <!-- Twitter -->
@@ -19,9 +19,9 @@
   <meta name="twitter:creator" content="@openRA">
 
   
-  <title>Release 20180307 now available | OpenRA</title>
+  <title>Playtest 20250220 | OpenRA</title>
 
-  <link rel="canonical" href="https://www.openra.net/news/release-20180307/" />
+  <link rel="canonical" href="https://www.openra.net/news/playtest-20250220/" />
 
   <link rel="stylesheet" href="/styles/normalize.css" />
   <link rel="stylesheet" href="/styles/index.css" />
@@ -158,91 +158,84 @@
               <article class="developer-update">
   <header class="developer-update__header">
     <div class="developer-update__subheading text--medium">
-      Posted by <strong class="developer-update__author">reaperrr</strong> on <time>07 March 2018</time>
+      Posted by <strong class="developer-update__author">PunkPun</strong> on <time>20 February 2025</time>
     </div>
-    <h3 class="developer-update__heading">Release 20180307 now available</h3>
+    <h3 class="developer-update__heading">Playtest 20250220</h3>
   </header>
   <div class="developer-update__body">
     <div style="border-radius: 4px; background-color: #272d2c; padding: 5px">
 <div style="margin: -10px 5px">
-    <p>We are today pushing a new bugfix release that addresses a collection of issues that were missed during the playtesting phase of release-20180218.</p>
 
-    <p>The changes in release-20180307 are:</p>
+    <p>We present release candidate <a href="/download">Playtest 20250220</a>. Thanks everyone for taking part in the playtests!</p>
 
+    <p>Notable changes include:</p>
     <ul>
-      <li>Fixed an issue that could cause excessive debug log file sizes.</li>
-      <li>Fixed a compatibility issue with mono 5.10 and newer.</li>
-      <li>Increased the minimum required mono version to 4.2 (fixing the “Failed to query server list” issue).</li>
-      <li>Fixed Windows build scripts to account for <a href="https://blog.github.com/2018-02-23-weak-cryptographic-standards-removed/">GitHub API changes</a>.</li>
+      <li>simplified option selection in the mission browser</li>
+      <li>fixed a series of crashes and bugs in campaigns</li>
+      <li>fixed crashes when saving matches against bots</li>
+      <li>improved lua documentation</li>
+      <li>updated SDL to 2.32.0</li>
     </ul>
 
-    <p>Head on over to our <a href="/download">download page</a> to grab the new release, and spread the word!</p>
+    <p>As always the Tiberian Dawn HD playtest can be <a href="https://github.com/OpenRA/TiberianDawnHD/releases/tag/playtest-20250220">downloaded here</a>, and the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/47c96ae105932d766927b19b7e70b31e4671745c">full changelog</a> is available on GitHub.</p>
+
+    <p>If you find any critical issues don’t forget to share your feedback with us on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a>, or <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. Good luck on the battlefield, Commanders!</p>
 
   </div>
 </div>
-<p>The <a href="/news/release-20180218/">original announcement</a> for release-20180218 is included below:</p>
 
-<hr />
+<p>Welcome back, Commanders!</p>
 
-<p>We are excited to announce the first <a href="/download">OpenRA release</a> of this year!
-Over 700 commits from 43 contributors were merged over the last six months, with each commit helping to fix bugs, improve code quality, or add new features that improve the single- and multi-player experience.</p>
-
-<p>The main focus of this development cycle was modernizing core parts of the engine and game code to support the work-in-progress Tiberian Sun mod and other community projects. Thanks to our contributors, and to everybody who tested the playtest and reported bugs! Please note that changes to the way hotkeys are managed mean you will need to redefine any custom hotkeys in the Input settings.</p>
-
-<p>The changes weren’t all behind the scenes; an overhaul of the multiplayer UI added long-requested features:</p>
-
-<ul>
-  <li>The server browser shows the name/faction/team of connected players</li>
-  <li>The server browser is now also available as a tab in the server lobby</li>
-  <li>The main menu and server browser will notify you if a new release is available</li>
-  <li>The Global Chat has been removed from the server browser and lobby</li>
-  <li>A chat dialog has been added to the in-game menu</li>
-</ul>
+<p>After a whole year of development, the OpenRA team proudly presents <a href="/download">Playtest 20241116</a>. This latest installment elevates your OpenRA experience with enhanced visuals, new tools and improved performance across the board.</p>
 
 <figure>
-  <img src="/images/news/20180102-serverplayers.png" style="width: 600px" alt="Server player list" />
-  <figcaption>The new server player list is one of several improvements to the multiplayer UI.</figcaption>
+   <video autoplay="" loop="" muted="">
+    <source src="/images/news/20241116-chrono.mp4" type="video/mp4" alt="chrono vortex" />
+    <source src="/images/news/20241116-chrono.webm" type="video/webm" alt="chrono vortex" />
+    <img src="/images/news/20241116-vortex.webp" alt="chrono vortex" />
+  </video>
+  <figcaption>OpenRA now supports post-processing effects out of the box!</figcaption>
 </figure>
 
-<p>Of course, we realize that the vast majority of OpenRA players do not play online. We haven’t forgotten about you either!
-Improvements for the singleplayer experience include:</p>
-
-<ul>
-  <li>The full Harkonnen campaign in D2K</li>
-  <li>Refinements and improvements to several campaign missions in Red Alert and Tiberian Dawn</li>
-  <li>A fix for the AI cheating when it uses superweapons and support powers</li>
-  <li>Several other changes that should improve the AI behaviour and performance</li>
-</ul>
+<p>Introducing the newly revamped Map Editor, designed with a modern interface and a cohesive design. We took notice of how players use the editor and reimagined it to better align with your creative needs.</p>
 
 <figure>
-  <img src="/images/news/20180102-airstrike.png" alt="AI Airstrike" />
-  <figcaption>Improvements to the AI support power targeting mean that this will be a rarer sight.</figcaption>
+  <img src="/images/news/20241116-map-editor.webp" style="width: 800px" alt="Map Editor" />
+  <figcaption>New Map Editor!</figcaption>
 </figure>
+
+<p>New Map Editor features include:</p>
+<ul>
+  <li>draggable selections</li>
+  <li>draggable actors</li>
+  <li>measurement tools</li>
+  <li>a marker layer</li>
+  <li>a play button</li>
+  <li>and more!</li>
+</ul>
+
+<p>We added an encyclopedia to the Tiberian Dawn mod! This feature was inspired by the community’s desire for an in-game resource to consolidate knowledge about units, structures, and technologies. While fan-made wikis have been invaluable, many have become outdated or inconsistent as the game evolves.</p>
+
+<figure>
+  <img src="/images/news/20241116-eva.webp" style="width: 800px" alt="Tiberian Dawn EVA Database" />
+  <figcaption>New EVA Database!</figcaption>
+</figure>
+
+<p>This latest release has significantly improved support for HD art assets. You should notice faster load times and overall performance improvements for the “Tiberian Dawn HD” project. It is packaged as a separate release and can be <a href="https://github.com/OpenRA/TiberianDawnHD/releases/tag/playtest-20241116">downloaded here</a>. This preview is multiplayer-compatible with the main 20241116 playtest. The C&amp;C Remastered Collection must be installed through Steam or the EA App, and if using macOS or Linux, the project README provides <a href="https://github.com/OpenRA/TiberianDawnHD#asset-installation">detailed installation instructions</a>.</p>
 
 <p>Other notable changes include:</p>
-
 <ul>
-  <li>New lobby options to disable bounty, build radius, and re-packing Construction Yards</li>
-  <li>Units will no longer target enemies revealed by the Red Alert GPS Satellite</li>
-  <li>A collection of community-driven balance changes for Red Alert and Tiberian Dawn</li>
-  <li>Fixes for many graphical glitches and polish issues</li>
-  <li>Fixes for several platform integration issues on Windows and macOS</li>
-  <li>Further improvements to memory usage and performance</li>
+  <li>game assets can now be installed from the Steam release of The Ultimate Collection</li>
+  <li>switched to high-quality Dune 2000 assets and included lots of extra visual polish</li>
+  <li>added two Red Alert missions and improved the quality of many others</li>
+  <li>Red Alert and Dune 2000 balance changes</li>
+  <li>skirmish options no longer reset between matches</li>
+  <li>behind the scenes we made significant progress towards supporting additional languages in future releases.</li>
 </ul>
 
-<figure>
-  <img src="/images/news/20180102-mapoptions.png" style="width: 600px" alt="Expanded game options" />
-  <figcaption>The Map Options tab includes several new settings, and can be customized by scripted maps.</figcaption>
-</figure>
-<p><br /></p>
-<figure>
-  <img src="/images/news/20180102-winmacos.png" style="width: 600px" alt="Windows and macOS improvements" />
-  <figcaption>Platform integration fixes include "Pin to taskbar" support on Windows and 64 bit support for macOS.</figcaption>
-</figure>
+<p>As always, the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/151b0777e7bdda9e672212acedfc0773f8312dc7">full changelog</a> is available on GitHub if you would like to find out more.</p>
 
-<p>As always, we suggest you read the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/1277bf3eb2b17e29fe9f2f6fd658c90771d7edbe">full changelog</a> if you’d like more information on the full list of changes.</p>
-
-<p>Now <a href="/download">download</a> and head to the battlefield!</p>
+<p>Don’t forget to share your feedback with us on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a>, or <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. We hope you’ll enjoy this newest installment of OpenRA! Good luck on the battlefield, Commanders!</p>
 
   </div>
   <footer class="developer-update__footer">
@@ -250,8 +243,8 @@ Improvements for the singleplayer experience include:</p>
 <script>
   if (document.domain == 'www.openra.net') {
     var disqus_config = function () {
-      this.page.url = window.location.origin + "/news/release-20180307/";
-      this.page.identifier = "release-20180218";
+      this.page.url = window.location.origin + "/news/playtest-20250220/";
+      this.page.identifier = "playtest-20241116";
     };
 
     (function() {
