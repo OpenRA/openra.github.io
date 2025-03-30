@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <meta name="description" content="OpenRA is an open source project that recreates and modernizes classic real time strategy games, like Red Alert, Command & Conquer, and Dune 2000." />
+
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Release 20250330 | OpenRA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Classic strategy games rebuilt for the modern era" />
+  <meta property="og:url" content="https://www.openra.net/news/release-20250330/" />
+  <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
+  <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2025-03-30-18-33" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@openRA">
+  <meta name="twitter:creator" content="@openRA">
+
+  
+  <title>Release 20250330 | OpenRA</title>
+
+  <link rel="canonical" href="https://www.openra.net/news/release-20250330/" />
+
+  <link rel="stylesheet" href="/styles/normalize.css" />
+  <link rel="stylesheet" href="/styles/index.css" />
+  <link rel="stylesheet" href="/styles/lite-youtube-embed.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="alternate" href="/news/atom/" type="application/atom+xml" title="OpenRA - News Feed" />
+  <!-- hack to prevent Firefox from doing a "FOUC" -->
+  <!-- the contents of the <script> aren't important, just that it is here -->
+  <script>var PREVENT_FOUC = true;</script>
+</head>
+
+
+  <body>
+    <div class="site">
+
+      
+
+<header class="site-header">
+  <div class="site-header__main">
+    <button class="site-header__menu-toggle" aria-label="Open Site Menu">
+      <svg class="icon">
+        <use xlink:href="/images/icons/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <a href="/">
+      <img 
+        class="site-header__logo"
+        src="/images/openra-logo-with-text.svg"
+        alt="OpenRA" />
+    </a>
+
+    <div class="site-header__menu">
+      <button class="site-header__menu-close" aria-label="Open Site Menu">
+        <svg class="icon">
+          <use xlink:href="/images/icons/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+
+      <nav class="site-header__nav">
+        <a class="site-header__nav__link is-active" href="/news/" tabindex="0">News</a>
+        <a class="site-header__nav__link" href="/about/" tabindex="0">About</a>
+        <a class="site-header__nav__link" href="/download/" tabindex="0">Download</a>
+        <a class="site-header__nav__link" href="/games/" tabindex="0">Games</a>
+        <a class="site-header__nav__link" href="/community/" tabindex="0">Community</a>
+        <a class="site-header__nav__link" href="https://forum.openra.net" tabindex="0">
+          Forum
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-external-link"></use>
+          </svg>
+        </a>
+        <a class="site-header__nav__link" href="https://resource.openra.net" tabindex="0">
+          Resources
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-external-link"></use>
+          </svg>
+        </a>
+      </nav>
+
+      <nav class="site-header__social-nav">
+        <div class="site-header__social-nav__row">
+          <a class="site-header__social-nav__link" href="https://github.com/OpenRA/OpenRA" tabindex="0">
+            <span class="text--hidden">GitHub</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-github"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://discord.openra.net/" tabindex="0">
+            <span class="text--hidden">Discord</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-discord"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://openra.itch.io/openra" tabindex="0">
+            <span class="text--hidden">Itch</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-itch"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.facebook.com/openra" tabindex="0">
+            <span class="text--hidden">Facebook</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="site-header__social-nav__row">
+          <a class="site-header__social-nav__link" href="https://twitter.com/openRA" tabindex="0">
+            <span class="text--hidden">Twitter</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.reddit.com/r/openra" tabindex="0">
+            <span class="text--hidden">Reddit</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-reddit"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig" tabindex="0">
+            <span class="text--hidden">YouTube</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+          <a class="site-header__social-nav__link" href="https://steamcommunity.com/groups/openra/" tabindex="0">
+            <span class="text--hidden">Steam</span>
+            <svg class="icon">
+              <use xlink:href="/images/icons/icons.svg#icon-steam"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <hr class="site-header__hr" />
+  
+</header>
+
+      <div class="site-content">
+        <section class="developer-update-detail site-section">
+          <div class="site-section__content">
+            <div class="dark-panel">
+              <div class="dark-panel__header">
+                <a class="developer-update-detail__view-all" href="/news/">
+                  <svg class="icon">
+                    <use xlink:href="/images/icons/icons.svg#icon-chevron-left"></use>
+                  </svg>
+                  View All Updates
+                </a>
+              </div>
+
+              <article class="developer-update">
+  <header class="developer-update__header">
+    <div class="developer-update__subheading text--medium">
+      Posted by <strong class="developer-update__author">PunkPun</strong> on <time>30 March 2025</time>
+    </div>
+    <h3 class="developer-update__heading">Release 20250330</h3>
+  </header>
+  <div class="developer-update__body">
+    <h4 id="hotfix-20250330-smarter-harvesters-bug-fixes-and-smoother-battles">Hotfix 20250330: Smarter Harvesters, Bug Fixes, and Smoother Battles</h4>
+
+<figure>
+   <video autoplay="" loop="" muted="">
+    <source src="/images/news/20250330-harvesters.mp4" type="video/mp4" alt="harvesters harvesting ore" />
+    <img src="/images/news/20250330-harvesters.png" alt="harvesters harvesting ore" />
+  </video>
+  <figcaption>Harvester operations have been returned to normal</figcaption>
+</figure>
+
+<p>No battle plan survives first contact, and the same goes for software updates. We’re rolling out a hotfix to address a few issues identified in the latest release. Here’s what’s been fixed:</p>
+
+<ul>
+  <li><strong>Harvesters now mine smarter;</strong> They’ll stick closer to their refinery instead of wandering off</li>
+  <li><strong>Rally points display correctly;</strong> Unit move commands are now consistently shown</li>
+  <li><strong>Jungle trees won’t crash the game as they burn;</strong> Some Tiberian Dawn trees were feeling spicy</li>
+  <li><strong>OpenRA again runs on Raspberry Pi;</strong> Shader compilers be crazy</li>
+  <li><strong>Lobby alignments fixed;</strong> In multiplayer skirmish lobbies, team numbers are now properly centered</li>
+  <li><strong>Adjusted Dune 2000 weapon splash damage;</strong> To better match the vanilla balance</li>
+  <li><strong>Fixed green gliches on Dune 2000 corpses;</strong> Soldiers were spilling green blood</li>
+</ul>
+
+<h4 id="a-look-back-at-openra-release-20250303">A Look Back at OpenRA Release 20250303</h4>
+
+<p>The 20250303 release was one of OpenRA’s biggest updates yet, bringing over a year of development and community playtesting into a polished final version. If you missed it, here’s a quick refresher on the major additions:</p>
+
+<figure>
+   <video autoplay="" loop="" muted="">
+    <source src="/images/news/20241116-chrono.mp4" type="video/mp4" alt="chrono vortex" />
+    <source src="/images/news/20241116-chrono.webm" type="video/webm" alt="chrono vortex" />
+    <img src="/images/news/20241116-vortex.webp" alt="chrono vortex" />
+  </video>
+  <figcaption>OpenRA now supports post-processing effects out of the box!</figcaption>
+</figure>
+
+<p>We significantly improved support for high-definition art assets, especially for the Tiberian Dawn HD project. This brings:</p>
+<ul>
+  <li>Faster load times</li>
+  <li>Better performance</li>
+  <li>Fewer graphical bugs</li>
+</ul>
+
+<p>Tiberian Dawn HD is packaged as a separate release and can be <a href="https://github.com/OpenRA/TiberianDawnHD/releases/tag/release-20250330">downloaded here</a>. This preview is multiplayer-compatible with the main 20250330 release.</p>
+
+<p>To use it, the C&amp;C Remastered Collection must be installed via Steam or the EA App. If you’re on macOS or Linux, follow the project README for <a href="https://github.com/OpenRA/TiberianDawnHD#asset-installation">detailed installation instructions</a>.</p>
+
+<h4 id="dune-2000-visual-overhaul">Dune 2000 Visual Overhaul</h4>
+
+<p>The original Dune 2000 shipped with an option for 16-bit sprites, but OpenRA had previously only supported lower-quality 8-bit versions. Thanks to HD graphics improvements, the game has now been fully upgraded to higher quality assets, bringing:</p>
+<ul>
+  <li>Smoother shading and reduced color banding</li>
+  <li>More detailed terrain, units, explosions, and sidebar icons</li>
+</ul>
+
+<p>With a newly active Dune 2000 modding community, additional missing assets and refinements have been introduced:</p>
+<ul>
+  <li>Missing versions of 16-bit assets</li>
+  <li>Added vehicle husks</li>
+  <li>More varied explosion debris and husk effects</li>
+  <li>Refined Spice Bloom animations for more predictable growth</li>
+  <li>Proper Saboteur logic</li>
+</ul>
+
+<figure>
+  <img src="/images/news/20241116-map-editor.webp" style="width: 800px" alt="Map Editor" />
+  <figcaption>New Map Editor!</figcaption>
+</figure>
+
+<p>We completely revamped the Map Editor with a modern and intuitive design. It now includes:</p>
+<ul>
+  <li>Draggable selections and actors for easier editing</li>
+  <li>Measurement tools and a marker layer to fine-tune maps</li>
+  <li>A play button for quick testing</li>
+  <li>Many other quality-of-life improvements</li>
+</ul>
+
+<figure>
+  <img src="/images/news/20241116-eva.webp" style="width: 800px" alt="Tiberian Dawn EVA Database" />
+  <figcaption>New EVA Database!</figcaption>
+</figure>
+
+<p>The Tiberian Dawn mod now includes a built-in encyclopedia, providing a central resource for unit, structure, and technology details. This addition was inspired by the community’s request for an in-game knowledge base, consolidating information that was previously scattered across wikis (many of which are now outdated).</p>
+
+<p>New Missions &amp; Gameplay Enhancements</p>
+<ul>
+  <li>Two new Red Alert missions were added, alongside various mission improvements</li>
+  <li>Skirmish options now persist between matches instead of resetting</li>
+  <li>Balance changes for Red Alert and Dune 2000 for a more refined experience</li>
+</ul>
+
+<p>Under-the-Hood Improvements</p>
+<ul>
+  <li>Added support for The Ultimate Collection (Steam version)</li>
+  <li>Improved installation support for classic assets from the C&amp;C Remastered Collection</li>
+  <li>Significant progress toward future language support</li>
+</ul>
+
+<p>For a complete breakdown, including all changes from the main release, check out <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/5579f73e444f6634d0f99ab9f29fc0caf26a4965">the full changelog</a>.</p>
+
+<p>Don’t forget to share your feedback on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a>, or <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. We hope you enjoy this newest installment of OpenRA! Good luck on the battlefield, Commanders!</p>
+
+  </div>
+  <footer class="developer-update__footer">
+    <div id="disqus_thread"></div>
+<script>
+  if (document.domain == 'www.openra.net') {
+    var disqus_config = function () {
+      this.page.url = window.location.origin + "/news/release-20250330/";
+      this.page.identifier = "release-20250330";
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = '//openra.disqus.com/embed.js';
+      s.async = true;
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+  else
+  {
+    var warn = document.createElement("p");
+    warn.appendChild(document.createTextNode("Comments are disabled for this domain."));
+    warn.classList.add("text--warning");
+    warn.classList.add("text--small");
+    document.getElementById("disqus_thread").appendChild(warn);
+  }
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments—powered by Disqus.</a>
+</noscript>
+  </footer>
+</article>
+            
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="site-footer">
+  <hr class="site-footer__hr" />
+  <div class="site-footer__main u-centered-content u-centered-content--small">
+    <a class="site-footer__logo-link" href="/">
+      <img class="site-footer__logo" src="/images/openra-logo-with-text.svg" alt="OpenRA" />
+    </a>
+    <div class="site-footer__legal">©2007-2025 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</div>
+    <nav class="site-footer__nav">
+      <div>
+        <a href="/news/" tabindex="0">News</a>
+      </div>
+      <div>
+        <a href="/about/" tabindex="0">About</a>
+      </div>
+      <div>
+        <a href="/download/" tabindex="0">Download</a>
+      </div>
+      <div>
+        <a href="/games/" tabindex="0">Games</a>
+      </div>
+      <div>
+        <a href="/community/" tabindex="0">Community</a>
+      </div>
+      <div>
+        <a href="https://forum.openra.net" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-conversation"></use>
+          </svg>
+          Forum
+        </a>
+      </div>
+      <div>
+        <a href="https://resource.openra.net" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-wrench"></use>
+          </svg>
+          Resources
+        </a>
+      </div>
+    </nav>
+    <nav class="site-footer__social-nav">
+      <div>
+        <a href="https://github.com/OpenRA/OpenRA" class="color--github" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-github"></use>
+          </svg>
+          GitHub
+        </a>
+      </div>
+      <div>
+        <a href="https://discord.openra.net/" class="color--discord" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-discord"></use>
+          </svg>
+          Discord
+        </a>
+      </div>
+      <div>
+        <a href="https://openra.itch.io/openra" class="color--itch" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-itch"></use>
+          </svg>
+          Itch
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/openra" class="color--facebook" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-facebook"></use>
+          </svg>
+          Facebook
+        </a>
+      </div>
+      <div>
+        <a href="https://twitter.com/openRA" class="color--twitter" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-twitter"></use>
+          </svg>
+          Twitter
+        </a>
+      </div>
+      <div>
+        <a href="https://www.reddit.com/r/openra" class="color--reddit" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-reddit"></use>
+          </svg>
+          Reddit
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/channel/UCRoiPL1J4K1-EhQeNazrYig" class="color--youtube" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-youtube"></use>
+          </svg>
+          YouTube
+        </a>
+      </div>
+      <div>
+        <a href="https://steamcommunity.com/groups/openra/" class="color--steam" tabindex="0">
+          <svg class="icon">
+            <use xlink:href="/images/icons/icons.svg#icon-steam"></use>
+          </svg>
+          Steam
+        </a>
+      </div>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+
+    <script
+  src="/scripts/vendor/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<script src="/scripts/vendor/svgxuse.min.js" async></script>
+<script src="/scripts/vendor/lite-youtube-embed.js" async></script>
+<script src="/scripts/global.js"></script>
+
+  </body>
+</html>
