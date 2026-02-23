@@ -12,7 +12,7 @@
   <meta property="og:description" content="Classic strategy games rebuilt for the modern era" />
   <meta property="og:url" content="https://www.openra.net/" />
   <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
-  <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2025-11-21-14-06" />
+  <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2026-02-23-18-02" />
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@openRA">
@@ -292,111 +292,56 @@
         <article class="developer-update">
   <header class="developer-update__header">
     <div class="developer-update__subheading text--medium">
-      Posted by <strong class="developer-update__author">PunkPun</strong> on <time>30 March 2025</time>
+      Posted by <strong class="developer-update__author">Paul Chote</strong> on <time>22 February 2026</time>
     </div>
-    <h3 class="developer-update__heading">Release 20250330</h3>
+    <h3 class="developer-update__heading">Playtest 20260222</h3>
   </header>
   <div class="developer-update__body">
-    <h4 id="hotfix-20250330-smarter-harvesters-bug-fixes-and-smoother-battles">Hotfix 20250330: Smarter Harvesters, Bug Fixes, and Smoother Battles</h4>
+    <p>The past year has brought several exciting new developments, which we are happy to share today with a new <a href="/download">OpenRA playtest</a>!</p>
+
+<p>The headline new feature in playtest-20260222 are the new random map generators for Red Alert, Tiberian Dawn, and Dune 2000. These work much like you would expect: select a biome, the number of players, and some details about symmetry and resources, then play! Generated maps work both in Skirmish and Multiplayer.</p>
+
+<figure>
+  <img src="/images/news/20260222-generators.gif" style="width: 512px" alt="Random map generator UI" />
+  <figcaption>The new random map generators can make better maps than me.</figcaption>
+</figure>
+
+<p>Dune 2000 has received a glow-up, featuring new visual effects for the Sonic Tank and damaged structures, along with the long-awaited “bulk purchase” logic for the Starport. The update includes a complete, community-led balance overhaul for skirmish and multiplayer modes. Meanwhile, the single-player campaign receives its own difficulty adjustments to ease the learning curve.</p>
 
 <figure>
    <video autoplay="" loop="" muted="">
-    <source src="/images/news/20250330-harvesters.mp4" type="video/mp4" alt="harvesters harvesting ore" />
-    <img src="/images/news/20250330-harvesters.png" alt="harvesters harvesting ore" />
+    <source src="/images/news/20260222-d2keffects.mp4" type="video/mp4" alt="Dune 2000 combat" />
+    <img src="/images/news/20260222-d2keffects.webp" alt="Dune 2000 combat" />
   </video>
-  <figcaption>Harvester operations have been returned to normal</figcaption>
+  <figcaption>Dune 2000 includes new, more faithful, effects for Sonic Tanks and damaged structures.</figcaption>
 </figure>
 
-<p>No battle plan survives first contact, and the same goes for software updates. We’re rolling out a hotfix to address a few issues identified in the latest release. Here’s what’s been fixed:</p>
-
-<ul>
-  <li><strong>Harvesters now mine smarter;</strong> They’ll stick closer to their refinery instead of wandering off</li>
-  <li><strong>Rally points display correctly;</strong> Unit move commands are now consistently shown</li>
-  <li><strong>Jungle trees won’t crash the game as they burn;</strong> Some Tiberian Dawn trees were feeling spicy</li>
-  <li><strong>OpenRA again runs on Raspberry Pi;</strong> Shader compilers be crazy</li>
-  <li><strong>Lobby alignments fixed;</strong> In multiplayer skirmish lobbies, team numbers are now properly centered</li>
-  <li><strong>Adjusted Dune 2000 weapon splash damage;</strong> To better match the vanilla balance</li>
-  <li><strong>Fixed green gliches on Dune 2000 corpses;</strong> Soldiers were spilling green blood</li>
-</ul>
-
-<h4 id="a-look-back-at-openra-release-20250303">A Look Back at OpenRA Release 20250303</h4>
-
-<p>The 20250303 release was one of OpenRA’s biggest updates yet, bringing over a year of development and community playtesting into a polished final version. If you missed it, here’s a quick refresher on the major additions:</p>
+<p>Support for the C&amp;C Remastered Collection assets in Tiberian Dawn reached two important milestones in the (currently) standalone <a href="https://github.com/OpenRA/TiberianDawnHD/releases/tag/playtest-20260222">Tiberian Dawn HD</a> mod. The mod is now feature-complete, with new HD sprites for the last custom assets plus a new content manager that allows you to select between remastered or classic artwork, audio, and music. Significant progress has been made towards integrating these features into the core OpenRA Tiberian Dawn – while this release still remains a standalone mod, we hope to complete the merge in the next release.</p>
 
 <figure>
-   <video autoplay="" loop="" muted="">
-    <source src="/images/news/20241116-chrono.mp4" type="video/mp4" alt="chrono vortex" />
-    <source src="/images/news/20241116-chrono.webm" type="video/webm" alt="chrono vortex" />
-    <img src="/images/news/20241116-vortex.webp" alt="chrono vortex" />
-  </video>
-  <figcaption>OpenRA now supports post-processing effects out of the box!</figcaption>
+  <img src="/images/news/20260222-tdhdcontent.webp" style="width: 600px" alt="Tiberian Dawn HD content selector UI" />
+  <figcaption><a href="">Tiberian Dawn HD</a> can now choose between remastered and classic assets.</figcaption>
 </figure>
 
-<p>We significantly improved support for high-definition art assets, especially for the Tiberian Dawn HD project. This brings:</p>
-<ul>
-  <li>Faster load times</li>
-  <li>Better performance</li>
-  <li>Fewer graphical bugs</li>
-</ul>
-
-<p>Tiberian Dawn HD is packaged as a separate release and can be <a href="https://github.com/OpenRA/TiberianDawnHD/releases/tag/release-20250330">downloaded here</a>. This preview is multiplayer-compatible with the main 20250330 release.</p>
-
-<p>To use it, the C&amp;C Remastered Collection must be installed via Steam or the EA App. If you’re on macOS or Linux, follow the project README for <a href="https://github.com/OpenRA/TiberianDawnHD#asset-installation">detailed installation instructions</a>.</p>
-
-<h4 id="dune-2000-visual-overhaul">Dune 2000 Visual Overhaul</h4>
-
-<p>The original Dune 2000 shipped with an option for 16-bit sprites, but OpenRA had previously only supported lower-quality 8-bit versions. Thanks to HD graphics improvements, the game has now been fully upgraded to higher quality assets, bringing:</p>
-<ul>
-  <li>Smoother shading and reduced color banding</li>
-  <li>More detailed terrain, units, explosions, and sidebar icons</li>
-</ul>
-
-<p>With a newly active Dune 2000 modding community, additional missing assets and refinements have been introduced:</p>
-<ul>
-  <li>Missing versions of 16-bit assets</li>
-  <li>Added vehicle husks</li>
-  <li>More varied explosion debris and husk effects</li>
-  <li>Refined Spice Bloom animations for more predictable growth</li>
-  <li>Proper Saboteur logic</li>
-</ul>
+<p>This is another big release for our map-making community, with further UI improvements to the OpenRA map editor, and new tools that take advantage of the random map generator logic.</p>
 
 <figure>
-  <img src="/images/news/20241116-map-editor.webp" style="width: 800px" alt="Map Editor" />
-  <figcaption>New Map Editor!</figcaption>
+  <img src="/images/news/20260222-pathtiler.webp" alt="Map Editor UI" />
+  <figcaption>The new Path Tiler map editor tool makes it easy to place cliffs, beaches, and roads.</figcaption>
 </figure>
 
-<p>We completely revamped the Map Editor with a modern and intuitive design. It now includes:</p>
+<p>Other noteable changes include:</p>
+
 <ul>
-  <li>Draggable selections and actors for easier editing</li>
-  <li>Measurement tools and a marker layer to fine-tune maps</li>
-  <li>A play button for quick testing</li>
-  <li>Many other quality-of-life improvements</li>
+  <li>Added new “Other RTS” mouse input mode.</li>
+  <li>Added timed auto-save settings for missions/skirmish.</li>
+  <li>Bots will now attempt to build expansion bases.</li>
+  <li>Further progress towards supporting localisation in a future release.</li>
+  <li>Added a new mission each for Red Alert and Tiberium Dawn.</li>
+  <li>Many other bug fixes and minor performance optimisations.</li>
 </ul>
 
-<figure>
-  <img src="/images/news/20241116-eva.webp" style="width: 800px" alt="Tiberian Dawn EVA Database" />
-  <figcaption>New EVA Database!</figcaption>
-</figure>
-
-<p>The Tiberian Dawn mod now includes a built-in encyclopedia, providing a central resource for unit, structure, and technology details. This addition was inspired by the community’s request for an in-game knowledge base, consolidating information that was previously scattered across wikis (many of which are now outdated).</p>
-
-<p>New Missions &amp; Gameplay Enhancements</p>
-<ul>
-  <li>Two new Red Alert missions were added, alongside various mission improvements</li>
-  <li>Skirmish options now persist between matches instead of resetting</li>
-  <li>Balance changes for Red Alert and Dune 2000 for a more refined experience</li>
-</ul>
-
-<p>Under-the-Hood Improvements</p>
-<ul>
-  <li>Added support for The Ultimate Collection (Steam version)</li>
-  <li>Improved installation support for classic assets from the C&amp;C Remastered Collection</li>
-  <li>Significant progress toward future language support</li>
-</ul>
-
-<p>For a complete breakdown, including all changes from the main release, check out <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/5579f73e444f6634d0f99ab9f29fc0caf26a4965">the full changelog</a>.</p>
-
-<p>Don’t forget to share your feedback on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a>, or <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. We hope you enjoy this newest installment of OpenRA! Good luck on the battlefield, Commanders!</p>
+<p>As always, the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog-(bleed)/9803f2f696bda224b2c0c14edfbb46ebd4da627f">full changelog</a> is available with more information on the changes and fixes. Stay tuned for more updates and be sure to take part in the playtest. Don’t forget to share your feedback with us on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a>, or <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>!</p>
 
   </div>
   <footer class="developer-update__footer">
@@ -404,8 +349,8 @@
 <script>
   if (document.domain == 'www.openra.net') {
     var disqus_config = function () {
-      this.page.url = window.location.origin + "/news/release-20250330/";
-      this.page.identifier = "release-20250330";
+      this.page.url = window.location.origin + "/news/playtest-20260222/";
+      this.page.identifier = "playtest-20260222";
     };
 
     (function() {
@@ -443,7 +388,7 @@
     <a class="site-footer__logo-link" href="/">
       <img class="site-footer__logo" src="/images/openra-logo-with-text.svg" alt="OpenRA" />
     </a>
-    <div class="site-footer__legal">©2007-2025 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</div>
+    <div class="site-footer__legal">©2007-2026 The OpenRA Developers (<a href="/legal/">Legal notices</a>)</div>
     <nav class="site-footer__nav">
       <div>
         <a href="/news/" tabindex="0">News</a>
