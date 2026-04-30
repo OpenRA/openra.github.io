@@ -283,19 +283,10 @@ input.radio-button__input { margin-top: 0.75rem; margin-right: 0; margin-bottom:
 
 .terminal__prompt { font-weight: bold; color: gold; }
 
-/* Flot */
-/* If you don't like this fresh mess of CSS, we need to move away from Flot In order to move away from Flot, we need data in JSON format */
-.flot-tick-label { color: white; }
+/* Chart.js player activity charts */
+.player-chart { padding: 1px; border-width: 2px; border-style: solid; border-top-color: #737381; border-right-color: #343442; border-bottom-color: #292936; border-left-color: #6e6e7b; border-radius: 7px; background-color: rgba(0, 0, 0, 0.35); background-size: 150px 150px; background-image: linear-gradient(to right, rgba(7, 3, 3, 0.35) 1px, transparent 1px), linear-gradient(to bottom, rgba(7, 3, 3, 0.35) 1px, transparent 1px); box-shadow: rgba(0, 0, 0, 0.75) 0 4px 2px 0, inset 0 1px 2px black; margin-top: 1rem; height: 350px !important; position: relative; }
 
-.flot-chart { padding: 1px; border-width: 2px; border-style: solid; border-top-color: #737381; border-right-color: #343442; border-bottom-color: #292936; border-left-color: #6e6e7b; border-radius: 7px; background-color: rgba(0, 0, 0, 0.35); background-size: 150px 150px; background-image: linear-gradient(to right, rgba(7, 3, 3, 0.35) 1px, transparent 1px), linear-gradient(to bottom, rgba(7, 3, 3, 0.35) 1px, transparent 1px); box-shadow: rgba(0, 0, 0, 0.75) 0 4px 2px 0, inset 0 1px 2px black; margin-top: 1rem; height: auto !important; }
-
-.flot-chart, .flot-chart > table { width: 100%; }
-
-.flot-chart table td { padding: 0; }
-
-.flot-chart table td:first-child { width: 100%; padding: 1rem 1rem; }
-
-#flotTip { background: white; color: black; text-shadow: none; font-size: 0.875rem; border-radius: 2px; padding: 0.25rem 0.5rem; }
+.player-chart canvas { max-height: 100%; }
 
 /* Site Styles General site styles */
 .site { position: relative; overflow-x: hidden; height: 100%; margin-top: 75px; background-size: 1px 50vh; background-repeat: repeat-x; background-attachment: fixed; }
