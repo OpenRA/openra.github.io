@@ -12,7 +12,7 @@
   <meta property="og:description" content="Classic strategy games rebuilt for the modern era" />
   <meta property="og:url" content="https://www.openra.net/" />
   <!-- query param at the end is for cache busting if/when more dynamic social images are added -->
-  <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2026-10-13-09-22" />
+  <meta property="og:image" content="https://www.openra.net/images/social.jpg?t=2026-10-25-19-55" />
   <!-- X (Twitter) Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@openRA">
@@ -304,27 +304,27 @@
         <article class="developer-update">
   <header class="developer-update__header">
     <div class="developer-update__subheading text--medium">
-      Posted by <strong class="developer-update__author">Gustas</strong> on <time>11 October 2026</time>
+      Posted by <strong class="developer-update__author">Gustas</strong> on <time>25 October 2026</time>
     </div>
-    <h3 class="developer-update__heading">Playtest 20261011</h3>
+    <h3 class="developer-update__heading">Playtest 20261026</h3>
   </header>
   <div class="developer-update__body">
     <div style="border-radius: 4px; background-color: #272d2c; padding: 5px">
 <div style="margin: -10px 5px">
 
-    <p>We present release candidate <a href="/download">Playtest 20261011</a>. A massive thank you to everyone who took part in the previous playtests—your reports were critical in helping us track down and resolve game-breaking issues!</p>
+    <p>Welcome back, commanders! We present release candidate <a href="/download">Playtest 20261026</a>. Thanks everyone for taking part in the playtests!</p>
 
-    <p>This follow-up playtest is larger than usual, bringing a wealth of gameplay content alongside the usual bug fixes. Highlights for this release include:</p>
+    <p>Notable changes include:</p>
     <ul>
-      <li><strong>The entire Dune 2000 campaign is finally complete!</strong> Added a massive batch of missing missions for Atreides and Ordos. With such an amount of new single-player content, we are relying on you to playtest these missions so we can nail the balance and pacing before the release. Alongside this, we’ve integrated the community-led balance overhaul for skirmish and multiplayer modes.</li>
-      <li><strong>Single-Player QoL &amp; Red Alert Updates:</strong> Overhauled the game save and load interfaces, complete with a new QuickSave hotkey. We’ve also made plenty of changes to the Red Alert campaign, including difficulty adjustments and event fixes to various missions.</li>
-      <li><strong>Multiplayer &amp; UI Tweaks:</strong> Map previews now show team numbers, and the lobby features new options to hide map previews and spawns. We’ve added a hotkey to disable the game UI and fixed replay stuttering at maximum speed.</li>
-      <li><strong>Smarter AI:</strong> AI bots have received a plethora of upgrades, including smarter base expansion, better defense placement, and fixed aircraft rearming logic.</li>
-      <li><strong>Critical Fixes:</strong> Fixed Attack Move ignoring unit target preferences, resolved visual fuzziness when zoomed out on low-DPI displays, and fixed other crashes.</li>
-      <li><strong>Tech Upgrades:</strong> Moved the engine to .NET 10, adding native support for Windows on ARM and aarch64 AppImages for Linux users.</li>
+      <li>fixed a crash when joining a multiplayer lobby with a non-downloaded map selected</li>
+      <li>fixed a crash in replays and game saves that contain bots</li>
+      <li>fixed up game save/load tooltips</li>
+      <li>fixed errors in Dune 2000 missions harkonnen-6a and harkonnen-6b</li>
+      <li>fixed errors in Lua documentation</li>
+      <li>fixed update rules</li>
     </ul>
 
-    <p>As always the Tiberian Dawn HD playtest can be <a href="https://github.com/OpenRA/TiberianDawnHD/releases/tag/playtest-20261011">downloaded here</a>, and the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/f9e8ab54d70000a9e17c5198f8e522023e5d4137">full changelog</a> is available on GitHub.</p>
+    <p>As always the Tiberian Dawn HD playtest can be <a href="https://github.com/OpenRA/TiberianDawnHD/releases/tag/20261026">downloaded here</a>, and the <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/6e4ce8e175cc8965163d4e2100715b851760f285">full changelog</a> is available on GitHub.</p>
 
     <p>If you find any critical issues don’t forget to share your feedback with us on <a href="https://forum.openra.net/">our forum</a>, <a href="https://discord.openra.net">community Discord server</a>, or <a href="https://github.com/OpenRA/OpenRA/issues">GitHub</a>. Good luck on the battlefield, Commanders!</p>
 
@@ -383,7 +383,7 @@
 <script>
   if (document.domain == 'www.openra.net') {
     var disqus_config = function () {
-      this.page.url = window.location.origin + "/news/playtest-20261011/";
+      this.page.url = window.location.origin + "/news/playtest-20261026/";
       this.page.identifier = "playtest-20260222";
     };
 
